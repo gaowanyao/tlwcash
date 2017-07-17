@@ -1,0 +1,137 @@
+<div class="page-header navbar navbar-fixed-top">
+
+
+    <div class="page-header-inner ">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a style="text-decoration: none;color: lightskyblue;" href="index.php?&m=admin&a=news">
+                <h3  style="margin-top:10px;position: fixed;">多宝金豆网站后台管理</h3>
+                <!--<img src="__PUBLIC__/resource/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> -->
+            </a>
+
+
+            <!--<div class="menu-toggler sidebar-toggler">-->
+                <!--<span></span>-->
+            <!--</div>-->
+            <!---->
+
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            <span></span>
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                <!-- BEGIN NOTIFICATION DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
+                <!-- DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
+
+                <!-- BEGIN TODO DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <li style="display: none;" class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="icon-calendar"></i>
+                        <span class="badge badge-default"> 3 </span>
+                    </a>
+                    <ul class="dropdown-menu extended tasks">
+                        <li class="external">
+                            <h3>You have
+                                <span class="bold">12 pending</span> tasks</h3>
+                            <a href="app_todo.html">view all</a>
+                        </li>
+                        <li>
+                            <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                <li>
+                                    <a href="javascript:;">
+                                                        <span class="task">
+                                                            <span class="desc">New release v1.2 </span>
+                                                            <span class="percent">30%</span>
+                                                        </span>
+                                        <span class="progress">
+                                                            <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                                <span class="sr-only">40% Complete</span>
+                                                            </span>
+                                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                                        <span class="task">
+                                                            <span class="desc">Application deployment</span>
+                                                            <span class="percent">65%</span>
+                                                        </span>
+                                        <span class="progress">
+                                                            <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                                <span class="sr-only">65% Complete</span>
+                                                            </span>
+                                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END TODO DROPDOWN -->
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <li class="dropdown dropdown-user">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <img alt="" class="img-circle" src="__PUBLIC__/resource/layouts/layout/img/avatar3_small.jpg" />
+                        <span class="username username-hide-on-mobile"> <?php echo $_SESSION['user']['user_name']; ?> </span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-default">
+                        <li>
+                            <a href="index.php?m=admin&a=personal">
+                                <i class="icon-user"></i> 个人信息 </a>
+                        </li>
+                        <!--<li>-->
+                            <!--<a href="app_calendar.html">-->
+                                <!--<i class="icon-calendar"></i> My Calendar </a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="app_inbox.html">-->
+                                <!--<i class="icon-envelope-open"></i> My Inbox-->
+                                <!--<span class="badge badge-danger"> 3 </span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="app_todo.html">-->
+                                <!--<i class="icon-rocket"></i> My Tasks-->
+                                <!--<span class="badge badge-success"> 7 </span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="divider"> </li>-->
+                        <!--<li>-->
+                            <!--<a href="page_user_lock_1.html">-->
+                                <!--<i class="icon-lock"></i>锁屏</a>-->
+                        <!--</li>-->
+                        <li>
+                            <a href="index.php?&m=admin&a=logout">
+                                <i class="icon-key"></i>退出</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END USER LOGIN DROPDOWN -->
+                <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                <li style="display: none;"  class="dropdown dropdown-quick-sidebar-toggler">
+                    <a href="javascript:;" class="dropdown-toggle">
+                        <i class="icon-logout"></i>
+                    </a>
+                </li>
+                <!-- END QUICK SIDEBAR TOGGLER -->
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+
+</div>
+
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->

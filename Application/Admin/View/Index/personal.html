@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>MoBiCoin网站后台管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#1 selling multi-purpose bootstrap admin theme sold in themeforest marketplace packed with angularjs, material design, rtl support with over thausands of templates and ui elements and plugins to power any type of web applications including saas and admin dashboards. Preview page of Theme #1 for buttons extension demos"
+          name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="__PUBLIC__/resource/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="__PUBLIC__/resource/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="__PUBLIC__/resource/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="__PUBLIC__/resource/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/resource/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="__PUBLIC__/resource/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<div class="page-wrapper">
+    <!-- BEGIN HEADER -->
+    <!-- BEGIN HEADER INNER -->
+    <include file="Public/header"/>
+    <!-- END HEADER INNER -->
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <include file="Public/left" active="admin" open="admin"/>
+
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN THEME PANEL -->
+                <!-- END THEME PANEL -->
+                <!-- BEGIN PAGE BAR -->
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="index.php?&m=admin&a=admin">管理员</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a href="index.php?&m=admin&a=admin">管理员列表</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <span>个人信息</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END PAGE BAR -->
+                <br>
+
+                <div class="row">
+
+                    <div class="col-md-6 ">
+                        <!-- BEGIN SAMPLE FORM PORTLET-->
+                        <div class="portlet light ">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-dark"></i>
+                                    <span class="caption-subject font-dark sbold uppercase">个人信息</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <form class="form-horizontal" action="index.php?&m=admin&a=personal_msg" method="post" role="form">
+
+
+
+                                    <input type="hidden" name="uid" value="{$admin.uid}" class="form-control input-inline input-medium" >
+
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">用户名</label>
+                                            <div class="col-md-9">
+                                                <input type="text" name="user_name" id="user_name" disabled="disabled"  value="{$admin.user_name}" class="form-control input-inline input-medium" placeholder="请输入用户名">
+                                                <!--<span class="help-block"> A block of help text. </span>-->
+                                                <button id="alter_user_name" type="button" class="btn green">修改用户名</button>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">密码</label>
+                                            <div class="col-md-9">
+                                                <input type="password" name="password" id="password" disabled="disabled" value="{$admin.password}" class="form-control input-inline input-medium" placeholder="请输入新密码">
+                                                <!--<span class="help-inline"> 修改密码 </span>-->
+                                                <button id="alter_password" type="button" class="btn green">修改密码</button>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-md-9">
+                                                <button type="submit" class="btn green">提交</button>
+                                                <a href="index.php?&m=admin&a=admin" class="btn default">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+        <!-- END CONTENT -->
+        <!-- BEGIN QUICK SIDEBAR -->
+        <include file="Public/quick-sidebar"/>
+
+        <!-- END QUICK SIDEBAR -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <include file="Public/page-footer"/>
+
+    <!-- END FOOTER -->
+</div>
+<!-- BEGIN QUICK NAV -->
+<!--<include file="Public/quick-nav"/>-->
+<!-- END QUICK NAV -->
+
+
+
+<div class="modal fade draggable-modal" id="draggable" tabindex="-1" role="basic" aria-hidden="true">
+    <div class="modal-dialog" style="padding-top:200px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body"> 确定要删除这篇文章吗？ </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal">取消</button>
+                <button type="button" id="delete_confirm" class="btn green">确定</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+
+<!--[if lt IE 9]>
+<script src="__PUBLIC__/resource/global/plugins/respond.min.js"></script>
+<script src="__PUBLIC__/resource/global/plugins/excanvas.min.js"></script>
+<script src="__PUBLIC__/resource/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+<!-- BEGIN CORE PLUGINS -->
+<script src="__PUBLIC__/resource/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="__PUBLIC__/resource/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
+
+<script src="__PUBLIC__/resource/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="__PUBLIC__/resource/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+
+<script src="__PUBLIC__/resource/pages/scripts/ui-modals.min.js" type="text/javascript"></script>
+
+
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<!--<script src="__PUBLIC__/resource/pages/scripts/table-datatables-buttons.min.js" type="text/javascript"></script>-->
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="__PUBLIC__/resource/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/resource/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        $("#alter_password").click(function () {
+            $("#password").val("");
+            $("#password").attr("disabled",false);
+        });
+
+
+
+        $("#alter_user_name").click(function () {
+//            $("#user_name").val("");
+            $("#user_name").attr("disabled",false);
+        });
+
+        $(document).on("click",".delete",function () {
+
+            var id = $(this).attr("data-id");
+            $("#delete_confirm").attr("data-id",id);
+            $("#draggable").modal("show");
+
+        });
+
+        $("#delete_confirm").click(function () {
+            var iid = $(this).attr("data-id");
+            window.location.href='index.php?&m=admin&a=delete_article&id='+iid;
+        });
+
+    });
+
+
+
+
+    var TableDatatablesButtons = function () {
+
+        var initTable1 = function () {
+            var table = $('#sample_1');
+
+            var oTable = table.dataTable({
+
+                // Internationalisation. For more info refer to http://datatables.net/manual/i18n
+                "language": {
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    },
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "No entries found",
+                    "infoFiltered": "(filtered1 from _MAX_ total entries)",
+                    "lengthMenu": "_MENU_ entries",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found"
+                },
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+
+                buttons: [
+                    { extend: 'print', className: 'btn dark btn-outline' },
+                    { extend: 'copy', className: 'btn red btn-outline' },
+                    { extend: 'pdf', className: 'btn green btn-outline' },
+                    { extend: 'excel', className: 'btn yellow btn-outline ' },
+                    { extend: 'csv', className: 'btn purple btn-outline ' },
+                    { extend: 'colvis', className: 'btn dark btn-outline', text: 'Columns'}
+                ],
+
+                // setup responsive extension: http://datatables.net/extensions/responsive/
+                responsive: true,
+
+                //"ordering": false, disable column ordering
+                //"paging": false, disable pagination
+
+                "order": [
+                    [5, 'desc']
+                ],
+
+                "lengthMenu": [
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
+                ],
+                // set the initial value
+                "pageLength": 10,
+
+                "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+            });
+        }
+
+        var initTable2 = function () {
+            var table = $('#sample_2');
+
+            var oTable = table.dataTable({
+
+                // Internationalisation. For more info refer to http://datatables.net/manual/i18n
+                "language": {
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    },
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "No entries found",
+                    "infoFiltered": "(filtered1 from _MAX_ total entries)",
+                    "lengthMenu": "_MENU_ entries",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found"
+                },
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+                buttons: [
+                    { extend: 'print', className: 'btn default' },
+                    { extend: 'copy', className: 'btn default' },
+                    { extend: 'pdf', className: 'btn default' },
+                    { extend: 'excel', className: 'btn default' },
+                    { extend: 'csv', className: 'btn default' },
+                    {
+                        text: 'Reload',
+                        className: 'btn default',
+                        action: function ( e, dt, node, config ) {
+                            //dt.ajax.reload();
+                            alert('Custom Button');
+                        }
+                    }
+                ],
+
+                "order": [
+                    [0, 'asc']
+                ],
+
+                "lengthMenu": [
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
+                ],
+                // set the initial value
+                "pageLength": 10,
+
+                "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+            });
+        }
+
+        var initTable3 = function () {
+            var table = $('#sample_3');
+
+            var oTable = table.dataTable({
+
+                // Internationalisation. For more info refer to http://datatables.net/manual/i18n
+                "language": {
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    },
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "No entries found",
+                    "infoFiltered": "(filtered1 from _MAX_ total entries)",
+                    "lengthMenu": "_MENU_ entries",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found"
+                },
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+                buttons: [
+                    { extend: 'print', className: 'btn dark btn-outline' },
+                    { extend: 'copy', className: 'btn red btn-outline' },
+                    { extend: 'pdf', className: 'btn green btn-outline' },
+                    { extend: 'excel', className: 'btn yellow btn-outline ' },
+                    { extend: 'csv', className: 'btn purple btn-outline ' },
+                    { extend: 'colvis', className: 'btn dark btn-outline', text: 'Columns'}
+                ],
+
+                // setup responsive extension: http://datatables.net/extensions/responsive/
+                responsive: true,
+
+                //"ordering": false, disable column ordering
+                //"paging": false, disable pagination
+
+                "order": [
+                    [0, 'asc']
+                ],
+
+                "lengthMenu": [
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
+                ],
+                // set the initial value
+                "pageLength": 10,
+
+                //"dom": "<'row' <'col-md-12'>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+            });
+
+            // handle datatable custom tools
+            $('#sample_3_tools > li > a.tool-action').on('click', function() {
+                var action = $(this).attr('data-action');
+                oTable.DataTable().button(action).trigger();
+            });
+        }
+
+        var initAjaxDatatables = function () {
+
+            //init date pickers
+            $('.date-picker').datepicker({
+                rtl: App.isRTL(),
+                autoclose: true
+            });
+
+            var grid = new Datatable();
+
+            grid.init({
+                src: $("#datatable_ajax"),
+                onSuccess: function (grid, response) {
+                    // grid:        grid object
+                    // response:    json object of server side ajax response
+                    // execute some code after table records loaded
+                },
+                onError: function (grid) {
+                    // execute some code on network or other general error
+                },
+                onDataLoad: function(grid) {
+                    // execute some code on ajax data load
+                },
+                loadingMessage: 'Loading...',
+                dataTable: { // here you can define a typical datatable settings from http://datatables.net/usage/options
+
+                    // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                    // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/scripts/datatable.js).
+                    // So when dropdowns used the scrollable div should be removed.
+
+                    //"dom": "<'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'<'table-group-actions pull-right'>>r>t<'row'<'col-md-8 col-sm-12'pli><'col-md-4 col-sm-12'>>",
+
+                    "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
+
+                    "lengthMenu": [
+                        [10, 20, 50, 100, 150, -1],
+                        [10, 20, 50, 100, 150, "All"] // change per page values here
+                    ],
+                    "pageLength": 10, // default record count per page
+                    "ajax": {
+                        "url": "../demo/table_ajax.php", // ajax source
+                    },
+                    "order": [
+                        [1, "asc"]
+                    ],// set first column as a default sort by asc
+
+                    // Or you can use remote translation file
+                    //"language": {
+                    //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                    //},
+
+                    buttons: [
+                        { extend: 'print', className: 'btn default' },
+                        { extend: 'copy', className: 'btn default' },
+                        { extend: 'pdf', className: 'btn default' },
+                        { extend: 'excel', className: 'btn default' },
+                        { extend: 'csv', className: 'btn default' },
+                        {
+                            text: 'Reload',
+                            className: 'btn default',
+                            action: function ( e, dt, node, config ) {
+                                dt.ajax.reload();
+                                alert('Datatable reloaded!');
+                            }
+                        }
+                    ],
+
+                }
+            });
+
+            // handle group actionsubmit button click
+            grid.getTableWrapper().on('click', '.table-group-action-submit', function (e) {
+                e.preventDefault();
+                var action = $(".table-group-action-input", grid.getTableWrapper());
+                if (action.val() != "" && grid.getSelectedRowsCount() > 0) {
+                    grid.setAjaxParam("customActionType", "group_action");
+                    grid.setAjaxParam("customActionName", action.val());
+                    grid.setAjaxParam("id", grid.getSelectedRows());
+                    grid.getDataTable().ajax.reload();
+                    grid.clearAjaxParams();
+                } else if (action.val() == "") {
+                    App.alert({
+                        type: 'danger',
+                        icon: 'warning',
+                        message: 'Please select an action',
+                        container: grid.getTableWrapper(),
+                        place: 'prepend'
+                    });
+                } else if (grid.getSelectedRowsCount() === 0) {
+                    App.alert({
+                        type: 'danger',
+                        icon: 'warning',
+                        message: 'No record selected',
+                        container: grid.getTableWrapper(),
+                        place: 'prepend'
+                    });
+                }
+            });
+
+            //grid.setAjaxParam("customActionType", "group_action");
+            //grid.getDataTable().ajax.reload();
+            //grid.clearAjaxParams();
+
+            // handle datatable custom tools
+            $('#datatable_ajax_tools > li > a.tool-action').on('click', function() {
+                var action = $(this).attr('data-action');
+                grid.getDataTable().button(action).trigger();
+            });
+        }
+
+        return {
+
+            //main function to initiate the module
+            init: function () {
+
+                if (!jQuery().dataTable) {
+                    return;
+                }
+
+                initTable1();
+                initTable2();
+                initTable3();
+
+                initAjaxDatatables();
+            }
+
+        };
+
+    }();
+
+    jQuery(document).ready(function() {
+        TableDatatablesButtons.init();
+    });
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

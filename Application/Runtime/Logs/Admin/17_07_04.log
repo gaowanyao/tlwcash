@@ -1,0 +1,1166 @@
+[ 2017-07-04T14:14:40+08:00 ] 60.29.18.50 /index.php?&m=admin&a=message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-07-04T14:14:44+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-07-04T14:14:45+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-07-04T14:14:46+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006384s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 419 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-07-04T14:14:50+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 1162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-07-04T14:16:18+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 452 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-07-04T14:16:40+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005752s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005821s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-07-04T14:16:46+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+ERR: 非法操作:delete_user
+
+[ 2017-07-04T14:19:19+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( id= )
+
+[ 2017-07-04T14:19:26+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( id= )
+
+[ 2017-07-04T14:20:14+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-07-04T14:20:17+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006193s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 132 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s )' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( uid=%s )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s )' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( uid=%s )
+
+[ 2017-07-04T14:20:42+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: uid /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 132 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( uid= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_user` WHERE ( uid= )
+
+[ 2017-07-04T14:20:59+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=6 ) [ RunTime:0.1019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-07-04T14:21:00+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006213s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-07-04T14:21:05+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=5 ) [ RunTime:0.0688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-07-04T14:21:06+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005988s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006061s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-07-04T14:21:14+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=4 ) [ RunTime:0.0695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-07-04T14:21:15+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-07-04T14:21:18+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=3 ) [ RunTime:0.0733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008908s ]
+
+[ 2017-07-04T14:21:20+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006292s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005952s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006024s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-07-04T14:21:24+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=2 ) [ RunTime:0.0916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-04T14:21:26+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006343s ]
+
+[ 2017-07-04T14:36:39+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-07-04T14:56:45+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-07-04T14:56:48+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2017-07-04T14:56:58+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-07-04T14:56:59+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 436 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006312s ]
+
+[ 2017-07-04T14:57:02+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-04T14:57:06+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=8 ) [ RunTime:0.0565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005811s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005864s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-07-04T14:57:07+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-07-04T14:57:10+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=7 ) [ RunTime:0.0664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-04T14:57:11+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-07-04T14:57:15+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_user` WHERE ( uid=1 ) [ RunTime:0.0654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-07-04T14:57:16+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 1155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-07-04T15:06:50+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-07-04T15:06:53+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-07-04T15:06:58+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-07-04T15:06:59+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 436 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-07-04T15:07:02+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-07-04T15:46:07+08:00 ] 60.29.18.50 /index.php?&m=admin&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-07-04T15:46:10+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-07-04T15:46:12+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-07-04T15:46:13+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 436 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-07-04T15:46:16+08:00 ] 60.29.18.50 /index.php?&m=admin&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+

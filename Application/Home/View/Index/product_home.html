@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>众筹</title>
+    <link rel="stylesheet" href="__ROOT__/Public/css/bootstrap.yb.css">
+    <link rel="stylesheet" href="__ROOT__/Public/css/main.css">
+
+
+
+</head>
+<body>
+<include file="sdk"  />
+
+<div class="container-fluid">
+
+
+    <include file="Public/header"/>
+
+
+    <div class="main-pannel clearfix col-sm-24">
+        <div class="left-pannel pull-left col-sm-16 col-xs-24">
+            <div class="row pannel-container">
+                <h2 class="pannel-title">关于我们</h2>
+                <p class="pannel-text">熊猫矿机是一家新晋的虚拟货币硬件设备专业制造商。伴随着规模日益扩大的虚拟币采矿业，我们在2016年集合了众多行业专家，组建成一支全方位的团队，在半年内研发出全球首创、适用多种虚拟货币的显卡集成矿机。</p>
+                <p class="pannel-text">熊猫矿机管理团队由数位芯片、显卡、比特币、互联网及资本运营领域的资深人士构成，创始人郭伟城--牛比特云算力平台CEO，2014年进入挖矿行业，具备丰富、成熟的大型矿场部署经验。我们通过整合市场已有的显卡挖矿的优势，在散热、运算多方面对显卡进行改进升级，完善显卡参数。数千个小时的电脑模拟和精细微调让我们获得了前所未有的低功耗及超高算力。未来我们将会继续不断优化我们的产品方案，以满足日新月异的挖矿需求。</p>
+                <img src="__ROOT__/Public/images/person.png" alt="" class="img-responsive pannel-image">
+            </div>
+        </div>
+        <div class="right-pannel pull-right col-sm-7 col-xs-24">
+            <div class="row pannel-container">
+                <div class="pannel-item">
+                    <h2 class="slide-title"><span class="slide-rect"></span>众筹进度</h2>
+                    <p class="funding-money">目前累计资金:<span class="money-num">¥6666666</span></p>
+                    <p class="funding-desc">此项目须在 <span class="funding-end-time">2017年01月22日23时59分</span>前，获得 <span class="funding-goal">1,480,000.00</span>的支持才可成功!</p>
+                    <p class="funding-progress">众筹进度<span class="progress-precent" id="progress_precent">100%</span></p>
+                    <p class="funding-progress-bar-container"><span class="funding-progress-bar" id="funding_progress_bar"></span></p>
+                    <ul class="funding-detail clearfix">
+                        <li class="funding-detail-item col-sm-12 col-xs-8"><span
+                                class="glyphicon glyphicon-user detail-icon"></span><span class="detail-title">支持人数:</span><span class="detail-data">6人</span>
+                        </li>
+                        <li class="funding-detail-item col-sm-12 col-xs-8"><span
+                                class="glyphicon glyphicon-time detail-icon"></span><span class="detail-title">剩余天数:</span><span class="detail-data">已成功</span>
+                        </li>
+                        <li class="funding-detail-item col-sm-16 col-xs-8"><span
+                                class="glyphicon glyphicon-flag detail-icon"></span><span class="detail-title">开始时间:</span><span class="detail-data">2017-03-21</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pannel-item">
+                    <h2 class="slide-title"><span class="slide-rect"></span>支持¥10.0000/(一份起)</h2>
+                    <p class="slide-detail clearfix"><span class="pull-left">不限额</span><span class="pull-right">已购1份</span></p>
+                    <p class="slide-desc">感谢您的支持，众筹结束后，每满1500名将由币众筹官方抽取1名用户，获得价值15000元的熊猫矿机PandaMiner B1 Plus一台，不足1500人将不抽取，德邦包邮。</p>
+                    <img src="__ROOT__/Public/images/product.png" alt="" class="img-responsive product-img">
+                    <p class="product-desc clearfix"><span class="pull-left">运费:包邮</span><span class="pull-right">预计发放时间:项目成功后30天内</span></p>
+                    <span class="funding-btn" onclick="callpay()">支持RMB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="__ROOT__/Public/js/jquery.min.js"></script>
+<script src="__ROOT__/Public/js/main.js"></script>
+<script>
+
+//    $(document).ready(function () {
+//        $("#pay").click(function () {
+//            $.ajax({
+//                url:"index.php?m=home&c=index&a=call_wx_pay",
+//                type:"POST",
+//                data:{
+//                    money:1000
+//                },
+//                success:function (jsApiParameters) {
+//                    alert(jsApiParameters);
+//                        callpay(jsApiParameters);
+//                },
+//                error:function (err) {
+//                    alert("sss");
+//                }
+//            })
+//        })
+//    })
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

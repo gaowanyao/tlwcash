@@ -1,0 +1,16 @@
+2017-07-03 13:32:28 pid:9217 Workerman[http_test.php] start in DEBUG mode
+2017-07-03 13:33:40 pid:9217 Workerman[http_test.php] Stopping ...
+2017-07-03 13:33:40 pid:9217 Workerman[http_test.php] has been stopped
+2017-07-03 13:33:46 pid:9224 Workerman[http_test.php] stop 
+2017-07-03 13:33:46 pid:9224 Workerman[http_test.php] not run
+2017-07-03 13:33:51 pid:9225 Workerman[http_test.php] stop 
+2017-07-03 13:33:51 pid:9225 Workerman[http_test.php] not run
+2017-07-03 17:46:00 pid:10281 Workerman[ws_test.php] start in DEBUG mode
+2017-07-03 17:46:54 pid:10281 Workerman[ws_test.php] Stopping ...
+2017-07-03 17:46:54 pid:10281 Workerman[ws_test.php] has been stopped
+2017-07-03 17:46:55 pid:10288 Workerman[ws_test.php] start in DEBUG mode
+2017-07-03 17:54:03 pid:10288 Workerman[ws_test.php] Stopping ...
+2017-07-03 17:54:03 pid:10288 Workerman[ws_test.php] has been stopped
+2017-07-03 17:54:06 pid:10304 Workerman[ws_test.php] start in DEBUG mode
+2017-07-03 17:54:12 pid:10304 Workerman[ws_test.php] Stopping ...
+2017-07-03 17:54:12 pid:10304 Workerman[ws_test.php] has been stopped
