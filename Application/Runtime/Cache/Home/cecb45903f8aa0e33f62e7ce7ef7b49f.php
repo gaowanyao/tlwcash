@@ -286,7 +286,7 @@
 <header id="header" style="background: #000000;opacity: 0.8;">
     <div class="container" style=" <?php if($pc == 'pc'){ echo 'min-width: 1200px !important;';};?>">
         <!-- ############################# Logo ############################# -->
-        <a id="logo" href="index.html" class="smooth-link" style=" "><img src=" <?php if($pc == 'pc'){ echo '/Public/images/logo1.png';}else{ echo '/Public/images/logo3.png';};?>"  style="<?php if($pc == 'pc'){ echo 'width: 140px;height: 45px;margin-top:2px;';}else{ echo 'width:50px;height: 49px;';};?>" alt="Logo"></a>
+        <a id="logo" href="index.php" class="smooth-link" style=" "><img src=" <?php if($pc == 'pc'){ echo '/Public/images/logo1.png';}else{ echo '/Public/images/logo3.png';};?>"  style="<?php if($pc == 'pc'){ echo 'width: 140px;height: 45px;margin-top:2px;';}else{ echo 'width:50px;height: 49px;';};?>" alt="Logo"></a>
         <!--<a id="logo" href="index.html" class="smooth-link"><img src="/Public/wap/placeholders/logo.png" alt="Logo"></a>-->
 
 
@@ -800,7 +800,7 @@
 <!-- Footer Note -->
 <div id="footer-note">
     <p>
-        Copyright © 2017 mobicoin.com All rights Reserved
+        Copyright © 2017 dbjd.9ebo.com All rights Reserved
         <!--<a href="#">Rascals Themes</a>-->
     </p>
 

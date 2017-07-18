@@ -340,7 +340,7 @@
 <header id="header" style="background: #000000;opacity: 0.8;">
     <div class="container" style=" <?php if($pc == 'pc'){ echo 'min-width: 1200px !important;';};?>">
         <!-- ############################# Logo ############################# -->
-        <a id="logo" href="index.html" class="smooth-link" style=" "><img src=" <?php if($pc == 'pc'){ echo '/Public/images/logo1.png';}else{ echo '/Public/images/logo3.png';};?>"  style="<?php if($pc == 'pc'){ echo 'width: 140px;height: 45px;margin-top:2px;';}else{ echo 'width:50px;height: 49px;';};?>" alt="Logo"></a>
+        <a id="logo" href="index.php" class="smooth-link" style=" "><img src=" <?php if($pc == 'pc'){ echo '/Public/images/logo1.png';}else{ echo '/Public/images/logo3.png';};?>"  style="<?php if($pc == 'pc'){ echo 'width: 140px;height: 45px;margin-top:2px;';}else{ echo 'width:50px;height: 49px;';};?>" alt="Logo"></a>
         <!--<a id="logo" href="index.html" class="smooth-link"><img src="/Public/wap/placeholders/logo.png" alt="Logo"></a>-->
 
 
@@ -748,7 +748,7 @@
                                                                 <div class="tab-pane active" id="tab_1_1">
 
 
-                                                                    <p class="dark">注册指南在浏览器地址栏输入www.mobicoin.com，进入mobicoin官网，点击右上角登录注册按钮。目前币创网支持手机注册和邮箱注册。</p>
+                                                                    <p class="dark">注册指南</p>
 
                                                                 </div>
 
