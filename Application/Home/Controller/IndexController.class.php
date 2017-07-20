@@ -23,13 +23,13 @@ class IndexController extends Controller
 
         if (isset($_SESSION["account"])) {
 
-//            dump($_POST);
             $m = M("User");
             $data['password'] = md5($_POST['new_pwd']);
             $old_pwd = md5($_POST['old_pwd']);
 
             $uid = $_SESSION['account']['uid'];
             $sel = $m->where("uid=$uid")->find();
+
 
             if($old_pwd != $sel['password']){
                 $this->error("旧密码不对，请重新修改！");
@@ -43,7 +43,10 @@ class IndexController extends Controller
 
 
                     if($res){
-                        $this->success("新密码修改成功!");
+
+                        $_SESSION['account'] = NULL;
+
+                        $this->success("新密码修改成功,请重新登录！","");
                     }else{
                         $this->error("新密码修改失败!");
                     }
@@ -110,6 +113,7 @@ class IndexController extends Controller
 
         $data = $_POST;
         $data['uid'] = $_SESSION['account']['uid'];
+        $data['confirm'] = 1;
 
         $res = $m->data($data)->save();
 //        $res = 1;
@@ -134,17 +138,17 @@ class IndexController extends Controller
 
         $random = substr(md5(uniqid(rand(),1)),   8,   32);
 
-        $msg = "您好，".$data['user_name']."<br/>欢迎加入MoBiCoin！请点击下面的链接来认证您的邮箱。<br/><a href='".C("domain")."/index.php?&a=email&base=".$user."&v=".$random."'>".C("domain")."/index.php?&a=email&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中认证";
+        $msg = "您好，".$data['user_name']."<br/>欢迎加入多宝金豆！请点击下面的链接来认证您的邮箱。<br/><a href='".C("domain")."/index.php?&a=email&base=".$user."&v=".$random."'>".C("domain")."/index.php?&a=email&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中认证";
 
         $user = urlsafe_b64decode($user);
 
-        dump($user);
-        dump($msg);
-        dump($random);
+//        dump($user);
+//        dump($msg);
+//        dump($random);
 
 //        think_send_mail('1528667112@qq.com','','你好!邮件标题','这是一篇测试邮件正文！');
 
-        if(think_send_mail('1528667112@qq.com','','MoBiCoin用户激活邮件',$msg) == true){
+        if(think_send_mail('1528667112@qq.com','','多宝金豆用户激活邮件',$msg) == true){
             echo '发送成功！';
         }
         else{
@@ -167,13 +171,71 @@ class IndexController extends Controller
 
         $m = M("User");
         $uid = $_SESSION['account']['uid'];
-        $sel = $m->where("uid=$uid")->field("uid,user_name,phone,email,create_time,admin,real_name,idcard,sex,head")->find();
+        $sel = $m->where("uid=$uid")->field("uid,user_name,phone,email,create_time,admin,real_name,idcard,sex,head,country,confirm")->find();
 
         $_SESSION['account'] = $sel;
 
         $this->assign("user",$sel);
 
 
+
+
+        $this->display();
+
+    }
+
+    public function account_zhongchou(){
+        $this->judge();
+
+        if (isset($_SESSION["account"])) {
+
+            if($_SESSION["account"]['confirm'] != 1){
+                $this->error("请先填写完信息，进行实名认证！",'index.php?&a=account_set');
+            }
+
+        } else {
+            $this->error("请先登录！",'index.php?&a=signin');
+
+        }
+
+
+        $this->display();
+
+    }
+
+    public function account_zhongchou_history(){
+        $this->judge();
+
+        if (isset($_SESSION["account"])) {
+
+            if($_SESSION["account"]['confirm'] != 1){
+                $this->error("请先填写完信息，进行实名认证！",'index.php?&a=account_set');
+            }
+
+        } else {
+            $this->error("请先登录！",'index.php?&a=signin');
+
+        }
+
+
+        $this->display();
+
+    }
+
+
+
+
+
+    public function account_certification(){
+        $this->judge();
+
+        if (isset($_SESSION["account"])) {
+
+
+        } else {
+            $this->error("请先登录！",'index.php?&a=signin');
+
+        }
 
 
         $this->display();
@@ -227,7 +289,7 @@ class IndexController extends Controller
 
             $m = M("User");
             $uid = $_SESSION['account']['uid'];
-            $sel = $m->where("uid=$uid")->field("uid,user_name,phone,email,create_time,admin,real_name,idcard,sex,head")->find();
+            $sel = $m->where("uid=$uid")->field("uid,user_name,phone,email,create_time,admin,real_name,idcard,sex,head,country,confirm")->find();
             $_SESSION['account'] = $sel;
 
         } else {
@@ -626,9 +688,9 @@ class IndexController extends Controller
 
                 $random = substr(md5(uniqid(rand(),1)),   8,   32);
 
-                $msg = "您好，<strong>".$data['user_name']."</strong><br/>欢迎加入<strong>MoBiCoin</strong>！请点击下面的链接来重置您的密码。<br/><a href='http://wechat.tiny-calf.com/index.php?&a=update_pwd&jj=".$time."&base=".$user."&v=".$random."'>http://wechat.tiny-calf.com/index.php?&a=update_pwd&jj=".$time."&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中。<br/><br/>该验证邮件有效期为30分钟，超时请重新发送邮件";
+                $msg = "您好，<strong>".$data['user_name']."</strong><br/>欢迎加入<strong>多宝金豆</strong>！请点击下面的链接来重置您的密码。<br/><a href='http://wechat.tiny-calf.com/index.php?&a=update_pwd&jj=".$time."&base=".$user."&v=".$random."'>http://wechat.tiny-calf.com/index.php?&a=update_pwd&jj=".$time."&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中。<br/><br/>该验证邮件有效期为30分钟，超时请重新发送邮件";
 
-                if(think_send_mail($data['email'],'','MoBiCoin找回密码邮件',$msg)){
+                if(think_send_mail($data['email'],'','多宝金豆找回密码邮件',$msg)){
                     $this->success("重置密码邮件已经发送到".$data['email']."，请登录邮箱重置！",'index.php?&a=signin',5);
                 }else{
                     $this->error("邮件发送失败，请联系管理员！");
@@ -681,9 +743,9 @@ class IndexController extends Controller
 
                         $random = substr(md5(uniqid(rand(),1)),   8,   32);
 
-                        $msg = "您好，<strong>".$data['user_name']."</strong><br/>欢迎加入<strong>MoBiCoin</strong>！请点击下面的链接来认证您的邮箱。<br/><a href='http://wechat.tiny-calf.com/index.php?&a=email&base=".$user."&v=".$random."'>http://wechat.tiny-calf.com/index.php?&a=email&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中。";
+                        $msg = "您好，<strong>".$data['user_name']."</strong><br/>欢迎加入<strong>多宝金豆</strong>！请点击下面的链接来认证您的邮箱。<br/><a href='http://wechat.tiny-calf.com/index.php?&a=email&base=".$user."&v=".$random."'>http://wechat.tiny-calf.com/index.php?&a=email&base=".$user."&v=".$random."</a><br/>如果您的邮箱不支持链接点击，请将以上链接地址拷贝到您的浏览器地址栏中。";
 
-                        if(think_send_mail($data['email'],'','MoBiCoin用户激活邮件',$msg)){
+                        if(think_send_mail($data['email'],'','多宝金豆用户激活邮件',$msg)){
                             $this->success("注册成功，激活邮件已发送到".$data['email']."您的邮箱,请激活！",'index.php?&a=signin',5);
                         }else{
                             $this->error("邮件发送失败，请联系管理员！");
@@ -746,17 +808,26 @@ class IndexController extends Controller
             if($sel['admin'] == 0){
                 $this->success("您的账号尚未激活，请先激活后再登陆！","",5);
             }else{
-                $data['password'] = md5($_POST['password']);
-                $sel2 = $m->where($data)->field("uid,password")->find();
+                $map['uid'] = $sel['uid'];
+                $map['password'] = md5($_POST['password']);
 
-                if($sel2['password'] == $data['password']){
-                    $_SESSION['account'] = $sel;
+                $sel2 = $m->where($map)->field("uid,password")->find();
 
-                    $this->success("登录成功！",'index.php?a=account_set');
+                if($sel2){
+                    if($sel2['password'] == md5($_POST['password'])){
+                        $_SESSION['account'] = $sel;
+
+                        $this->success("登录成功！",'index.php?a=account_set');
+
+                    }else{
+
+                          $this->error("登陆失败，请检查用户名/手机号/邮箱和密码！");
+                    }
 
                 }else{
                     $this->error("登陆失败，请检查用户名/手机号/邮箱和密码！");
                 }
+
 
 
             }
@@ -1068,7 +1139,7 @@ class IndexController extends Controller
     }
 
 
-    public function mobicoinlist(){
+    public function 多宝金豆list(){
 
         $this->judge();
         $this->right();
@@ -1202,6 +1273,13 @@ class IndexController extends Controller
 //            $this->call_wx_pay(1000);
 //        }
 
+        $this->display();
+
+    }
+
+    public function support(){
+
+        $this->judge();
         $this->display();
 
     }

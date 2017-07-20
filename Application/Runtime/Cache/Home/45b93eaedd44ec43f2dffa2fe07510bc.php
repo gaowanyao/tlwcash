@@ -8,6 +8,7 @@
 <meta name="description" content="多宝金豆作为逊和集团有效整合企业和社会中的各种形式积分的一种多功能性数字货币资产，让您的消费变理财，让消费者成为企业的股东，获赠企业利润分红，实现财富盛世。">
 
 
+<link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
 
 
 <link rel="stylesheet" href="/Public/wap/login/css/style.css">

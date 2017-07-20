@@ -1028,7 +1028,7 @@
     <!-- BEGIN FOOTER -->
     <div class="page-footer">
     <div class="page-footer-inner">
-        2017 &copy;MoBiCoin
+        2017 &copy;多宝金豆
     </div>
     <div class="scroll-to-top">
         <i class="icon-arrow-up"></i>

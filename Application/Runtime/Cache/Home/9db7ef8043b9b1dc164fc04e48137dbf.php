@@ -42,7 +42,8 @@
 
 
     <!-- Fav icon -->
-    <link rel="shortcut icon" href="/Public/wap/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
+
     <!-- <meta name="robots" content="index,follow"> -->
 
     <!-- ############################# Stylesheets ############################# -->
@@ -266,7 +267,7 @@
 <header id="header" style="background: #000000;opacity: 0.8;">
     <div class="container" style=" <?php if($pc == 'pc'){ echo 'min-width: 1200px !important;';};?>">
         <!-- ############################# Logo ############################# -->
-        <!--<a id="logo" href="index.html" class="smooth-link" style=" <?php if($pc == 'notpc'){ echo '';}else{ echo '';};?>"><img src="/Public/img/ico.png"  style="width: 60px;height: 51px;" alt="Logo"></a>-->
+        <a id="logo" href="index.php" class="smooth-link" style=" "><img src=" <?php if($pc == 'pc'){ echo '/Public/images/logo1.png';}else{ echo '/Public/images/logo3.png';};?>"  style="<?php if($pc == 'pc'){ echo 'width: 140px;height: 45px;margin-top:2px;';}else{ echo 'width:50px;height: 49px;';};?>" alt="Logo"></a>
         <!--<a id="logo" href="index.html" class="smooth-link"><img src="/Public/wap/placeholders/logo.png" alt="Logo"></a>-->
 
 
@@ -667,7 +668,7 @@
             <div style="text-align: center" >
                 <h4>
 
-                    <!--<img style="width: 130px;display: block;margin:0 auto;margin-top:0px;" src="/Public/img/logo.png" alt="logo" class="logo-default">-->
+                    <img style="width: 160px;height: 50px;display: block;margin:0 auto;margin-bottom: 30px;" src="/Public/images/logo1.png" alt="logo" class="logo-default">
 
                 </h4>
                 <div style="text-align: left;<?php if($pc == 'pc'){ echo 'padding-left: 15px;';}else{ echo 'width:155px;margin:0 auto;';};?>">
@@ -708,9 +709,9 @@
             <!--<br>-->
             <div style="text-align: center">
                 <h4>新手帮助</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';">注册指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';">充值指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';">交易指南</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=signupguide';">注册指南</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=rechargeguide';">充值指南</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=tradingguide';">交易指南</h4>
 
 
             </div>
@@ -760,7 +761,7 @@
 <!-- Footer Note -->
 <div id="footer-note">
     <p>
-        Copyright © 2017 mobicoin.com All rights Reserved
+        Copyright © 2017 dbjd.9ebo.com All rights Reserved
         <!--<a href="#">Rascals Themes</a>-->
     </p>
 

@@ -22,7 +22,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="author" content="gcan">
     <!-- Fav icon -->
-    <link rel="shortcut icon" href="/Public/wap/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
     <!-- <meta name="robots" content="index,follow"> -->
 
     <!-- ############################# Stylesheets ############################# -->
@@ -306,7 +306,8 @@
                 <li class="personal">
 
                     <div style="text-align: right;margin-top:0px;" >
-                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
+                        <!--<img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">-->
+                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/images/tou.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
 
 
                         <a href="index.php?a=account_set" style="position:relative;top:-10px;cursor:pointer;"> <?php  $name = $_SESSION['account']['user_name']; echo substr($name,0,18); ?> </a>

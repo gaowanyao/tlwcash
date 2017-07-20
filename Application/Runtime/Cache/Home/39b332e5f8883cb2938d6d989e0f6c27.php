@@ -22,7 +22,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="author" content="gcan">
     <!-- Fav icon -->
-    <link rel="shortcut icon" href="/Public/wap/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
+
     <!-- <meta name="robots" content="index,follow"> -->
 
 
@@ -64,15 +65,11 @@
 
 
 
-
-
-
-
     <!-- ############################# Stylesheets ############################# -->
 
     <link rel="stylesheet" href="/Public/wap/css/style.css" media="screen" />
 
-    <link rel="shortcut icon" href="/Public/img/ico.ico" />
+
 
     <link href="/Public/resource/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
 
@@ -441,7 +438,8 @@
                 <li class="personal">
 
                     <div style="text-align: right;margin-top:0px;" >
-                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
+                        <!--<img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">-->
+                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/images/tou.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
 
 
                         <a href="index.php?a=account_set" style="position:relative;top:-10px;cursor:pointer;"> <?php  $name = $_SESSION['account']['user_name']; echo substr($name,0,18); ?> </a>
@@ -1265,32 +1263,33 @@
                     <!-- Clients row -->
                     <div class="clients-row">
                         <!-- Client logo -->
-                        <div class="client flex-col-1-4">
+                        <div class="client flex-col-1-3">
 
-                            <a href="#" class="animated" data-delay="100"><img style="width: 170px;height: 68px;" src="/Public/images/part1.png" alt="Client Logo"></a>
+                            <a href="http://www.xunhejituan.com/templates/cn/html/xh.html" class="animated" data-delay="100"><img style="width: 170px;height: 68px;" src="/Public/images/part1.png" alt="Client Logo"></a>
 
                         </div>
                         <!-- /client logo -->
                         <!-- Client logo -->
-                        <div class="client flex-col-1-4">
+                        <div class="client flex-col-1-3">
 
-                            <a href="#" class="animated" data-delay="200"><img style="width: 170px;height: 68px;" src="/Public/images/part2.png" alt="Client Logo"></a>
-
-                        </div>
-                        <!-- /client logo -->
-
-                        <!-- Client logo -->
-                        <div class="client flex-col-1-4">
-
-                            <a href="#" class="animated" data-delay="300"><img style="width: 170px;height: 68px;" src="/Public/images/part3.png" alt="Client Logo"></a>
+                            <a href="http://www.flbfex.com/" class="animated" data-delay="200"><img style="width: 170px;height: 68px;" src="/Public/images/part2.png" alt="Client Logo"></a>
 
                         </div>
                         <!-- /client logo -->
 
                         <!-- Client logo -->
-                        <div class="client flex-col-1-4">
+                        <!--<div class="client flex-col-1-4">-->
 
-                            <a href="#" class="animated" data-delay="400"><img style="width: 170px;height: 68px;" src="/Public/wap/placeholders/logo-codecanyon.png" alt="Client Logo"></a>
+                            <!--<a href="http://www.duobaohulian.com/shoppingmall" class="animated" data-delay="300"><img style="width: 170px;height: 68px;" src="/Public/images/part3.png" alt="Client Logo"></a>-->
+
+                        <!--</div>-->
+                        <!-- /client logo -->
+
+                        <!-- Client logo -->
+                        <div class="client flex-col-1-3">
+
+                            <!--<a href="#" class="animated" data-delay="400"><img style="width: 170px;height: 68px;" src="/Public/wap/placeholders/logo-codecanyon.png" alt="Client Logo"></a>-->
+                            <a href="http://www.duobaohulian.com/shoppingmall" class="animated" data-delay="300"><img style="width: 170px;height: 68px;" src="/Public/images/part3.png" alt="Client Logo"></a>
 
                         </div>
                         <!-- /client logo -->

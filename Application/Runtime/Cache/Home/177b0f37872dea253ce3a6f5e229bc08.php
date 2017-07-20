@@ -54,7 +54,8 @@
     <link href="/Public/resource/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="/Public/resource/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
-    <link rel="shortcut icon" href="/Public/img/icoico.ico" />
+    <link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
+
 
 
 
@@ -62,7 +63,7 @@
 
     <link rel="stylesheet" href="/Public/wap/css/style.css" media="screen" />
 
-    <link rel="shortcut icon" href="/Public/img/ico.ico" />
+
 
     <link href="/Public/resource/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
 
@@ -372,7 +373,8 @@
                 <li class="personal">
 
                     <div style="text-align: right;margin-top:0px;" >
-                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
+                        <!--<img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/img/kaola.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">-->
+                        <img onclick="window.location.href='index.php?a=account_set';"  onerror="javascript:this.src='/Public/images/tou.jpg';" style="line-height:30px;width: 30px;height: 30px;border-radius:100% !important;" src="<?php echo $_SESSION['account']['head']; ?>">
 
 
                         <a href="index.php?a=account_set" style="position:relative;top:-10px;cursor:pointer;"> <?php  $name = $_SESSION['account']['user_name']; echo substr($name,0,18); ?> </a>
@@ -615,56 +617,92 @@
                                     <div class="col-md-12">
                                         <!-- BEGIN PROFILE SIDEBAR -->
                                         <div class="profile-sidebar">
-                                            <!-- PORTLET MAIN -->
-                                            <div class="portlet light profile-sidebar-portlet radius">
-                                                <!-- SIDEBAR USERPIC -->
-                                                <div class="profile-userpic">
+    <!-- PORTLET MAIN -->
+    <div class="portlet light profile-sidebar-portlet radius">
+        <!-- SIDEBAR USERPIC -->
+        <div class="profile-userpic">
 
 
-                                                    <!--<img src="http://www.placehold.it/151x150/EFEFEF/AAAAAA&amp;text=no+image" style="width: 150px;height: 150px;" class="img-responsive" alt=""> </div>-->
-                                                <img src="<?php echo $_SESSION['account']['head']; ?>" onerror="javascript:this.src='/Public/img/kaola.jpg';" style="width: 150px;height: 150px;" class="img-responsive" alt=""> </div>
-                                                <!-- END SIDEBAR USERPIC -->
-                                                <!-- SIDEBAR USER TITLE -->
-                                                <div class="profile-usertitle">
-                                                    <div class="profile-usertitle-name"> <?php echo $_SESSION['account']['user_name']; ?> </div>
-                                                    <!--<div class="profile-usertitle-job"> Developer </div>-->
-                                                </div>
-                                                <!-- END SIDEBAR USER TITLE -->
-                                                <!-- SIDEBAR BUTTONS -->
-                                                <!--<div class="profile-userbuttons">-->
-                                                    <!--<button type="button" class="btn btn-circle green btn-sm">Follow</button>-->
-                                                    <!--<button type="button" class="btn btn-circle red btn-sm">Message</button>-->
-                                                <!--</div>-->
-                                                <!-- END SIDEBAR BUTTONS -->
-                                                <!-- SIDEBAR MENU -->
-                                                <div class="profile-usermenu">
-                                                    <ul class="nav">
-                                                        <!--<li>-->
-                                                            <!--<a href="index.php?&a=account_set">-->
-                                                                <!--<i class="icon-home"></i> Overview </a>-->
-                                                        <!--</li>-->
-                                                        <li class="active">
-                                                            <a href="index.php?&a=account_set">
-                                                                <i class="icon-settings"></i> 账户设置 </a>
-                                                        </li>
-                                                        <!--<li class="active2">-->
-                                                            <!--<a href="index.php?&a=account_set">-->
-                                                                <!--<i class="icon-info"></i> 帮助中心 </a>-->
-                                                        <!--</li>-->
-                                                    </ul>
-                                                </div>
-                                                <!-- END MENU -->
-                                            </div>
-                                            <!-- END PORTLET MAIN -->
+            <!--<img src="http://www.placehold.it/151x150/EFEFEF/AAAAAA&amp;text=no+image" style="width: 150px;height: 150px;" class="img-responsive" alt=""> </div>-->
+            <!--<img src="<?php echo $_SESSION['account']['head']; ?>" onerror="javascript:this.src='/Public/img/kaola.jpg';" style="width: 150px;height: 150px;" class="img-responsive" alt=""> </div>-->
+        <img src="<?php echo $_SESSION['account']['head']; ?>" onerror="javascript:this.src='/Public/images/tou.jpg';" style="width: 150px;height: 150px;" class="img-responsive" alt=""> </div>
+        <!-- END SIDEBAR USERPIC -->
+        <!-- SIDEBAR USER TITLE -->
+        <div class="profile-usertitle">
+            <div class="profile-usertitle-name"> <?php echo $_SESSION['account']['user_name']; ?> </div>
+            <!--<div class="profile-usertitle-job"> Developer </div>-->
+        </div>
+        <!-- END SIDEBAR USER TITLE -->
+        <!-- SIDEBAR BUTTONS -->
+        <!--<div class="profile-userbuttons">-->
+        <!--<button type="button" class="btn btn-circle green btn-sm">Follow</button>-->
+        <!--<button type="button" class="btn btn-circle red btn-sm">Message</button>-->
+        <!--</div>-->
+        <!-- END SIDEBAR BUTTONS -->
+        <!-- SIDEBAR MENU -->
+        <div class="profile-usermenu">
+            <ul class="nav">
+                <!--<li>-->
+                <!--<a href="index.php?&a=account_set">-->
+                <!--<i class="icon-home"></i> Overview </a>-->
+                <!--</li>-->
+                <li class="<?php if('account_set' == 'account_set'){ echo 'active';} ?>">
+                    <a href="index.php?&a=account_set">
+                        <!--<i class="icon-settings"></i>-->
+                        个人资料
+                    </a>
+                </li>
 
-                                        </div>
+                <li class="<?php if('account_set' == 'account_zhongchou'){ echo 'active';} ?>">
+                    <a href="index.php?&a=account_zhongchou">
+                        <!--<i class="icon-settings"></i>-->
+                        我的众筹
+                    </a>
+                </li>
+
+                <li class="<?php if('account_set' == 'account_zhongchou_history'){ echo 'active';} ?>">
+                    <a href="index.php?&a=account_zhongchou_history">
+                        <!--<i class="icon-settings"></i>-->
+                        历史纪录
+                    </a>
+                </li>
+
+                <!--<li class="<?php if('account_set' == 'account_certification'){ echo 'active';} ?>">-->
+                    <!--<a href="index.php?&a=account_certification">-->
+                        <!--&lt;!&ndash;<i class="icon-settings"></i>&ndash;&gt;-->
+                        <!--实名认证-->
+                    <!--</a>-->
+                <!--</li>-->
+
+                <li class="<?php if('account_set' == 'account_dbjd_detail'){ echo 'active';} ?>">
+                    <a href="index.php?&a=account_set">
+                        <!--<i class="icon-settings"></i>-->
+                        金豆明细
+                    </a>
+                </li>
+
+
+
+                <!--<li class="active2">-->
+                <!--<a href="index.php?&a=account_set">-->
+                <!--<i class="icon-info"></i> 帮助中心 </a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <!-- END MENU -->
+    </div>
+    <!-- END PORTLET MAIN -->
+
+</div>
+
+
                                         <!-- END BEGIN PROFILE SIDEBAR -->
                                         <!-- BEGIN PROFILE CONTENT -->
                                         <div class="profile-content">
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="portlet light radius">
-                                                        <div class="portlet-title tabbable-line">
+                                                        <div class="portlet-title tabbable-line" style="height: 60px;">
                                                             <div class="caption caption-md">
                                                                 <i class="icon-globe theme-font hide"></i>
                                                                 <span class="caption-subject font-blue-madison bold uppercase" style="font-size: 20px;">个人资料</span>
@@ -690,6 +728,8 @@
                                                                 <div class="tab-pane active" id="tab_1_1">
 
 
+
+
                                                                     <form role="form" action="#" class="form-horizontal" id="form_sample_1">
                                                                         <div class="form-body">
                                                                             <!--<div class="alert alert-danger display-hide">-->
@@ -700,7 +740,7 @@
                                                                                 <!--<button class="close" data-close="alert"></button> Your form validation is successful!-->
                                                                             <!--</div>-->
                                                                             <div class="form-group form-md-line-input">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">用户名
+                                                                                <label class="col-md-3 control-label" for="user_name">用户名
                                                                                     <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-9">
@@ -710,7 +750,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group form-md-line-input">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">Email
+                                                                                <label class="col-md-3 control-label" for="email">Email
                                                                                     <span class="required">*</span>
 
                                                                                 </label>
@@ -724,7 +764,7 @@
 
 
                                                                             <div class="form-group form-md-line-input">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">手机号
+                                                                                <label class="col-md-3 control-label" for="phone">手机号
                                                                                     <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-9">
@@ -737,59 +777,105 @@
 
 
                                                                             <div class="form-group form-md-line-input">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">真实姓名
+                                                                                <label class="col-md-3 control-label" for="real_name">真实姓名
                                                                                     <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-9">
-                                                                                    <input type="text" value="<?php echo ($user["real_name"]); ?>" minlength="2" class="form-control" placeholder="" id="real_name" name="real_name">
+                                                                                    <input type="text" value="<?php echo ($user["real_name"]); ?>" <?php if($user['confirm'] == 1){ echo 'disabled';} ?>  minlength="2" class="form-control" placeholder="" id="real_name" name="real_name">
                                                                                     <div class="form-control-focus"> </div>
                                                                                     <span class="help-block">enter your real name</span>
 
                                                                                 </div>
                                                                             </div>
 
+                                                                            <!--<div class="form-group">-->
+                                                                                <!--<label class="col-md-3 control-label">国籍</label>-->
+                                                                                <!--<div class="col-md-9">-->
+                                                                                    <!--<select class="form-control">-->
+                                                                                        <!--<option>中国（）</option>-->
+
+                                                                                    <!--</select>-->
+                                                                                <!--</div>-->
+                                                                            <!--</div>-->
+
+
                                                                             <div class="form-group form-md-line-input">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">身份证号
+                                                                                <label class="col-md-3 control-label" for="country">国籍</label>
+                                                                                <div class="col-md-9">
+                                                                                    <select class="form-control" id="country" <?php if($user['confirm'] == 1){ echo 'disabled';} ?>>
+                                                                                        <!--<option value=""></option>-->
+                                                                                        <option value="cn" <?php if($user['country'] == 'cn'){ echo 'selected';} ?>>中国（China）</option>
+                                                                                    </select>
+                                                                                    <div class="form-control-focus"> </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="form-group form-md-line-input">
+                                                                                <label class="col-md-3 control-label" for="idcard">身份证号
                                                                                     <span class="required">*</span>
                                                                                 </label>
                                                                                 <div class="col-md-9">
-                                                                                    <input type="text" minlength="15" value="<?php echo ($user["idcard"]); ?>"  class="form-control" placeholder="" id="idcard" name="idcard">
+                                                                                    <input type="text" minlength="15" maxlength="18" <?php if($user['confirm'] == 1){ echo 'disabled';} ?> value="<?php echo ($user["idcard"]); ?>"  class="form-control" placeholder="" id="idcard" name="idcard">
                                                                                     <div class="form-control-focus"> </div>
                                                                                     <span class="help-block">enter your idcard</span>
 
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div class="form-group form-md-radios">
-                                                                                <label class="col-md-3 control-label" for="form_control_1">性别</label>
-                                                                                <div class="col-md-9">
-                                                                                    <div class="md-radio-inline">
-                                                                                        <div class="md-radio">
-                                                                                            <input type="radio" id="checkbox1_8" <?php if($user['sex'] == 1){ echo ' checked ';} ?> name="sex" value="1" class="md-radiobtn">
-                                                                                            <label for="checkbox1_8">
-                                                                                                <span></span>
-                                                                                                <span class="check"></span>
-                                                                                                <span class="box"></span> 男 </label>
-                                                                                        </div>
-                                                                                        <div class="md-radio">
-                                                                                            <input type="radio" id="checkbox1_9"  <?php if($user['sex'] == 2){ echo ' checked ';} ?>   name="sex" value="2" class="md-radiobtn">
-                                                                                            <label for="checkbox1_9">
-                                                                                                <span></span>
-                                                                                                <span class="check"></span>
-                                                                                                <span class="box"></span> 女 </label>
-                                                                                        </div>
+                                                                            <!--<div class="form-group form-md-radios">-->
+                                                                                <!--<label class="col-md-3 control-label" for="form_control_1">性别</label>-->
+                                                                                <!--<div class="col-md-9">-->
+                                                                                    <!--<div class="md-radio-inline">-->
+                                                                                        <!--<div class="md-radio">-->
+                                                                                            <!--<input type="radio" id="checkbox1_8" <?php if($user['sex'] == 1){ echo ' checked ';} ?> name="sex" value="1" class="md-radiobtn">-->
+                                                                                            <!--<label for="checkbox1_8">-->
+                                                                                                <!--<span></span>-->
+                                                                                                <!--<span class="check"></span>-->
+                                                                                                <!--<span class="box"></span> 男 </label>-->
+                                                                                        <!--</div>-->
+                                                                                        <!--<div class="md-radio">-->
+                                                                                            <!--<input type="radio" id="checkbox1_9"  <?php if($user['sex'] == 2){ echo ' checked ';} ?>   name="sex" value="2" class="md-radiobtn">-->
+                                                                                            <!--<label for="checkbox1_9">-->
+                                                                                                <!--<span></span>-->
+                                                                                                <!--<span class="check"></span>-->
+                                                                                                <!--<span class="box"></span> 女 </label>-->
+                                                                                        <!--</div>-->
 
+                                                                                    <!--</div>-->
+                                                                                <!--</div>-->
+                                                                            <!--</div>-->
+
+
+                                                                            <div class="form-group form-md-line-input" style="<?php if($user['confirm'] == 1){ echo 'display:none;';} ?>">
+                                                                                <div class="col-md-offset-3 col-md-4">
+                                                                                    <div class="md-checkbox-list">
+                                                                                        <div class="md-checkbox">
+                                                                                            <input type="checkbox" id="promise" name="promise" class="md-check">
+                                                                                            <label for="promise">
+                                                                                                <span></span>
+                                                                                                <span class="check"></span>
+                                                                                                <span class="box"></span> 我承诺提交的信息属于我本人 </label>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+
+
                                                                         </div>
-                                                                        <div class="form-actions">
+                                                                        <div class="form-actions" style="<?php if($user['confirm'] == 1){ echo 'display:none;';} ?>">
+
                                                                             <div class="row">
                                                                                 <div class="col-md-offset-3 col-md-9">
                                                                                     <button type="submit" class="  btn_more">保存</button>
                                                                                     <button type="reset" class="  btn_more">重置</button>
                                                                                 </div>
                                                                             </div>
+
+                                                                            <div class="" style="color: red;">为了您的资金安全，需验证您的身份才可进行其他操作；认证信息一经验证不能修改，请务必如实填写； 平台仅支持18至60周岁的用户进行交易； 因提供虚假信息所造成的一切后果将由您本人承担。
+                                                                            </div>
+
+
+
                                                                         </div>
                                                                     </form>
 
@@ -1751,7 +1837,7 @@
             <div class="modal-footer">
 
                 <button type="button" class="btn_more" data-dismiss="modal">取消</button>
-                <button type="button" onclick="window.location.href='index.php?a=account_set';0" data-dismiss="modal" class="btn_more">确定</button>
+                <button type="button" onclick="window.location.href='index.php?a=account_set';" data-dismiss="modal" class="btn_more">确定</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -1943,11 +2029,13 @@
                     }
                 },
                 rules: {
+
                     sex:{
                         required:true
                     },
                     idcard: {
                         minlength: 15,
+                        maxlength:18,
                         required: true
                     },
                     name: {
@@ -2055,20 +2143,34 @@
 
                 submitHandler: function(form) {
 
-                    var sex = $("input[name='sex']:checked").val();
+//                    var sex = $("input[name='sex']:checked").val();
                     var idcard = $("#idcard").val();
                     var real_name = $("#real_name").val();
-                    console.log(sex);
+                    var promise = $("#promise").val();
+                    var promise = $("input[name='promise']:checked").val();
+
+                    var country = $("#country").val();
+
+//                    console.log(sex);
                     console.log(idcard);
                     console.log(real_name);
+                    console.log(promise);
+                    console.log(country);
+
+                    if(promise == undefined){
+                        $("#pwd_modal_body").html("保存失败，请检查！");
+                        $("#pwd_modal").modal("show");
+                        return false;
+                    }
+
 
                     $.ajax({
                        type:"POST",
                         url:"index.php?&a=account_set_personal_msg",
                         data:{
-                           sex:sex,
                             real_name:real_name,
-                            idcard:idcard
+                            idcard:idcard,
+                            country:country
                         },
                         success:function (data) {
                             console.log(data);
@@ -2085,6 +2187,9 @@
 
                         }
                     });
+
+
+
 
 
 //                    window.location.href = "index.php?&a=account_set_personal_msg&name="+real_name+"&idcard="+idcard+"&sex="+sex;
