@@ -1,0 +1,1614 @@
+[ 2017-07-27T10:57:36+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007403s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2017-07-27T10:57:37+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-27T10:57:42+08:00 ] 60.29.18.50 /index.php?&m=admin&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-07-27T10:57:43+08:00 ] 60.29.18.50 /index.php?&m=admin&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005911s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005981s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-07-27T10:57:44+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-07-27T11:01:01+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007075s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-07-27T11:01:19+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006259s ]
+
+[ 2017-07-27T14:03:15+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-07-27T14:03:18+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-07-27T14:03:20+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-27T14:03:21+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2017-07-27T14:03:29+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-07-27T14:09:53+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007106s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0007s ]
+SQL: UPDATE `think_article` SET `title`='解析五种方式让你的区块链项目筹到资金',`author`='多宝金豆',`type`='众筹资讯',`tag`='区块链,众筹,多宝金豆',`content`='<p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司创业成功与否与其具有多少流动资金密切相关。这种观点同样适用于比特币经济当中。你可以开发能够改变世界的创新性技术，但是如果没有了资金，那这个项目只就很难维持。幸运的是，如今有多种方式可以为你的区块链项目筹集资金，这其中还不包括向银行贷款。在这篇文章中，本文将会介绍5种替代方式让你的区块链项目获得资金。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>Bootstrapping</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司获得资金的最简单最轻松的方式就是Bootstrapping(不求人的创业方式)，当你和你的开发者团队有自己的资金池的时候，你们自己就可以启动项目。初创公司使用自己资金的好处就是没有外部的股东或者是私人投资者。此外通过这种方式启动项目，你在公司的股份不会被稀释，或许某一天这个股份会很值钱。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>风险投资</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对初创公司来说比较传统获得资金的方式就是向风投公司推销自己的想法，这些投资公司会寻找有前途的初创公司投资。在过去几年，对于技术公司尤其是金融科技公司来说还是很容易获得风险投资。这不仅是因为技术和金融科技正在快速发展，还有风投公司想要获得比当前股票证券市场更高的投资回报率的问题。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　一些大的区块链风投公司有，Digital Currency Group, Blockchain Capital，Union Square Ventures, 和Ribbit Capital。这些风投公司不仅会给予你资金上的支持，还会给予你某种程度上的行业帮助。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　不得不说的是，你获得风投资金后这就意味着你必须要创造出投资者想要的利益。因此，一些风投公司可能会采取更实际的方式，这就意味着你作为创始人可能会将话语权交给风投公司。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>众筹</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你自己的资金不足以支持这个项目完成，那么你需要寻找其他的融资方式。这其中的一个方式就是众筹。众筹指的是从很多个体单位筹集资金，通常情况下都是在众筹平台上进行。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对于众筹，这里有三种类型：奖励式众筹，捐赠式众筹，以及股权式众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　奖励式众筹，顾名思义就是对那些为项目/初创公司投资的人进行奖励。奖励可以以手写感谢信的方式将其放在初创公司网站上，然后允许投资人使用初创公司即将生产的产品。比较著名的奖励式众筹平台是美国的Kickstarter。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　捐赠式众筹通常用于非盈利部门，这个方式适合个人和非政府组织为慈善机构筹集资金。在盈利空间上，捐赠式众筹基本没有。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　股权众筹奖励投资者部分公司股份，这种方式以私人投资替代了公筹。初创公司可以利用Crowdfunder,CircleUp和WeFunder等股权式众筹平台进行众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>点对点借贷</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你不想将股份分给外部投资者，那么为你的项目借贷可能是一个不错的选择，你可以申请点对点借贷。点对点借贷是一种债务融资，通过在线的点对点借贷平台几个人就可以借钱给一个初创公司或者是一个中小企业。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　为了确保点对点借贷的安全，你必须在诸如LendingClub 和Prosper等平台上申请资金要求列表。一旦资金要求，条目和条件被初创公司和P2P借贷平台确定后，个人投资者就可以对其放贷。初创公司在获得贷款后它需要在借贷期间每个月分期付款偿还借款和利息。所有的支付都需要经过借贷平台来处理。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　点对点借贷对于那些努力从银行贷款的公司来说是一个非常优秀的融资方式，很多比特币初创公司都面临着缺乏资金的问题，他们都不愿意轻易让出自己公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>ICO</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　最后要介绍的是，当前区块链项目最受欢迎的融资方式——ICO(币众筹)。ICO也被称为代币售卖，这是初创公司以售卖数字代币筹集资金的新方式。这些代币也被称为加密货币或者是加密资产，它们间接代表了这个项目的股份，也可以从侧面反映这个公司的表现。这代表着，ICO类似于股份的IPO，但是其中关键的不同是投资者不能实际持有公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　从公司的角度看，ICO是非常好的融资方式，它不会让公司放弃股份也不会让公司背上债务融资。</span></p><p><br/></p>',`create_time`='2017-07-27 14:09:53' WHERE `id` = 28 [ RunTime:0.0613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-07-27T14:09:54+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-07-27T14:10:25+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006143s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007127s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-07-27T14:11:50+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006142s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007116s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-27T14:12:25+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005978s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-07-27T14:12:54+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"white-space: normal;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</span></p><p style=\"white-space: normal;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong><span style=\"font-size: 18px;\">　<span style=\"font-size: 14px;\">　你的公司适合用股权众筹来融资吗</span></span></strong></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　　<span style=\"font-family: arial, helvetica, sans-serif;\">开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　<span style=\"font-family: arial, helvetica, sans-serif;\">　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　<span style=\"font-family: arial, helvetica, sans-serif;\">　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　　<span style=\"font-family: arial, helvetica, sans-serif;\">招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　　<span style=\"font-family: arial, helvetica, sans-serif;\">一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　专注于合理界定的目标市场</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　<span style=\"font-family: arial, helvetica, sans-serif;\">　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\"><span style=\"font-family: 宋体; font-size: 18px;\">　　</span><span style=\"font-family: arial, helvetica, sans-serif;\">众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\"><strong><span style=\"font-family: 宋体; font-size: 18px;\">　　<span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\">制定强势社交媒体推广策略，制作高品质宣传视频</span></span></strong></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　　<span style=\"font-family: arial, helvetica, sans-serif;\">社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\">　　<span style=\"font-family: arial, helvetica, sans-serif;\">对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</span></span></p><p style=\"white-space: normal;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　让你现有的投资人参与新的融资过程</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-family: Calibri; font-size: 14px;\"><span style=\"font-family: 宋体; font-size: 18px;\">　　</span><span style=\"font-family: arial, helvetica, sans-serif;\">股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</span></span></p><p><br/></p>',`create_time`='2017-07-27 14:12:54' WHERE `id` = 13 [ RunTime:0.0754s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-27T14:12:55+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-07-27T14:13:09+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-07-27T14:15:45+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p>　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p>　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p><span style=\"font-family: Calibri; font-size: 14px;\">　</span>　开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。</p><p>　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p>　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p>　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p>　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p>　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p>　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p>　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p>　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p>　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p>　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p>　　<strong>让你现有的投资人参与新的融资过程</strong></p><p>　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:15:45' WHERE `id` = 13 [ RunTime:0.0740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-27T14:15:47+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-07-27T14:16:21+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-07-27T14:17:13+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\"><span style=\"font-family: Calibri; font-size: 14px;\">　</span>　开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:17:13' WHERE `id` = 13 [ RunTime:0.0903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-07-27T14:17:14+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007134s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-07-27T14:17:34+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007161s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006011s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006103s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-07-27T14:18:19+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006168s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007115s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\"><span style=\"font-family: Calibri; font-size: 14px;\">　</span>　开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:18:19' WHERE `id` = 13 [ RunTime:0.0671s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-07-27T14:18:20+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-07-27T14:18:41+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-07-27T14:20:20+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\"><span style=\"font-family: Calibri; font-size: 14px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　</span>　</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:20:19' WHERE `id` = 13 [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-07-27T14:20:21+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007191s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006259s ]
+
+[ 2017-07-27T14:20:29+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007094s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-07-27T14:21:13+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\"><span style=\"font-family: Calibri; font-size: 14px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　</span>　</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:21:13' WHERE `id` = 13 [ RunTime:0.0539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-07-27T14:21:15+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006269s ]
+
+[ 2017-07-27T14:21:26+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007147s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-07-27T14:21:44+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\">开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　　</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>　　</strong></span><strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:21:44' WHERE `id` = 13 [ RunTime:0.0689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-07-27T14:21:45+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-07-27T14:21:53+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007107s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-07-27T14:22:30+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</p><p style=\"text-align: left;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></p><p style=\"text-align: left;\">开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　　</p><p style=\"text-align: left;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</p><p style=\"text-align: left;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</p><p style=\"text-align: left;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</p><p style=\"text-align: left;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</p><p style=\"text-align: left;\">　<strong>专注于合理界定的目标市场</strong></p><p style=\"text-align: left;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</p><p style=\"text-align: left;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</p><p style=\"text-align: left;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></p><p style=\"text-align: left;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</p><p style=\"text-align: left;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</p><p style=\"text-align: left;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</p><p style=\"text-align: left;\">　　<strong>让你现有的投资人参与新的融资过程</strong></p><p style=\"text-align: left;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</p><p><br/></p>',`create_time`='2017-07-27 14:22:30' WHERE `id` = 13 [ RunTime:0.0600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2017-07-27T14:22:31+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-07-27T14:22:41+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-07-27T14:23:09+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007060s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　　</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　<strong>专注于合理界定的目标市场</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>让你现有的投资人参与新的融资过程</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</span></p><p><br/></p>',`create_time`='2017-07-27 14:23:09' WHERE `id` = 13 [ RunTime:0.0732s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-07-27T14:23:11+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-07-27T15:04:10+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006227s ]
+
+[ 2017-07-27T15:04:25+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006979s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='解析五种方式让你的区块链项目筹到资金',`author`='多宝金豆',`type`='众筹资讯',`tag`='区块链,众筹,多宝金豆',`content`='<p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司创业成功与否与其具有多少流动资金密切相关。这种观点同样适用于比特币经济当中。你可以开发能够改变世界的创新性技术，但是如果没有了资金，那这个项目只就很难维持。幸运的是，如今有多种方式可以为你的区块链项目筹集资金，这其中还不包括向银行贷款。在这篇文章中，本文将会介绍5种替代方式让你的区块链项目获得资金。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>Bootstrapping</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司获得资金的最简单最轻松的方式就是Bootstrapping(不求人的创业方式)，当你和你的开发者团队有自己的资金池的时候，你们自己就可以启动项目。初创公司使用自己资金的好处就是没有外部的股东或者是私人投资者。此外通过这种方式启动项目，你在公司的股份不会被稀释，或许某一天这个股份会很值钱。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>风险投资</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对初创公司来说比较传统获得资金的方式就是向风投公司推销自己的想法，这些投资公司会寻找有前途的初创公司投资。在过去几年，对于技术公司尤其是金融科技公司来说还是很容易获得风险投资。这不仅是因为技术和金融科技正在快速发展，还有风投公司想要获得比当前股票证券市场更高的投资回报率的问题。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　一些大的区块链风投公司有，Digital Currency Group, Blockchain Capital，Union Square Ventures, 和Ribbit Capital。这些风投公司不仅会给予你资金上的支持，还会给予你某种程度上的行业帮助。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　不得不说的是，你获得风投资金后这就意味着你必须要创造出投资者想要的利益。因此，一些风投公司可能会采取更实际的方式，这就意味着你作为创始人可能会将话语权交给风投公司。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>众筹</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你自己的资金不足以支持这个项目完成，那么你需要寻找其他的融资方式。这其中的一个方式就是众筹。众筹指的是从很多个体单位筹集资金，通常情况下都是在众筹平台上进行。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对于众筹，这里有三种类型：奖励式众筹，捐赠式众筹，以及股权式众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　奖励式众筹，顾名思义就是对那些为项目/初创公司投资的人进行奖励。奖励可以以手写感谢信的方式将其放在初创公司网站上，然后允许投资人使用初创公司即将生产的产品。比较著名的奖励式众筹平台是美国的Kickstarter。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　捐赠式众筹通常用于非盈利部门，这个方式适合个人和非政府组织为慈善机构筹集资金。在盈利空间上，捐赠式众筹基本没有。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　股权众筹奖励投资者部分公司股份，这种方式以私人投资替代了公筹。初创公司可以利用Crowdfunder,CircleUp和WeFunder等股权式众筹平台进行众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>点对点借贷</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你不想将股份分给外部投资者，那么为你的项目借贷可能是一个不错的选择，你可以申请点对点借贷。点对点借贷是一种债务融资，通过在线的点对点借贷平台几个人就可以借钱给一个初创公司或者是一个中小企业。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　为了确保点对点借贷的安全，你必须在诸如LendingClub 和Prosper等平台上申请资金要求列表。一旦资金要求，条目和条件被初创公司和P2P借贷平台确定后，个人投资者就可以对其放贷。初创公司在获得贷款后它需要在借贷期间每个月分期付款偿还借款和利息。所有的支付都需要经过借贷平台来处理。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　点对点借贷对于那些努力从银行贷款的公司来说是一个非常优秀的融资方式，很多比特币初创公司都面临着缺乏资金的问题，他们都不愿意轻易让出自己公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>ICO</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　最后要介绍的是，当前区块链项目最受欢迎的融资方式——ICO(币众筹)。ICO也被称为代币售卖，这是初创公司以售卖数字代币筹集资金的新方式。这些代币也被称为加密货币或者是加密资产，它们间接代表了这个项目的股份，也可以从侧面反映这个公司的表现。这代表着，ICO类似于股份的IPO，但是其中关键的不同是投资者不能实际持有公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　从公司的角度看，ICO是非常好的融资方式，它不会让公司放弃股份也不会让公司背上债务融资。</span></p><p><br/></p>',`create_time`='2017-07-27 15:04:25' WHERE `id` = 28 [ RunTime:0.0625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006233s ]
+
+[ 2017-07-27T15:04:26+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-07-27T15:04:46+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006215s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007151s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-07-27T15:05:03+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='解析五种方式让你的区块链项目筹到资金',`author`='多宝金豆',`type`='众筹资讯',`tag`='区块链,众筹,多宝金豆',`content`='<p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司创业成功与否与其具有多少流动资金密切相关。这种观点同样适用于比特币经济当中。你可以开发能够改变世界的创新性技术，但是如果没有了资金，那这个项目只就很难维持。幸运的是，如今有多种方式可以为你的区块链项目筹集资金，这其中还不包括向银行贷款。在这篇文章中，本文将会介绍5种替代方式让你的区块链项目获得资金。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>Bootstrapping</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　初创公司获得资金的最简单最轻松的方式就是Bootstrapping(不求人的创业方式)，当你和你的开发者团队有自己的资金池的时候，你们自己就可以启动项目。初创公司使用自己资金的好处就是没有外部的股东或者是私人投资者。此外通过这种方式启动项目，你在公司的股份不会被稀释，或许某一天这个股份会很值钱。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>风险投资</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对初创公司来说比较传统获得资金的方式就是向风投公司推销自己的想法，这些投资公司会寻找有前途的初创公司投资。在过去几年，对于技术公司尤其是金融科技公司来说还是很容易获得风险投资。这不仅是因为技术和金融科技正在快速发展，还有风投公司想要获得比当前股票证券市场更高的投资回报率的问题。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　一些大的区块链风投公司有，Digital Currency Group, Blockchain Capital，Union Square Ventures, 和Ribbit Capital。这些风投公司不仅会给予你资金上的支持，还会给予你某种程度上的行业帮助。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　不得不说的是，你获得风投资金后这就意味着你必须要创造出投资者想要的利益。因此，一些风投公司可能会采取更实际的方式，这就意味着你作为创始人可能会将话语权交给风投公司。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>众筹</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你自己的资金不足以支持这个项目完成，那么你需要寻找其他的融资方式。这其中的一个方式就是众筹。众筹指的是从很多个体单位筹集资金，通常情况下都是在众筹平台上进行。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　对于众筹，这里有三种类型：奖励式众筹，捐赠式众筹，以及股权式众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　奖励式众筹，顾名思义就是对那些为项目/初创公司投资的人进行奖励。奖励可以以手写感谢信的方式将其放在初创公司网站上，然后允许投资人使用初创公司即将生产的产品。比较著名的奖励式众筹平台是美国的Kickstarter。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　捐赠式众筹通常用于非盈利部门，这个方式适合个人和非政府组织为慈善机构筹集资金。在盈利空间上，捐赠式众筹基本没有。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　股权众筹奖励投资者部分公司股份，这种方式以私人投资替代了公筹。初创公司可以利用Crowdfunder,CircleUp和WeFunder等股权式众筹平台进行众筹。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>点对点借贷</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　如果你不想将股份分给外部投资者，那么为你的项目借贷可能是一个不错的选择，你可以申请点对点借贷。点对点借贷是一种债务融资，通过在线的点对点借贷平台几个人就可以借钱给一个初创公司或者是一个中小企业。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　为了确保点对点借贷的安全，你必须在诸如LendingClub 和Prosper等平台上申请资金要求列表。一旦资金要求，条目和条件被初创公司和P2P借贷平台确定后，个人投资者就可以对其放贷。初创公司在获得贷款后它需要在借贷期间每个月分期付款偿还借款和利息。所有的支付都需要经过借贷平台来处理。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　点对点借贷对于那些努力从银行贷款的公司来说是一个非常优秀的融资方式，很多比特币初创公司都面临着缺乏资金的问题，他们都不愿意轻易让出自己公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　<strong>ICO</strong></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　最后要介绍的是，当前区块链项目最受欢迎的融资方式——ICO(币众筹)。ICO也被称为代币售卖，这是初创公司以售卖数字代币筹集资金的新方式。这些代币也被称为加密货币或者是加密资产，它们间接代表了这个项目的股份，也可以从侧面反映这个公司的表现。这代表着，ICO类似于股份的IPO，但是其中关键的不同是投资者不能实际持有公司的股份。</span></p><p style=\"white-space: normal;\"><span style=\"font-size: 14px;\">　　从公司的角度看，ICO是非常好的融资方式，它不会让公司放弃股份也不会让公司背上债务融资。</span></p>',`create_time`='2017-07-27 15:05:03' WHERE `id` = 28 [ RunTime:0.0515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-07-27T15:05:04+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-07-27T15:12:36+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_article` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/1507d9f6d70e39f3e05a467f7689fa31.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006247s ]
+
+[ 2017-07-27T15:12:46+08:00 ] 60.29.18.50 /index.php?&m=admin&a=update_article_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007171s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0006s ]
+SQL: UPDATE `think_article` SET `title`='盘点股权众筹前应该准备些什么',`author`='多宝金豆',`type`='行业新闻',`tag`='众筹,股权众筹,多宝金豆',`content`='<p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　股权众筹正在逐渐成为一种常规众筹方式。由于这种方式可以接触到全球范围的广大客户，许多初创企业都开始将股权众筹作为股权融资的一个备选项。不过，作为一个技术平台初创项目，在开启股权众筹前，你需要做如下一系列考虑细节等，才能确保最大可能地获得众筹成功。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>你的公司适合用股权众筹来融资吗</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">开始准备股权众筹时，你要先确定你的公司是否适合通过股权众筹募资，这一点很重要。除此以外，你还要决定到底是使用债券融资还是股权融资。股权众筹最适合那些有着广大社会基础的公司。　　</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　因为股权众筹的猛烈势头得到了移动技术界与社会媒体的大量支持，而这些社会媒体能够接触到大量的资金来源，所以得到足够的媒体曝光率与支持对于公司进行股权众筹是很重要的。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　采用股权众筹融资的初创企业要进行完全信息披露。这意味着公司需要提供财务报告以供会计人员审核。除此以外，在发放股份之前，公司还需要制作一份招股说明书，其中涵盖投资公司的额外细节与包含的风险。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　招股说明书以及其他披露材料的要求会因股权众筹发生的行政地域不同而有所区别。所以务必要对科技初创企业招股地区的法律环境有所了解，因为这将会影响到需要披露的细节程度。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　一旦你的初创企业满足了你所采用融资方式所需要的信息披露与招股说明书的要求之后，下一步就是雇佣一个证券律师来起草一份股东合同。这份合同将列出你的初创企业与外部股东之间将存在的关系。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　<strong>专注于合理界定的目标市场</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　能有效联结目标市场的公司更有可能通过股权众筹平台获取成功。由于传统的天使投资模式具有高度集中性，不少被目标受众予以高度期待的产品因为天使投资人不了解其潜在需求而难以获得资金。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　众筹为产品集资开启了一扇门——基于目标市场估值获取投资。如果科技公司开展的众筹活动能成功向目标受众传递出产品价值高的信号，就有更大的可能性从目标受众那里获得资金。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>制定强势社交媒体推广策略，制作高品质宣传视频</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　社交媒体市场策略的优势是使用免费。虽然在一些情况下使用付费广告是有意义的，但不妨同时采取某种社交媒体策略去吸引更多目标受众。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　你需要通过社交媒体清晰生动地讲述企业故事，因为大部分潜在投资人也许永远没有机会亲自看到你的产品，他们只是在网上展开调查，然后决定是否往你的新项目里投钱。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　对技术初创企业而言，一个简约且蕴含价值的产品介绍视频是很重要的。因为大多数人都不明白产品的复杂机理，所以最好能够展现你产品的实用性，并关注与你的产品如何为投资者带来价值，这样潜在的投资者就更有可能接纳你的产品，并因此成为你初创企业的投资人。</span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　<strong>让你现有的投资人参与新的融资过程</strong></span></p><p style=\"text-align: left;\"><span style=\"font-size: 14px;\">　　股权众筹的关键是势头——如果你计划准备得当，你可以让你目前的所有股东、顾客与合伙人都参与进融资来。对于你的公司而言，关键是在开始众筹前获得至少30%的融资额，以此在人群中获得支持的态势。</span></p>',`create_time`='2017-07-27 15:12:46' WHERE `id` = 13 [ RunTime:0.0684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006242s ]
+
+[ 2017-07-27T15:12:47+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `think_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/wechat.tiny-calf.com/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/wechat.tiny-calf.com/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+

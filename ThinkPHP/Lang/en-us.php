@@ -47,5 +47,110 @@ return array(
     '_RECORD_HAS_UPDATE_'    => 'Record has been updated',
     '_NOT_ALLOW_PHP_'        => 'PHP codes are not allowed in the template',
     '_PARAM_ERROR_'          => 'Parameter error or undefined',
-    '_ERROR_QUERY_EXPRESS_'  => 'Query express error',       
+    '_ERROR_QUERY_EXPRESS_'  => 'Query express error',
+
+
+
+//    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//通用翻译
+    '_Login' => "Sign In",
+    '_Register'=>'Sign Up',
+    '_Must_fill_username' => 'User name must be filled',
+    '_Must_fill_password' => 'Password must be completed',
+    '_Sign_out' =>'quit',
+
+    '_Header_index' => 'Home',
+    '_Header_introduction' => 'Introduction',
+    '_Header_productdet' => 'Raised',
+    '_Header_news' => 'News',
+    '_Header_project_advantage' => 'Advantage',
+    '_Header_team_member' => 'Team',
+    '_Header_project_plan' => 'Plan',
+    '_Header_about_us' => 'About',
+
+
+
+
+//Index首页页面翻译
+    '_Index_big_title' => 'DBCoin block chain to the center of the digital currency project',
+    '_Index_small_title' => 'Promoting consumption finance and realizing full employee stock ownership',
+    '_Enter_website' => 'Enter the official website',
+    '_Beta_app_download' => 'Beta APP Download',
+    '_DBCoin' => 'DBCoin',
+    '_Tag' => 'Label',
+
+
+//    登录页面signin
+    '_Member_login' => 'Member Sign In',
+    '_Login_introduction' => 'DBCoin as a one-stop public investors to build a trading platform to raise',
+    '_Login_placeholder_username' => "Please enter Username/Phone/Email",
+    '_Login_password' => 'Please enter a password',
+    '_Login_register_tis' => 'No account yet?',
+    '_Login_quick_login' => 'Quick Sign In',
+    '_Login_forgot_password' => 'Forgot password',
+
+//      注册页面signup
+    '_Register_Member_register' => 'Member Sign Up',
+    '_Register_placeholder_username' => 'Please enter your user name',
+    '_Register_placeholder_password' => 'Please input a password',
+    '_Register_placeholder_rusername' => 'Please enter a repeat password',
+    '_Register_placeholder_phone' => 'Please enter your cell phone number',
+    '_Register_placeholder_email' => 'Please enter the Email',
+    '_Register_register_tis' => 'Already have an account',
+
+
+//      忘记密码页forget_pwd
+    '_Forget_password_retrieval' => 'Password retrieval',
+    '_Forget_return' => 'Return',
+
+
+//      项目介绍home页
+    '_Home_countdown' => 'ICO Countdown',
+    '_Home_white_book' => 'WHITE BOOK',
+    '_Home_ico_rules' => 'ICO RULES',
+    '_Home_day' => 'day',
+    '_Home_hour' => 'hour',
+    '_Home_minute' => 'minute',
+    '_Home_second' => 'second',
+
+    //底部
+    '_Footer_time' => ' Working Hours',
+    '_Footer_qq_group' => 'Website QQ Group',
+    '_Footer_customer_phone' => 'Customer Service Phone ',
+    '_Footer_cooperative_mailbox' => 'Cooperative Mailbox ',
+    '_Footer_about_us' => 'ABOUT US',
+    '_Footer_help' => 'HELP',
+    '_Footer_registration_guide' => 'Registration Guide',
+    '_Footer_recharge_guide' => 'Recharge Guide',
+    '_Footer_trading_guide' => 'Trading Guide',
+    '_Footer_contact_us' => 'CONTACT US',
+
+
+
+    //新闻页news
+    '_News_small_title' => 'DBCoin news provides you with the latest and most comprehensive market information, industry reports, media reports and other hot news',
+    '_News_read_more' => 'Read More',
+    '_News_author' => 'Author',
+    '_News_zhaiyao' => 'Abstract hints',
+    '_News_share_to' => 'Share To',
+    '_News_last' => 'Previous Article',
+    '_News_next' => 'Next Article',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 );

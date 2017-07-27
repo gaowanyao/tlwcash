@@ -120,8 +120,8 @@
     <section id="intro-image" class="intro medium clearfix">
 
         <div class="intro-captions">
-            <h3 class="caption-title big animated">新闻资讯</h3><br>
-            <h3 class="caption-title small animated">多宝金豆新闻资讯每日为您提供最新最全面的市场众筹资讯、行业报道、媒体报道等新闻热点</h3>
+            <h3 class="caption-title big animated">{$Think.lang._Header_news}</h3><br>
+            <h3 class="caption-title small animated">{$Think.lang._News_small_title}</h3>
         </div>
 
         <!-- Image -->
@@ -165,19 +165,19 @@
 
 
                             </span>
-                            <div class="categories"><a href="#">{$vo.author}</a></div>
+                            <div class="categories"><a href="#">{$Think.lang._DBCoin}</a></div>
                         </div>
 
                         <div class="col-2-3 last">
-                            <h2 class="entry-title"><a href="index.php?a=newsdet&id={$vo.id}">{$vo.title}</a></h2>
+                            <h2 class="entry-title"><a href="index.php?a=newsdet&id={$vo.id}"><?php echo Translate::exec ( $vo['title'],"zh",$to);  ?></a></h2>
                             <!--<p class="excerpt">-->
                             <!--Evolve, "drive 24/365 platforms vortals, platforms reinvent mashups niches dot-com." Holistic implement best-of-breed weblogs podcasts remix; share, data-driven blogospheres design generate leading-edge cross-platform, reinvent long-tail sticky solutions portals...-->
                             <!--</p>-->
 
-                            <div class="animated" data-delay="100" style="height:100px;overflow: hidden;">{$vo['content']}</div>
+                            <div class="animated" data-delay="100" style="height:100px;overflow: hidden;"><?php echo Translate::exec ( cutstr_html($vo['content'],200),"zh",$to);  ?></div>
 
 
-                            <span class=" animated"  style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;" data-delay="150">标签：</span><?php
+                            <span class=" animated"  style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;" data-delay="150">{$Think.lang._Tag}：</span><?php
 
                                                                         $tag = $vo['tag'];
                                                                         $arr = explode(",",$tag);
@@ -186,18 +186,18 @@
 
                                                                             if($arr[$i] == ''){}else{
                                                                  $str .='<a class="title_head animated" data-delay="200" style="color:#a0a9b4 !important;margin-right:5px;margin-bottom:5px;display:inline-block;" href="index.php?&a=tag&tag='.$arr[$i].'" >
-                            <span  >'.$arr[$i].'</span>
-                            </a>';
-                            }
-                            }
-                            echo $str;
+                                                                        <span  >'.Translate::exec ( $arr[$i],"zh",$to).'</span>
+                                                                        </a>';
+                                                                        }
+                                                                        }
+                                                                        echo $str;
 
-                            ?>
+                                                                        ?>
 
                             <!-- Button -->
                             <!--<a  style="margin-top:30px;"  class=" animated"  data-delay="200">{$two[0]['create_time']}</a>-->
                             <div style="display: inline-block;text-align: right;float: right;padding-right: 10px;">
-                                <a href="index.php?a=newsdet&id={$vo.id}"  class="readmore animated">阅读全文</a>
+                                <a href="index.php?a=newsdet&id={$vo.id}"  class="readmore animated">{$Think.lang._News_read_more}</a>
 
                             </div>
 

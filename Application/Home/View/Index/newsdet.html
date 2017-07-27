@@ -71,13 +71,13 @@
     <section id="intro-image" class="intro medium clearfix">
 
         <div class="intro-captions">
-            <h3 class="caption-title big animated">{$article.title}</h3><br>
+            <h3 class="caption-title big animated"><?php echo Translate::exec ( $article['title'],"zh",$to);  ?></h3><br>
             <h3 class="caption-title small animated">
 
 
                 <?php $time = strtotime($article['create_time']); echo date("M d,Y",$time);  ?>
 
-                作者：{$article.author}
+                {$Think.lang._News_author}：{$Think.lang._DBCoin}
             </h3>
         </div>
 
@@ -111,31 +111,31 @@
             <!--</p>-->
 
             <blockquote>
-                <p><span  style="font-weight: 900;font-style: normal;">摘要提示：</span>
+                <p><span  style="font-weight: 900;font-style: normal;">{$Think.lang._News_zhaiyao}：</span>
 
-                    {$zhaiyao}
+                    <?php echo Translate::exec ( $zhaiyao,"zh",$to);  ?>
 
                 </p>
             </blockquote>
 
             <!-- Image with caption and lightbox -->
             <div class="caption">
-                <a href="{$article['article_picture']}" class="imagebox zoom-thumb" title="{$article.title}">
+                <a href="{$article['article_picture']}" class="imagebox zoom-thumb" title="<?php echo Translate::exec ( $article['title'],"zh",$to);  ?>">
                     <img src="{$article['article_picture']}" style="width: 100%;" alt="{$article.title}" title="{$article.title}" >
                     <!--<img src="__PUBLIC__/wap/placeholders/news-single02.jpg" alt="News Single" >-->
                 </a>
                 <!--<p class="caption-text">Confirmation by Kushagra Agarwal</p>-->
             </div>
-            <p>
-                {$article.content}
-            </p>
+            <div>
+                <?php echo Translate::exec ( $article['content'],"zh",$to);  ?>
+            </div>
             <!--<p>-->
                 <!--Distributed blogging reinvent blogging Cluetrain networks benchmark rss-capable, wikis, "peer-to-peer; niches harness, harness 24/7 models." Rss-capable convergence web-readiness granular revolutionize applications magnetic semantic clicks-and-mortar e-business distributed dynamic deliver. Widgets, facilitate communities compelling aggregate, web services streamline, data-driven killer; synthesize, technologies innovative generate, interactive turn-key seize niches.-->
             <!--</p>-->
 
 
 
-            <span style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;">标签：</span><?php
+            <span style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;">{$Think.lang._Tag}：</span><?php
 
                                                 $tag = $article['tag'];
                                                 $arr = explode(",",$tag);
@@ -144,7 +144,7 @@
 
                                                     if($arr[$i] == ''){}else{
                                                             $str .='<a class="title_head" style="color:#a0a9b4 !important;margin-right:5px;margin-bottom:5px;display:inline-block;" href="index.php?&a=tag&tag='.$arr[$i].'" >
-                                                                        <span  >'.$arr[$i].'</span>
+                                                                        <span  >'.Translate::exec ( $arr[$i],"zh",$to).'</span>
                                                                         </a>';
                                                                         }
                                                         }
@@ -159,7 +159,7 @@
 
                 <!-- JiaThis Button BEGIN -->
                 <div class="jiathis_style">
-                    <span class="jiathis_txt" style="color:#a0a9b4 !important;">分享到：</span>
+                    <span class="jiathis_txt" style="color:#a0a9b4 !important;">{$Think.lang._News_share_to}：</span>
 
                     <a class="jiathis_button_qzone"></a>
                     <a class="jiathis_button_tsina"></a>
@@ -187,7 +187,7 @@
 
 
                 ?>
-                ;" href="index.php?&a=newsdet&id={$last}" style="display: inherit;">上一篇：{$last_title}</a>
+                ;" href="index.php?&a=newsdet&id={$last}" style="display: inherit;">{$Think.lang._News_last}：<?php echo Translate::exec ( $last_title,"zh",$to);  ?></a>
                 <br/>
                 <a style="display: <?php
 
@@ -199,7 +199,7 @@
 
 
                 ?>
-                ;" href="index.php?&a=newsdet&id={$next}">下一篇：{$next_title}</a>
+                ;" href="index.php?&a=newsdet&id={$next}">{$Think.lang._News_next}：<?php echo Translate::exec ( $next_title,"zh",$to);  ?></a>
 
 
                 <!--<a href="" style="display: inherit;">上一篇：1111111111111111111111111111</a>-->

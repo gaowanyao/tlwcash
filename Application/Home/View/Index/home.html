@@ -212,29 +212,29 @@
     <section id="resize-image"  class="intro clearfix" >
 
         <div class="intro-captions" style=" <?php if($pc == 'pc'){ }else{ echo 'margin-top:30px;';};?>">
-            <h3 class="caption-title big animated">多宝金豆区块链去中心化数字货币项目</h3><br>
-            <h3 class="caption-title small animated">促进消费金融，实现全员持股</h3>
+            <h3 class="caption-title big animated">{$Think.lang._Index_big_title}</h3><br>
+            <h3 class="caption-title small animated">{$Think.lang._Index_small_title}</h3>
             <div class="divider white long animated"></div>
 
 
-            <h3 class="caption-title small animated" style="margin-bottom: 0px;  <?php if($pc == 'pc'){ echo 'font-size: 30px;margin-top: 0px;';}else{ echo 'font-size: 22px !important;margin-top: -10px;';};?>">ICO众筹倒计时</h3>
+            <h3 class="caption-title small animated" style="margin-bottom: 0px;  <?php if($pc == 'pc'){ echo 'font-size: 30px;margin-top: 0px;';}else{ echo 'font-size: 22px !important;margin-top: -10px;';};?>">{$Think.lang._Home_countdown}</h3>
             <br>
 
             <ul class="countdown caption-title animated">
                 <li> <span class="days" id="my_day">00</span>
-                    <p class="days_ref">天</p>
+                    <p class="days_ref">{$Think.lang._Home_day}</p>
                 </li>
                 <li class="seperator">.</li>
                 <li> <span class="hours" id="my_hour">00</span>
-                    <p class="hours_ref">时</p>
+                    <p class="hours_ref">{$Think.lang._Home_hour}</p>
                 </li>
                 <li class="seperator">:</li>
                 <li> <span class="minutes" id="my_minite">00</span>
-                    <p class="minutes_ref">分</p>
+                    <p class="minutes_ref">{$Think.lang._Home_minute}</p>
                 </li>
                 <li class="seperator">:</li>
                 <li> <span class="seconds" id="my_second">00</span>
-                    <p class="seconds_ref">秒</p>
+                    <p class="seconds_ref">{$Think.lang._Home_second}</p>
                 </li>
             </ul>
 
@@ -242,11 +242,11 @@
             <div style="">
 
                 <div class="caption-title big animated" style="width: 50%;float: left;text-align: right;color: #fff;font-size: 20px;padding-right: 3%;">
-                    <a class="whitepater_or_icodetail" target="_blank" href="__PUBLIC__/file/dbjd_whitepaper.pdf" style="font-weight: 900;color: #ffffff;">白皮书</a>
+                    <a class="whitepater_or_icodetail" target="_blank" href="__PUBLIC__/file/dbjd_whitepaper.pdf" style="font-weight: 900;color: #ffffff;">{$Think.lang._Home_white_book}</a>
                 </div>
                 
                 <div class="caption-title big animated" style="width: 50%;float: left;text-align: left;color: #fff;font-size: 20px;padding-left: 2.5%;">
-                    <a class="whitepater_or_icodetail"  target="_blank" href="__PUBLIC__/file/dbjd_ico_detail.pdf" style="font-weight: 900;color: #ffffff;">ICO细则</a>
+                    <a class="whitepater_or_icodetail"  target="_blank" href="__PUBLIC__/file/dbjd_ico_detail.pdf" style="font-weight: 900;color: #ffffff;">{$Think.lang._Home_ico_rules}</a>
                 </div>
 
             </div>
@@ -289,6 +289,10 @@
                     </p>
                 </header>
                 <!-- /section header -->
+
+
+
+
 
                 <!-- Services -->
                 <div class="row" >
@@ -358,6 +362,10 @@
             <!-- /container -->
         </section>
         <!-- /services -->
+
+
+        <!--<video src="https://kc.static.bitbays.com/video15.mp4" width="100%" preload="none" autoplay="autoplay" loop="loop" poster="" id='video-bg' class='sm-display-none' muted></video>-->
+
 
 
         <div style="margin-top: 0px;position: absolute;" id="products_raised" ></div>

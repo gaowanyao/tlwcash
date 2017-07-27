@@ -32,6 +32,17 @@
     <!-- ############################# Javascript - Modernizr ############################# -->
 
     <script src="__PUBLIC__/wap/js/modernizr.custom.js"></script>
+
+    <style>
+
+        .downloads:hover{
+            color: #e96147 !important;
+            cursor: pointer;
+        }
+
+    </style>
+
+
 </head>
 <body>
 <!--[if lte IE 8]>
@@ -82,13 +93,18 @@
         <!-- Slide -->
         <div class="slide">
             <div class="intro-captions">
-                <h3 class="caption-title big animated">多宝金豆区块链去中心化数字货币项目</h3><br>
-                <h3 class="caption-title small animated">促进消费金融，实现全员持股</h3>
+                <h3 class="caption-title big animated">{$Think.lang._Index_big_title}</h3><br>
+                <h3 class="caption-title small animated">{$Think.lang._Index_small_title}</h3>
                 <div class="divider white long animated"></div>
-                <a class="stamp-button intro-button smooth-link animated" href="index.php?a=home"><span>进入官网</span></a>
+                <a class="stamp-button intro-button smooth-link animated" href="index.php?a=home"><span>{$Think.lang._Enter_website}</span></a>
+                <br/>
+
+                <div class="caption-title white animated"  href="index.php?a=home"><span class="downloads" onclick="window.location.href='';">{$Think.lang._Beta_app_download}</span></div>
+
+
             </div>
             <!-- Image -->
-            <div class="image home-slide01" style="background-image:url(__PUBLIC__/img/new/index2.jpg) !important;"></div>
+            <div class="image home-slide01" style="background-image:url(__PUBLIC__/img/new/index1.jpg) !important;"></div>
             <!-- Overlay -->
             <span class="overlay animated"></span>
         </div>
@@ -96,14 +112,16 @@
         <!-- Slide -->
         <div class="slide">
             <div class="intro-captions">
-                <h3 class="caption-title big animated">多宝金豆区块链去中心化数字货币项目</h3><br>
-                <h3 class="caption-title small animated">促进消费金融，实现全员持股</h3>
+                <h3 class="caption-title big animated">{$Think.lang._Index_big_title}</h3><br>
+                <h3 class="caption-title small animated">{$Think.lang._Index_small_title}</h3>
                 <div class="divider white long animated"></div>
-                <a class="stamp-button intro-button smooth-link animated" href="index.php?a=home"><span>进入官网</span></a>
+                <a class="stamp-button intro-button smooth-link animated"><span >{$Think.lang._Enter_website}</span></a>
+                <br/>
+                <div class="caption-title white animated"  href="index.php?a=home"><span class="downloads" onclick="window.location.href='';">{$Think.lang._Beta_app_download}</span></div>
 
             </div>
             <!-- Image -->
-            <div class="image home-slide02"  style="background-image:url(__PUBLIC__/img/new/index1.jpg) !important;"></div>
+            <div class="image home-slide02"  style="background-image:url(__PUBLIC__/img/new/index2.jpg) !important;"></div>
             <!-- Overlay -->
             <span class="overlay animated"></span>
         </div>

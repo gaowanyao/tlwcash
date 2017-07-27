@@ -22,12 +22,13 @@
                     <img style="width: 160px;height: 50px;display: block;margin:0 auto;margin-bottom: 30px;" src="__PUBLIC__/images/logo1.png" alt="logo" class="logo-default">
 
                 </h4>
-                <div style="text-align: left;<?php if($pc == 'pc'){ echo 'padding-left: 15px;';}else{ echo 'width:155px;margin:0 auto;';};?>">
-                    工作时间：9:00-18:00<br/>
-                    官网QQ群：123456789<br/>
+                <div style="text-align: center;<?php if($pc == 'pc'){ echo '';}else{ echo 'margin:0 auto;';};?>">
 
-                    客服电话：400-1111-1234<br/>
-                    合作邮箱：ebo@mbc.com<br/>
+                    {$Think.lang._Footer_time}：9:00-18:00<br/>
+                    {$Think.lang._Footer_qq_group}：123456789<br/>
+
+                    {$Think.lang._Footer_customer_phone}：400-1111-1234<br/>
+                    {$Think.lang._Footer_cooperative_mailbox}：ebo@mbc.com<br/>
                 </div>
 
 
@@ -40,10 +41,10 @@
         <div class="footer-col" style="<?php  if($pc == 'pc'){ echo 'width: 25%;';} ?>">
             <!--<h4>Let's Talk</h4>-->
             <div style="text-align: center">
-                <h4>关于我们</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';">多宝金豆 </h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=news';">新闻资讯</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=productdet';">产品众筹</h4>
+                <h4>{$Think.lang._Footer_about_us}</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';">{$Think.lang._DBCoin} </h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=news';">{$Think.lang._Header_news}</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=productdet';">{$Think.lang._Header_productdet}</h4>
 
 
             </div>
@@ -59,10 +60,11 @@
             <!--<a class="stamp-button" href="#"><span>Get in touch</span></a>-->
             <!--<br>-->
             <div style="text-align: center">
-                <h4>新手帮助</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=signupguide';">注册指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=rechargeguide';">充值指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=tradingguide';">交易指南</h4>
+
+                <h4>{$Think.lang._Footer_help}</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=signupguide';">{$Think.lang._Footer_registration_guide}</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=rechargeguide';">{$Think.lang._Footer_recharge_guide}</h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=tradingguide';">{$Think.lang._Footer_trading_guide}</h4>
 
 
             </div>
@@ -74,7 +76,7 @@
         <div class="footer-col last" style="<?php  if($pc == 'pc'){ echo 'width: 25%;';} ?>">
             <div style="text-align: center">
 
-                <h4>联系我们</h4>
+                <h4>{$Think.lang._Footer_contact_us}</h4>
                 <!--smooth-link-->
                 <!--<a  href="index.html" class=" " style="text-decoration: none !important;border: 0px;"><img src="__PUBLIC__/images/sina.svg" style="width: 50px!important;height: 41px!important;;" ></a>-->
                 <!--<a  href="index.html" class=" " style="text-decoration: none !important;border: 0px;"><img src="__PUBLIC__/images/qq.svg" style="width: 50px!important;;height: 41px!important;;" ></a>-->

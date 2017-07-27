@@ -2,32 +2,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>注册丨Sharelink</title>
+<title>忘记密码</title>
 <link rel="stylesheet" href="/Public/wap/login/css/style.css">
+<link rel="shortcut icon" href="/Public/images/icoo.ico" type="image/x-icon" />
+
 <body>
 
 <div class="register-container">
 
-    <h1 style="<?php if($pc == 'notpc'){ echo 'margin-top: 20px;';}else{ echo 'margin-top: 40px;';};?>"><a href="index.php"><img src="/Public/img/logo.png" style="width: 200px;"></a></h1>
+    <h1 style="<?php if($pc == 'notpc'){ echo 'margin-top: 20px;';}else{ echo 'margin-top: 40px;';};?>"><a href="index.php"><img src="/Public/images/logo1.png" style="width: 200px;"></a></h1>
 
 
-    <h1>忘记密码？</h1>
+    <h1><?php echo (L("_Login_forgot_password")); ?>？</h1>
 
     <div class="connect">
-        <p>Mobi Coin为投资人打造的一站式众筹交易服务平台</p>
+        <p><?php echo (L("_Login_introduction")); ?></p>
     </div>
 
     <form action="index.php?a=update_pwd_msg" method="post" id="registerForm">
 
         <div>
-            <input type="email" name="email" class="email" placeholder="请输入邮箱地址" oncontextmenu="return false"  />
+            <input type="email" name="email" class="email" placeholder="<?php echo (L("_Register_placeholder_email")); ?>" oncontextmenu="return false"  />
             <!--onpaste="return false"-->
         </div>
 
-        <button id="submit" type="submit">找 回 密 码</button>
+        <button id="submit" type="submit"><?php echo (L("_Forget_password_retrieval")); ?></button>
     </form>
     <a href="index.php?a=signin">
-        <button type="button" class="register-tis">返 回</button>
+        <button type="button" class="register-tis"><?php echo (L("_Forget_return")); ?></button>
     </a>
 
 </div>
@@ -121,7 +123,7 @@
                     maxlength:"密码至多为18个字符",
                 },
                 email:{
-                    required:"请输入邮箱地址",
+                    required:"<?php echo (L("_Register_placeholder_email")); ?>",
                     email: "请输入正确的email地址"
                 },
                 confirm_password:{

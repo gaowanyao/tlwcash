@@ -12,30 +12,30 @@
 
 <div class="login-container">
     <h1><a href="index.php"><img src="/Public/images/logo1.png" style="width: 200px;"></a></h1>
-    <h1>会员登录</h1>
+    <h1><?php echo (L("_Member_login")); ?></h1>
 
     <div class="connect">
-        <p> 多宝金豆为投资人打造的一站式众筹交易服务平台</p>
+        <p><?php echo (L("_Login_introduction")); ?></p>
     </div>
 
     <form action="index.php?a=login_msg" method="post" id="loginForm">
         <div>
-            <input type="text" name="username" class="username" placeholder="用户名/手机号/邮箱" autocomplete="off"/>
+            <input type="text" name="username" class="username" placeholder="<?php echo (L("_Login_placeholder_username")); ?>" autocomplete="off"/>
         </div>
         <div>
-            <input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+            <input type="password" name="password" class="password" placeholder="<?php echo (L("_Login_password")); ?>" oncontextmenu="return false" onpaste="return false" />
         </div>
-        <button id="submit" type="submit">登 录</button>
+        <button id="submit" type="submit"><?php echo (L("_Login")); ?></button>
     </form>
 
     <a href="index.php?a=signup">
-        <button type="button" class="register-tis">还没有账号？</button>
+        <button type="button" class="register-tis"><?php echo (L("_Login_register_tis")); ?></button>
     </a>
 
     <div style="margin-top: 10px;font-size: 14px;">
 
 
-        <span style="display: inline-block;position:relative;top:-5px;font-weight: 900;">快捷登录：</span>
+        <span style="display: inline-block;position:relative;top:-5px;font-weight: 900;"><?php echo (L("_Login_quick_login")); ?>：</span>
         <a href="" style="text-decoration: none;display: inline-block;">
             <img src="/Public/wap/tubiao/weibo2.svg" style="width: 20px!important;height: 21px!important;" >&nbsp;
         </a>
@@ -54,7 +54,7 @@
         &nbsp;
         &nbsp;
         <a href="index.php?a=forget_pwd" style="text-decoration: none;color: red;font-weight: 900;">
-            <span style="display: inline-block;position:relative;top:-5px;">忘记密码？</span>
+            <span style="display: inline-block;position:relative;top:-5px;"><?php echo (L("_Login_forgot_password")); ?>？</span>
         </a>
 
     </div>
@@ -96,13 +96,13 @@
             //错误信息提示
             messages:{
                 username:{
-                    required:"必须填写用户名",
+                    required:"<?php echo (L("_Must_fill_username")); ?>",
                     minlength:"该字段至少为2个字符",
                     maxlength:"该字段至多为30个字符",
                     remote: "用户名已存在",
                 },
                 password:{
-                    required:"必须填写密码",
+                    required:"<?php echo (L("_Must_fill_password")); ?>",
                     minlength:"密码至少为6个字符",
                     maxlength:"密码至多为18个字符",
                 },

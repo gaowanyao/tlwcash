@@ -161,6 +161,7 @@ class IndexController extends Controller
         $this->judge();
 
 
+
         if (isset($_SESSION["account"])) {
 
 
@@ -282,6 +283,40 @@ class IndexController extends Controller
 
     public function judge()
     {
+
+
+        if(!empty($_GET['l'])){
+
+            $_SESSION['language'] = $_GET['l'];
+
+
+
+
+
+        }else{
+
+            $this->assign("to","zh");
+
+        }
+
+
+        if($_SESSION['language'] == "zh-cn"){
+            $this->assign("to","zh");
+        }
+
+        if($_SESSION['language'] == "zh-tw"){
+            $this->assign("to","cht");
+        }
+
+        if($_SESSION['language'] == "en-us"){
+            $this->assign("to","en");
+        }
+        
+
+//        MODULE_NAME,CONTROLLER_NAME,ACTION_NAME
+
+
+        $this->assign("action",ACTION_NAME);
 
 
         if (isset($_SESSION["account"])) {
@@ -569,9 +604,10 @@ class IndexController extends Controller
     public function logout(){
 
 
-        session_unset();//清除变量
-
-        session_destroy();
+//        session_unset();//清除变量
+//
+//        session_destroy();
+        session('account',null);
 
         if(!isset($_SESSION['account'])){
             $this->success("成功退出，欢迎下次登录!","index.php?a=home");
@@ -717,7 +753,7 @@ class IndexController extends Controller
 
         $data['user_name'] = $_POST['username'];
         $data['email'] = $_POST['email'];
-        $data['phone'] = $_POST['phone'];
+        $data['phone'] = $_POST['phone_number'];
         $data['password'] = md5($_POST['password']);
 
         $m = M("User");
@@ -914,7 +950,7 @@ class IndexController extends Controller
         $m = M("Article");
 
         $count = $m->count();// 查询满足要求的总记录数 $map表示查询条件
-        $Page = new Page($count,8);// 实例化分页类 传入总记录数
+        $Page = new Page($count,5);// 实例化分页类 传入总记录数
         $showall = $Page->show();// 分页显示输出
 
         // 进行分页数据查询
@@ -1200,6 +1236,9 @@ class IndexController extends Controller
     public function index(){
 
         $this->judge();
+
+
+
 
 //        if($this->is_weixin() == true){
 //            $this->sdk("index");

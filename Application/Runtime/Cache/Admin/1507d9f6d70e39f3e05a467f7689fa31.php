@@ -60,7 +60,7 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a style="text-decoration: none;color: lightskyblue;" href="index.php?&m=admin&a=news">
-                <h3  style="margin-top:10px;position: fixed;">MoBiCoin网站后台管理</h3>
+                <h3  style="margin-top:10px;position: fixed;">多宝金豆网站后台管理</h3>
                 <!--<img src="/Public/resource/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> -->
             </a>
 
@@ -1083,7 +1083,7 @@
     <!-- BEGIN FOOTER -->
     <div class="page-footer">
     <div class="page-footer-inner">
-        2017 &copy;MoBiCoin
+        2017 &copy;多宝金豆
     </div>
     <div class="scroll-to-top">
         <i class="icon-arrow-up"></i>

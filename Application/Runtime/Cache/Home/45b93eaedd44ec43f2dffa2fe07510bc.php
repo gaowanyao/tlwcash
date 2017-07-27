@@ -20,34 +20,37 @@
     <h1 style="<?php if($pc == 'notpc'){ echo 'margin-top: 20px;';}else{ echo 'margin-top: 40px;';};?>"><a href="index.php"><img src="/Public/images/logo1.png" style="width: 200px;"></a></h1>
 
 
-    <h1>会员注册</h1>
+    <h1><?php echo (L("_Register_Member_register")); ?></h1>
 
     <div class="connect">
-        <p>多宝金豆为投资人打造的一站式众筹交易服务平台</p>
+        <p><?php echo (L("_Login_introduction")); ?></p>
     </div>
 
     <form action="index.php?a=register_msg" method="post" id="registerForm">
+
+
+
         <div>
-            <input type="text" name="username" class="username" minlength="2" maxlength="33" placeholder="您的用户名" autocomplete="off"/>
+            <input type="text" name="username" class="username" minlength="2" maxlength="33" placeholder="<?php echo (L("_Register_placeholder_username")); ?>" autocomplete="off"/>
         </div>
         <div>
-            <input type="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false" onpaste="return false" />
+            <input type="password" name="password" class="password" placeholder="<?php echo (L("_Register_placeholder_password")); ?>" oncontextmenu="return false" onpaste="return false" />
         </div>
         <div>
-            <input type="password" name="confirm_password" class="confirm_password" placeholder="再次输入密码" oncontextmenu="return false" onpaste="return false" />
+            <input type="password" name="confirm_password" class="confirm_password" placeholder="<?php echo (L("_Register_placeholder_rusername")); ?>" oncontextmenu="return false" onpaste="return false" />
         </div>
         <div>
-            <input type="text" name="phone" class="phone_number" placeholder="输入手机号码" autocomplete="off" id="number"/>
+            <input type="text" name="phone_number" class="phone_number" placeholder="<?php echo (L("_Register_placeholder_phone")); ?>" autocomplete="off" id="number"/>
         </div>
         <div>
-            <input type="email" name="email" class="email" placeholder="输入邮箱地址" oncontextmenu="return false"  />
+            <input type="email" name="email" class="email" placeholder="<?php echo (L("_Register_placeholder_email")); ?>" oncontextmenu="return false"  />
             <!--onpaste="return false"-->
         </div>
 
-        <button id="submit" type="submit">注 册</button>
+        <button id="submit" type="submit"><?php echo (L("_Register")); ?></button>
     </form>
     <a href="index.php?a=signin">
-        <button type="button" class="register-tis">已经有账号？</button>
+        <button type="button" class="register-tis"><?php echo (L("_Register_register_tis")); ?>？</button>
     </a>
 
 </div>
@@ -82,13 +85,13 @@
             //错误信息提示
             messages:{
                 username:{
-                    required:"必须填写用户名",
+                    required:"<?php echo (L("_Must_fill_username")); ?>",
                     minlength:"用户名至少为2个字符",
                     maxlength:"用户名至多为12个字符",
                     remote: "用户名已存在",
                 },
                 password:{
-                    required:"必须填写密码",
+                    required:"<?php echo (L("_Must_fill_password")); ?>",
                     minlength:"密码至少为6个字符",
                     maxlength:"密码至多为18个字符",
                 },
@@ -130,27 +133,27 @@
             //错误信息提示
             messages:{
                 username:{
-                    required:"必须填写用户名",
+                    required:"<?php echo (L("_Must_fill_username")); ?>",
                     minlength:"用户名至少为2个字符",
                     maxlength:"用户名至多为12个字符",
                     remote: "用户名已存在",
                 },
                 password:{
-                    required:"必须填写密码",
+                    required:"<?php echo (L("_Must_fill_password")); ?>",
                     minlength:"密码至少为6个字符",
                     maxlength:"密码至多为18个字符",
                 },
                 email:{
-                    required:"请输入邮箱地址",
+                    required:"<?php echo (L("_Register_placeholder_email")); ?>",
                     email: "请输入正确的email地址"
                 },
                 confirm_password:{
-                    required: "请再次输入密码",
+                    required: "<?php echo (L("_Register_placeholder_rusername")); ?>",
                     minlength: "确认密码不能少于6个字符",
                     equalTo: "两次输入密码不一致",//与另一个元素相同
                 },
                 phone_number:{
-                    required:"请输入手机号码",
+                    required:"<?php echo (L("_Register_placeholder_phone")); ?>",
                     digits:"请输入正确的手机号码",
                 },
 
