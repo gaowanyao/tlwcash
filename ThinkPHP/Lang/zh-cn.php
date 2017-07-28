@@ -112,6 +112,24 @@ return array(
     '_Home_hour' => '时',
     '_Home_minute' => '分',
     '_Home_second' => '秒',
+    '_Home_what_is_dbcoin' => '什么是多宝金豆？',
+    '_Home_transaction_service' => '交易服务',
+    '_Home_price_fluctuation' => '价格波动',
+    '_Home_global_price_differentials' => '全球价格差异',
+    '_Home_global_cross-border_payments' => '全球跨境支付',
+
+    '_Home_transaction_service_content' => '由于很多人不懂互联网和数字货币操作，从事数字货币线上交易平台和提供数字货币交易服务，收取交易费在任何国家都有需求。',
+    '_Home_price_fluctuation_content' => '由于数字货币受政策、事件等影响波动较大，商品价格与商品的价值成正比，与货币的价值成反比。商品价格，只有在货币价值不变、商品价值提高时，或在商品价值不变、货币价值降低时，才会普遍提高。',
+    '_Home_global_price_differentials_content' => '由于全球国情不同，政府政策和国情造成人们对法币的不信任，会让比特币等数字货币价格大涨，在价格低的国家收币，在价格高的国家卖币，实现无风险套利。',
+    '_Home_global_cross-border_payments_content' => '采用比特币进行跨境支付/国际汇款,不再需要银行中介机构的存在,流动性好,可以做到快速到账,而且手续费非常低廉。',
+
+    '_Home_raised_small_title' => '多宝金豆--区块链去中心化数字货币项目',
+    '_Home_news_button_more' => '浏览更多资讯',
+    '_Home_introduction_content' => '多宝金豆（英文名：DBCoin，简称：DBC）是逊和集团有限公司消费金融经营方式中实现用户获得金融收益的一种数字货币资产，是逊和集团依据自身的资金和资产，通过资产转化方式形成的一种数字资产，全球限量6000万个，用户通过公司赠送和公司兑换获得多宝金豆，拥有多宝金豆即等于持有等值集团资产包份额。目前开通了抵押、贷款、担保、兑换、变现、增值、置换、交易、众筹等商业应用。加入逊和集团多宝互联平台，拥有多宝金豆让您的消费变成理财，让消费者成为企业的股东，实现财富共享。',
+
+
+
+
 
     //底部
     '_Footer_time' => '工作时间',
@@ -135,12 +153,19 @@ return array(
     '_News_next' => '下一篇',
 
 
+    //关于我们about页面
+    '_About_small_title' => '多宝金豆关于我们为您提供平台简介及新手注册、充值、交易等帮助',
+    '_About_dbcoin_introduction' => '多宝金豆简介',
+    '_About_newuserzc' => '新用户注册',
+    '_About_help_center' => '帮助中心',
 
 
-
-
-
-
+    //产品众筹
+    '_Raised_project_home' => '项目主页',
+    '_Raised_history' => '历史纪录',
+    '_Raised_Progress'=> '众筹进度',
+    '_Raised_going' => '进行中',
+    '_Raised_small_title' => '多宝金豆利用了区块链去中心化、匿名性、天然审计、不可篡改的特征，以太坊嵌入的智能合约实现了交易自动执行的功能',
 
 
 

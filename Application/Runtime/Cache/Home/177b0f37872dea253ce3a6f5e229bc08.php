@@ -184,7 +184,7 @@
         height:50px;
         display:inline-block;
 
-    <?php if($pc == 'pc'){ echo 'margin-right:10px;';}else{ if('account' == 'account'){ echo 'margin-right: -5px;'; }else{ echo 'margin-right: 80px;';}}?>
+    <?php if($pc == 'pc'){ echo 'margin-right:10px;';}else{ if('account' == 'account'){ echo 'margin-right: -5px;'; }else{ echo 'margin-right: 20px;';}}?>
     }
 
     .menu_my_nav{
@@ -587,6 +587,17 @@
 
         console.log(action);
 
+        if(action == "newsdet"){
+            var aid = "<?php echo ($article['id']); ?>";
+            console.log(aid);
+            window.location.href = "index.php?a="+action+"&id="+aid+"&l="+l;
+
+            return false;
+        }
+
+
+
+
         window.location.href = "index.php?a="+action+"&l="+l;
 
 
@@ -604,6 +615,15 @@
         var action = "<?php echo ($action); ?>";
 
         console.log(action);
+
+
+        if(action == "newsdet"){
+            var aid = "<?php echo ($article['id']); ?>";
+            console.log(aid);
+            window.location.href = "index.php?a="+action+"&id="+aid+"&l="+l;
+
+            return false;
+        }
 
         window.location.href = "index.php?a="+action+"&l="+l;
 
@@ -1153,7 +1173,7 @@
                     <img style="width: 160px;height: 50px;display: block;margin:0 auto;margin-bottom: 30px;" src="/Public/images/logo1.png" alt="logo" class="logo-default">
 
                 </h4>
-                <div style="text-align: left;<?php if($pc == 'pc'){ echo 'padding-left: 15px;';}else{ echo 'width:155px;margin:0 auto;';};?>">
+                <div style="text-align: center;<?php if($pc == 'pc'){ echo '';}else{ echo 'margin:0 auto;';};?>">
 
                     <?php echo (L("_Footer_time")); ?>：9:00-18:00<br/>
                     <?php echo (L("_Footer_qq_group")); ?>：123456789<br/>

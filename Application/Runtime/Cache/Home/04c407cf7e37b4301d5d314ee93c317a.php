@@ -668,8 +668,8 @@
 <section id="intro-image" class="intro medium clearfix">
 
     <div class="intro-captions">
-        <h3 class="caption-title big animated">关于我们</h3><br>
-        <h3 class="caption-title small animated">多宝金豆关于我们为您提供平台简介及新手注册、充值、交易等帮助</h3>
+        <h3 class="caption-title big animated"><?php echo (L("_Footer_about_us")); ?></h3><br>
+        <h3 class="caption-title small animated"><?php echo (L("_About_small_title")); ?></h3>
     </div>
 
     <!-- Image -->
@@ -740,20 +740,20 @@
 
         <div class="profile-usermenu" style="margin-top: 0px;">
             <h4  class="hidden_my font-blue-madison" style="padding-left: 50px;margin: 0px 0px 10px;">
-                关于我们
+                <?php echo (L("_Footer_about_us")); ?>
             </h4>
             <ul class="nav hidden_nav" style="<?php if($pc == 'notpc'){ echo 'display:block;';} ?>">
                 <li class="<?php if('helpcenter' == 'about'){ echo 'active';} ?>">
                     <a href="index.php?&a=about">
                         <!--<i class="icon-home"></i>-->
-                        多宝金豆简介
+                        <?php echo (L("_About_dbcoin_introduction")); ?>
                     </a>
                 </li>
 
                 <li class="<?php if('helpcenter' == 'newuserzc'){ echo 'active';} ?>">
                     <a href="index.php?&a=newuserzc">
                         <!--<i class="icon-home"></i>-->
-                        新用户注册
+                        <?php echo (L("_About_newuserzc")); ?>
                     </a>
                 </li>
                 <!--<li class=" ">-->
@@ -765,7 +765,7 @@
                 <li class="<?php if('helpcenter' == 'helpcenter'){ echo 'active';} ?>">
                     <a href="index.php?&a=helpcenter">
                         <!--<i class="icon-info"></i> -->
-                        帮助中心
+                        <?php echo (L("_About_help_center")); ?>
                     </a>
                 </li>
             </ul>
@@ -773,26 +773,30 @@
 
         <div class="profile-usermenu " style="margin-top: 0px;">
             <h4 class="hidden_my font-blue-madison" style="padding-left: 50px;margin: 0px 0px 10px;">
-                新手帮助
+                <?php echo (L("_Footer_help")); ?>
+
             </h4>
             <ul class="nav hidden_nav" style="<?php if($pc == 'notpc'){ echo 'display:block;';} ?>">
                 <li class="<?php if('helpcenter' == 'signupguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=signupguide">
                         <!--<i class="icon-home"></i>-->
-                        注册指南
+                        <?php echo (L("_Footer_registration_guide")); ?>
+
 
                     </a>
                 </li>
                 <li class="<?php if('helpcenter' == 'rechargeguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=rechargeguide">
                         <!--<i class="icon-settings"></i>-->
-                        充值指南
+                        <?php echo (L("_Footer_recharge_guide")); ?>
+
                     </a>
                 </li>
                 <li class="<?php if('helpcenter' == 'tradingguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=tradingguide">
                         <!--<i class="icon-info"></i> -->
-                        交易指南
+                        <?php echo (L("_Footer_trading_guide")); ?>
+
                     </a>
                 </li>
             </ul>
@@ -818,7 +822,7 @@
                                                         <div class="portlet-title tabbable-line" style="height: 60px;">
                                                             <div class="caption caption-md">
                                                                 <i class="icon-globe theme-font hide"></i>
-                                                                <span class="caption-subject font-blue-madison bold uppercase" style="font-size: 20px;padding-left: 0px;">帮助中心</span>
+                                                                <span class="caption-subject font-blue-madison bold" style="font-size: 20px;padding-left: 0px;"><?php echo (L("_About_help_center")); ?></span>
                                                             </div>
                                                             <!--<ul class="nav nav-tabs">-->
                                                             <!--<li class="active">-->

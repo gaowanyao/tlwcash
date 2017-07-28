@@ -113,6 +113,29 @@ return array(
     '_Home_hour' => 'hour',
     '_Home_minute' => 'minute',
     '_Home_second' => 'second',
+    '_Home_what_is_dbcoin' => 'What is DBCoin?',
+    '_Home_transaction_service' => 'Transaction Service',
+    '_Home_price_fluctuation' => 'Price Fluctuation',
+    '_Home_global_price_differentials' => 'Global Price Differentials',
+    '_Home_global_cross-border_payments' => 'Global Cross-border Payments',
+
+
+    '_Home_transaction_service_content' => 'As many people do not understand the Internet and digital currency operations, engaged in digital currency online trading platform and the provision of digital currency trading services, transaction fees charged in any country there is demand.',
+    '_Home_price_fluctuation_content' => 'As the digital currency is affected by policies, events and other fluctuations, commodity prices are directly proportional to the value of commodities, and inversely proportional to the value of money. Commodity prices are generally raised only when the value of the money is constant, the value of the commodity increases, or when the value of the product is constant and the value of the money decreases.',
+    '_Home_global_price_differentials_content' => 'Due to the global conditions of different government policies and conditions caused by people do not trust in Fiat, will let other digital currency bitcoin prices rose, in the low price country collecting coins, selling coins in high price countries, no risk arbitrage.',
+    '_Home_global_cross-border_payments_content' => 'The use of bitcoin for cross-border payment / international remittance, no longer need the presence of banking intermediaries, liquidity is good, you can achieve fast arrival, and the fees are very low.',
+
+
+
+
+    '_Home_raised_small_title' => 'DBCoin - block chain to the center of the digital currency project',
+    '_Home_news_button_more' => 'Browse more information',
+    '_Home_introduction_content' => 'DBCoin (Chinese Name: 多宝金豆, abbreviation: DBC) is to achieve the users get a digital currency assets of financial income and less limited company of group of consumer finance business, is inferior and group based on their own funds and assets, assets formed by transformation of a digital assets, global set limit to 60 million, by the user company presentation and exchange DBCoin, DBCoin is equal to the equivalent group asset package share holding. At present, the opening of mortgage, loan, guarantee, exchange, cash, value-added, replacement, trading, all raised and other commercial applications. Join the group Johnson and turbo Internet platform with DBCoin allows you to become consumer finance, allowing consumers to become the company\'s shareholders, to achieve wealth sharing.',
+
+
+
+
+
 
     //底部
     '_Footer_time' => ' Working Hours',
@@ -140,6 +163,18 @@ return array(
 
 
 
+    //关于我们about页面
+    '_About_small_title' => 'DBCoin about providing you with platform profiles, and new registration, recharge, transactions and other help',
+    '_About_dbcoin_introduction' => 'DBCoin Brief Introduction',
+    '_About_newuserzc' => 'New User Registration',
+    '_About_help_center' => 'Help Center',
+
+    //产品众筹
+    '_Raised_project_home' => 'PROJECT',
+    '_Raised_history' => 'HISTORY',
+    '_Raised_Progress'=> 'Raised Progress',
+    '_Raised_going' => 'Going',
+    '_Raised_small_title' => 'DBCoin takes advantage of block chaining, centrality, anonymity, natural auditing and non tampering. The intelligent contract embedded in the workshop implements the function of automatic transaction execution',
 
 
 

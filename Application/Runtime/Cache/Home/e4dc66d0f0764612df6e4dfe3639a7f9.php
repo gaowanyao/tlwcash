@@ -182,7 +182,7 @@
         height:50px;
         display:inline-block;
 
-    <?php if($pc == 'pc'){ echo 'margin-right:10px;';}else{ if('account' == 'account'){ echo 'margin-right: -5px;'; }else{ echo 'margin-right: 80px;';}}?>
+    <?php if($pc == 'pc'){ echo 'margin-right:10px;';}else{ if('account' == 'account'){ echo 'margin-right: -5px;'; }else{ echo 'margin-right: 20px;';}}?>
     }
 
     .menu_my_nav{
@@ -370,8 +370,8 @@
                 <li class="hidden_nav_li display"><a href="javascript:;" class="youshi product_schedule"><?php echo (L("_Header_project_plan")); ?></a></li>
                 <li class="hidden_nav_li display"><a href="javascript:;" class="youshi about_us"><?php echo (L("_Header_about_us")); ?></a></li>
 
-                <li class="hidden_nav_li show"  style="<?php if($_SESSION['language'] == 'en-us'){ echo 'width:120px;';} ?>"><a href="index.php?a=home" class="youshi products_raised"><?php echo (L("_Header_introduction")); ?></a></li>
-                <li class="hidden_nav_li show"  style="<?php if($_SESSION['language'] == 'en-us'){ echo 'width:120px;';} ?>"><a href="index.php?a=productdet" class="youshi products_raised"><?php echo (L("_Header_project_advantage")); ?></a></li>
+                <li class="hidden_nav_li show"  style="<?php if($_SESSION['language'] == 'en-us'){ echo 'width:120px !important;';} ?>"><a href="index.php?a=home" class="youshi products_raised"><?php echo (L("_Header_introduction")); ?></a></li>
+                <li class="hidden_nav_li show"  style="<?php if($_SESSION['language'] == 'en-us'){ echo 'width:120px;';} ?>"><a href="index.php?a=productdet" class="youshi products_raised"><?php echo (L("_Header_productdet")); ?></a></li>
                 <li class="hidden_nav_li show"><a href="index.php?a=news" class="youshi news_information"><?php echo (L("_Header_news")); ?></a></li>
                 <li class="hidden_nav_li show"><a href="index.php?a=about" class="youshi about_us"><?php echo (L("_Header_about_us")); ?></a></li>
 
@@ -585,6 +585,17 @@
 
         console.log(action);
 
+        if(action == "newsdet"){
+            var aid = "<?php echo ($article['id']); ?>";
+            console.log(aid);
+            window.location.href = "index.php?a="+action+"&id="+aid+"&l="+l;
+
+            return false;
+        }
+
+
+
+
         window.location.href = "index.php?a="+action+"&l="+l;
 
 
@@ -602,6 +613,15 @@
         var action = "<?php echo ($action); ?>";
 
         console.log(action);
+
+
+        if(action == "newsdet"){
+            var aid = "<?php echo ($article['id']); ?>";
+            console.log(aid);
+            window.location.href = "index.php?a="+action+"&id="+aid+"&l="+l;
+
+            return false;
+        }
 
         window.location.href = "index.php?a="+action+"&l="+l;
 
@@ -648,8 +668,8 @@
 <section id="intro-image" class="intro medium clearfix">
 
     <div class="intro-captions">
-        <h3 class="caption-title big animated">关于我们</h3><br>
-        <h3 class="caption-title small animated">多宝金豆关于我们为您提供平台简介及新手注册、充值、交易等帮助</h3>
+        <h3 class="caption-title big animated"><?php echo (L("_Footer_about_us")); ?></h3><br>
+        <h3 class="caption-title small animated"><?php echo (L("_About_small_title")); ?></h3>
     </div>
 
     <!-- Image -->
@@ -719,20 +739,20 @@
 
         <div class="profile-usermenu" style="margin-top: 0px;">
             <h4  class="hidden_my font-blue-madison" style="padding-left: 50px;margin: 0px 0px 10px;">
-                关于我们
+                <?php echo (L("_Footer_about_us")); ?>
             </h4>
             <ul class="nav hidden_nav" style="<?php if($pc == 'notpc'){ echo 'display:block;';} ?>">
                 <li class="<?php if('tradingguide' == 'about'){ echo 'active';} ?>">
                     <a href="index.php?&a=about">
                         <!--<i class="icon-home"></i>-->
-                        多宝金豆简介
+                        <?php echo (L("_About_dbcoin_introduction")); ?>
                     </a>
                 </li>
 
                 <li class="<?php if('tradingguide' == 'newuserzc'){ echo 'active';} ?>">
                     <a href="index.php?&a=newuserzc">
                         <!--<i class="icon-home"></i>-->
-                        新用户注册
+                        <?php echo (L("_About_newuserzc")); ?>
                     </a>
                 </li>
                 <!--<li class=" ">-->
@@ -744,7 +764,7 @@
                 <li class="<?php if('tradingguide' == 'helpcenter'){ echo 'active';} ?>">
                     <a href="index.php?&a=helpcenter">
                         <!--<i class="icon-info"></i> -->
-                        帮助中心
+                        <?php echo (L("_About_help_center")); ?>
                     </a>
                 </li>
             </ul>
@@ -752,26 +772,30 @@
 
         <div class="profile-usermenu " style="margin-top: 0px;">
             <h4 class="hidden_my font-blue-madison" style="padding-left: 50px;margin: 0px 0px 10px;">
-                新手帮助
+                <?php echo (L("_Footer_help")); ?>
+
             </h4>
             <ul class="nav hidden_nav" style="<?php if($pc == 'notpc'){ echo 'display:block;';} ?>">
                 <li class="<?php if('tradingguide' == 'signupguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=signupguide">
                         <!--<i class="icon-home"></i>-->
-                        注册指南
+                        <?php echo (L("_Footer_registration_guide")); ?>
+
 
                     </a>
                 </li>
                 <li class="<?php if('tradingguide' == 'rechargeguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=rechargeguide">
                         <!--<i class="icon-settings"></i>-->
-                        充值指南
+                        <?php echo (L("_Footer_recharge_guide")); ?>
+
                     </a>
                 </li>
                 <li class="<?php if('tradingguide' == 'tradingguide'){ echo 'active';} ?>">
                     <a href="index.php?&a=tradingguide">
                         <!--<i class="icon-info"></i> -->
-                        交易指南
+                        <?php echo (L("_Footer_trading_guide")); ?>
+
                     </a>
                 </li>
             </ul>
@@ -797,7 +821,7 @@
                                                         <div class="portlet-title tabbable-line" style="height: 60px;">
                                                             <div class="caption caption-md">
                                                                 <i class="icon-globe theme-font hide"></i>
-                                                                <span class="caption-subject font-blue-madison bold uppercase" style="font-size: 20px;padding-left: 0px;">交易指南</span>
+                                                                <span class="caption-subject font-blue-madison bold " style="font-size: 20px;padding-left: 0px;"><?php echo (L("_Footer_trading_guide")); ?></span>
                                                             </div>
                                                             <!--<ul class="nav nav-tabs">-->
                                                             <!--<li class="active">-->
@@ -881,7 +905,7 @@
                     <img style="width: 160px;height: 50px;display: block;margin:0 auto;margin-bottom: 30px;" src="/Public/images/logo1.png" alt="logo" class="logo-default">
 
                 </h4>
-                <div style="text-align: left;<?php if($pc == 'pc'){ echo 'padding-left: 15px;';}else{ echo 'width:155px;margin:0 auto;';};?>">
+                <div style="text-align: center;<?php if($pc == 'pc'){ echo '';}else{ echo 'margin:0 auto;';};?>">
 
                     <?php echo (L("_Footer_time")); ?>：9:00-18:00<br/>
                     <?php echo (L("_Footer_qq_group")); ?>：123456789<br/>
@@ -900,7 +924,7 @@
         <div class="footer-col" style="<?php  if($pc == 'pc'){ echo 'width: 25%;';} ?>">
             <!--<h4>Let's Talk</h4>-->
             <div style="text-align: center">
-                <h4><?php echo (L("_Header_about_us")); ?></h4>
+                <h4><?php echo (L("_Footer_about_us")); ?></h4>
                 <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=about';"><?php echo (L("_DBCoin")); ?> </h4>
                 <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=news';"><?php echo (L("_Header_news")); ?></h4>
                 <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=productdet';"><?php echo (L("_Header_productdet")); ?></h4>
@@ -919,10 +943,11 @@
             <!--<a class="stamp-button" href="#"><span>Get in touch</span></a>-->
             <!--<br>-->
             <div style="text-align: center">
-                <h4>新手帮助</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=signupguide';">注册指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=rechargeguide';">充值指南</h4>
-                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=tradingguide';">交易指南</h4>
+
+                <h4><?php echo (L("_Footer_help")); ?></h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=signupguide';"><?php echo (L("_Footer_registration_guide")); ?></h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=rechargeguide';"><?php echo (L("_Footer_recharge_guide")); ?></h4>
+                <h4 class="footer_h4 footer_my_hover" onclick="window.location.href='index.php?a=tradingguide';"><?php echo (L("_Footer_trading_guide")); ?></h4>
 
 
             </div>
@@ -934,7 +959,7 @@
         <div class="footer-col last" style="<?php  if($pc == 'pc'){ echo 'width: 25%;';} ?>">
             <div style="text-align: center">
 
-                <h4>联系我们</h4>
+                <h4><?php echo (L("_Footer_contact_us")); ?></h4>
                 <!--smooth-link-->
                 <!--<a  href="index.html" class=" " style="text-decoration: none !important;border: 0px;"><img src="/Public/images/sina.svg" style="width: 50px!important;height: 41px!important;;" ></a>-->
                 <!--<a  href="index.html" class=" " style="text-decoration: none !important;border: 0px;"><img src="/Public/images/qq.svg" style="width: 50px!important;;height: 41px!important;;" ></a>-->

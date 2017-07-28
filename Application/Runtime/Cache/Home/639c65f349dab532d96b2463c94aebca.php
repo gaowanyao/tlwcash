@@ -830,8 +830,8 @@
                     <section id="intro-image" class="intro medium clearfix">
 
                         <div class="intro-captions">
-                            <h3 class="caption-title big animated">产品众筹</h3><br>
-                            <h3 class="caption-title small animated">多宝金豆利用了区块链去中心化、匿名性、天然审计、不可篡改的特征，以太坊嵌入的智能合约实现了交易自动执行的功能</h3>
+                            <h3 class="caption-title big animated"><?php echo (L("_Header_productdet")); ?></h3><br>
+                            <h3 class="caption-title small animated"><?php echo (L("_Raised_small_title")); ?></h3>
                         </div>
 
                         <!-- Image -->
@@ -916,7 +916,7 @@
                                                     <div class="tabbable-line tabbable-full-width">
                                                         <ul class="nav nav-tabs" style="margin-top:-8px;text-align: center;">
                                                             <li class="active" style="width: 33.3%;">
-                                                                <a href="#tab_1_1" data-toggle="tab" style="<?php if($pc=='pc'){echo 'font-size: 18px !important;';}else{ echo 'font-size: 15px !important;';} ?>font-weight: 600;">项目主页</a>
+                                                                <a href="#tab_1_1" data-toggle="tab" style="<?php if($pc=='pc'){echo 'font-size: 18px !important;';}else{ echo 'font-size: 15px !important;';} ?>font-weight: 600;"><?php echo (L("_Raised_project_home")); ?></a>
                                                             </li>
                                                             <li style="width: 33.3%;">
                                                             <!--<li style="width: 50%;">-->
@@ -924,18 +924,18 @@
                                                             </li>
 
                                                             <li style="width: 33.3%;">
-                                                                <a href="#tab_1_3" data-toggle="tab" style="<?php if($pc=='pc'){echo 'font-size: 18px !important;';}else{ echo 'font-size: 15px !important;';} ?>font-weight: 600;"> 历史纪录 </a>
+                                                                <a href="#tab_1_3" data-toggle="tab" style="<?php if($pc=='pc'){echo 'font-size: 18px !important;';}else{ echo 'font-size: 15px !important;';} ?>font-weight: 600;"><?php echo (L("_Raised_history")); ?></a>
                                                             </li>
 
                                                         </ul>
-                                                        <div class="tab-content" style="padding-bottom: 0px;">
+                                                        <div class="tab-content" style="padding-bottom: 10px;">
                                                             <div class="tab-pane " id="tab_1_1">
                                                                 <!--<div class="tab-pane active" id="tab_1_1">-->
                                                                 <div class="row">
                                                                     <div class="col-md-12">
 
 
-                                                                        <img style="width: 100%;height: 300px;" src="/Public/img/new/pro1.jpg"/>
+                                                                        <img style="width: 100%;<?php if($pc=='pc'){ echo 'height: 300px;';}else{ echo 'height: 200px;';} ?>" src="/Public/img/new/pro1.jpg"/>
 
 
                                                                         <div>
@@ -944,7 +944,7 @@
                                                                             </p>
 
                                                                             <p class="p_content" >中文名称：多宝金豆
-                                                                        　　<p  class="p_content" >英文名称：Turbo beans
+                                                                        　　<p  class="p_content" >英文名称：DBCoin
                                                                         <!--　　<p class="p_content" >英文简称：DBJD-->
                                                                             　　<p class="p_content" >总发行量：6000万枚
                                                                             　　<p class="p_content" >开始日期：2017年9月01日
@@ -1256,7 +1256,7 @@
         <div class="portlet-title" style="height: 50px;">
             <div class="caption">
                 <!--<i class="icon-social-dribbble font-green" style="font-weight: 900; font-size: 20px;"></i>-->
-                <span class="caption-subject font-dark bold uppercase"><span style="color: #424e98;display: inline-block;font-size: 2em;">多宝金豆</span>/众筹进度</span>
+                <span class="caption-subject font-dark bold "><span style="color: #424e98;display: inline-block;font-size: 2em;"><?php echo (L("_DBCoin")); ?></span>/<?php echo (L("_Raised_Progress")); ?></span>
             </div>
 
         </div>
@@ -1266,7 +1266,7 @@
                 目前累计资金：<span style="font-size:20px;color:red;font-weight: 600;">0BTC</span><br>
 
                 <div  style="color:gray;margin-top: 10px;">
-                    此项目须在 2017年09月25日00分前，获得<span style="font-size:20px;color:red;font-weight: 600;">10000BTC</span>的支持才可成功!<br>
+                    此项目须在 2017年09月25日00分前，获得 <span style="font-size:20px;color:red;font-weight: 600;">10000BTC</span> 的支持才可成功!<br>
                 </div>
 
                 <div class="row">
@@ -1274,12 +1274,12 @@
 
 
                         <button style="<?php if($pc=='pc'){ echo 'margin-top: -5px;';}else{ echo 'margin-top: -5px;';} ?>padding:5px 10px;" type="button" data-loading-text="Loading..." class="pull-right btn red btn-sm   btn-circle" data-style="slide-left">
-                            <span class="ladda-label">进行中</span>
+                            <span class="ladda-label"><?php echo (L("_Raised_going")); ?></span>
                         </button>
 
 
                         <h3 class="font-red-haze">
-                            众筹进度<span data-counter="counterup" data-value="0">0</span>%
+                            <?php echo (L("_Raised_Progress")); ?> <span data-counter="counterup" data-value="0">0</span>%
                         </h3>
 
 
@@ -1335,7 +1335,7 @@
             <div class="caption" style="margin-top: 0px;">
                 <!--<i class="icon-social-dribbble font-green" style="font-weight: 900; font-size: 20px;"></i>-->
                 <!--<span class="caption-subject font-dark bold uppercase">  支持 ￥10.0000/（一份起）</span>-->
-                <span class="caption-subject font-dark bold uppercase">  <span style="color: #424e98;display: inline-block;font-size: 2em;">多宝金豆</span>/金额不限</span>
+                <span class="caption-subject font-dark bold ">  <span style="color: #424e98;display: inline-block;font-size: 2em;"><?php echo (L("_DBCoin")); ?></span>/金额不限</span>
             </div>
             <div class="actions">
                 <!--<a class="btn btn-circle btn-icon-only btn-default" href="javascriptt:;">-->
@@ -2302,6 +2302,35 @@
 
 
 <script>
+
+//    document.body.innerHTML="<div id='div1'>aaa</div><div id='div2'>bbb</div><div id='div3'>ccc</div>";
+//    for(var i=1;i<4;i++){
+//        document.getElementById("div"+i).addEventListener("click",function(){
+//            alert(i);
+//        });
+//
+//        console.log(i);
+//    }
+//
+//    i=5;
+
+//    for(var i=1;i<4;i++){
+//        document.getElementById("div"+i).addEventListener("click",function(){
+//            alert(i);
+//        });
+//    }
+
+//    for(var i=1;i<4;i++){
+//        (function(i){
+//            document.getElementById("div"+i).addEventListener("click",function(){
+//                alert(i);
+//            });
+//        }(i));
+//        console.log(i);
+//    }
+
+
+
 
     $(document).ready(function () {
         $("#progress").animate({"width":"0%"});

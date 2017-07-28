@@ -281,11 +281,13 @@
             <div class="container"  >
 
                 <!-- Section Header -->
-                <header class="section-header" >
-                    <h2 class="section-title animated " data-delay="0">什么是多宝金豆？</h2>
+                <header class="section-header" style="padding: 0px;">
+                    <h2 class="section-title animated " data-delay="0">{$Think.lang._Home_what_is_dbcoin}</h2>
                     <div class="divider dark long animated" data-delay="100"></div>
-                    <p class="section-header-text animated" style="font-style: normal;text-indent: 2em;" data-delay="200">
-                        多宝金豆是逊和集团有限公司消费金融经营方式中实现用户获得金融收益的一种数字货币资产，是逊和集团依据自身的资金和资产，通过资产转化方式形成的一种数字资产，全球限量 6000 万个，用户通过公司赠送和公司兑换获得多宝金豆，拥有多宝金豆即等于持有等值集团资产包份额。目前开通了抵押、贷款、担保、兑换、变现、增值、置换、交易、众筹等商业应用。加入逊和集团多宝互联平台，拥有多宝金豆让您的消费变成理财，让消费者成为企业的股东，实现财富共享。
+                    <p class="section-header-text animated" style="text-align:left;font-style: normal;text-indent: 2em;" data-delay="200">
+
+                        {$Think.lang._Home_introduction_content}
+
                     </p>
                 </header>
                 <!-- /section header -->
@@ -304,23 +306,25 @@
                         <!-- Title -->
 
 
-                        <h3 class="service-title">交易服务</h3>
+                        <h3 class="service-title" style="font-size: 16px;">{$Think.lang._Home_transaction_service}</h3>
 
-                        <p class="service-text">由于很多人不懂互联网和数字货币操作，从事数字货币线上交易平台和提供数字货币交易服务，收取交易费在任何国家都有需求。</p>
+                        <p class="service-text" style="text-align: left;">{$Think.lang._Home_transaction_service_content}</p>
 
                         <!--<a class="readmore" href="#">Read more</a>-->
 
                     </div>
                     <!-- /service -->
 
+
+
                     <!-- Service -->
                     <div class="col-1-4 service animated" data-delay="100">
                         <!-- Icon -->
                         <span class="service-icon icon icon-ruler"></span>
                         <!-- Title -->
-                        <h3 class="service-title">价格波动</h3>
+                        <h3 class="service-title" style="font-size: 16px;">{$Think.lang._Home_price_fluctuation}</h3>
 
-                        <p class="service-text">由于数字货币受政策、事件等影响波动较大，商品价格与商品的价值成正比，与货币的价值成反比。商品价格，只有在货币价值不变、商品价值提高时，或在商品价值不变、货币价值降低时，才会普遍提高。</p>
+                        <p class="service-text" style="text-align: left;">{$Think.lang._Home_price_fluctuation_content}</p>
 
                         <!--<a class="readmore" href="#">Read more</a>-->
 
@@ -332,9 +336,9 @@
                         <!-- Icon -->
                         <span class="service-icon icon icon-diamond"></span>
                         <!-- Title -->
-                        <h3 class="service-title">全球价格差异</h3>
+                        <h3 class="service-title" style="font-size: 16px;">{$Think.lang._Home_global_price_differentials}</h3>
 
-                        <p class="service-text">由于全球国情不同，政府政策和国情造成人们对法币的不信任，会让比特币等数字货币价格大涨，在价格低的国家收币，在价格高的国家卖币，实现无风险套利。</p>
+                        <p class="service-text" style="text-align: left;">{$Think.lang._Home_global_price_differentials_content}</p>
 
                         <!--<a class="readmore" href="#">Read more</a>-->
 
@@ -347,9 +351,9 @@
                         <!-- Icon -->
                         <span class="service-icon icon icon-phone"></span>
                         <!-- Title -->
-                        <h3 class="service-title">全球跨境支付</h3>
+                        <h3 class="service-title" style="font-size: 16px;">{$Think.lang._Home_global_cross-border_payments}</h3>
 
-                        <p class="service-text">采用比特币进行跨境支付/国际汇款,不再需要银行中介机构的存在,流动性好,可以做到快速到账,而且手续费非常低廉。</p>
+                        <p class="service-text" style="text-align: left;">{$Think.lang._Home_global_cross-border_payments_content}</p>
 
                         <!--<a class="readmore" href="#">Read more</a>-->
 
@@ -377,7 +381,7 @@
 
 
             <header class="section-header"  >
-                <h2 class="section-title animated distance_top" data-delay="0">产品众筹</h2>
+                <h2 class="section-title animated distance_top" data-delay="0">{$Think.lang._Header_productdet}</h2>
                 <div class="divider dark long animated" data-delay="100"></div>
                 <!--<p class="section-header-text animated" style="font-style: normal;" data-delay="200">本次ICO将众筹1000个ETH主要用于后期Mobi Coin项目产品完善和市场推广，及后期商业运营、金融、社区交流、区块链+游戏、众筹等不同行业应用场景。其中，40%用于团队项目产品完善和市场推广，20%用于市场合作，游戏接入和增加用户流量等成本;10%给社区来进行管理（ICO结束一个月内发给管理）10%奖励Mobi Coin创始团队;20%风险预备金，防范由于不可预测的市场风险造成的MBC价格不稳。</p>-->
             </header>
@@ -412,7 +416,7 @@
             <!-- Content -->
             <div class="flex-col-1-2 box">
                 <h3 class="color line-heading tiny big animated" data-delay="100" style="cursor: pointer;"  onclick="window.location.href='index.php?a=productdet';">
-                    <a href="index.php?a=productdet">多宝金豆--区块链去中心化数字货币项目</a>
+                    <a href="index.php?a=productdet">{$Think.lang._Home_raised_small_title}</a>
                 </h3>
                 <p class="lead big animated" data-delay="100" style="text-indent: 2em;font-size: 16px;">
                     在信息技术高速发展的今天，实体货币远远不能满足人们的资金流动需求。虚拟币是指高科技中代替实体货币流通的信息流或数据流，业内人士估计，国内互联网已具备每年几十亿元的虚拟货币市场规模，并以15%~20%的速度成长，可见，全球数字资产市场与传统金融体系融合的趋势已经非常明朗。
@@ -440,7 +444,7 @@
 
                 <!-- Section Header -->
                 <header class="section-header">
-                    <h2 class="section-title animated " data-delay="0">新闻资讯</h2>
+                    <h2 class="section-title animated " data-delay="0">{$Think.lang._Header_news}</h2>
                     <div class="divider dark long animated" data-delay="100"></div>
                 </header>
                 <!-- /section header -->
@@ -450,12 +454,12 @@
                     <div class="col-1-2">
 
                         <!-- Title -->
-                        <h5 class="line-heading animated title_head" data-delay="0" style="cursor: pointer;" onclick='window.location.href="index.php?a=newsdet&id={$two[0][id]}";'>{$two[0]['title']}</h5>
+                        <h5 class="line-heading animated title_head" data-delay="0" style="cursor: pointer;" onclick='window.location.href="index.php?a=newsdet&id={$two[0][id]}";'><?php echo Translate::exec ( $two[0]['title'],"zh",$to);  ?></h5>
 
 
 
                         <!-- Text -->
-                        <div class="animated" data-delay="100" style="height:100px;overflow: hidden;">{$two[0]['content']}</div>
+                        <div class="animated" data-delay="100" style="height:95px;overflow: hidden;"><?php echo Translate::exec ( cutstr_html($two[0]['content'],130),"zh",$to);  ?></div>
 
 
                         <span style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;">标签：</span><?php
@@ -467,7 +471,7 @@
 
                                                                             if($arr[$i] == ''){}else{
                                                                  $str .='<a class="title_head" style="color:#a0a9b4 !important;margin-right:5px;margin-bottom:5px;display:inline-block;" href="index.php?&a=tag&tag='.$arr[$i].'" >
-                        <span  >'.$arr[$i].'</span>
+                        <span  >'.Translate::exec ( $arr[$i],"zh",$to).'</span>
                         </a>';
                         }
                         }
@@ -495,11 +499,11 @@
                     <div class="col-1-2 last">
 
                         <!-- Title -->
-                        <h5 class="line-heading animated title_head" data-delay="0" style="cursor: pointer;" onclick='window.location.href="index.php?a=newsdet&id={$two[1][id]}";'>{$two[1]['title']}</h5>
+                        <h5 class="line-heading animated title_head" data-delay="0" style="cursor: pointer;" onclick='window.location.href="index.php?a=newsdet&id={$two[1][id]}";'><?php echo Translate::exec ( $two[1]['title'],"zh",$to);  ?></h5>
 
 
                         <!-- Text -->
-                        <div style="height: 100px;overflow: hidden;" class="animated" data-delay="400">{$two[1]['content']}</div>
+                        <div style="height: 95px;overflow: hidden;" class="animated" data-delay="400"><?php echo Translate::exec ( cutstr_html($two[1]['content'],130),"zh",$to);  ?></div>
 
                         <span style="color:#a0a9b4 !important;font-size: 16px;padding-bottom: 10px;">标签：</span><?php
 
@@ -510,7 +514,7 @@
 
                                                                             if($arr[$i] == ''){}else{
                                                                                 $str .='<a class="title_head" style="color:#a0a9b4 !important;margin-right:5px;margin-bottom:5px;display:inline-block;" href="index.php?&a=tag&tag='.$arr[$i].'" >
-                                                                                                <span  >'.$arr[$i].'</span>
+                                                                                                <span  >'.Translate::exec ( $arr[$i],"zh",$to).'</span>
                                                                                                 </a>';
                                                                                                 }
                                                                                     }
@@ -535,7 +539,7 @@
 
                     <div style="text-align: center;">
 
-                        <button onclick='window.location.href="index.php?a=news"' class="btn_more animated" style="cursor: pointer;margin:30px 0 30px;">浏览更多资讯</button>
+                        <button onclick='window.location.href="index.php?a=news"' class="btn_more animated" style="cursor: pointer;margin:30px 0 30px;">{$Think.lang._Home_news_button_more}</button>
 
                     </div>
 
