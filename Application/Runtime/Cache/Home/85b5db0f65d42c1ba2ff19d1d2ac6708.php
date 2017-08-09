@@ -1,0 +1,185 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>忘记密码</title>
+    <meta name="author" content="gcan" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/login/css/style.css" tppabs="css/style.css" />
+    <style>
+        body{height:100%;background:#16a085;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+    <script src="/Public/resource/global/plugins/jquery.min.js" type="text/javascript"></script>
+
+    <script src="/Public/static/login/js/verificationNumbers.js" tppabs="/Public/static/login/js/verificationNumbers.js"></script>
+    <script src="/Public/static/login/js/Particleground.js" tppabs="/Public/static/login/js/Particleground.js"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+    <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
+    <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
+
+    <style>
+
+        /*背景颜色也可以调*/
+        .pg-canvas{
+            /*background-color: #000000;*/
+            background: url("/Public/img/banner1.jpg") no-repeat;
+            background-size:100% 100%;
+        }
+
+    </style>
+
+
+</head>
+<body >
+
+<!--<form>-->
+
+<dl class="admin_login" >
+    <dt>
+        <strong>忘记密码</strong>
+        <!--<em>Management System</em>-->
+    </dt>
+    <dd class="user_icon">
+        <input type="text" id="user" name="user" minlength="2" placeholder="用户名/E-mail" required class="login_txtbx"/>
+    </dd>
+
+    <dd class="val_icon">
+        <div class="checkcode" style="width: 100%;">
+            <input type="text" name="code" style="width: 100%;" required id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx">
+
+            <!--<canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>-->
+        </div>
+
+        <img src="index.php?a=ver"  id="imgcode" onclick="this.src= 'index.php?a=ver&vv=' + Math.random();" style="z-index=999999999;position: absolute;width: 130px;height: 42px;right: 0px;"/>
+
+
+
+        <!--<input type="button" value="验证码核验" class="ver_btn" onClick="validate();">-->
+    </dd>
+
+
+
+
+    <dd>
+        <input type="button" value="找回密码" id="submit" class="submit_btn"/>
+        <input type="submit" value="找回密码" id="submit2" style="display: none;" class="submit_btn"/>
+    </dd>
+    <dd>
+        <p>© 铜锣湾 版权所有</p>
+        <!--<p>陕B2-8998988-1</p>-->
+    </dd>
+</dl>
+
+
+<!--</form>-->
+
+<script>
+    $(document).ready(function() {
+        //粒子背景特效
+        $('body').particleground({
+            dotColor: '#5cbdac',
+            lineColor: '#5cbdac'
+        });
+
+        $("#submit").click(function(){
+
+            var code = $("#J_codetext").val();
+            var user = $("#user").val();
+            var pwd = $("#pwd").val();
+
+            if(user == ""){
+                tipDialog("用户名/E-mail不能为空！",'error','',3);
+                return false;
+            }
+
+            if(user.length < 2){
+                console.log($("#user").length);
+                tipDialog("用户名/E-mail长度不能小于2！",'error','',3);
+                return false;
+            }
+
+
+
+            if(pwd == ""){
+                tipDialog("密码不能为空！",'error','',3);
+                return false;
+            }
+
+            if(pwd.length < 6){
+                tipDialog("密码长度不能小于6！",'error','',3);
+                return false;
+            }
+
+            if(code == ""){
+                tipDialog("验证码不能为空！",'error','',3);
+                return false;
+            }
+
+            if(code.length != 4){
+                tipDialog("验证码长度必须为4！",'error','',3);
+                return false;
+            }
+
+
+            $.ajax({
+                type:"POST",
+                url:"index.php?a=forgetpwd_msg",
+                data:{
+                    code:code,
+                    user:user
+                },
+                success:function (data) {
+                    $("#imgcode").click();
+
+
+                    console.log(data);
+
+
+
+                    if(data.errcode == 1){
+                        tipDialog('验证码错误！','error','',3);
+                        return false;
+
+                    }
+
+                    if(data.errcode == 2){
+                        tipDialog("用户名/E-mail或密码错误！",'error','',3);
+                        return false;
+                    }
+
+
+
+                    if(data.errcode == 3){
+                        tipDialog("登录成功！",'ok','',2);
+                        setTimeout(function(){
+                            window.location='index.php?a=index';
+                        },3000);
+                        return false;
+                    }
+
+                    if(data.errcode == 4){
+                        tipDialog("请先激活邮件，再登录！",'error','',3);
+                        return false;
+                    }
+
+
+                }
+            });
+
+
+
+//                $("#submit2").click();
+//                location.href="javascrpt:;"/*tpa=http://***index.html*/;
+        });
+
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1067 @@
+[ 2017-08-01T14:21:15+08:00 ] 60.29.18.50 /index.php?m=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-08-01T14:21:29+08:00 ] 60.29.18.50 /index.php?m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006989s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006135s ]
+
+[ 2017-08-01T14:21:31+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-08-01T14:21:41+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005993s ]
+
+[ 2017-08-01T14:22:06+08:00 ] 60.29.18.50 /index.php?&m=admin&a=register_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_admin` WHERE `user_name` = 'gcan' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_admin` (`user_name`,`password`,`create_time`) VALUES ('gcan','46594f221b8fd5f5d1f9477c45449a6f','2017-08-01 14:22:06') [ RunTime:0.0653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-08-01T14:22:08+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006228s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006246s ]
+
+[ 2017-08-01T14:22:31+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006267s ]
+
+[ 2017-08-01T14:22:32+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-08-01T14:22:33+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+
+[ 2017-08-01T14:23:35+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+
+[ 2017-08-01T14:23:38+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006973s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+
+[ 2017-08-01T14:23:41+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+
+[ 2017-08-01T14:37:32+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006571s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+ERR: 1146:Table 'tcash.t_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_article`
+
+[ 2017-08-01T14:42:21+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0014s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/www.jifadu.cn/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-08-01T14:42:25+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2017-08-01T14:42:33+08:00 ] 60.29.18.50 /index.php?&m=admin&a=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_admin` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005949s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006029s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 230 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 237 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 243 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 263 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 305 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 1168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-08-01T14:42:36+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_article` ORDER BY create_time desc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/www.jifadu.cn/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005793s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005880s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-08-01T14:42:37+08:00 ] 60.29.18.50 /index.php?&m=admin&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006866s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 241 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 248 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant add_article - assumed 'add_article' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 254 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 274 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 282 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 316 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/1798383a4e64a7ccc79fc395699806e2.php 第 324 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-08-01T14:42:40+08:00 ] 60.29.18.50 /index.php?&m=admin&a=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006764s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_admin` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 230 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 237 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 243 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 263 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 305 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 1168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-08-01T14:43:38+08:00 ] 60.29.18.50 /index.php?&m=admin&a=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_admin` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 230 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 237 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 243 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 263 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 305 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 1168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-08-01T14:44:33+08:00 ] 60.29.18.50 /index.php?&m=admin&a=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006124s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006764s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_admin` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 230 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 237 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 243 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 263 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 271 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 305 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 313 行.
+NOTIC: [8] Undefined index: id /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/b8bd0e0ecae1262e7991fae7d0c8df46.php 第 1168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-08-01T14:46:18+08:00 ] 60.29.18.50 /index.php?&m=admin&a=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-08-01T14:46:21+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-08-01T14:46:30+08:00 ] 60.29.18.50 /index.php?&m=admin&a=register_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006882s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_admin` WHERE `user_name` = 'gcan' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_admin` (`user_name`,`password`,`create_time`) VALUES ('gcan','46594f221b8fd5f5d1f9477c45449a6f','2017-08-01 14:46:30') [ RunTime:0.0581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006320s ]
+
+[ 2017-08-01T14:46:32+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-08-01T14:46:34+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006824s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-08-01T14:46:37+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-08-01T14:46:58+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-08-01T14:46:59+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/www.jifadu.cn/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-08-01T14:47:53+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-08-01T14:47:56+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-08-01T14:48:03+08:00 ] 60.29.18.50 /index.php?&m=admin&a=register_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_admin` WHERE `user_name` = 'gcan' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `t_admin` (`user_name`,`password`,`create_time`) VALUES ('gcan','46594f221b8fd5f5d1f9477c45449a6f','2017-08-01 14:48:03') [ RunTime:0.0611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-08-01T14:48:05+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-08-01T14:48:06+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006799s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-08-01T14:48:09+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2017-08-01T14:48:52+08:00 ] 60.29.18.50 /index.php?&m=admin&a=login_msg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007218s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE `user_name` = 'gcan' AND `password` = '46594f221b8fd5f5d1f9477c45449a6f' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-08-01T14:48:54+08:00 ] 60.29.18.50 /index.php?&m=admin&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006816s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_article` ORDER BY create_time desc  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: tag /home/wwwroot/www.jifadu.cn/Application/Admin/Controller/IndexController.class.php 第 440 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 230 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 237 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 243 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 263 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 271 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 305 行.
+NOTIC: [8] Use of undefined constant news - assumed 'news' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/33d78a532dce9c56cf1d796e9a7153d7.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-08-01T14:48:56+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-08-01T15:35:29+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003738s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006727s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `t_user` WHERE ( uid=3 ) [ RunTime:0.0656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-08-01T15:35:30+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 1155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-08-01T15:41:55+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006486s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_user` ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-08-01T15:42:35+08:00 ] 60.29.18.50 /index.php?&m=admin&a=delete_user&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0005s ]
+SQL: DELETE FROM `t_user` WHERE ( uid=4 ) [ RunTime:0.0702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-08-01T15:42:36+08:00 ] 60.29.18.50 /index.php?&m=admin&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`user_name`,`email`,`admin`,`create_time` FROM `t_admin` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_user` ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005929s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006005s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 230 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 237 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 243 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 263 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 271 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 305 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Use of undefined constant user - assumed 'user' /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 313 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/www.jifadu.cn/Application/Runtime/Cache/Admin/f2ad854573dbf0e17793495ce8b9e81a.php 第 1155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
