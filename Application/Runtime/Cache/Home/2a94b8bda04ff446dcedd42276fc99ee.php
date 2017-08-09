@@ -157,6 +157,7 @@
 
 <body class="home-page">
 <!-- ******HEADER****** -->
+
 <header id="header" class="header navbar-fixed-top">
     <div class="container">
         <h1 class="logo">
@@ -212,6 +213,9 @@
         </nav><!--//main-nav-->
     </div><!--//container-->
 </header><!--//header-->
+
+
+
 
 <!--id="banner_can"-->
 <div class="bg-slider-wrapper2" >
@@ -532,6 +536,8 @@
 
 </div><!--//section-wrapper-->
 
+
+
 <!-- ******FOOTER****** -->
 <footer class="footer" style="background: #253340;">
     <div class="footer-content" style="">
@@ -540,19 +546,19 @@
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
                         <h3 class="title"  style="text-align: center;">
-                            
-                            
+
+
                             <img src="/Public/img/logo.png" >
-                            
-                            
+
+
                         </h3>
                         <p  style="text-align: center;padding-left: 15px;">工作时间：09:00--18:00</p>
                         <!--<ul class="list-unstyled">-->
-                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
-                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
-                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>联系我们</a></li>-->
-                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
-                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>联系我们</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
                         <!--</ul>-->
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
@@ -637,8 +643,8 @@
                                 <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary">提交</button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
-                                 <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                  <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@website.com</a></p>
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@website.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -661,7 +667,7 @@
                         <h3 class="title">Contact us</h3>
                         <p class="adr clearfix">
                             <i class="fa fa-map-marker pull-left"></i>
-                            <span class="adr-group pull-left">       
+                            <span class="adr-group pull-left">
                                     <span class="street-address">College Green</span><br>
                                     <span class="region">56 College Green Road</span><br>
                                     <span class="postal-code">BS1 XR18</span><br>
@@ -699,6 +705,9 @@
         </div><!--//modal-content-->
     </div><!--//modal-dialog-->
 </div><!--//modal-->
+
+
+
 
 
 <script src="/Public/assets/js/core.min.js"></script>

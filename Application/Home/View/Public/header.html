@@ -1,131 +1,56 @@
+<header id="header" class="header navbar-fixed-top">
+    <div class="container">
+        <h1 class="logo">
+            <!--<a href="index.html"><span class="text"><img src="__PUBLIC__/img/logo.png"></span></a>-->
+            <!--<a href="index.html"><img src="__PUBLIC__/img/logo.png"></a>-->
+            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="__PUBLIC__/img/logo.png">
 
+            <!--__PUBLIC__/img/logo.png-->
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active nav-item"><a class="my_center" href="index.html" >首页</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;我要理财 <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 100px;">
+                            <li><a href="download.html">ICO基金</a></li>
+                            <li><a href="blog.html">指数基金</a></li>
+                            <li><a href="blog-single.html">套利基金</a></li>
 
-<!-- Preloader -->
-<div class="preloader"  style="z-index: 10000000;"></div>
-<!--header-style-two-->
-<!-- Main Header-->
-<header class="main-header " style="z-index: 30;">
-    <!-- Header Top -->
-    <div class="header-top">
-        <div class="auto-container clearfix">
-            <!-- Top Left -->
-            <div class="top-left">
-                <ul class="clearfix">
-                    <li><span class="icon fa flaticon-old-typical-phone"></span> <a href="#">+920-637-8294</a></li>
-                    <li><span class="icon fa fa-envelope"></span> <a href="mailto:something@gmail.com">something@gmail.com</a></li>
-                </ul>
-            </div>
-
-            <!-- Top Right -->
-            <div class="top-right">
-                <ul class="clearfix">
-                    <!--<li><a href="#">Career</a></li>-->
-                    <!--<li><a href="#">Privacy Policy</a></li>-->
-                    <!--<li><a href="__PUBLIC__/static/contact.html">Help &amp; Support</a></li>-->
-                    <!--<li><a href="__PUBLIC__/static/faq-1.html">FAQ</a></li>-->
-
-                    <li><a <?php if($account == 'on'){  }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "account";  }else{ echo 'signin';} ?>"><?php if($account == 'on'){ echo "用户中心";  }else{ echo '登录';} ?></a></li>
-                    <li><a href="#">|</a></li>
-                    <li><a <?php if($account == 'on'){  }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "logout";  }else{ echo 'signup';} ?>"><?php if($account == 'on'){ echo "退出";  }else{ echo '注册';} ?></a></li>
-                    <!--<li><a href="__PUBLIC__/static/faq-1.html">FAQ</a></li>-->
-
-
-                </ul>
-            </div>
-
-        </div>
-    </div><!-- Header Top End -->
-
-    <!--Header-Lower-->
-    <div class="header-lower">
-        <div class="auto-container">
-            <div class="outer clearfix">
-                <!--Logo -->
-                <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="__PUBLIC__/img/logo.png" alt=""></a></div>
-
-                    <!--<div class="logo"><a href="index.html"><img src="__PUBLIC__/static/images/logo.png" alt=""></a></div>-->
-                </div>
-
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-
-
-
-
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current "><a href="index.php">首页</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="__PUBLIC__/static/index.html">Homepage One</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/index-2.html">Homepage Two</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class="dropdown"><a href="#">我要理财</a>
-                                <ul>
-                                    <li><a href="about-us-1.html">ICO基金</a></li>
-                                    <li><a href="about-us-2.html">指数基金</a></li>
-                                    <li><a href="about-us-2.html">套利基金</a></li>
-                                    <!--<li class="dropdown"><a href="#">Our Team</a>-->
-                                        <!--<ul>-->
-                                            <!--<li><a href="__PUBLIC__/static/team-grid.html">Team Grid View</a></li>-->
-                                            <!--<li><a href="__PUBLIC__/static/team-single.html">Single Member</a></li>-->
-                                        <!--</ul>-->
-                                    <!--</li>-->
-                                </ul>
-                            </li>
-                            <li class=""><a href="index.php?a=features">产品特色</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="__PUBLIC__/static/services.html">Services Style One</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/services-2.html">Services Style Two</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/single-service.html">Single Service</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class=""><a href="#">安全保障</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="__PUBLIC__/static/faq-1.html">FAQs Style One</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/faq-2.html">FAQs Style Two</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/error-page.html">404 Page</a></li>-->
-                                <!--</ul>-->
-                            </li>
-
-                            <li class=""><a href="index.php?a=faq">问题解答</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="__PUBLIC__/static/blog.html">Blog Classic</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/blog-three-column.html">Blog Three Column</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/blog-single.html">Blog Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
-
-                            <li class=""><a href="index.php?a=about">关于我们</a>
-                                <!--<ul>-->
-                                <!--<li><a href="__PUBLIC__/static/gallery-1.html">Gallery One</a></li>-->
-                                <!--<li><a href="__PUBLIC__/static/gallery-2.html">Gallery Two</a></li>-->
-                                <!--<li><a href="__PUBLIC__/static/gallery-single.html">Gallery Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <!--<li class="dropdown"><a href="#">Contact Us</a>-->
-                                <!--<ul class="from-right">-->
-                                    <!--<li><a href="__PUBLIC__/static/contact.html">Contact Us One</a></li>-->
-                                    <!--<li><a href="__PUBLIC__/static/contact-2.html">Contact Us Two</a></li>-->
-                                <!--</ul>-->
-                            <!--</li>-->
                         </ul>
-                    </div>
-                </nav><!-- Main Menu End-->
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
+                    <li class="nav-item"><a class="my_center"  href="pricing.html">资金管理</a></li>
+                    <li class="nav-item"><a class="my_center"  href="pricing.html">安全保障</a></li>
 
-            </div>
-        </div>
-    </div>
 
-</header>
-<!--End Main Header -->
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;客户服务 <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
+                            <li><a href="download.html">关于我们</a></li>
+                            <li><a href="blog.html">帮助中心</a></li>
+                            <li><a href="blog-single.html">联系我们</a></li>
+
+                        </ul>
+                    </li><!--//dropdown-->
+
+
+
+                    <li class="nav-item"><a class="my_center"  href="login.html">登录</a></li>
+                    <li class="nav-item"><a class="my_center"  href="login.html">注册</a></li>
+                    <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div><!--//container-->
+</header><!--//header-->
+
