@@ -68,7 +68,10 @@ return array(
     '_Header_team_member' => 'Team',
     '_Header_project_plan' => 'Plan',
     '_Header_about_us' => 'About',
-
+    '_Header_Financial' => 'Financial',
+    '_Header_safety' => 'Safety',
+    '_Header_app_download' => 'Downloads',
+    '_Header_customer_service' => 'Service',
 
 
 

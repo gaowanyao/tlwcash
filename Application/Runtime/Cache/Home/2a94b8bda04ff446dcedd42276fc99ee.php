@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/Public/img/ico.ico">
+
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -37,13 +38,12 @@
 
 
     <style>
-
         .my_center{
             text-align: center;
             font-size: 16px;
         }
         @media screen and (max-width: 375px)   {
-            .bg-slider-wrapper2{height: 800px}
+            /*.bg-slider-wrapper2{height: 800px}*/
         }
 
 
@@ -184,6 +184,31 @@
     }
 
 
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(/Public/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
+
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
+    }
+
 </style>
 
 
@@ -196,12 +221,26 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
         <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
+
             <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -211,10 +250,10 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active nav-item"><a class="my_center" href="index.html" >首页</a></li>
+                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;我要理财<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=ico">ICO基金</a></li>
                             <li><a href="index.php?a=exponential">指数基金</a></li>
                             <li><a href="index.php?a=arbitrage">套利基金</a></li>
@@ -222,14 +261,14 @@
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety">安全保障</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=download">APP下载</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;客户服务<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=faq">帮助中心</a></li>
                             <li><a href="index.php?a=about">关于我们</a></li>
 
@@ -243,13 +282,11 @@
 
                     <li class="nav-item">
 
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;简体中文<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
-                            <li><a href="index.php?a=faq">简体中文</a></li>
-                            <li><a href="index.php?a=about">繁体中文</a></li>
-
-                            <li><a href="blog-single.html">English</a></li>
-
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
 
                         <!--<a class="my_center"  href="javascript:;">-->
@@ -268,8 +305,8 @@
                         <!--</a>-->
 
                     </li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin">登录</a></li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup">注册</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
 
 
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
@@ -296,8 +333,8 @@
             <h2 class="title">铜锣湾基金</h2>
             <p class="intro">创立一种新的跨境资产转移、支付协议和去中心化基金平台 <br /> 基于区块链技术，改变传统理财基金</p>
             <p>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html">白皮书</a>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html">ICO细则</a>
+                <a class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_white_book")); ?></a>
+                <a class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_ico_rules")); ?></a>
 
             </p>
 
@@ -532,24 +569,41 @@
             <!--</div>-->
         </div><!--//container-->
     </section><!--//why-->
-    <div style="width: 100%;height: 550px;background-image:url('/Public/img/bgImg.jpg');background-repeat: round">
-        <div class="container">
-            <div class="row" style="margin-top: 50px">
-                <div class="col-sm-12 col-lg-6" >
+    <div style="width: 100%;height:500px;background:url('/Public/img/app-part1-bg.png');<?php if($pc!='pc')echo'height:700px'?> ">
+        <div class="container text-center" style="background:url('/Public/img/app-part1-bg.png');background-repeat: round ">
+            <div class="row" >
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center" >
                     <!--<div  style="width: 585px;height: 450px;background: url('/Public/img/app2-en.png');background-repeat: round"></div>-->
                     <img src="/Public/img/app2-en.png" class="img-responsive" alt="">
                 </div>
-                <div class="col-sm-12 col-lg-5 col-lg-push-1">
-                    <div class="row">
-                        <div col-md-12><h1 style="display: inline-block">TCASH</h1>
-                            <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-11 col-xs-push-1">
-                            <span>安全管理：账户管理</span> <br><span>快速交易：意见交易，安全快捷</span>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1 text-center">
+                    <div class="row" >
+                        <div col-md-12 col-md-push-1><h1 style="display: inline-block">TCASH</h1>
+                            <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p>
                         </div>
-                        <div class="col-xs-11 col-xs-push-1">
-                            <span>最新版本</span><br><span>了解更多</span><br>图片
+                    </div>
+                    <div class="row text-center" >
+                        <div class="col-xs-11  col-lg-6   text-left" style="<?php if($pc=='pc')echo'margin-top: 50px'?>">
+                            <p>安全管理：账户管理</p><p>快速交易：一键交易安全快捷</p>
+                            <span>最新版本</span>&nbsp<a style="text-decoration: none">了解更多</a><br>
+                        </div>
+                        <div class="col-lg-6"></div>
+                        <div class="col-xs-11 col-sm-12 col-md-6 col-lg-6">
+                            <br>
+                            <div style="position:relative;left:30px;width: 190px;height: 70px;background: rgba(0,0,0,0.3);border-radius: 8px;>">&nbsp&nbsp
+                                <i style="position: absolute;left: 10px" class="fa fa-android fa-4x" aria-hidden="true"></i>
+                                <div style="position: absolute;right: 0;top: 0;font-weight: bold">Android&nbsp</div>
+                                <div style="position: absolute;right: 0;bottom: 0;font-weight: bold">立即下载&nbsp</div>
+
+                            </div>
+                            <br>
+                            <div style="position:relative;left:30px;width: 190px;height: 70px;background: rgba(0,0,0,0.3);border-radius: 8px;">&nbsp&nbsp
+                                <i style="position: absolute;left: 10px" class="fa fa-apple fa-4x" aria-hidden="true"></i>
+                                <div style="position: absolute;right: 0;top: 0;font-weight: bold">Iphone&nbsp</div>
+                                <div style="position: absolute;right: 0;bottom: 0;font-weight: bold">立即下载&nbsp</div>
+
+                            </div>
+
                         </div>
                     </div>
 
@@ -558,6 +612,7 @@
         </div>
     </div>
     <!-- ******Testimonials Section****** -->
+    <!--<div style="background:#f5f5f5;width: 100%;height: 30px; "></div>-->
     <section class="section testimonials">
         <div class="container">
             <h2 class="title text-center">团队介绍</h2>
@@ -654,10 +709,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>
@@ -849,6 +904,7 @@
 
     var screenheight = $(window).height();
     console.log(screenheight);
+    $(".constellation").css("height",screenheight);
 
     $(".bg-slider-wrapper").css("height",screenheight);
     $(".bg-slider-wrapper2").css("height",screenheight);

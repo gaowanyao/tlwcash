@@ -63,6 +63,7 @@ return array(
     '_Tag' => '标签',
 
 
+
     '_Header_index' => '首页',
     '_Header_introduction' => '项目介绍',
     '_Header_productdet' => '产品众筹',
@@ -71,6 +72,11 @@ return array(
     '_Header_team_member' => '团队成员',
     '_Header_project_plan' => '项目计划',
     '_Header_about_us' => '关于我们',
+    '_Header_Financial' => '我要理财',
+    '_Header_safety' => '安全保障',
+    '_Header_app_download' => 'APP下載',
+    '_Header_customer_service' => '客户服务',
+
 
 
 //      Index首页页面翻译

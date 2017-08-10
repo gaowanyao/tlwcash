@@ -59,7 +59,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+                <img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
@@ -121,14 +121,14 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>
-                        <p  style="text-align: center;padding-left: 15px;">工作时间：09:00--18:00</p>
+                        <p  style="text-align: center;padding-left: 14px;">工作时间：早09--晚18</p>
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
@@ -144,10 +144,11 @@
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;">关于我们</h3>
-                        <ul class="list-unstyled" style="font-size: 20px;">
+                        <ul class="list-unstyled" style="font-size: 16px;">
                             <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>APP下载&nbsp;&nbsp;</a></li>
                             <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>联系我们&nbsp;&nbsp;</a></li>
+
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
                         </ul>
@@ -165,7 +166,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 18px;">官方微信群</p>
+                        <p style="text-align: center;font-size: 16px;">官方微信群</p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -187,7 +188,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 18px;">官方QQ群</p>
+                        <p style="text-align: center;font-size: 16px;">官方QQ群</p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->

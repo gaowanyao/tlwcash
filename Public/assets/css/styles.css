@@ -3169,7 +3169,8 @@ select {
     margin: 0 auto;
   }
   .header .main-nav .nav .nav-item {
-    margin-right: 10px;
+    /*margin-right: 10px;*/
+    margin-right: 0px;
   }
   .main-nav.navbar-right {
     float: none !important;
@@ -3309,7 +3310,8 @@ select {
     margin: inherit;
   }
   .header .main-nav .nav .nav-item {
-    margin-right: 15px;
+    /*margin-right: 15px;*/
+    margin-right: 0px;
   }
   .main-nav.navbar-right {
     float: right !important;

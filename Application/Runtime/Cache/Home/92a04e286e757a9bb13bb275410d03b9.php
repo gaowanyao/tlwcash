@@ -44,10 +44,37 @@
         font-size: 16px;
     }
 
-    .top{
+
+    #header,#header.container,body{
+
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
+
+    }
 
 
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(/Public/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
 
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
     }
 
 </style>
@@ -62,12 +89,26 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
         <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
+
             <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -77,10 +118,10 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active nav-item"><a class="my_center" href="index.html" >首页</a></li>
+                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;我要理财<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=ico">ICO基金</a></li>
                             <li><a href="index.php?a=exponential">指数基金</a></li>
                             <li><a href="index.php?a=arbitrage">套利基金</a></li>
@@ -88,14 +129,14 @@
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety">安全保障</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=download">APP下载</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;客户服务<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=faq">帮助中心</a></li>
                             <li><a href="index.php?a=about">关于我们</a></li>
 
@@ -109,13 +150,11 @@
 
                     <li class="nav-item">
 
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;简体中文<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
-                            <li><a href="index.php?a=faq">简体中文</a></li>
-                            <li><a href="index.php?a=about">繁体中文</a></li>
-
-                            <li><a href="blog-single.html">English</a></li>
-
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
 
                         <!--<a class="my_center"  href="javascript:;">-->
@@ -134,8 +173,8 @@
                         <!--</a>-->
 
                     </li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin">登录</a></li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup">注册</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
 
 
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
@@ -159,7 +198,7 @@
             帮助中心
             <!--30 day <span class="highlight">FREE</span> trial with all plans!-->
         </h2>
-        <p class="intro text-center">为您的投资专业解答</p>
+        <p class="intro text-center" style="font-size: 25px;font-weight: 600;">为您的投资专业解答</p>
     </div><!--//container-->
 </section><!--//pricing-->
 
@@ -171,166 +210,121 @@
             <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i>Can I viverra sit amet quam eget lacinia?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i>
+                                政策风险
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq1">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。
                         </div>
                     </div>
                 </div><!--//panel-->
 
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i>What is the ipsum dolor sit amet quam tortor?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i>
+                                信用风险
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq2">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            发行人可能出现违约情形或者交易对手方未能按约履行的情形。
                         </div>
                     </div>
                 </div><!--//panel-->
 
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i>How does the morbi quam tortor work?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i>
+                                市场风险
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq3">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            金融产品的基础资产价值受未来市场的不确定影响，产生的收益波动。
                         </div>
                     </div>
                 </div><!--//panel-->
 
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i>Can I ipsum dolor sit amet nascetur ridiculus?</a></h4>
-                    </div>
 
-                    <div class="panel-collapse collapse" id="faq4">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div><!--//panel-->
 
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i>Is it possible to tellus eget auctor condimentum?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i>
+                                合规风险
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq5">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            金融产品的管理人的管理运作不符合法律法规和合同规定，可能造成的风险。
                         </div>
                     </div>
                 </div><!--//panel-->
 
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i>Would it elementum turpis semper imperdiet?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i>
+                                管理风险
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq6">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            管理人和发行人受经验、技能、判断力、执行力等方面的限制，可能对产品的运作及管理造成一定影响。
                         </div>
                     </div>
                 </div><!--//panel-->
 
+
                 <div class="panel">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><a data-parent="#accordion"
-                                                   data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-plus-square"></i>How can I imperdiet lorem sem non nisl?</a></h4>
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i>
+                                不可抗力及意外事件
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="faq4">
+                        <div class="panel-body">
+                            包括但不限于自然灾害、金融市场危机、战争或国家政策变化等。
+                        </div>
+                    </div>
+                </div><!--//panel-->
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-plus-square"></i>
+                                其他数字货币和区块链技术问题
+                            </a>
+                        </h4>
                     </div>
 
                     <div class="panel-collapse collapse" id="faq7">
                         <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia
-                            aute, non cupidatat skateboard dolor brunch. Food truck
-                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                            sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditch et. Nihil anim keffiyeh
-                            helvetica, craft beer labore wes anderson cred nesciunt
-                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                            Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them
-                            accusamus labore sustainable VHS.
+                            相对于比特币/莱特币这些去中心化的数字货币在市值还小的情况下无法兼顾流动性良好和币值稳定两个目标。Tcash是中心化发行，一定程度上应用区块链技术中的特性去中心化运营、来相对稳定币值、以流通为目的数字货币，即能解决法币流通中的流动性问题，又能解决比特币、莱特币流通中价值波动的问题。
                         </div>
                     </div>
                 </div><!--//panel-->
 
-                <div class="panel">
+                <div class="panel" style="display: none;">
                     <div class="panel-heading">
                         <h4 class="panel-title"><a data-parent="#accordion"
                                                    data-toggle="collapse" class="panel-toggle" href="#faq8"><i class="fa fa-plus-square"></i>Can I imperdiet massa ut?</a></h4>
@@ -391,10 +385,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>

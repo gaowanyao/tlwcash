@@ -71,7 +71,10 @@ return array(
     '_Header_team_member' => '團隊成員',
     '_Header_project_plan' => '項目計畫',
     '_Header_about_us' => '關於我們',
-
+    '_Header_Financial' => '我要理財',
+    '_Header_safety' => '安全保障',
+    '_Header_app_download' => 'APP下載',
+    '_Header_customer_service' => '客戶服務',
 
 
 

@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="__PUBLIC__/img/ico.ico">
+
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -37,13 +38,12 @@
 
 
     <style>
-
         .my_center{
             text-align: center;
             font-size: 16px;
         }
         @media screen and (max-width: 375px)   {
-            .bg-slider-wrapper2{height: 800px}
+            /*.bg-slider-wrapper2{height: 800px}*/
         }
 
 
@@ -181,8 +181,8 @@
             <h2 class="title">铜锣湾基金</h2>
             <p class="intro">创立一种新的跨境资产转移、支付协议和去中心化基金平台 <br /> 基于区块链技术，改变传统理财基金</p>
             <p>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html">白皮书</a>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html">ICO细则</a>
+                <a class="btn btn-cta btn-cta-primary" href="signup.html">{$Think.lang._Home_white_book}</a>
+                <a class="btn btn-cta btn-cta-primary" href="signup.html">{$Think.lang._Home_ico_rules}</a>
 
             </p>
 
@@ -417,24 +417,41 @@
             <!--</div>-->
         </div><!--//container-->
     </section><!--//why-->
-    <div style="width: 100%;height: 550px;background-image:url('__PUBLIC__/img/bgImg.jpg');background-repeat: round">
-        <div class="container">
-            <div class="row" style="margin-top: 50px">
-                <div class="col-sm-12 col-lg-6" >
+    <div style="width: 100%;height:500px;background:url('__PUBLIC__/img/app-part1-bg.png');<?php if($pc!='pc')echo'height:700px'?> ">
+        <div class="container text-center" style="background:url('__PUBLIC__/img/app-part1-bg.png');background-repeat: round ">
+            <div class="row" >
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center" >
                     <!--<div  style="width: 585px;height: 450px;background: url('__PUBLIC__/img/app2-en.png');background-repeat: round"></div>-->
                     <img src="__PUBLIC__/img/app2-en.png" class="img-responsive" alt="">
                 </div>
-                <div class="col-sm-12 col-lg-5 col-lg-push-1">
-                    <div class="row">
-                        <div col-md-12><h1 style="display: inline-block">TCASH</h1>
-                            <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-11 col-xs-push-1">
-                            <span>安全管理：账户管理</span> <br><span>快速交易：意见交易，安全快捷</span>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1 text-center">
+                    <div class="row" >
+                        <div col-md-12 col-md-push-1><h1 style="display: inline-block">TCASH</h1>
+                            <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p>
                         </div>
-                        <div class="col-xs-11 col-xs-push-1">
-                            <span>最新版本</span><br><span>了解更多</span><br>图片
+                    </div>
+                    <div class="row text-center" >
+                        <div class="col-xs-11  col-lg-6   text-left" style="<?php if($pc=='pc')echo'margin-top: 50px'?>">
+                            <p>安全管理：账户管理</p><p>快速交易：一键交易安全快捷</p>
+                            <span>最新版本</span>&nbsp<a style="text-decoration: none">了解更多</a><br>
+                        </div>
+                        <div class="col-lg-6"></div>
+                        <div class="col-xs-11 col-sm-12 col-md-6 col-lg-6">
+                            <br>
+                            <div style="position:relative;left:30px;width: 190px;height: 70px;background: rgba(0,0,0,0.3);border-radius: 8px;>">&nbsp&nbsp
+                                <i style="position: absolute;left: 10px" class="fa fa-android fa-4x" aria-hidden="true"></i>
+                                <div style="position: absolute;right: 0;top: 0;font-weight: bold">Android&nbsp</div>
+                                <div style="position: absolute;right: 0;bottom: 0;font-weight: bold">立即下载&nbsp</div>
+
+                            </div>
+                            <br>
+                            <div style="position:relative;left:30px;width: 190px;height: 70px;background: rgba(0,0,0,0.3);border-radius: 8px;">&nbsp&nbsp
+                                <i style="position: absolute;left: 10px" class="fa fa-apple fa-4x" aria-hidden="true"></i>
+                                <div style="position: absolute;right: 0;top: 0;font-weight: bold">Iphone&nbsp</div>
+                                <div style="position: absolute;right: 0;bottom: 0;font-weight: bold">立即下载&nbsp</div>
+
+                            </div>
+
                         </div>
                     </div>
 
@@ -443,6 +460,7 @@
         </div>
     </div>
     <!-- ******Testimonials Section****** -->
+    <!--<div style="background:#f5f5f5;width: 100%;height: 30px; "></div>-->
     <section class="section testimonials">
         <div class="container">
             <h2 class="title text-center">团队介绍</h2>
@@ -564,6 +582,7 @@
 
     var screenheight = $(window).height();
     console.log(screenheight);
+    $(".constellation").css("height",screenheight);
 
     $(".bg-slider-wrapper").css("height",screenheight);
     $(".bg-slider-wrapper2").css("height",screenheight);

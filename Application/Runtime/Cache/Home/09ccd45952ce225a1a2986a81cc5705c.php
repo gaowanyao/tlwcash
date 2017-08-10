@@ -45,10 +45,37 @@
         font-size: 16px;
     }
 
-    .top{
+
+    #header,#header.container,body{
+
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
+
+    }
 
 
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(/Public/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
 
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
     }
 
 </style>
@@ -63,12 +90,26 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
         <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
+
             <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -78,10 +119,10 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active nav-item"><a class="my_center" href="index.html" >首页</a></li>
+                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;我要理财<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=ico">ICO基金</a></li>
                             <li><a href="index.php?a=exponential">指数基金</a></li>
                             <li><a href="index.php?a=arbitrage">套利基金</a></li>
@@ -89,14 +130,14 @@
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety">安全保障</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=download">APP下载</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;客户服务<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
                             <li><a href="index.php?a=faq">帮助中心</a></li>
                             <li><a href="index.php?a=about">关于我们</a></li>
 
@@ -107,27 +148,36 @@
 
 
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin">登录</a></li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup">注册</a></li>
+
                     <li class="nav-item">
 
-                        <a class="my_center"  href="javascript:;">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
 
+                        <!--<a class="my_center"  href="javascript:;">-->
 
-                            <!--注册-->
-                            <select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">
-                                <option value="zh-cn">简体中文</option>
-                                <option value="zh-tw">繁体中文</option>
-                                <option value="en-us">English</option>
-                                <i class="fa fa-angle-down"></i>
+                            <!---->
+                            <!---->
 
-                            </select>
-                        </a>
+                            <!--&lt;!&ndash;注册&ndash;&gt;-->
+                            <!--<select id="language" onchange="change()" style="appearance:button;background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                                <!--<option value="zh-cn">简体中文</option>-->
+                                <!--<option value="zh-tw">繁体中文</option>-->
+                                <!--<option value="en-us">English</option>-->
+                                <!--<i class="fa fa-angle-down"></i>-->
 
-
-
+                            <!--</select>-->
+                        <!--</a>-->
 
                     </li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
+
+
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
                 </ul><!--//nav-->
             </div><!--//navabr-collapse-->
@@ -178,10 +228,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>

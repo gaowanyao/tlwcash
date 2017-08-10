@@ -40,11 +40,39 @@ class IndexController extends Controller
             $this->assign("pc","notpc");
         }
 
+        $this->assign("action_url", "index.php?a=".ACTION_NAME);
+
+        if(!empty($_COOKIE['think_language'])){
+            if($_COOKIE['think_language'] == 'en-us'){
+                $this->assign("language","English");
+            }else if($_COOKIE['think_language'] == 'zh-cn'){
+                $this->assign("language","简体中文");
+            }else if($_COOKIE['think_language'] == 'zh-tw'){
+                $this->assign("language","繁体中文");
+            }else{
+                $this->assign("language","简体中文");
+            }
+        }else{
+            $this->assign("language","简体中文");
+
+        }
 
     }
 
 
 
+    public function kk(){
+        $this->judge();
+        dump($_SESSION);
+        dump($_COOKIE);
+        dump($_SESSION);
+        dump($_SESSION);
+        dump($_SESSION);
+
+//        $_SESSION['num'] = 0;
+//        dump($_SESSION);
+//        dump(session('num'));
+    }
     /**
      * Author:阿耀王子
      * ajax获取手机验证码 注册
@@ -177,13 +205,6 @@ class IndexController extends Controller
     }
 
 
-    public function kk(){
-
-//        $_SESSION['num'] = 0;
-//        dump($_SESSION);
-//        dump(session('num'));
-    }
-
 
     /**
      * Author:阿耀王子
@@ -295,6 +316,13 @@ class IndexController extends Controller
     }
 
 
+    public function bb(){
+        dump( ACTION_NAME  );
+        dump(__ACTION__ );
+        dump(__ACTION__ );
+        dump(__ACTION__ );
+    }
+
     /**
      * Author:阿耀王子
      * 主页
@@ -303,7 +331,10 @@ class IndexController extends Controller
 
 
 
+
         $this->judge();
+
+
 
         $time = time();
 
