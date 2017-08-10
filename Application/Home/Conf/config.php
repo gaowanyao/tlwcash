@@ -21,6 +21,9 @@ return array(
         'SESSION_EXPIRE' => '72',
     ),
 
+    'CODE_NAME' => 'Tcash',
+    'CODE_USER_NAME' => 'gcan',
+    'CODE_USER_PASS' => 'gaowanyao123456'
 
 
 

@@ -18,6 +18,8 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="/Public/assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="/Public/assets/plugins/flexslider/flexslider.css">
+    <!--index css  server six parts-->
+    <link rel="stylesheet" href="/Public/style/hover/css/component.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="/Public/assets/css/styles.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,7 +42,9 @@
             text-align: center;
             font-size: 16px;
         }
-
+        @media screen and (max-width: 375px)   {
+            .bg-slider-wrapper2{height: 800px}
+        }
 
 
         /*banner重写*/
@@ -148,7 +152,9 @@
 
 
         }
-
+        a{
+        text-decoration: none;
+        }
 
 
     </style>
@@ -158,7 +164,34 @@
 <body class="home-page">
 <!-- ******HEADER****** -->
 
+
+<style>
+
+    .scrolled{
+        background: #304153 !important;
+    }
+
+    .my_center{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    #header,#header.container,body{
+
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
+
+    }
+
+
+</style>
+
+
 <header id="header" class="header navbar-fixed-top">
+    <!--<div class="top" >-->
+        <!--<span>欢迎来到铜锣湾比特币基金</span>-->
+    <!--</div>-->
+
     <div class="container">
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
@@ -180,33 +213,65 @@
                 <ul class="nav navbar-nav">
                     <li class="active nav-item"><a class="my_center" href="index.html" >首页</a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;我要理财 <i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;我要理财<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 100px;">
-                            <li><a href="download.html">ICO基金</a></li>
-                            <li><a href="blog.html">指数基金</a></li>
-                            <li><a href="blog-single.html">套利基金</a></li>
+                            <li><a href="index.php?a=ico">ICO基金</a></li>
+                            <li><a href="index.php?a=exponential">指数基金</a></li>
+                            <li><a href="index.php?a=arbitrage">套利基金</a></li>
 
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="pricing.html">资金管理</a></li>
-                    <li class="nav-item"><a class="my_center"  href="pricing.html">安全保障</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety">安全保障</a></li>
+
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=download">APP下载</a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;客户服务 <i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;客户服务<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
-                            <li><a href="download.html">关于我们</a></li>
-                            <li><a href="blog.html">帮助中心</a></li>
-                            <li><a href="blog-single.html">联系我们</a></li>
+                            <li><a href="index.php?a=faq">帮助中心</a></li>
+                            <li><a href="index.php?a=about">关于我们</a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
                         </ul>
                     </li><!--//dropdown-->
 
 
 
-                    <li class="nav-item"><a class="my_center"  href="login.html">登录</a></li>
-                    <li class="nav-item"><a class="my_center"  href="login.html">注册</a></li>
+
+                    <li class="nav-item">
+
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;简体中文<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 100px;">
+                            <li><a href="index.php?a=faq">简体中文</a></li>
+                            <li><a href="index.php?a=about">繁体中文</a></li>
+
+                            <li><a href="blog-single.html">English</a></li>
+
+                        </ul>
+
+                        <!--<a class="my_center"  href="javascript:;">-->
+
+                            <!---->
+                            <!---->
+
+                            <!--&lt;!&ndash;注册&ndash;&gt;-->
+                            <!--<select id="language" onchange="change()" style="appearance:button;background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                                <!--<option value="zh-cn">简体中文</option>-->
+                                <!--<option value="zh-tw">繁体中文</option>-->
+                                <!--<option value="en-us">English</option>-->
+                                <!--<i class="fa fa-angle-down"></i>-->
+
+                            <!--</select>-->
+                        <!--</a>-->
+
+                    </li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin">登录</a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup">注册</a></li>
+
+
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
                 </ul><!--//nav-->
             </div><!--//navabr-collapse-->
@@ -226,7 +291,7 @@
 
 
     </div>
-    <section class="promo section section-on-bg" >
+    <section class="promo section section-on-bg">
         <div class="container text-center">
             <h2 class="title">铜锣湾基金</h2>
             <p class="intro">创立一种新的跨境资产转移、支付协议和去中心化基金平台 <br /> 基于区块链技术，改变传统理财基金</p>
@@ -236,7 +301,7 @@
 
             </p>
 
-            <table style="width: 260px;margin: 0 auto;margin-top:10px;background: transparent;height: 40px;text-align: center;">
+            <table style="width: 260px;margin: 0 auto;margin-top:50px;background: transparent;height: 40px;text-align: center;">
 
                 <tr>
                     <td  class="time_number my_day">00</td>
@@ -291,168 +356,211 @@
 <div class="sections-wrapper">
 
     <!-- ******Why Section****** -->
-    <section id="why" class="section why">
-        <div class="container">
-            <h2 class="title text-center">项目介绍</h2>
-            <p class="intro text-center" style="max-width: 100%;">铜锣湾基金（英文名：Tcash）是基于成熟、开源的区块链技术。可以与法币或者其他数字货币进行正常的全球跨境支付、跨境无风险套利、与交易所融资融币、场外OTC等商业交易,也可以用于日常消费使用。运营团队确保流通中的Tcash始终有超过其价值的数字资产作为储备金与之对应，达到维持Tcash价格稳定的目标。</p>
+    <section id="why" class="section why" >
+        <div class="container" style="margin-top: -60px;">
+            <div style="display: flex;justify-content: center;align-items: center">
+                <div style="width: 80px;height: 3px;background: black;margin-right: 10px;margin-top: -20px;"></div>
+                <h2 class="title text-center" style="margin-bottom: 20px">项目介绍</h2>
+                <div style="width: 80px;height: 3px;background: black;margin-left: 10px;margin-top: -20px;"></div>
+            </div>
+
+            <p class="intro text-center" style="max-width: 100%;color: #444">
+                铜锣湾基金（英文名：Tcash）是基于成熟、开源的区块链技术。
+                可以与法币或者其他数字货币进行正常的全球跨境支付、跨境无风险套利、与交易所融资融币、
+                场外OTC等商业交易,也可以用于日常消费使用。运营团队确保流通中的Tcash始终有超过其价值的数字资
+                产作为储备金与之对应，达到维持Tcash价格稳定的目标。
+            </p>
 
 
-            <div class="container">
-                <div class="services" id="services">
-                    <div class="ser-top wthree-3 wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <h3>Our Services </h3>
-                        <p>Sharetribe's built-in payment system allows your merchants to accept both PayPal system allows your of major credit cards.</p>
+            <!--<div class="container">-->
+                <div class="services" id="services" style="text-align: center;">
+                    <div class="col-md-4  ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                                <a href="#" style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
+                            </div>
+                        <h4 >全球跨境无风险套利</h4>
+                        <p class="intro text-center" style="max-width: 100%;color: #444">由于国情不同，在国内交易所的数字货币价格不同，有时候价格差别在10%-15%，我们在全球主流交易所都注册账户，每个账户都用法币来做账户备用金如果价格差别较大，
+                            就在价格低的交易所买入，在价格高的交易所卖出。当各大交易所价格稳定的时候，通过数字货币来对冲账户，实现无风险套利。</p>
                     </div>
                     <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-                        <h4>Retina Display</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin  vestibulum velit.Lorem ipsum ultricies.</p>
+                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
+                        </div>
+                        <h4>全球场外OTC交易</h4>
+                        <p class="intro text-center" style="max-width: 100%;color: #444">
+                            指在全球主要地区都有专门的交易员，
+                            我们的客户提供比特币等数字货币业务咨询、代理购买、P2P方式交易，
+                            通过该业务服务两种人群，第一种是有投资能力但不懂如何买卖数字货币的人群，第二种是数字货币高频交易人群，
+                            这个业务开展的方式主要通过社交软件、网络支付、手机钱包来完成。
+                        </p>
                     </div>
                     <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                        <h4>SEO Optimized</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum Lorem ipsum velit.</p>
-                    </div>
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
-                        <h4>Animation Effects</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies Lorem ipsum dolor sit amet.</p>
+                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                            <a  href="#" style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
+                        </div>
+                        <h4>以太坊域名投资</h4>
+                        <p class="intro text-center" style="max-width: 100%;color: #444">域名交易是指个人或商业团体，将自己所注册的尚未到期且属于自己的互联网域名通过有偿方式授权，给中介网站和域名平台网站转让、
+                            出售等方式进行所属权变更的行为。注册以.eth为后缀的域名ENS是以太坊域名服务，一个基于以太坊的分布式，开放和可扩展的域名系统。
+
+                        </p>
                     </div>
 
 
                     <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                        <h4>Clean Modern Code</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit sit amet.</p>
+                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-earth">Partners</a>
+                        </div>
+                        <h4>全球跨境支付结算</h4>
+                        <p class="intro text-center" style="max-width: 100%;color: #444">对于国内的企业希望在海外采购，或者海外的企业希望在国内采购，总之如果有需求将法币转到海外变成美金，或者有需求将美金转到国内变成人民币，
+                            都可以申请我们的全球结算业务，我们通过在主流国家准备备用基金实现对冲，在通过数字货币来高效、安全的交易，通过数字货币可以额度高、速度快、费率低。
+                        </p>
                     </div>
                     <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                        <h4>Google Fonts</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit Lorem ipsum.</p>
+                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-contract">Contact</a>
+                        </div>
+                        <h4>全球交易所融资融币</h4>
+                        <p class="intro text-center" style="max-width: 100%;color: #444">Tcash融资融币为p2p模式，由于全球各大交易所，用户跟用户之间借款和放款，所有的借款金额和放款利率都是由用户定，
+                            利率浮动由市场调节。所得炒币用户在交易所都有
+                            一定的账户资金我们通过配资的方式给用户增加杠杆， 通过爆仓机制来控制风险，
+                            我们只收取等额的手续费，按天计费或者按月计费。</p>
                     </div>
                     <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                        <h4>Fully Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit dolor sit amet.</p>
+                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
+                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-refresh">Refresh</a>
+                        </div>
+                        <h4>全球自由兑换流动</h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444">在Tcash发行初期就可以自由流动，虚拟数字货币之间自由兑换。在自由流通过程中，Tcash应对区块链的特点有所取舍。
+                               借鉴区块链技术防止货币被重复使用、交易不可逆转的特点。Tcash数字货币采用比特币去中心化技术，
+                                进行修改了比特币的核心代码，进行了区块链技术创新，创造出可找回、高防盗性的数字货币钱包。
+                               </p>
                     </div>
                     <div class="clearfix"></div>
 
                 </div>
-            </div>
+            <!--</div>-->
 
 
 
 
-            <div class="row item">
-                <div class="content col-xs-12 col-md-4">
-                    <h3 class="title">Save you time and effort</h3>
-                    <div class="desc">
-                        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-                        <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
-                    </div>
-                    <div class="quote">
-                        <div class="quote-profile">
-                            <img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-1.png" alt="" />
-                        </div><!--//profile-->
-                        <div class="quote-content">
-                            <blockquote><p><a href="" target="_blank">@velocity</a> Love it! Thank you for making my life easier and saving me time! I’ll definitely recommend it to my friends. :)</p></blockquote>
-                            <p class="source">@LisaW, Bristol</p>
-                        </div><!--//quote-content-->
-                    </div><!--//quote-->
-                </div><!--//content-->
-                <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/assets/images/figures/figure-1.png" alt="" />
-                    <figcaption class="figure-caption">(Screenshot: Coral - App &amp; website startup kit) </figcaption>
-                </figure>
-            </div><!--//item-->
+            <!--<div class="row item">-->
+                <!--<div class="content col-xs-12 col-md-4">-->
+                    <!--<h3 class="title">Save you time and effort</h3>-->
+                    <!--<div class="desc">-->
+                        <!--<p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>-->
+                        <!--<p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>-->
+                    <!--</div>-->
+                    <!--<div class="quote">-->
+                        <!--<div class="quote-profile">-->
+                            <!--<img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-1.png" alt="" />-->
+                        <!--</div>&lt;!&ndash;//profile&ndash;&gt;-->
+                        <!--<div class="quote-content">-->
+                            <!--<blockquote><p><a href="" target="_blank">@velocity</a> Love it! Thank you for making my life easier and saving me time! I’ll definitely recommend it to my friends. :)</p></blockquote>-->
+                            <!--<p class="source">@LisaW, Bristol</p>-->
+                        <!--</div>&lt;!&ndash;//quote-content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//quote&ndash;&gt;-->
+                <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                <!--<figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">-->
+                    <!--<img class="img-responsive" src="/Public/assets/images/figures/figure-1.png" alt="" />-->
+                    <!--<figcaption class="figure-caption">(Screenshot: Coral - App &amp; website startup kit) </figcaption>-->
+                <!--</figure>-->
+            <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
-            <div class="row item">
-                <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
-                    <h3 class="title">Works across all devices</h3>
-                    <div class="desc">
-                        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-                        <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
-                        <p><i class="fa fa-download"></i> <a href="download.html">Download mobile versions</a></p>
-                    </div>
+            <!--<div class="row item">-->
+                <!--<div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">-->
+                    <!--<h3 class="title">Works across all devices</h3>-->
+                    <!--<div class="desc">-->
+                        <!--<p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>-->
+                        <!--<p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>-->
+                        <!--<p><i class="fa fa-download"></i> <a href="download.html">Download mobile versions</a></p>-->
+                    <!--</div>-->
 
-                    <div class="quote">
-                        <div class="quote-profile">
-                            <img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-2.png" alt="" />
-                        </div><!--//profile-->
-                        <div class="quote-content">
-                            <blockquote><p>I find the mobile app very useful when I'm on the go. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></blockquote>
-                            <p class="source">@JackT, San Francisco</p>
-                        </div><!--//quote-content-->
-                    </div><!--//quote-->
-                </div><!--//content-->
-                <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/assets/images/figures/figure-2.png" alt="" />
-                    <div class="control text-center">
-                        <button type="button" class="play-trigger" data-toggle="modal" data-target="#modal-video"><i class="fa fa-play"></i></button>
-                    </div><!--//control-->
-                </figure>
-            </div><!--//item-->
+                    <!--<div class="quote">-->
+                        <!--<div class="quote-profile">-->
+                            <!--<img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-2.png" alt="" />-->
+                        <!--</div>&lt;!&ndash;//profile&ndash;&gt;-->
+                        <!--<div class="quote-content">-->
+                            <!--<blockquote><p>I find the mobile app very useful when I'm on the go. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></blockquote>-->
+                            <!--<p class="source">@JackT, San Francisco</p>-->
+                        <!--</div>&lt;!&ndash;//quote-content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//quote&ndash;&gt;-->
+                <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                <!--<figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">-->
+                    <!--<img class="img-responsive" src="/Public/assets/images/figures/figure-2.png" alt="" />-->
+                    <!--<div class="control text-center">-->
+                        <!--<button type="button" class="play-trigger" data-toggle="modal" data-target="#modal-video"><i class="fa fa-play"></i></button>-->
+                    <!--</div>&lt;!&ndash;//control&ndash;&gt;-->
+                <!--</figure>-->
+            <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
-            <div class="row item ">
-                <div class="content col-xs-12 col-md-4">
-                    <h3 class="title">Easy to customise</h3>
-                    <div class="desc">
-                        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-                        <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
-                    </div>
-                    <div class="quote">
-                        <div class="quote-profile">
-                            <img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-3.png" alt="" />
-                        </div><!--//profile-->
-                        <div class="quote-content">
-                            <blockquote><p>Nice template! It’s practical and there is no gimmicks. Very easy to customise as well!</p></blockquote>
-                            <p class="source"><a href="#">@AlexD</a>, London</p>
-                        </div><!--//quote-content-->
-                    </div><!--//quote-->
-                </div><!--//content-->
-                <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/assets/images/figures/figure-3.png" alt="" />
-                    <figcaption class="figure-caption">(Screenshot: <a href="website-templates/responsive-bootstrap-theme-for-startups-tempo/?ref=3wm" target="_blank">Tempo - Bootstrap template for startups)</a> </figcaption>
+            <!--<div class="row item ">-->
+                <!--<div class="content col-xs-12 col-md-4">-->
+                    <!--<h3 class="title">Easy to customise</h3>-->
+                    <!--<div class="desc">-->
+                        <!--<p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>-->
+                        <!--<p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>-->
+                    <!--</div>-->
+                    <!--<div class="quote">-->
+                        <!--<div class="quote-profile">-->
+                            <!--<img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-3.png" alt="" />-->
+                        <!--</div>&lt;!&ndash;//profile&ndash;&gt;-->
+                        <!--<div class="quote-content">-->
+                            <!--<blockquote><p>Nice template! It’s practical and there is no gimmicks. Very easy to customise as well!</p></blockquote>-->
+                            <!--<p class="source"><a href="#">@AlexD</a>, London</p>-->
+                        <!--</div>&lt;!&ndash;//quote-content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//quote&ndash;&gt;-->
+                <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                <!--<figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">-->
+                    <!--<img class="img-responsive" src="/Public/assets/images/figures/figure-3.png" alt="" />-->
+                    <!--<figcaption class="figure-caption">(Screenshot: <a href="website-templates/responsive-bootstrap-theme-for-startups-tempo/?ref=3wm" target="_blank">Tempo - Bootstrap template for startups)</a> </figcaption>-->
 
-                </figure>
-            </div><!--//item-->
+                <!--</figure>-->
+            <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+            <!--<hr>-->
+            <!--<div class="row item last-item">-->
+                <!--&lt;!&ndash;<div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">&ndash;&gt;-->
+                <!--<div class="content">-->
+                    <!--<div class="col-lg-12" style="width: 100%;height: 300px;background-image:url('/Public/img/bgImg.jpg')"></div>-->
+                <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
 
-            <div class="row item last-item">
-                <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
-                    <h3 class="title">Connect your users</h3>
-                    <div class="desc">
-                        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-                        <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
-
-                    </div>
-
-                    <div class="quote">
-                        <div class="quote-profile">
-                            <img class="img-responsive img-circle" src="/Public/assets/images/people/profile-s-4.png" alt="" />
-                        </div><!--//profile-->
-                        <div class="quote-content">
-                            <blockquote><p>I can connect to like-minded people lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></blockquote>
-                            <p class="source">@JackT, San Francisco</p>
-                        </div><!--//quote-content-->
-                    </div><!--//quote-->
-                </div><!--//content-->
-                <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/assets/images/figures/figure-4.png" alt="" />
-                </figure>
-            </div><!--//item-->
+            <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
 
-            <div class="feature-lead text-center">
-                <h4 class="title">Want to discover all the features?</h4>
-                <p><a class="btn btn-cta btn-cta-secondary" href="features.html">Take a Tour</a></p>
-            </div>
+            <!--<div class="feature-lead text-center">-->
+                <!--<h4 class="title">Want to discover all the features?</h4>-->
+                <!--<p><a class="btn btn-cta btn-cta-secondary" href="features.html">Take a Tour</a></p>-->
+            <!--</div>-->
         </div><!--//container-->
     </section><!--//why-->
+    <div style="width: 100%;height: 550px;background-image:url('/Public/img/bgImg.jpg');background-repeat: round">
+        <div class="container">
+            <div class="row" style="margin-top: 50px">
+                <div class="col-sm-12 col-lg-6" >
+                    <!--<div  style="width: 585px;height: 450px;background: url('/Public/img/app2-en.png');background-repeat: round"></div>-->
+                    <img src="/Public/img/app2-en.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-5 col-lg-push-1">
+                    <div class="row">
+                        <div col-md-12><h1 style="display: inline-block">TCASH</h1>
+                            <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-11 col-xs-push-1">
+                            <span>安全管理：账户管理</span> <br><span>快速交易：意见交易，安全快捷</span>
+                        </div>
+                        <div class="col-xs-11 col-xs-push-1">
+                            <span>最新版本</span><br><span>了解更多</span><br>图片
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ******Testimonials Section****** -->
     <section class="section testimonials">
         <div class="container">
-            <h2 class="title text-center">What are people saying about Velocity?</h2>
+            <h2 class="title text-center">团队介绍</h2>
             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
@@ -461,21 +569,21 @@
                 </ol><!--//carousel-indicators-->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <figure class="profile"><img src="/Public/assets/images/people/profile-m-1.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/assets/images/people/shen.jpg" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>We used Velocity as a front-end design template for our product site. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit tortor, consectetur vitae varius at, interdum eget libero. Morbi.</p>
+                                <p>多年IT技术工作，Intel技术大使，触控首席CVP,微软技术专家MCSE,曾编写《解密比特币》、《游戏开发原理》等书籍。</p>
                             </blockquote>
                             <p class="source">Kevin Knight<br /><span class="title">Co-Founder, Startup Hub</span></p>
                         </div><!--//content-->
                     </div><!--//item-->
                     <div class="item">
-                        <figure class="profile"><img src="/Public/assets/images/people/profile-m-2.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/assets/images/people/chang.jpg" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                                <p>从事互联网产品运营十年余年，期间主导并参与多款游戏产品的运营和发行工作，曾负责空中网旗下《天劫OL》《天劫贰OL》《封神OL》《梦幻天劫》等知名产品运营发行，目前主要负责颐博数码自研及代理产品运营对外发行。</p>
                             </blockquote>
                             <p class="source">Diana	Luna<br /><span class="title">Entrepreneur, Maecenas</span></p>
                         </div><!--//content-->
@@ -497,36 +605,36 @@
     </section><!--//testimonials-->
 
     <!-- ******Press Section****** -->
-    <section class="section press">
-        <div class="container text-center">
-            <h2 class="title">Press Coverage</h2>
-            <ul class="press-list list-inline row">
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-1.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-2.png" alt="" /></a></li>
-                <li class="xs-break col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-3.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-4.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-5.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-6.png" alt="" /></a></li>
-            </ul><!--//press-list-->
-            <ul class="press-list list-inline row last">
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-7.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-8.png" alt="" /></a></li>
-                <li class="xs-break col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-9.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-10.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-11.png" alt="" /></a></li>
-                <li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-12.png" alt="" /></a></li>
-            </ul><!--//press-list-->
+    <!--<section class="section press">-->
+        <!--<div class="container text-center">-->
+            <!--<h2 class="title">Press Coverage</h2>-->
+            <!--<ul class="press-list list-inline row">-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-1.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-2.png" alt="" /></a></li>-->
+                <!--<li class="xs-break col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-3.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-4.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-5.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-6.png" alt="" /></a></li>-->
+            <!--</ul>&lt;!&ndash;//press-list&ndash;&gt;-->
+            <!--<ul class="press-list list-inline row last">-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-7.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-8.png" alt="" /></a></li>-->
+                <!--<li class="xs-break col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-9.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-10.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-11.png" alt="" /></a></li>-->
+                <!--<li class="col-xs-4 col-sm-2"><a href="#"><img class="img-responsive" src="/Public/assets/images/press/press-12.png" alt="" /></a></li>-->
+            <!--</ul>&lt;!&ndash;//press-list&ndash;&gt;-->
 
-            <!--<div class="press-lead text-center">-->
-                <!--<h3 class="title">Have press inquires?</h3>-->
-                <!--<p class="press-links"><a href="#">Download our press kit</a> or <a href="contact.html">Get in touch</a></p>-->
-            <!--</div>-->
+            <!--&lt;!&ndash;<div class="press-lead text-center">&ndash;&gt;-->
+                <!--&lt;!&ndash;<h3 class="title">Have press inquires?</h3>&ndash;&gt;-->
+                <!--&lt;!&ndash;<p class="press-links"><a href="#">Download our press kit</a> or <a href="contact.html">Get in touch</a></p>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-        </div><!--//container-->
-    </section><!--//press-->
+        <!--</div>&lt;!&ndash;//container&ndash;&gt;-->
+    <!--</section>&lt;!&ndash;//press&ndash;&gt;-->
 
     <!-- ******CTA Section****** -->
-    <section id="cta-section" class="section cta-section text-center home-cta-section">
+    <section id="cta-section" class="section cta-section text-center home-cta-section" style="min-height: 370px;">
         <div class="container">
             <h2 class="title">为改变世界而生</h2>
             <p class="intro">数字货币---颠覆现实、引发技术革命，即将渗透至你我生活的方方面面</p>
@@ -539,8 +647,9 @@
 
 
 <!-- ******FOOTER****** -->
-<footer class="footer" style="background: #253340;">
-    <div class="footer-content" style="">
+<!--<footer class="footer" style="background: #253340;">-->
+    <footer class="footer" style="background: #304153 !important;">
+    <div class="footer-content" >
         <div class="container">
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
@@ -552,7 +661,7 @@
 
 
                         </h3>
-                        <p  style="text-align: center;padding-left: 15px;">工作时间：09:00--18:00</p>
+                        <p  style="text-align: center;padding-left: 14px;">工作时间：早09--晚18</p>
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
@@ -568,10 +677,11 @@
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;">关于我们</h3>
-                        <ul class="list-unstyled" style="font-size: 20px;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i>联系我们&nbsp;&nbsp;</a></li>
+                        <ul class="list-unstyled" style="font-size: 16px;">
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>APP下载&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
+
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
                         </ul>
@@ -589,7 +699,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 18px;">官方微信群</p>
+                        <p style="text-align: center;font-size: 16px;">官方微信群</p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -611,7 +721,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 18px;">官方QQ群</p>
+                        <p style="text-align: center;font-size: 16px;">官方QQ群</p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->

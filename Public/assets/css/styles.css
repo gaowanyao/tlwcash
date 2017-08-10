@@ -180,7 +180,8 @@ select {
   top: 0;
 }
 .header.scrolled .main-nav .nav .nav-item a {
-  color: #666;
+  /*color: #666;*/
+  color: #fff;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -3284,7 +3285,8 @@ select {
     padding-top: 25px;
   }
   .header.scrolled .main-nav .nav .nav-item a {
-    color: #666;
+    /*color: #666;*/
+    color: #fff;
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;

@@ -43,6 +43,148 @@ class IndexController extends Controller
 
     }
 
+
+
+    /**
+     * Author:阿耀王子
+     * ajax获取手机验证码 注册
+     */
+    public function ajaxSandPhone(){
+
+        $phone = $_POST['phone'];
+
+        if(empty($phone)){
+            $data['status']=0;
+            $data['info'] = "手机号码不能为空";
+            $this->ajaxReturn($data);
+        }
+
+        if(!preg_match("/^1[34578]{1}\d{9}$/",$phone)){
+            $data['status']=-1;
+            $data['info'] = "手机号码不正确";
+            $this->ajaxReturn($data);
+        }
+        $user_phone=M("User")->field('phone')->where("phone='$phone'")->find();
+        if (!empty($user_phone)){
+            $data['status']=-2;
+            $data['info'] = "手机号码已存在";
+            $this->ajaxReturn($data);
+        }
+
+
+        $r = sandPhone1($phone,C('CODE_NAME'),C('CODE_USER_NAME'),C('CODE_USER_PASS'));
+
+
+
+
+        if($r!="短信发送成功"){
+            $data['status']=0;
+            $data['info'] = $r;
+            $this->ajaxReturn($data);
+        }else{
+            $data['status']=1;
+            $data['info'] = $r;
+            $this->ajaxReturn($data);
+        }
+    }
+
+
+    /**
+     * Author:阿耀王子
+     * ajax获取手机验证码 忘记密码
+     */
+    public function ajaxSandPhoneforgetpwd(){
+
+        $phone = $_POST['phone'];
+
+        if(empty($phone)){
+            $data['status']=0;
+            $data['info'] = "手机号码不能为空";
+            $this->ajaxReturn($data);
+        }
+
+        if(!preg_match("/^1[34578]{1}\d{9}$/",$phone)){
+            $data['status']=-1;
+            $data['info'] = "手机号码不正确";
+            $this->ajaxReturn($data);
+        }
+        $user_phone=M("User")->field('phone')->where("phone='$phone'")->find();
+        if (empty($user_phone)){
+            $data['status']=-2;
+            $data['info'] = "手机号码不存在";
+            $this->ajaxReturn($data);
+        }
+
+
+        $r = sandPhone1($phone,C('CODE_NAME'),C('CODE_USER_NAME'),C('CODE_USER_PASS'));
+
+
+
+
+        if($r!="短信发送成功"){
+            $data['status']=0;
+            $data['info'] = $r;
+            $this->ajaxReturn($data);
+        }else{
+            $data['status']=1;
+            $data['info'] = $r;
+            $this->ajaxReturn($data);
+        }
+    }
+
+
+    /**
+     * Author:阿耀王子
+     * 注册信息处理
+     */
+    public function signupMsg(){
+        $code = $_SESSION['code'];
+        $verify = $_POST['verify'];
+        if($code == $verify){
+
+            $data['phone'] = $_POST['phone'];
+            $data['password'] = md5($_POST['pwd']);
+            $data['create_time'] = time();
+
+            $res = M("User")->add($data);
+
+            if($res){
+                $data['status']=1;
+                $data['info'] = "注册成功";
+                $this->ajaxReturn($data);
+            }else{
+                $data['status']=0;
+                $data['info'] = "注册失败";
+                $this->ajaxReturn($data);
+            }
+
+
+        }else{
+            $data['status']=0;
+            $data['info'] = "验证码不正确";
+            $this->ajaxReturn($data);
+        }
+
+
+
+
+    }
+
+
+    public function download(){
+        $this->judge();
+        $this->display();
+    }
+
+
+    public function kk(){
+
+//        $_SESSION['num'] = 0;
+//        dump($_SESSION);
+//        dump(session('num'));
+    }
+
+
     /**
      * Author:阿耀王子
      * 忘记密码
@@ -58,20 +200,60 @@ class IndexController extends Controller
      * 忘记密码处理
      */
     public function forgetpwd_msg(){
+        $code = $_SESSION['code'];
+        $verify = $_POST['verify'];
+        if($code == $verify){
+
+            $phone = $map['phone'] = $_POST['phone'];
+            $map['password'] = md5($_POST['pwd']);
+
+
+            if(empty($phone)){
+                $data['status']=0;
+                $data['info'] = "手机号码不能为空";
+                $this->ajaxReturn($data);
+            }
+
+            if(!preg_match("/^1[34578]{1}\d{9}$/",$phone)){
+                $data['status']=-1;
+                $data['info'] = "手机号码不正确";
+                $this->ajaxReturn($data);
+            }
+            $user = M("User")->field('uid')->where("phone='$phone'")->find();
+            if (empty($user)){
+                $data['status']=-2;
+                $data['info'] = "手机号码不存在";
+                $this->ajaxReturn($data);
+            }else{
+
+                $map['uid'] = $user['uid'];
+
+                $res = M("User")->save($map);
+
+                if($res){
+                    $data['status']=1;
+                    $data['info'] = "重置密码成功，请登录！";
+                    $this->ajaxReturn($data);
+                }else{
+                    $data['status']=-3;
+                    $data['info'] = "重置密码失败";
+                    $this->ajaxReturn($data);
+                }
+
+            }
+
+
+        }else{
+            $data['status']=0;
+            $data['info'] = "验证码不正确";
+            $this->ajaxReturn($data);
+        }
 
 
     }
 
 
-    /**
-     * 项目介绍
-     * 项目优势
-     * Tcash发行及使资金使用计划
-     * Tcash ICO细则
-     * 项目风险说明
-     * 团队介绍
-     * 免责申明
-     */
+
 
 
     /**
@@ -206,6 +388,78 @@ class IndexController extends Controller
      * 登录验证
      */
     public function signin_msg(){
+
+
+
+
+            $map['user_name'] = $_POST['user'];
+            $map['phone'] = $_POST['user'];
+            $map['_logic'] = 'OR';
+
+
+            $pwd = md5($_POST['pwd']);
+
+
+            $m = M("User");
+            $sel= $m->where($map)->find();
+
+
+            if($sel){
+
+                if($pwd == $sel['password']){
+
+
+                    $msg = '{
+                                 "errcode":"3",
+                                 "status":"ok",
+                                 "msg":"登录成功！"
+                             }';
+                    $msg = json_decode($msg,true);
+
+                    $account['user_name'] = $sel['user_name'];
+                    $account['email'] = $sel['email'];
+
+                    session('account',$account);
+
+
+                    $this->ajaxReturn($msg);
+                    return false;
+                }else{
+                    $msg = '{
+                              "errcode":"2",
+                              "status":"error",
+                              "msg":"用户名/手机号或密码错误！"
+                        }';
+                    $msg = json_decode($msg,true);
+
+                    $this->ajaxReturn($msg);
+                    return false;
+                }
+
+
+            }else{
+                $msg = '{
+                              "errcode":"2",
+                              "status":"error",
+                              "msg":"用户名/手机号或密码错误！"
+                        }';
+                $msg = json_decode($msg,true);
+
+                $this->ajaxReturn($msg);
+                return false;
+
+            }
+
+
+    }
+
+
+
+    /**
+     * Author:阿耀王子
+     * 登录验证
+     */
+    public function signin_msg2(){
 
 
 
