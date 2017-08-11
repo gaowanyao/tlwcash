@@ -152,9 +152,15 @@
 
 
         }
-        a{
-        text-decoration: none;
+        /*a{*/
+             /*text-decoration: none;*/
+        /*}*/
+
+        .notpc_center{
+             <?php if($pc=='notpc'){ echo 'text-align:center;';} ?>
         }
+
+
 
 
     </style>
@@ -324,7 +330,7 @@
 
     <div class="bg-slider-wrapper">
 
-        <canvas class="constellation" ></canvas>
+        <canvas class="constellation"></canvas>
 
 
     </div>
@@ -354,6 +360,7 @@
                 </tr>
 
             </table>
+
 
 
             <!--<button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>-->
@@ -393,8 +400,8 @@
 <div class="sections-wrapper">
 
     <!-- ******Why Section****** -->
-    <section id="why" class="section why" >
-        <div class="container" style="margin-top: -60px;">
+    <section id="why" class="section why" style="padding-bottom: 0px;">
+        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -110px;';} ?>">
             <div style="display: flex;justify-content: center;align-items: center">
                 <div style="width: 80px;height: 3px;background: black;margin-right: 10px;margin-top: -20px;"></div>
                 <h2 class="title text-center" style="margin-bottom: 20px">项目介绍</h2>
@@ -569,23 +576,82 @@
             <!--</div>-->
         </div><!--//container-->
     </section><!--//why-->
-    <div style="width: 100%;height:500px;background:url('/Public/img/app-part1-bg.png');<?php if($pc!='pc')echo'height:700px'?> ">
-        <div class="container text-center" style="background:url('/Public/img/app-part1-bg.png');background-repeat: round ">
-            <div class="row" >
+
+
+
+
+    <section id="why" class="section why" style="padding: 0px;width: 100%;background: url('/Public/img/appdownload_bg.png');background-repeat: no-repeat;background-size: cover;">
+        <div class="container" >
+            <div class="row item last-item" style="padding: 30px 0;">
+                <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4" style="padding-bottom: 0px;<?php  if($pc == 'pc'){ echo 'padding-top: 50px;';} ?>">
+                    <h3 class="title notpc_center" style="font-weight: 900;">Tcash App Downloads</h3>
+                    <div class="desc notpc_center" style="margin-bottom: 0px;">
+                        <p class="notpc_center">安全管理：账户中心，交易管理</p>
+
+                        <p class="notpc_center">快速交易：一键交易，安全快捷</p>
+                        <p class="notpc_center">最新版本： V1.0.0(2017-8-15)</p>
+                        <p class="notpc_center"><a style="font-weight: 900;font-size: 20px;text-decoration: none;" href="index.php?a=download">了解更多>>></a></p>
+                        <!--<p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>-->
+
+                        <p class="notpc_center" style="display: inline-block;">
+                            <p class="notpc_center" style="display: inline-block;">
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-apple"></i><span class="text">苹果下载</span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-android"></i><span class="text">安卓下载</span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a>
+                            </p>
+                            <!--<p class=" class="download-area"">-->
+                            <!--<ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >-->
+                            <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">苹果下载</span> </a></li>-->
+                            <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text">安卓下载</span></a></li>-->
+                            <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>-->
+                            <!--</ul>-->
+                            <!--</p>-->
+                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png" alt="" />
+
+
+                        </p>
+
+                    </div>
+
+                    <!--<div class="quote">-->
+                        <!--<div class="quote-profile">-->
+                            <!--<img class="img-responsive img-block" style="width: 100px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png" alt="" />-->
+                        <!--</div>&lt;!&ndash;//profile&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="quote-content">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<blockquote><p>I can connect to like-minded people lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></blockquote>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<p class="source">@JackT, San Francisco</p>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&lt;!&ndash;//quote-content&ndash;&gt;&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//quote&ndash;&gt;-->
+
+
+                </div><!--//content-->
+                <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                    <img class="img-responsive" src="/Public/img/apppage.png" alt="" />
+                </figure>
+            </div><!--//item-->
+        </div>
+    </section>
+
+
+    <div style="display: none;width: 100%;height:500px;background:url('/Public/img/appdownload_bg.png');background-size:cover;background-repeat: no-repeat;<?php if($pc!='pc')echo'height:700px'?> ">
+        <div class="container text-center" style="background-repeat: round;">
+            <div class="row" style="<?php if($pc=='pc')echo'display: flex;align-items: center'?>">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center" >
                     <!--<div  style="width: 585px;height: 450px;background: url('/Public/img/app2-en.png');background-repeat: round"></div>-->
-                    <img src="/Public/img/app2-en.png" class="img-responsive" alt="">
+                    <img src="/Public/img/apppage.png" class="img-responsive" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 text-center">
                     <div class="row" >
-                        <div col-md-12 col-md-push-1><h1 style="display: inline-block">TCASH</h1>
+                        <div>
+                            <p style="font-size: 60px;display: inline-block">Tcash&nbsp;</p>
                             <p style="font-size: 60px;display: inline-block;margin-top:20px;padding: 0">App</p>
                         </div>
                     </div>
                     <div class="row text-center" >
                         <div class="col-xs-11  col-lg-6   text-left" style="<?php if($pc=='pc')echo'margin-top: 50px'?>">
                             <p>安全管理：账户管理</p><p>快速交易：一键交易安全快捷</p>
-                            <span>最新版本</span>&nbsp<a style="text-decoration: none">了解更多</a><br>
+                            <span>最新版本： V1.8.1(2017-5-13)</span>&nbsp
+                            <!--<a style="text-decoration: none">了解更多</a><br>-->
                         </div>
                         <div class="col-lg-6"></div>
                         <div class="col-xs-11 col-sm-12 col-md-6 col-lg-6">
@@ -630,7 +696,7 @@
                                 <i class="fa fa-quote-left"></i>
                                 <p>多年IT技术工作，Intel技术大使，触控首席CVP,微软技术专家MCSE,曾编写《解密比特币》、《游戏开发原理》等书籍。</p>
                             </blockquote>
-                            <p class="source">Kevin Knight<br /><span class="title">Co-Founder, Startup Hub</span></p>
+                            <p class="source">沈大海<br /><span class="title">CTO</span></p>
                         </div><!--//content-->
                     </div><!--//item-->
                     <div class="item">
@@ -904,7 +970,7 @@
 
     var screenheight = $(window).height();
     console.log(screenheight);
-    $(".constellation").css("height",screenheight);
+//    $(".constellation").css("height",screenheight);
 
     $(".bg-slider-wrapper").css("height",screenheight);
     $(".bg-slider-wrapper2").css("height",screenheight);

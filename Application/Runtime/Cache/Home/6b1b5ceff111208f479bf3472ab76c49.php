@@ -87,7 +87,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -221,8 +221,8 @@
                             <!--Annoucement-->
                             公告
                         </h3>
-                        <p>Any app related updates can go into this area. Example - We are going to release our app for Windows phone on 23rd Jan 2015.</p>
-                        <p>You can <a href="http://www.appqr.mobi/" target="_blank">generate a single QR code</a> for your app download. Magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+                        <p>2017年9月1日 上线iOS、Android应用程序客户端，可用于线上之间购买理财产品，实时查看收益情况。</p>
+                        <!--<p>You can <a href="http://www.appqr.mobi/" target="_blank">generate a single QR code</a> for your app download. Magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>-->
 
                     </div>
                 </div>
@@ -245,10 +245,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>

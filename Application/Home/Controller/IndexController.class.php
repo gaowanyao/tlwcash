@@ -117,6 +117,11 @@ class IndexController extends Controller
     }
 
 
+    public function ico(){
+        $this->judge();
+        $this->display();
+    }
+
     /**
      * Author:阿耀王子
      * ajax获取手机验证码 忘记密码

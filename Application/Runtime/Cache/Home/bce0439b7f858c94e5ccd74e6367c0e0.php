@@ -90,7 +90,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -194,7 +194,7 @@
 <section class="features-video section section-on-bg" style="height: 500px;">
     <div class="container text-center">
         <h2 class="title">安全保障</h2>
-        <div class="video-container">
+        <div class="video-container" style="color: white">
         <!--<iframe src="/player.vimeo.com/video/90299717?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
             为了使投资者获得最大收益回报，Tcahs享受到货币基金本身的收益之外还享受了市场价格的差额收益 ，为投资者获得最大收益回报。
         </div><!--//video-container-->
@@ -232,10 +232,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img src="/Public/img/logo.png" >
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
 
                         </h3>
