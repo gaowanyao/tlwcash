@@ -65,23 +65,30 @@ return array(
     '_Header_productdet' => 'Raised',
     '_Header_news' => 'News',
     '_Header_project_advantage' => 'Advantage',
-    '_Header_team_member' => 'Team',
+    '_Header_team_member' => 'Team Member',
     '_Header_project_plan' => 'Plan',
     '_Header_about_us' => 'About',
     '_Header_Financial' => 'Financial',
     '_Header_safety' => 'Safety',
-    '_Header_app_download' => 'Downloads',
+    '_Header_app_download' => 'App',
     '_Header_customer_service' => 'Service',
-
-
+    '_Header_help' => 'Help',
+    '_Header_ico' => 'ICO Fund',
+    '_Header_exp' => 'Exponential Fund',
+    '_Header_arbitrage' => 'Arbitrage Fund',
+    '_Header_notice1' => 'NOTICE',
+    '_download_1' => 'September 1, 2017 on-line iOS, Android application client, can be used to buy financial products online, real-time view of income',
 
 //Index首页页面翻译
     '_Index_big_title' => 'DBCoin block chain to the center of the digital currency project',
     '_Index_small_title' => 'Promoting consumption finance and realizing full employee stock ownership',
     '_Enter_website' => 'Enter the official website',
-    '_Beta_app_download' => 'Beta APP Download',
+    '_Beta_app_download' => 'Beta App Download',
     '_DBCoin' => 'DBCoin',
     '_Tag' => 'Label',
+    '_Index_banner_title' => 'Tongluowan Fund',
+    '_Index_banner1_title1' => 'The establishment of a new cross-border asset transfer, payment agreement and to the center of the fund platform',
+    '_Index_banner2_title2' =>'The traditional financial fund is changed based on block chaining Technology',
 
 
 //    登录页面signin
@@ -112,15 +119,55 @@ return array(
     '_Home_countdown' => 'ICO Countdown',
     '_Home_white_book' => 'WHITE BOOK',
     '_Home_ico_rules' => 'ICO RULES',
-    '_Home_day' => 'day',
-    '_Home_hour' => 'hour',
-    '_Home_minute' => 'minute',
-    '_Home_second' => 'second',
+    '_Home_day' => 'Day',
+    '_Home_hour' => 'Hour',
+    '_Home_minute' => 'Min',
+    '_Home_second' => 'Secs',
     '_Home_what_is_dbcoin' => 'What is DBCoin?',
     '_Home_transaction_service' => 'Transaction Service',
     '_Home_price_fluctuation' => 'Price Fluctuation',
     '_Home_global_price_differentials' => 'Global Price Differentials',
     '_Home_global_cross-border_payments' => 'Global Cross-border Payments',
+    '_Index_project' =>'Tongluowan Foundation (English Name: Tcash) is a mature and open block chain technology. Can the normal global cross-border payments, cross-border arbitrage and exchange financing currency, OTC and other commercial transactions with currency or other digital currency, can also be used for daily consumption. The operation team ensures that the Tcash in circulation is always more valuable than its digital assets as reserves to achieve the goal of maintaining the stability of the Tcash price.',
+
+    '_Index_cross' =>'Global cross-border risk-free arbitrage',
+    '_Index_cross_content' =>'Due to different national conditions, the price in the domestic exchange of digital currency is different, sometimes the price difference in 10%-15%, we have registered accounts in the mainstream of the global exchange, each account with legal tender to do account cash if the price difference, in the low price to buy into the exchange, sell at the high price of exchange. When the stock markets are stable, they hedge their accounts by digital money to achieve risk-free arbitrage.',
+
+    '_Index_otc' =>'Global OTC Trading',
+    '_Index_otc_content' =>'To have specialized traders in the world\'s major regions, our customers and other digital currency bitcoin business consulting, agency purchase, P2P trading, through the service of two people, the first is the investment ability but do not know how to buy and sell digital currency crowd, the second is a digital currency trading group, the business mainly through social software, network, mobile phone wallet to complete the payment.',
+
+    '_Index_ethernet' =>'Ethernet square domain investment',
+    '_Index_ethernet_content' =>'Domain name trading refers to the individual or business groups, their registration has not yet expired and their own Internet domain name through the way of authorization, to the intermediary website domain name and website platform for sale by means of ownership change behavior. Register the domain name suffix.Eth. ENS is the Ethernet square domain name service, a distributed, open and extensible domain name system based on the Ethernet square.',
+
+    '_Index_payment' =>'border payment and settlement',
+    '_Index_payment_content' =>'For the domestic enterprises in the hope of overseas purchasing, or overseas enterprises in the hope that if there is a demand in the domestic procurement, will go overseas to become legal tender dollars, or will go to the U.S. domestic demand into Renminbi, can apply for our global settlement, we pass in the mainstream of national emergency hedge fund implementation, in the digital currency to efficiently and safely exchange, through the digital currency can be the amount of high speed, low rates.`',
+
+    '_Index_exchange' =>'Global exchange financing',
+    '_Index_exchange_content' =>'Tcash finance financing P2P model, due to the world\'s major exchanges, users and borrowers borrowing and lending, all the loan amount and lending rates are determined by the user, the interest rate floating by the market. The user in the exchange of currency speculation has certain accounts through our approach to the user with a capital increase in leverage to control the risk through the explosion mechanism, we only charge for the fees, billing by the day or monthly billing.',
+
+    '_Index_freely' =>'Global free exchange flows',
+    '_Index_freely_content' =>'In the early days of Tcash release, you can freely move and freely convert between the virtual digital currencies. In the process of free circulation, Tcash should choose the characteristics of block chain. Using block chaining technology for reference to prevent the currency from being reused and the transaction irreversible. Tcash digital currency using bitcoin to center technology, to modify the core code bitcoin, block chain technical innovation, to create a recoverable, high anti-theft digital currency wallet.',
+    '_Index_app_download' =>'Tcash client Download',
+    '_Index_app_security' =>'Security management: account center, transaction management',
+    '_Index_app_fast' =>'Fast Trading: one key transaction, safe and fast',
+    '_Index_app_version' =>'Latest version: V1.0.0 (2017-8-15)',
+    '_Index_app_more' =>'Learn More>>>',
+
+    '_Index_ios_download' =>'Apple',
+    '_Index_android_download' =>'Android',
+    '_Index_pc_download' =>'Computer',
+
+
+    '_Index_team_content1' =>'Years of IT technology work, Intel technology ambassador, touch chief CVP, Microsoft technology expert MCSE, has written "decryption bitcoin", "game development principles" and other books.',
+    '_Index_team_name1' =>'Shendahai',
+
+
+    '_Index_team_content2' =>'Engaged in Internet product operation ten years, leading and participating in a variety of game products during the operation and distribution of work, was responsible for the air network\'s "tragedy OL" "tragedy" OL II "Fengshen OL" "dream taken" and other well-known products operation issue, is mainly responsible for the Yi Bo digital research and products operation issue',
+    '_Index_team_name2' =>'Changdacheng',
+
+    '_Index_right_join' =>'Born to change the world',
+    '_Index_right_join1' =>'Digital currency - the subversion of reality and the technological revolution is about to permeate all aspects of your life',
+    '_Index_right_join2' =>'Join Right Away',
 
 
     '_Home_transaction_service_content' => 'As many people do not understand the Internet and digital currency operations, engaged in digital currency online trading platform and the provision of digital currency trading services, transaction fees charged in any country there is demand.',
@@ -136,9 +183,104 @@ return array(
     '_Home_introduction_content' => 'DBCoin (Chinese Name: 多宝金豆, abbreviation: DBC) is to achieve the users get a digital currency assets of financial income and less limited company of group of consumer finance business, is inferior and group based on their own funds and assets, assets formed by transformation of a digital assets, global set limit to 60 million, by the user company presentation and exchange DBCoin, DBCoin is equal to the equivalent group asset package share holding. At present, the opening of mortgage, loan, guarantee, exchange, cash, value-added, replacement, trading, all raised and other commercial applications. Join the group Johnson and turbo Internet platform with DBCoin allows you to become consumer finance, allowing consumers to become the company\'s shareholders, to achieve wealth sharing.',
 
 
+    //ICO页面
+
+    '_ICO_banner' => 'In order to maximize returns for investors, the existing ICO products are inspected, and some ICO products are selected for early bird round investments to maximize returns for investors.',
+    '_ICO_revenue' => 'Product Revenue',
+    '_ICO_revenue_content' => 'The team\'s participation in the project ETH historical income of more than 300 times ',
+    '_ICO_run' => 'Product Operation ',
+    '_ICO_run_content' => '15 days a month, 24:00 closed investment period, cycle 365 days, T+0 redemption ',
+    '_ICO_introduce' => 'Product Introduction ',
+    '_ICO_introduce_content' => 'In the ICO hot moment, Lujiazui bitcoin fund company launched ICO fund, for our customers to win the highest risk market profits. We provide professional technical team, professional trader, the market of existing ICO products screening, inspection, and finally selected part of the ICO products early bird round investment. In order to maximize revenue, the team\'s participation in the project ETH historical benefits of more than 300 times',
+    '_ICO_money' => 'Starting Amount ',
+    '_ICO_money_1' => '＄ ',
+    '_ICO_money_2' => '1500 USD ',
+    '_ICO_money_3' => 'Immediate Investment ',
+    '_ICO_money_4' => 'There are some risks in digital money investment. Please control your funds in moderation',
+    '_ICO_Disclaimer' => 'Disclaimer ',
+    '_ICO_Disclaimer_content' => 'Investors are asked to read the white book on the ICO project and understand its block chain technology and assess the risks. Other digital virtual digital assets as the global currency trading, high risk, 24 hours a day in the transaction, no price limits, because the price is easy to influence government policy makers, global volatility, we strongly recommend that you can bear the risk in its range, to participate in the investment, and there are some users have the intention and a clear understanding of the risk of Tcash, once said that investors invest in understanding and acceptance of the project risk, and are willing to take a cut the corresponding results or consequences. ',
+
+    //指数页面
+    '_exponential_banner' => 'Exponential Fund ',
+    '_exponential_banner_content' => 'In order to maximize returns for investors, product investment with lower yield risk is evaluated to maximize returns for investors',
+    '_exponential_number1' => 'IndexFund  One',
+    '_exponential_number1_1' => 'Coming Soon ',
+    '_exponential_Date' => 'Release Date:',
+    '_exponential_fixed' => 'Fixed Income:',
+    '_exponential_year' => 'Annualized Return:',
+    '_exponential_estimate' => 'Projected Earnings:',
+    '_exponential_yield' => 'Yield Change:',
+    '_exponential_everyday' => 'Everyday',
+    '_exponential_repayment' => 'T+0 Redeem',
+
+    '_exponential_number2' => 'IndexFund  Tow',
+    '_exponential_number2_2' => 'Coming Soon',
+    '_exponential_Date_2' => 'Release Date:',
+    '_exponential_fixed_2' => 'Fixed Income:',
+    '_exponential_year_2' => 'Annualized Return:',
+    '_exponential_estimate_2' => 'Projected Earnings:',
+    '_exponential_yield_2' => 'Yield Change:',
+    '_exponential_everyday_2' => 'Everyday',
+    '_exponential_repayment_2' => 'T+0 Redeem',
+
+    '_exponential_number3' => 'IndexFund  Three',
+    '_exponential_number3_3' => 'Coming Soon',
+    '_exponential_Date_3' => 'Release Date:',
+    '_exponential_fixed_3' => 'Fixed Income:',
+    '_exponential_year_3' => 'Annualized Return:',
+    '_exponential_estimate_3' => 'Projected Earnings:',
+    '_exponential_yield_3' => 'Yield Change:',
+    '_exponential_everyday_3' => 'Everyday',
+    '_exponential_repayment_3' => 'T+0 Redeem',
+
+    //套利页面
+
+    '_arbitrage_banner' => 'Arbitrage Fund',
+    '_arbitrage_banner_content' => 'In order to maximize returns for investors, Tcahs enjoys the benefits of the money fund itself, as well as the differential gains from market prices, maximizing returns for investors',
+    '_arbitrage_number1' => 'Arbitrage Fund',
+    '_arbitrage_number1_1' => 'Coming Soon',
+    '_arbitrage_Date_1' => 'Release Date:',
+    '_arbitrage_fixed_1' => 'Fixed Income:',
+    '_arbitrage_year_1' => 'Annualized Return:',
+    '_arbitrage_estimate_1' => 'Projected Earnings:',
+    '_arbitrage_yield_1' => 'Yield Change:',
+    '_arbitrage_everyday_1' => 'Everyday',
+    '_arbitrage_repayment_1' => 'T+0 Redeem',
 
 
 
+
+    '_arbitrage_number_2' => 'Arbitrage Fund season',
+    '_arbitrage_number_2_2' => 'Coming Soon',
+    '_arbitrage_Date_2' => 'Release Date:',
+    '_arbitrage_fixed_2' => 'Fixed Income:',
+    '_arbitrage_year_2' => 'Annualized Return:',
+    '_arbitrage_estimate_2' => 'Projected Earnings:',
+    '_arbitrage_yield_2' => 'Yield Change:',
+    '_arbitrage_everyday_2' => 'Everyday',
+    '_arbitrage_repayment_2' => 'T+0 Redeem',
+
+    '_arbitrage_number_3' => 'Arbitrage fund half a year',
+    '_arbitrage_number_4' => 'Arbitrage fund a year',
+
+    //安全保障
+    '_safety_number' => 'Safety Guarantee',
+    '_safety_number_1' => 'In order to maximize returns for investors, Tcahs enjoys the benefits of the money fund itself, as well as the differential gains from market prices, maximizing returns for investors',
+    '_safety_number_2' => 'Support okcoin, Huobi, chbtc, BTCC, BTC, and LTC hedges to move bricks',
+    '_safety_number_3' => 'Support between chbtc and Yunbi, ETH hedging, moving bricks',
+    '_safety_number_4' => 'Support foreign mainstream platforms Bitfinex, Bitstamp, BTC-E and other hedge arbitrage',
+
+
+
+    //关于我们
+    '_about_number' => 'About us',
+    '_about_number_1' => 'For the convenience of customers, we quickly understand our Tcash and contact information',
+    '_about_number_2' => 'What is Tcash?',
+    '_about_number_3' => 'Tcash belongs to XXX Services Ltd., is committed to the development of global digital assets, to provide comprehensive and professional digital asset management services to clients, including ICO, ETF fund management index fund management, fund management is OTC arbitrage, the blockchain mature technology, based on open source software, can realize the function of mainstream digital currency currently include: currency exchange, both security and transparency with support can trade, storage, exchange, consumption, payment, and Tcash support multi signature technology and good scalability / upgrade, provide better digital assets of financial management services for our customers and friends from all walks of life.',
+    '_about_number_4' => 'Official QQ',
+    '_about_number_5' => 'Official WeChat',
+    '_about_number_6' => 'Official Call',
+    '_about_number_7' => 'Official mailbox',
 
     //底部
     '_Footer_time' => ' Working Hours',
@@ -146,13 +288,18 @@ return array(
     '_Footer_customer_phone' => 'Customer Service Phone ',
     '_Footer_cooperative_mailbox' => 'Cooperative Mailbox ',
     '_Footer_about_us' => 'ABOUT US',
-    '_Footer_help' => 'HELP',
+    '_Footer_help' => 'Help Center',
     '_Footer_registration_guide' => 'Registration Guide',
     '_Footer_recharge_guide' => 'Recharge Guide',
     '_Footer_trading_guide' => 'Trading Guide',
     '_Footer_contact_us' => 'CONTACT US',
-
-
+    '_Footer_profile' => 'Tcash profile',
+    '_Footer_hours' => 'Working:09:00--18:00',
+    '_Footer_WeChat' => 'WeChat Group',
+    '_Footer_qq' => 'QQ Group',
+    '_Footer_email' => 'Please enter Email',
+    '_Footer_submit' => 'Submitted',
+    '_Footer_app_download1' => 'App Download',
 
     //新闻页news
     '_News_small_title' => 'DBCoin news provides you with the latest and most comprehensive market information, industry reports, media reports and other hot news',
@@ -169,6 +316,7 @@ return array(
     //关于我们about页面
     '_About_small_title' => 'DBCoin about providing you with platform profiles, and new registration, recharge, transactions and other help',
     '_About_dbcoin_introduction' => 'DBCoin Brief Introduction',
+
     '_About_newuserzc' => 'New User Registration',
     '_About_help_center' => 'Help Center',
 

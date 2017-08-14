@@ -255,14 +255,14 @@
                 </button><!--//nav-toggle-->
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="ulChangeColor">
                     <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico">ICO基金</a></li>
-                            <li><a href="index.php?a=exponential">指数基金</a></li>
-                            <li><a href="index.php?a=arbitrage">套利基金</a></li>
+                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -275,8 +275,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq">帮助中心</a></li>
-                            <li><a href="index.php?a=about">关于我们</a></li>
+                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -321,6 +321,11 @@
         </nav><!--//main-nav-->
     </div><!--//container-->
 </header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
 
 
 
@@ -336,11 +341,11 @@
     </div>
     <section class="promo section section-on-bg">
         <div class="container text-center">
-            <h2 class="title">铜锣湾基金</h2>
-            <p class="intro">创立一种新的跨境资产转移、支付协议和去中心化基金平台 <br /> 基于区块链技术，改变传统理财基金</p>
+            <h2 class="title"><?php echo (L("_Index_banner_title")); ?></h2>
+            <p class="intro"><?php echo (L("_Index_banner1_title1")); ?><br/><?php echo (L("_Index_banner2_title2")); ?></p>
             <p>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_white_book")); ?></a>
-                <a class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_ico_rules")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_white_book")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_ico_rules")); ?></a>
 
             </p>
 
@@ -353,10 +358,10 @@
                     <td  class="time_number my_second">00</td>
                 </tr>
                 <tr>
-                    <td class="time_size">天</td>
-                    <td class="time_size">时</td>
-                    <td class="time_size">分</td>
-                    <td class="time_size">秒</td>
+                    <td class="time_size"><?php echo (L("_Home_day")); ?></td>
+                    <td class="time_size"><?php echo (L("_Home_hour")); ?></td>
+                    <td class="time_size"><?php echo (L("_Home_minute")); ?></td>
+                    <td class="time_size"><?php echo (L("_Home_second")); ?></td>
                 </tr>
 
             </table>
@@ -402,83 +407,82 @@
     <!-- ******Why Section****** -->
     <section id="why" class="section why" style="padding-bottom: 0px;">
         <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -110px;';} ?>">
-            <div style="display: flex;justify-content: center;align-items: center">
-                <div style="width: 80px;height: 3px;background: black;margin-right: 10px;margin-top: -20px;"></div>
-                <h2 class="title text-center" style="margin-bottom: 20px">项目介绍</h2>
-                <div style="width: 80px;height: 3px;background: black;margin-left: 10px;margin-top: -20px;"></div>
-            </div>
-
-            <p class="intro text-center" style="max-width: 100%;color: #444">
-                铜锣湾基金（英文名：Tcash）是基于成熟、开源的区块链技术。
-                可以与法币或者其他数字货币进行正常的全球跨境支付、跨境无风险套利、与交易所融资融币、
-                场外OTC等商业交易,也可以用于日常消费使用。运营团队确保流通中的Tcash始终有超过其价值的数字资
-                产作为储备金与之对应，达到维持Tcash价格稳定的目标。
-            </p>
 
 
             <!--<div class="container">-->
-                <div class="services" id="services" style="text-align: center;">
-                    <div class="col-md-4  ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                                <a href="#" style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
+                <div class="services blog-list" id="services" style="text-align: center;">
+                    <article class="post col-md-12 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div style="display: flex;justify-content: center;align-items: center;margin-top: 20px">
+                                <div style="width: 80px;height: 3px;background: black;margin-right: 10px;margin-top: -20px;"></div>
+                                <h2 class="title text-center" style="margin-bottom: 20px;<?php if($pc!='pc') echo 'font-size:20px'?>"><?php echo (L("_Header_introduction")); ?></h2>
+                                <div style="width: 80px;height: 3px;background: black;margin-left: 10px;margin-top: -20px;"></div>
                             </div>
-                        <h4 >全球跨境无风险套利</h4>
-                        <p class="intro text-center" style="max-width: 100%;color: #444">由于国情不同，在国内交易所的数字货币价格不同，有时候价格差别在10%-15%，我们在全球主流交易所都注册账户，每个账户都用法币来做账户备用金如果价格差别较大，
-                            就在价格低的交易所买入，在价格高的交易所卖出。当各大交易所价格稳定的时候，通过数字货币来对冲账户，实现无风险套利。</p>
-                    </div>
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
-                        </div>
-                        <h4>全球场外OTC交易</h4>
-                        <p class="intro text-center" style="max-width: 100%;color: #444">
-                            指在全球主要地区都有专门的交易员，
-                            我们的客户提供比特币等数字货币业务咨询、代理购买、P2P方式交易，
-                            通过该业务服务两种人群，第一种是有投资能力但不懂如何买卖数字货币的人群，第二种是数字货币高频交易人群，
-                            这个业务开展的方式主要通过社交软件、网络支付、手机钱包来完成。
-                        </p>
-                    </div>
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                            <a  href="#" style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
-                        </div>
-                        <h4>以太坊域名投资</h4>
-                        <p class="intro text-center" style="max-width: 100%;color: #444">域名交易是指个人或商业团体，将自己所注册的尚未到期且属于自己的互联网域名通过有偿方式授权，给中介网站和域名平台网站转让、
-                            出售等方式进行所属权变更的行为。注册以.eth为后缀的域名ENS是以太坊域名服务，一个基于以太坊的分布式，开放和可扩展的域名系统。
 
-                        </p>
-                    </div>
+                            <p class="intro" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_Project")); ?></p>
 
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
+                            </div>
+                            <h4 ><?php echo (L("_Index_cross")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_cross_content")); ?></p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
+                            </div>
+                            <h4><?php echo (L("_Index_otc")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left">
+                                <?php echo (L("_Index_otc_content")); ?>
+                            </p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
+                            </div>
+                            <h4><?php echo (L("_Index_ethernet")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_ethernet_content")); ?>
 
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-earth">Partners</a>
-                        </div>
-                        <h4>全球跨境支付结算</h4>
-                        <p class="intro text-center" style="max-width: 100%;color: #444">对于国内的企业希望在海外采购，或者海外的企业希望在国内采购，总之如果有需求将法币转到海外变成美金，或者有需求将美金转到国内变成人民币，
-                            都可以申请我们的全球结算业务，我们通过在主流国家准备备用基金实现对冲，在通过数字货币来高效、安全的交易，通过数字货币可以额度高、速度快、费率低。
-                        </p>
-                    </div>
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-contract">Contact</a>
-                        </div>
-                        <h4>全球交易所融资融币</h4>
-                        <p class="intro text-center" style="max-width: 100%;color: #444">Tcash融资融币为p2p模式，由于全球各大交易所，用户跟用户之间借款和放款，所有的借款金额和放款利率都是由用户定，
-                            利率浮动由市场调节。所得炒币用户在交易所都有
-                            一定的账户资金我们通过配资的方式给用户增加杠杆， 通过爆仓机制来控制风险，
-                            我们只收取等额的手续费，按天计费或者按月计费。</p>
-                    </div>
-                    <div class="col-md-4 ser-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-                        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" style="margin: 20px">
-                            <a href="#" style="text-decoration: none" class="hi-icon hi-icon-refresh">Refresh</a>
-                        </div>
-                        <h4>全球自由兑换流动</h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444">在Tcash发行初期就可以自由流动，虚拟数字货币之间自由兑换。在自由流通过程中，Tcash应对区块链的特点有所取舍。
-                               借鉴区块链技术防止货币被重复使用、交易不可逆转的特点。Tcash数字货币采用比特币去中心化技术，
-                                进行修改了比特币的核心代码，进行了区块链技术创新，创造出可找回、高防盗性的数字货币钱包。
-                               </p>
-                    </div>
+                            </p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                <a  style="text-decoration: none" class="hi-icon hi-icon-earth">Partners</a>
+                            </div>
+                            <h4><?php echo (L("_Index_payment")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_payment_content")); ?>
+                            </p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                <a  style="text-decoration: none" class="hi-icon hi-icon-contract">Contact</a>
+                            </div>
+                            <h4><?php echo (L("_Index_exchange")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_exchange_content")); ?></p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                        <div class="post-inner">
+                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                <a  style="text-decoration: none" class="hi-icon hi-icon-refresh">Refresh</a>
+                            </div>
+                            <h4><?php echo (L("_Index_freely")); ?></h4>
+                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_freely_content")); ?>
+                            </p>
+                        </div><!--//post-inner-->
+                    </article><!--//post-->
                     <div class="clearfix"></div>
 
                 </div>
@@ -584,20 +588,20 @@
         <div class="container" >
             <div class="row item last-item" style="padding: 30px 0;">
                 <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4" style="padding-bottom: 0px;<?php  if($pc == 'pc'){ echo 'padding-top: 50px;';} ?>">
-                    <h3 class="title notpc_center" style="font-weight: 900;">Tcash App Downloads</h3>
+                    <h3 class="title notpc_center" style="font-weight: 900;"><?php echo (L("_Index_app_download")); ?></h3>
                     <div class="desc notpc_center" style="margin-bottom: 0px;">
-                        <p class="notpc_center">安全管理：账户中心，交易管理</p>
+                        <p class="notpc_center"><?php echo (L("_Index_app_security")); ?></p>
 
-                        <p class="notpc_center">快速交易：一键交易，安全快捷</p>
-                        <p class="notpc_center">最新版本： V1.0.0(2017-8-15)</p>
-                        <p class="notpc_center"><a style="font-weight: 900;font-size: 20px;text-decoration: none;" href="index.php?a=download">了解更多>>></a></p>
+                        <p class="notpc_center"><?php echo (L("_Index_app_fast")); ?></p>
+                        <p class="notpc_center"><?php echo (L("_Index_app_version")); ?></p>
+                        <p class="notpc_center"><a style="font-weight: 900;font-size: 20px;text-decoration: none;" href="index.php?a=download"><?php echo (L("_Index_app_more")); ?></a></p>
                         <!--<p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>-->
 
                         <p class="notpc_center" style="display: inline-block;">
                             <p class="notpc_center" style="display: inline-block;">
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-apple"></i><span class="text">苹果下载</span></a><br/>
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-android"></i><span class="text">安卓下载</span></a><br/>
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-apple"></i><span class="text" ><?php echo (L("_Index_ios_download")); ?></span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a>
                             </p>
                             <!--<p class=" class="download-area"">-->
                             <!--<ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >-->
@@ -681,12 +685,12 @@
     <!--<div style="background:#f5f5f5;width: 100%;height: 30px; "></div>-->
     <section class="section testimonials">
         <div class="container">
-            <h2 class="title text-center">团队介绍</h2>
+            <h2 class="title text-center"><?php echo (L("_Header_team_member")); ?></h2>
             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="2"></li>-->
                 </ol><!--//carousel-indicators-->
                 <div class="carousel-inner">
                     <div class="item active">
@@ -694,9 +698,9 @@
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>多年IT技术工作，Intel技术大使，触控首席CVP,微软技术专家MCSE,曾编写《解密比特币》、《游戏开发原理》等书籍。</p>
+                                <p><?php echo (L("_Index_team_content1")); ?></p>
                             </blockquote>
-                            <p class="source">沈大海<br /><span class="title">CTO</span></p>
+                            <p class="source"><?php echo (L("_Index_team_name1")); ?><br /><span class="title">CTO</span></p>
                         </div><!--//content-->
                     </div><!--//item-->
                     <div class="item">
@@ -704,21 +708,21 @@
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>从事互联网产品运营十年余年，期间主导并参与多款游戏产品的运营和发行工作，曾负责空中网旗下《天劫OL》《天劫贰OL》《封神OL》《梦幻天劫》等知名产品运营发行，目前主要负责颐博数码自研及代理产品运营对外发行。</p>
+                                <p><?php echo (L("_Index_team_content2")); ?></p>
                             </blockquote>
-                            <p class="source">Diana	Luna<br /><span class="title">Entrepreneur, Maecenas</span></p>
+                            <p class="source"><?php echo (L("_Index_team_name2")); ?><br /><span class="title">COO</span></p>
                         </div><!--//content-->
-                    </div><!--//item-->
-                    <div class="item">
-                        <figure class="profile"><img src="/Public/assets/images/people/profile-m-3.png" alt="" /></figure>
-                        <div class="content">
-                            <blockquote>
-                                <i class="fa fa-quote-left"></i>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
-                            </blockquote>
-                            <p class="source">Tony Lee<br /><span class="title">CTO, Lorem Ipsum</span></p>
-                        </div><!--//content-->
-                    </div><!--//item-->
+                    <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+                    <!--<div class="item">-->
+                        <!--<figure class="profile"><img src="/Public/assets/images/people/profile-m-3.png" alt="" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source">Tony Lee<br /><span class="title">CTO, Lorem Ipsum</span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
                 </div><!--//carousel-inner-->
 
             </div><!--//carousel-->
@@ -757,9 +761,9 @@
     <!-- ******CTA Section****** -->
     <section id="cta-section" class="section cta-section text-center home-cta-section" style="min-height: 370px;">
         <div class="container">
-            <h2 class="title">为改变世界而生</h2>
-            <p class="intro">数字货币---颠覆现实、引发技术革命，即将渗透至你我生活的方方面面</p>
-            <p><a class="btn btn-cta btn-cta-primary" href="" target="_blank">马上加入</a></p>
+            <h2 class="title"><?php echo (L("_Index_right_join")); ?></h2>
+            <p class="intro"><?php echo (L("_Index_right_join1")); ?></p>
+            <p><a class="btn btn-cta btn-cta-primary" href=""  style="" target="_blank"><?php echo (L("_Index_right_join2")); ?></a></p>
         </div><!--//container-->
     </section><!--//cta-section-->
 
@@ -782,7 +786,7 @@
 
 
                         </h3>
-                        <p  style="text-align: center;padding-left: 14px;">工作时间：早09--晚18</p>
+                        <p  style="text-align: center;padding-left: 14px;"><?php echo (L("_Footer_hours")); ?></p>
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
@@ -797,11 +801,11 @@
 
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner" style="text-align: center;">
-                        <h3 class="title" style="font-size: 26px;">关于我们</h3>
+                        <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>APP下载&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -820,7 +824,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方微信群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_WeChat")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -842,7 +846,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方QQ群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_qq")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -859,23 +863,23 @@
                 <div class="footer-col connect col-xs-12 col-md-4">
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
-                            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
-                        </ul>
+                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
+                            </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
                             <form class="signup-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
-                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="请输入您的Email">
+                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
-                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary">提交</button>
+                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
                                 <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@website.com</a></p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -905,8 +909,8 @@
                                     <span class="country-name">UK</span>
                                 </span>
                         </p>
-                        <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
-                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
+                        <p class="tel"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                         <a href="" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
                     </div><!--//footer-col-inner-->
                 </div><!--//contact-->
@@ -977,11 +981,10 @@
 
 
 </script>
-
-
-
-
 <script>
+
+
+
 
 
     function PrefixInteger(num, length) {

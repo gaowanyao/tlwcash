@@ -153,14 +153,14 @@
                 </button><!--//nav-toggle-->
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="ulChangeColor">
                     <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico">ICO基金</a></li>
-                            <li><a href="index.php?a=exponential">指数基金</a></li>
-                            <li><a href="index.php?a=arbitrage">套利基金</a></li>
+                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -173,8 +173,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq">帮助中心</a></li>
-                            <li><a href="index.php?a=about">关于我们</a></li>
+                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -219,6 +219,11 @@
         </nav><!--//main-nav-->
     </div><!--//container-->
 </header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
 
 
 
@@ -228,10 +233,10 @@
 <!-- ******Video Section****** -->
 <section class="features-video section section-on-bg" style="<?php if($pc == 'pc'){ echo 'height: 550px;';}else{ echo 'height: 460px;';} ?>">
     <div class="container text-center">
-        <h2 class="title">ICO 基金</h2>
+        <h2 class="title"><?php echo (L("_Header_ico")); ?></h2>
         <div class="" style="color:#fff;width: 100%">
             <!--<iframe src="/player.vimeo.com/video/90299717?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-            为了使投资者获得最大收益回报，对现有ICO产品进行考察，选定部分ICO产品进行早鸟轮投资，为投资 者获得最大收益回报。
+            <?php echo (L("_ICO_banner")); ?>
         </div><!--//video-container-->
     </div><!--//container-->
 </section><!--//feature-video-->
@@ -252,21 +257,21 @@
                     <!--<a href="blog-single.html"><img class="img-responsive" src="/Public/assets/images/blog/post-1-thumb.jpg" alt="" /></a>-->
                     <!--</figure>&lt;!&ndash;//post-thumb&ndash;&gt;-->
                     <div class="content">
-                        <h3 class="post-title my_title">产品收益</h3>
+                        <h3 class="post-title my_title"><?php echo (L("_ICO_revenue")); ?></h3>
                         <div class="post-entry">
-                            <p class="indent">本团队参投项目ETH历史收益超过300倍</p>
+                            <p class="indent"><?php echo (L("_ICO_revenue_content")); ?></p>
                             <!--<a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a>-->
                         </div>
 
-                        <h3 class="post-title my_title">产品运作</h3>
+                        <h3 class="post-title my_title"><?php echo (L("_ICO_run")); ?></h3>
                         <div class="post-entry">
-                            <p class="indent">每月15日24:00进入封闭投资期，周期365天，T+0赎回</p>
+                            <p class="indent"><?php echo (L("_ICO_run_content")); ?></p>
                             <!--<a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a>-->
                         </div>
 
-                        <h3 class="post-title my_title">产品介绍</h3>
+                        <h3 class="post-title my_title"><?php echo (L("_ICO_introduce")); ?></h3>
                         <div class="post-entry">
-                            <p class="indent">在ICO火热的当下，陆家嘴比特币基金公司推出ICO基金，为我们 的客户赢取高风险市场的最大收益。我们提供专业技术团队，专 业操盘人员，对市场现有ICO产品进行筛选考察，最后选定部分 ICO产品进行早鸟轮投资。以做到收益最大化，本团队参投项目ETH历史收益超过300倍</p>
+                            <p class="indent"><?php echo (L("_ICO_introduce_content")); ?></p>
                             <!--<a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a>-->
                         </div>
 
@@ -291,14 +296,14 @@
                     <!--<a href="blog-single.html"><img class="img-responsive" src="/Public/assets/images/blog/post-2-thumb.jpg" alt="" /></a>-->
                     <!--</figure>&lt;!&ndash;//post-thumb&ndash;&gt;-->
                     <div class="content" style="text-align: center;background: transparent;">
-                        <h3 class="post-title my_title" style="padding: 4px 0;font-size: 30px !important;">起投金额</h3>
+                        <h3 class="post-title my_title" style="padding: 4px 0;font-size: 30px !important;"><?php echo (L("_ICO_money")); ?></h3>
                         <div class="post-entry">
-                            <p style="padding: 10px 0 20px;font-size: 20px;"><span style="font-size: 30px;color: red;font-weight: 900;">￥</span><span style="color: red;font-weight: 900;font-size: 25px;">10000元</span></p>
+                            <p style="padding: 10px 0 20px;font-size: 20px;"><span style="font-size: 30px;color: red;font-weight: 900;"><?php echo (L("_ICO_money_1")); ?></span><span style="color: red;font-weight: 900;font-size: 25px;"><?php echo (L("_ICO_money_2")); ?></span></p>
                             <!--<a class="read-more" href="blog-single.html">购买 <i class="fa fa-long-arrow-right"></i></a>-->
 
-                            <button id="invest" type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-cta btn-cta-primary" style="margin-bottom: 25px;font-size: 20px;text-align: center;">立即投资</button>
+                            <button id="invest" type="button" data-dismiss="modal" aria-hidden="true" class="btn btn-cta btn-cta-primary" style="margin-bottom: 25px;font-size: 20px;text-align: center;"><?php echo (L("_ICO_money_3")); ?></button>
 
-                            <p style="color: red;"><img src="/Public/img/danger.png"/> 数字货币投资存在一定的风险，请适量控制您的资金</p>
+                            <p style="color: red;"><img src="/Public/img/danger.png"/><?php echo (L("_ICO_money_4")); ?></p>
                         </div>
                         <!--<div class="meta">-->
                         <!--<ul class="meta-list list-inline">-->
@@ -326,11 +331,11 @@
         <div id="blog-mansonry" class="blog-list">
             <article class="post col-md-12 col-sm-6 col-xs-12" style="">
                 <div class="post-inner">
-                    <h3 class="post-title my_title" style="text-align: center;padding-top: 5px;">免责声明</h3>
+                    <h3 class="post-title my_title" style="text-align: center;padding-top: 5px;"><?php echo (L("_ICO_Disclaimer")); ?></h3>
 
                     <div class="content" style="padding-top: 5px;">
                         <div class="post-entry">
-                            <p class="indent">请投资者充分阅读相关ICO项目白皮书，并理解其区块链技术，评估好风险。另数字资产作为全球的虚拟数字货币，交易存在极高风险，一天24小时都在交易，没有涨跌限制，价格容易因为庄家、全球政府的政策影响而大幅波动，我们强烈建议您在自身能承受的风险范围内，进行参与投资，另外有相关用户有意向并明确了解Tcash的风险，投资者一旦参与投资即表示了解并接受该项目风险，并愿意个⼈为此承担⼀切相应结果或后果。</p>
+                            <p class="indent"><?php echo (L("_ICO_Disclaimer_content")); ?></p>
                             <!--<a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a>-->
                         </div>
 
@@ -488,7 +493,7 @@
 
 
                         </h3>
-                        <p  style="text-align: center;padding-left: 14px;">工作时间：早09--晚18</p>
+                        <p  style="text-align: center;padding-left: 14px;"><?php echo (L("_Footer_hours")); ?></p>
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
@@ -503,11 +508,11 @@
 
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner" style="text-align: center;">
-                        <h3 class="title" style="font-size: 26px;">关于我们</h3>
+                        <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>APP下载&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -526,7 +531,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方微信群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_WeChat")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -548,7 +553,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方QQ群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_qq")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -565,23 +570,23 @@
                 <div class="footer-col connect col-xs-12 col-md-4">
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
-                            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
-                        </ul>
+                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
+                            </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
                             <form class="signup-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
-                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="请输入您的Email">
+                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
-                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary">提交</button>
+                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
                                 <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@website.com</a></p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -611,8 +616,8 @@
                                     <span class="country-name">UK</span>
                                 </span>
                         </p>
-                        <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
-                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
+                        <p class="tel"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                         <a href="" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
                     </div><!--//footer-col-inner-->
                 </div><!--//contact-->
@@ -642,7 +647,6 @@
         </div><!--//modal-content-->
     </div><!--//modal-dialog-->
 </div><!--//modal-->
-
 
 
 

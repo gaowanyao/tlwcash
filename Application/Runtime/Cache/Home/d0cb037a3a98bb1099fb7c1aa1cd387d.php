@@ -28,134 +28,162 @@
 <div class="page-wrapper">
 
     
+<style>
 
-<!-- Preloader -->
-<div class="preloader"  style="z-index: 10000000;"></div>
+    .scrolled{
+        background: #304153 !important;
+    }
 
-<!-- Main Header-->
-<header class="main-header header-style-two" style="z-index: 30;">
-    <!-- Header Top -->
-    <div class="header-top">
-        <div class="auto-container clearfix">
-            <!-- Top Left -->
-            <div class="top-left">
-                <ul class="clearfix">
-                    <li><span class="icon fa flaticon-old-typical-phone"></span> <a href="#">+920-637-8294</a></li>
-                    <li><span class="icon fa fa-envelope"></span> <a href="mailto:something@gmail.com">something@gmail.com</a></li>
-                </ul>
-            </div>
-
-            <!-- Top Right -->
-            <div class="top-right">
-                <ul class="clearfix">
-                    <!--<li><a href="#">Career</a></li>-->
-                    <!--<li><a href="#">Privacy Policy</a></li>-->
-                    <!--<li><a href="/Public/static/contact.html">Help &amp; Support</a></li>-->
-                    <!--<li><a href="/Public/static/faq-1.html">FAQ</a></li>-->
-
-                    <li><a <?php if($account == 'on'){ }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "account"; }else{ echo 'signin';} ?>"><?php if($account == 'on'){ echo "用户中心"; }else{ echo '登录';} ?></a></li>
-                    <li><a href="#">|</a></li>
-                    <li><a <?php if($account == 'on'){ }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "logout"; }else{ echo 'signup';} ?>"><?php if($account == 'on'){ echo "退出"; }else{ echo '注册';} ?></a></li>
-                    <!--<li><a href="/Public/static/faq-1.html">FAQ</a></li>-->
+    .my_center{
+        text-align: center;
+        font-size: 16px;
+    }
 
 
-                </ul>
-            </div>
+    #header,#header.container,body{
 
-        </div>
-    </div><!-- Header Top End -->
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
 
-    <!--Header-Lower-->
-    <div class="header-lower">
-        <div class="auto-container">
-            <div class="outer clearfix">
-                <!--Logo -->
-                <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="/Public/static/images/logo.png" alt=""></a></div>
-                </div>
-
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+    }
 
 
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(/Public/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
+
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
+    }
+
+</style>
 
 
+<header id="header" class="header navbar-fixed-top">
+    <!--<div class="top" >-->
+        <!--<span>欢迎来到铜锣湾比特币基金</span>-->
+    <!--</div>-->
 
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current "><a href="index.php">首页</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/index.html">Homepage One</a></li>-->
-                                    <!--<li><a href="/Public/static/index-2.html">Homepage Two</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class="dropdown"><a href="#">我要理财</a>
-                                <ul>
-                                    <li><a href="about-us-1.html">ICO基金</a></li>
-                                    <li><a href="about-us-2.html">指数基金</a></li>
-                                    <li><a href="about-us-2.html">套利基金</a></li>
-                                    <!--<li class="dropdown"><a href="#">Our Team</a>-->
-                                        <!--<ul>-->
-                                            <!--<li><a href="/Public/static/team-grid.html">Team Grid View</a></li>-->
-                                            <!--<li><a href="/Public/static/team-single.html">Single Member</a></li>-->
-                                        <!--</ul>-->
-                                    <!--</li>-->
-                                </ul>
-                            </li>
-                            <li class=""><a href="index.php?a=features">产品特色</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/services.html">Services Style One</a></li>-->
-                                    <!--<li><a href="/Public/static/services-2.html">Services Style Two</a></li>-->
-                                    <!--<li><a href="/Public/static/single-service.html">Single Service</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class=""><a href="#">安全保障</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/faq-1.html">FAQs Style One</a></li>-->
-                                    <!--<li><a href="/Public/static/faq-2.html">FAQs Style Two</a></li>-->
-                                    <!--<li><a href="/Public/static/error-page.html">404 Page</a></li>-->
-                                <!--</ul>-->
-                            </li>
+    <div class="container">
+        <h1 class="logo">
+            <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
+            <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
-                            <li class=""><a href="index.php?a=faq">问题解答</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/blog.html">Blog Classic</a></li>-->
-                                    <!--<li><a href="/Public/static/blog-three-column.html">Blog Three Column</a></li>-->
-                                    <!--<li><a href="/Public/static/blog-single.html">Blog Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
+            <!--/Public/img/logo.png-->
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
 
-                            <li class=""><a href="index.php?a=about">关于我们</a>
-                                <!--<ul>-->
-                                <!--<li><a href="/Public/static/gallery-1.html">Gallery One</a></li>-->
-                                <!--<li><a href="/Public/static/gallery-2.html">Gallery Two</a></li>-->
-                                <!--<li><a href="/Public/static/gallery-single.html">Gallery Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <!--<li class="dropdown"><a href="#">Contact Us</a>-->
-                                <!--<ul class="from-right">-->
-                                    <!--<li><a href="/Public/static/contact.html">Contact Us One</a></li>-->
-                                    <!--<li><a href="/Public/static/contact-2.html">Contact Us Two</a></li>-->
-                                <!--</ul>-->
-                            <!--</li>-->
+            <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="ulChangeColor">
+                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
+                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+
                         </ul>
-                    </div>
-                </nav><!-- Main Menu End-->
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-            </div>
-        </div>
-    </div>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
-</header>
-<!--End Main Header -->
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
+
+                        <!--<a class="my_center"  href="javascript:;">-->
+
+                            <!---->
+                            <!---->
+
+                            <!--&lt;!&ndash;注册&ndash;&gt;-->
+                            <!--<select id="language" onchange="change()" style="appearance:button;background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                                <!--<option value="zh-cn">简体中文</option>-->
+                                <!--<option value="zh-tw">繁体中文</option>-->
+                                <!--<option value="en-us">English</option>-->
+                                <!--<i class="fa fa-angle-down"></i>-->
+
+                            <!--</select>-->
+                        <!--</a>-->
+
+                    </li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
+
+
+                    <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div><!--//container-->
+</header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
+
 
 
 

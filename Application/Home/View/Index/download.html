@@ -42,15 +42,15 @@
         <div class="row">
             <div class="content-area col-md-push-5 col-sm-push-6 col-xs-push-0 col-xs-12 col-sm-6">
                 <div class="download-area">
-                    <h2 class="title" style="<?php if($pc == 'notpc'){ echo 'font-size: 25px;text-align: center;';}?>">Tcash App Downloads</h2>
-                    <p class="intro" style="<?php if($pc == 'notpc'){ echo 'text-align: center;';}?>">安全管理：账户管理
-                    <br/>快速交易：一键交易，安全快捷
+                    <h2 class="title" style="<?php if($pc == 'notpc'){ echo 'font-size: 25px;text-align: center;';}?>">{$Think.lang._Index_app_download}</h2>
+                    <p class="intro" style="<?php if($pc == 'notpc'){ echo 'text-align: center;';}?>">{$Think.lang._Index_app_security}
+                    <br/>{$Think.lang._Index_app_fast}
                     </p>
 
                     <ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">苹果下载</span> </a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text">安卓下载</span></a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">{$Think.lang._Index_ios_download}</span> </a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a></li>
                     </ul>
                     <!--//Only show QR code on desktop -->
                     <!--hidden-sm hidden-xs-->
@@ -67,9 +67,9 @@
                     <div class="info-inner">
                         <h3 class="title"><i class="fa fa-bullhorn"></i>
                             <!--Annoucement-->
-                            公告
+                            {$Think.lang._Header_notice1}
                         </h3>
-                        <p>2017年9月1日 上线iOS、Android应用程序客户端，可用于线上之间购买理财产品，实时查看收益情况。</p>
+                        <p>{$Think.lang._download_1}</p>
                         <!--<p>You can <a href="http://www.appqr.mobi/" target="_blank">generate a single QR code</a> for your app download. Magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>-->
 
                     </div>

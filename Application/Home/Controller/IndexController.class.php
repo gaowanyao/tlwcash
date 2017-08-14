@@ -117,10 +117,18 @@ class IndexController extends Controller
     }
 
 
+
     public function ico(){
         $this->judge();
         $this->display();
     }
+
+    public function safety(){
+        $this->judge();
+        $this->display();
+    }
+
+
 
     /**
      * Author:阿耀王子
@@ -280,6 +288,15 @@ class IndexController extends Controller
 
 
 
+    /**
+     * Author:阿耀王子
+     * 用户中心
+     */
+    public function arbitrage(){
+        $this->judge();
+        $this->display();
+    }
+
 
 
     /**
@@ -289,8 +306,10 @@ class IndexController extends Controller
     public function account(){
         $this->judge();
         $this->display();
-
     }
+
+
+
     /**
      * Author:阿耀王子
      * 关于我们
@@ -310,11 +329,23 @@ class IndexController extends Controller
 
     }
 
+    public function exponential(){
+        $this->judge();
+        $this->display();
+    }
+
+
     /**
      * Author:阿耀王子
      * 产品特色
      */
     public function features(){
+        $this->judge();
+        $this->display();
+
+    }
+
+    public function features2(){
         $this->judge();
         $this->display();
 
@@ -371,6 +402,7 @@ class IndexController extends Controller
         }
 
     }
+
 
 
     /**

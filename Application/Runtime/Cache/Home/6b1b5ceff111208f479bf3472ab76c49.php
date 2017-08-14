@@ -115,14 +115,14 @@
                 </button><!--//nav-toggle-->
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="ulChangeColor">
                     <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico">ICO基金</a></li>
-                            <li><a href="index.php?a=exponential">指数基金</a></li>
-                            <li><a href="index.php?a=arbitrage">套利基金</a></li>
+                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -135,8 +135,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq">帮助中心</a></li>
-                            <li><a href="index.php?a=about">关于我们</a></li>
+                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -181,6 +181,11 @@
         </nav><!--//main-nav-->
     </div><!--//container-->
 </header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
 
 
 
@@ -194,15 +199,15 @@
         <div class="row">
             <div class="content-area col-md-push-5 col-sm-push-6 col-xs-push-0 col-xs-12 col-sm-6">
                 <div class="download-area">
-                    <h2 class="title" style="<?php if($pc == 'notpc'){ echo 'font-size: 25px;text-align: center;';}?>">Tcash App Downloads</h2>
-                    <p class="intro" style="<?php if($pc == 'notpc'){ echo 'text-align: center;';}?>">安全管理：账户管理
-                    <br/>快速交易：一键交易，安全快捷
+                    <h2 class="title" style="<?php if($pc == 'notpc'){ echo 'font-size: 25px;text-align: center;';}?>"><?php echo (L("_Index_app_download")); ?></h2>
+                    <p class="intro" style="<?php if($pc == 'notpc'){ echo 'text-align: center;';}?>"><?php echo (L("_Index_app_security")); ?>
+                    <br/><?php echo (L("_Index_app_fast")); ?>
                     </p>
 
                     <ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">苹果下载</span> </a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text">安卓下载</span></a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text"><?php echo (L("_Index_ios_download")); ?></span> </a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a></li>
                     </ul>
                     <!--//Only show QR code on desktop -->
                     <!--hidden-sm hidden-xs-->
@@ -219,9 +224,9 @@
                     <div class="info-inner">
                         <h3 class="title"><i class="fa fa-bullhorn"></i>
                             <!--Annoucement-->
-                            公告
+                            <?php echo (L("_Header_notice1")); ?>
                         </h3>
-                        <p>2017年9月1日 上线iOS、Android应用程序客户端，可用于线上之间购买理财产品，实时查看收益情况。</p>
+                        <p><?php echo (L("_download_1")); ?></p>
                         <!--<p>You can <a href="http://www.appqr.mobi/" target="_blank">generate a single QR code</a> for your app download. Magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>-->
 
                     </div>
@@ -252,7 +257,7 @@
 
 
                         </h3>
-                        <p  style="text-align: center;padding-left: 14px;">工作时间：早09--晚18</p>
+                        <p  style="text-align: center;padding-left: 14px;"><?php echo (L("_Footer_hours")); ?></p>
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
@@ -267,11 +272,11 @@
 
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner" style="text-align: center;">
-                        <h3 class="title" style="font-size: 26px;">关于我们</h3>
+                        <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>Tcash简介</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>APP下载&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i>帮助中心&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -290,7 +295,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方微信群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_WeChat")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -312,7 +317,7 @@
 
                         </h3>
 
-                        <p style="text-align: center;font-size: 16px;">官方QQ群</p>
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_qq")); ?></p>
 
                         <!--<ul class="list-unstyled">-->
                         <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
@@ -329,23 +334,23 @@
                 <div class="footer-col connect col-xs-12 col-md-4">
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
-                            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
-                        </ul>
+                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
+                            </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
                             <form class="signup-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
-                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="请输入您的Email">
+                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
-                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary">提交</button>
+                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
                                 <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@website.com</a></p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -375,8 +380,8 @@
                                     <span class="country-name">UK</span>
                                 </span>
                         </p>
-                        <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
-                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
+                        <p class="tel"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
                         <a href="" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
                     </div><!--//footer-col-inner-->
                 </div><!--//contact-->
