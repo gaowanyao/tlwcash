@@ -850,7 +850,7 @@ select {
 /* ======= Features tabs ======= */
 .features-tabbed {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .features-tabbed .title {
   font-size: 36px;

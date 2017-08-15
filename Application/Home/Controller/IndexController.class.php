@@ -445,7 +445,7 @@ class IndexController extends Controller
      * 登录
      */
     public function signin(){
-
+        $this->judge();
 
         $this->display();
     }

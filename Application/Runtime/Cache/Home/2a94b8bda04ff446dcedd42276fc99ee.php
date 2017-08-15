@@ -260,9 +260,9 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -275,8 +275,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
-                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -290,9 +290,9 @@
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
 
                         <!--<a class="my_center"  href="javascript:;">-->

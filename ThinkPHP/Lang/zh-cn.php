@@ -106,6 +106,19 @@ return array(
     '_Login_quick_login' => '快捷登录',
     '_Login_forgot_password' => '忘记密码',
 
+    '_login_1' => '会员登录',
+    '_login_2' => '用户名/手机号',
+    '_login_3' => '密码',
+    '_login_4' => '登录',
+    '_login_5' => '点击这里进行注册',
+    '_login_6' => '还没有账号',
+    '_login_7' => '用QQ账户登录',
+    '_login_8' => '用微信登录',
+    '_login_9' => '用微博登录',
+
+
+
+
 //      注册页面signup
     '_Register_Member_register' => '会员注册',
     '_Register_placeholder_username' => '请输入您的用户名',
@@ -114,6 +127,11 @@ return array(
     '_Register_placeholder_phone' => '请输入手机号码',
     '_Register_placeholder_email' => '请输入邮箱',
     '_Register_register_tis' => '已经有账号',
+    '_Register_register_Verification' => '短信验证码',
+    '_Register_register_immediately' => '立即发送',
+    '_Register_register_register' => '注册',
+    '_Register_register_existing' => '已有账号',
+    '_Register_register_sign' => '点击登录',
 
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => '找 回 密 码',
@@ -191,7 +209,7 @@ return array(
     '_ICO_run' => '产品运作 ',
     '_ICO_run_content' => '每月15日24:00进入封闭投资期，周期365天，T+0赎回 ',
     '_ICO_introduce' => '产品介绍 ',
-    '_ICO_introduce_content' => '在ICO火热的当下，陆家嘴比特币基金公司推出ICO基金，为我们 的客户赢取高风险市场的最大收益。我们提供专业技术团队，专 业操盘人员，对市场现有ICO产品进行筛选考察，最后选定部分 ICO产品进行早鸟轮投资。以做到收益最大化，本团队参投项目ETH历史收益超过300倍',
+    '_ICO_introduce_content' => '在ICO火热的当下，铜锣湾基金公司推出ICO基金，为我们 的客户赢取高风险市场的最大收益。我们提供专业技术团队，专 业操盘人员，对市场现有ICO产品进行筛选考察，最后选定部分 ICO产品进行早鸟轮投资。以做到收益最大化，本团队参投项目ETH历史收益超过300倍',
     '_ICO_money' => '起投金额 ',
     '_ICO_money_1' => '￥ ',
     '_ICO_money_2' => '10000元 ',
@@ -271,15 +289,67 @@ return array(
     '_safety_number_3' => '支持chbtc和yunbi之间ETH对冲搬砖',
     '_safety_number_4' => '支持国外主流平台Bitfinex、Bitstamp、BTC-E等之间的对冲套利',
 
+
+    //帮助中心
+
+    '_help_q' => '问',
+    '_help_a' => '答',
+
+    '_help_center' => '帮助中心',
+    '_help_center_1' => '为客户专业、贴心、快速解答各种疑难问题等多种方式服务',
+    '_help_project' => '理财问题',
+    '_help_project_1' => 'ICO基金怎么购买?',
+    '_help_project_1_1' => '可以通过官网点击我要理财→选择ICO基金→进入页面后点击购买→输入金额→生成订单→支付宝支付（或银行转账支付）',
+
+    '_help_project_2' => 'OTC套利基金怎么购买?',
+    '_help_project_2_2' => '可以通过官网点击我要理财→选择OTC套利基金→在OTC套利基金页面选择您需要购买的周期，周期分别为一个月，三个月，半年，一年。点击购买后确认投资协议和购买金额→支付宝支付（或者银行转账支付）。',
+
+    '_help_project_3' => 'ETF指数基金收益这么高会不会风险也很高?',
+    '_help_project_3_3' => 'ETF基金虽然收益高，但是我们在其中加入了40%的套利基金，可以帮助客户分担掉一些风险，帮客户做到保本的程度。',
+
+    '_help_project_4' => 'ETF指数基金怎么购买？',
+    '_help_project_4_4' => '指数基金在每月1日9:00开启购买通道，届时可以通过官网点击我要理财→选择ETF指数基金→确定购买金额→确定投资协议→支付宝支付（或者银行转账支付）。',
+
+    '_help_recharge' => '充值问题',
+    '_help_recharge_1' => '为什么点击一个理财的充值地址跟我的账户充值地址不一致？有何不同？',
+    '_help_recharge_1_1' => '资金管理界面中的比特币/莱特币充值地址是用于给您在Bitbank的主账户充值，充值后，自动存入活期，是一笔可用的虚拟货币。P2P理财里面点击“购买”后弹出的充值地址是您购买该项目所需的充值地址，当您向该地址充值确认后，系统会自动使用这笔币买成理财产品，省去您的二次操作。',
+    '_help_recharge_2' => '充值什么时候到账？',
+    '_help_recharge_2_2' => '比特币/莱特币通过网络确认（1个确认）后自动到账，预计10分钟以上；比特币/莱特币通过CHBTC转账到Bitbank可实现秒到账；人民币通过转账，以代理商账户到账为准。',
+
+    '_help_withdrawals' => '提现问题',
+    '_help_withdrawals_1' => '提现需要多久？',
+    '_help_withdrawals_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_withdrawals_2' => '提现有手续费么？',
+    '_help_withdrawals_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+
+    '_help_novice' => '新手帮助',
+    '_help_novice_1' => '怎么下载手机APP？',
+    '_help_novice_1_1' => '点击首页，使用您的手机通过扫描二维码下载安装，或者点击对应的手机系统进行安装。',
+    '_help_novice_2' => '提现有手续费么？',
+    '_help_novice_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+
+
+    '_help_risk' => '风险问题',
+    '_help_risk_1' => '提现需要多久？',
+    '_help_risk_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_risk_2' => '提现有手续费么？',
+    '_help_risk_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+
+
     //关于我们
     '_about_number' => '关于我们',
     '_about_number_1' => '为方便客户快速了解我们Tcash以及联系方式',
     '_about_number_2' => '什么是Tcash',
-    '_about_number_3' => 'Tcash隸屬於XXX服務有限公司，致力於全球數字資產的發展，為客戶提供全面、專業的數字資產理財服務，包括ICO基金理財、ETF指數基金理財、OTC套利基金理財，是基於成熟、開源的區塊鏈技術，可以實現目前主流數字貨幣的功能，包括：貨幣兌換、兼具安全和透明性用戶可以交易、存儲、兌換、消費支付等，並且Tcash支持多重簽名技術/以及良好的升級擴展性，為廣大客戶和各界朋友提供更好的數字資產金融理財服務。',
+    '_about_number_3' => 'Tcash隶属於XXX服务有限公司，致力于全球数字资產的发展，为客户提供全面、专业的数字资产理财服务，包括ICO基金理财、E
+    TF指数基金理财、OTC套利基金理财，是基于成熟、开源的区块链技术，可以实现目前主流数字货币的功能，包括：货币兑换、兼具安全和透明性用户可以交易、存储、兑换、消费支付等，并且Tcash支
+    持多重签名技术/以及良好的升级扩展性，为广大客户和各界朋友提供更好的数字资产金融理财服务',
     '_about_number_4' => '官方QQ',
     '_about_number_5' => '官方微信',
     '_about_number_6' => '官方电话',
     '_about_number_7' => '官方邮箱',
+
+
+
 
 
 

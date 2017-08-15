@@ -103,6 +103,19 @@ return array(
     '_Login_quick_login' => '快捷登入',
     '_Login_forgot_password' => '忘記密碼',
 
+
+
+    '_login_1' => '會員登錄',
+    '_login_2' => '用戶名/手機號',
+    '_login_3' => '密碼',
+    '_login_4' => '登錄',
+    '_login_5' => '點擊這裏進行注冊',
+    '_login_6' => '還沒有賬號',
+    '_login_7' => '用QQ賬戶登錄',
+    '_login_8' => '用微信登錄',
+    '_login_9' => '用微博登錄',
+
+
 //      注册页面signup
     '_Register_Member_register' => '會員注册',
     '_Register_placeholder_username' => '請輸入您的用戶名',
@@ -111,6 +124,12 @@ return array(
     '_Register_placeholder_phone' => '請輸入手機號碼',
     '_Register_placeholder_email' => '請輸入郵箱',
     '_Register_register_tis' => '已經有帳號',
+    '_Register_register_Verification' => '短信驗證碼',
+    '_Register_register_immediately' => '立即發送',
+    '_Register_register_register' => '注冊',
+    '_Register_register_existing' => '已有賬號',
+    '_Register_register_sign' => '點擊登錄',
+
 
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => '找 回 密 碼',
@@ -156,20 +175,15 @@ return array(
     '_Index_android_download' =>'安卓下载',
     '_Index_pc_download' =>'電腦端下載',
 
-
     '_Index_team_content1' =>'多年IT技術工作，Intel技術大使，觸控首席CVP,微軟技術專家MCSE,曾編寫《解密比特幣》、《遊戲開發原理》等書籍。',
     '_Index_team_name1' =>'沈大海',
-
 
     '_Index_team_content2' =>'從事互聯網産品運營十年余年，期間主導並參與多款遊戲産品的運營和發行工作，曾負責空中網旗下《天劫OL》《天劫貳OL》《封神OL》《夢幻天劫》等知名産品運營發行，目前主要負責頤博數碼自研及代理産品運營對外發行。',
     '_Index_team_name2' =>'常大成',
 
-
     '_Index_right_join' =>'爲改變世界而生',
     '_Index_right_join1' =>'數字貨幣---顛覆現實、引發技術革命，即將滲透至妳我生活的方方面面',
     '_Index_right_join2' =>'馬上加入',
-
-
 
     '_Home_transaction_service_content' => '由於很多人不懂互聯網和數位貨幣操作，從事數位貨幣線上交易平臺和提供數位貨幣交易服務，收取交易費在任何國家都有需求。',
     '_Home_price_fluctuation_content' => '由於數位貨幣受政策、事件等影響波動較大，商品價格與商品的價值成正比，與貨幣的價值成反比。商品價格，只有在貨幣價值不變、商品價值提高時，或在商品價值不變、貨幣價值降低時，才會普遍提高。',
@@ -191,7 +205,7 @@ return array(
     '_ICO_run' => '產品運作 ',
     '_ICO_run_content' => '每月15日24:00進入封閉投資期，周期365天，T+0贖回 ',
     '_ICO_introduce' => '產品介紹 ',
-    '_ICO_introduce_content' => '在ICO火熱的當下，陸家嘴比特幣基金公司推出ICO基金，為我們 的客戶贏取高風險市場的最大收益。我們提供專業技術團隊，專 業操盤人員，對市場現有ICO產品進行篩選考察，最後選定部分 ICO產品進行早鳥輪投資。以做到收益最大化，本團隊參投項目ETH歷史收益超過300倍',
+    '_ICO_introduce_content' => '在ICO火熱的當下，銅鑼灣基金公司推出ICO基金，為我們 的客戶贏取高風險市場的最大收益。我們提供專業技術團隊，專 業操盤人員，對市場現有ICO產品進行篩選考察，最後選定部分 ICO產品進行早鳥輪投資。以做到收益最大化，本團隊參投項目ETH歷史收益超過300倍',
     '_ICO_money' => '起投金額 ',
     '_ICO_money_1' => '￥ ',
     '_ICO_money_2' => '10000圓 ',
@@ -272,6 +286,52 @@ return array(
     '_safety_number_2' => '支持okcoin,huobi,chbtc,btcc之間BTC和LTC對衝搬磚',
     '_safety_number_3' => '支持chbtc和yunbi之間ETH對衝搬磚',
     '_safety_number_4' => '支持國外主流平台Bitfinex、Bitstamp、BTC-E等之間的對衝套利',
+
+    //帮助中心
+
+    '_help_q' => '問',
+    '_help_a' => '答',
+
+    '_help_center' => '幫助中心',
+    '_help_center_1' => '為客戶專業、貼心、快速解答各種疑難問題等多種方式服務',
+
+    '_help_project' => '理財問題',
+    '_help_project_1' => 'ICO基金怎麽購買?',
+    '_help_project_1_1' => '可以通過官網點擊我要理財→選擇ICO基金→進入頁面後點擊購買→輸入金額→生成訂單→支付寶支付（或銀行轉賬支付）',
+
+    '_help_project_2' => 'OTC套利基金怎麽購買?',
+    '_help_project_2_2' => '可以通過官網點擊我要理財→選擇OTC套利基金→在OTC套利基金頁面選擇您需要購買的周期，周期分別為壹個月，三個月，半年，壹年。點擊購買後確認投資協議和購買金額→支付寶支付（或者銀行轉賬支付）。',
+
+    '_help_project_3' => 'ETF指數基金收益這麽高會不會風險也很高?',
+    '_help_project_3_3' => 'ETF基金雖然收益高，但是我們在其中加入了40%的套利基金，可以幫助客戶分擔掉壹些風險，幫客戶做到保本的程度。',
+
+    '_help_project_4' => 'ETF指數基金怎麽購買？',
+    '_help_project_4_4' => '指數基金在每月1日9:00開啟購買通道，屆時可以通過官網點擊我要理材→選擇ETF指數基金→確定購買金額→確定投資協議→支付寶支付（或者銀行轉帳支付）。',
+
+    '_help_recharge' => '充值問題',
+    '_help_recharge_1' => '為什麽點擊壹個理財的充值地址跟我的賬戶充值地址不壹致？有何不同？',
+    '_help_recharge_1_1' => '資金管理界面中的比特蔽/萊特蔽充值地址是用於給您在Bitbank的主帳護充值，充值後，自動存入活期，是壹筆可用的虛擬貨蔽。P2P理材裏面點擊“購買”後彈出的充值地址是您購買該項目所需的充值地址，當您向該地址充值確認後，系統會自動使用這筆蔽買成理材產品，省去您的二次操作。',
+    '_help_recharge_2' => '充值什麽時候到賬？',
+    '_help_recharge_2_2' => '比特幣/萊特幣通過網絡確認（1個確認）後自動到賬，預計10分鐘以上；比特幣/萊特幣通過CHBTC轉賬到Bitbank可實現秒到賬；人民幣通過轉賬，以代理商賬戶到賬為淮。',
+
+    '_help_withdrawals' => '提現問題',
+    '_help_withdrawals_1' => '提現需要多久？',
+    '_help_withdrawals_1_1' => '比特幣提現壹般在兩小時內就能完成。',
+
+    '_help_withdrawals_2' => '提現有手續費麽？',
+    '_help_withdrawals_2_2' => 'BTC轉出免手續費，由網絡收取0.0001BTC作為交易手續費。LTC轉出免手續費，由網絡收取0.001LTC作為交易手續費',
+
+    '_help_novice' => '新手幫助',
+    '_help_novice_1' => '提现需要多久？',
+    '_help_novice_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_novice_2' => '提现有手续费么？',
+    '_help_novice_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+
+    '_help_risk' => '風險問題',
+    '_help_risk_1' => '提现需要多久？',
+    '_help_risk_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_risk_2' => '提现有手续费么？',
+    '_help_risk_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
 
     //关于我们
     '_about_number' => '關於我們',

@@ -100,15 +100,30 @@ return array(
     '_Login_quick_login' => 'Quick Sign In',
     '_Login_forgot_password' => 'Forgot password',
 
+    '_login_1' => 'Login In',
+    '_login_2' => 'User name / Cell Phone Number',
+    '_login_3' => 'Password',
+    '_login_4' =>'Sign in',
+    '_login_5' => 'Click Registration',
+    '_login_6' => 'No account yet',
+    '_login_7' => 'Log in with QQ',
+    '_login_8' => 'Log in with Wechat',
+    '_login_9' => 'Log in with micro-blog',
+
+
 //      注册页面signup
-    '_Register_Member_register' => 'Member Sign Up',
+    '_Register_Member_register' => 'Sign Up',
     '_Register_placeholder_username' => 'Please enter your user name',
     '_Register_placeholder_password' => 'Please input a password',
     '_Register_placeholder_rusername' => 'Please enter a repeat password',
     '_Register_placeholder_phone' => 'Please enter your cell phone number',
     '_Register_placeholder_email' => 'Please enter the Email',
     '_Register_register_tis' => 'Already have an account',
-
+    '_Register_register_Verification' => 'SMS Authentication Code',
+    '_Register_register_immediately' => 'Send',
+    '_Register_register_register' => 'Register',
+    '_Register_register_existing' => 'Existing Account',
+    '_Register_register_sign' => 'Click Login',
 
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => 'Password retrieval',
@@ -174,8 +189,6 @@ return array(
     '_Home_price_fluctuation_content' => 'As the digital currency is affected by policies, events and other fluctuations, commodity prices are directly proportional to the value of commodities, and inversely proportional to the value of money. Commodity prices are generally raised only when the value of the money is constant, the value of the commodity increases, or when the value of the product is constant and the value of the money decreases.',
     '_Home_global_price_differentials_content' => 'Due to the global conditions of different government policies and conditions caused by people do not trust in Fiat, will let other digital currency bitcoin prices rose, in the low price country collecting coins, selling coins in high price countries, no risk arbitrage.',
     '_Home_global_cross-border_payments_content' => 'The use of bitcoin for cross-border payment / international remittance, no longer need the presence of banking intermediaries, liquidity is good, you can achieve fast arrival, and the fees are very low.',
-
-
 
 
     '_Home_raised_small_title' => 'DBCoin - block chain to the center of the digital currency project',
@@ -269,6 +282,55 @@ return array(
     '_safety_number_2' => 'Support okcoin, Huobi, chbtc, BTCC, BTC, and LTC hedges to move bricks',
     '_safety_number_3' => 'Support between chbtc and Yunbi, ETH hedging, moving bricks',
     '_safety_number_4' => 'Support foreign mainstream platforms Bitfinex, Bitstamp, BTC-E and other hedge arbitrage',
+
+
+    //帮助中心
+
+    '_help_q' => 'Q',
+    '_help_a' => 'A',
+
+    '_help_center' => 'Help Center',
+    '_help_center_1' => 'For customers、professional、intimate、quick answer all kinds of difficult problems and other ways of service',
+
+    '_help_project' => 'Financing',
+    '_help_project_1' => 'How do you buy ICO funds?',
+    '_help_project_1_1' => 'Can I want to finance through the official website click Select ICO fund to enter the page and click to buy, the amount of input to generate orders, Alipay paid (or bank transfer payment)',
+
+    '_help_project_2' => 'OTC how to buy an arbitrage fund?',
+    '_help_project_2_2' => 'You can click through the official website, I want to finance. Select OTC arbitrage fund. On the OTC arbitrage fund page, select the cycle you need to buy, the cycles are one month, three months, six months, one year. Click to buy after the confirmation of the investment agreement and the purchase amount, Alipay paid (or bank transfer payment)',
+
+    '_help_project_3' => 'ETF index fund earnings so high will be high risk?',
+    '_help_project_3_3' => 'Although the ETF fund has a high profit, we have added 40% of the arbitrage funds to help customers share some of the risks and help customers to make sure they are guaranteed',
+
+    '_help_project_4' => 'ETF index fund how to buy?',
+    '_help_project_4_4' => 'The index fund purchase channel in 1 monthly 9:00 open, then you can click I want to choose the financial website ETF index fund to determine the purchase amount to determine the investment agreement, Alipay paid (or bank transfer payment)',
+
+    '_help_recharge' => 'Recharge',
+    '_help_recharge_1' => 'Why do you click the top address of a bank? What\'s the difference?',
+    '_help_recharge_1_1' => 'Money management interface Wright coin recharge address is used to recharge your account in, recharge automatically deposit current, is a virtual currency available. P2P money inside click "buy" after the pop-up recharge address is your purchase of the required address when you recharge, recharge to the address after the confirmation, the system will automatically use the money to buy into financial products, save two of your operation',
+
+    '_help_recharge_2' => 'When does the recharge come in？',
+    '_help_recharge_2_2' => 'Wright currency through the network to confirm (1 confirmed) automatically after the arrival, is expected to more than 10 minutes;  Wright currency by CHBTC transfer to Bitbank can realize the second arrival; RMB through transfer agents to account to account for',
+
+    '_help_withdrawals' => 'Withdrawals',
+    '_help_withdrawals_1' => 'How long does it take to withdraw cash?',
+    '_help_withdrawals_1_1' => 'withdrawals are generally completed within two hours',
+
+    '_help_withdrawals_2' => 'Do you have any commission?',
+    '_help_withdrawals_2_2' => 'BTC transfers fees without charge from the network to 0.0001BTC as transaction fees. LTC transfers fees without charge from the network to 0.001LTC as transaction fees',
+
+    '_help_novice' => 'Newbie help',
+    '_help_novice_1' => '提现需要多久？',
+    '_help_novice_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_novice_2' => '提现有手续费么？',
+    '_help_novice_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+
+
+    '_help_risk' => 'Risk',
+    '_help_risk_1' => '提现需要多久？',
+    '_help_risk_1_1' => '比特币提现一般在两小时内就能完成。',
+    '_help_risk_2' => '提现有手续费么？',
+    '_help_risk_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
 
 
 

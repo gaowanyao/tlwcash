@@ -46,7 +46,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
+                <img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
                 <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
                 <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
@@ -60,10 +60,10 @@
         <div class="container">
             <div class="row">
                 <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                    <div class="form-box-inner">
+                    <div class="form-box-inner"style="<?php if($pc!='pc') echo 'margin-top:80px;'?>">
                         <h2 class="title text-center">
                             <!--Sign up now-->
-                            账号注册
+                            <?php echo (L("_Register_Member_register")); ?>
                         </h2>
                         <!--<p class="intro text-center">It only takes 3 minutes!</p>-->
                         <div class="row">
@@ -71,37 +71,37 @@
                                 <form class="signup-form">
                                     <div class="form-group email">
                                         <label class="sr-only" for="phone">手机号</label>
-                                        <input id="phone" type="tel" class="form-control login-email" placeholder="手机号">
+                                        <input id="phone" type="tel" class="form-control login-email" placeholder="<?php echo (L("_Register_placeholder_phone")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">密码</label>
-                                        <input id="pwd" type="password" class="form-control login-password" placeholder="密码">
+                                        <input id="pwd" type="password" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_password")); ?>">
                                     </div><!--//form-group-->
 
                                     <div class="form-group password">
                                         <label class="sr-only" for="verify">验证码</label>
                                         <!--<i class="fa fa-envelope-o"></i>-->
-                                        <input id="verify" minlength="4" maxlength="4" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="短信验证码">
-                                        <button id="verify_send" style="width: 80px;float: right;" type="button" class="btn btn-cta-primary btn-cta-primary" >立即发送</button>
+                                        <input id="verify" minlength="4" maxlength="4" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="<?php echo (L("_Register_register_Verification")); ?>">
+                                        <button id="verify_send" style="width: 80px;float: right;" type="button" class="btn btn-cta-primary btn-cta-primary" ><?php echo (L("_Register_register_immediately")); ?></button>
 
                                         <br/>
                                         <br/>
                                     </div><!--//form-group-->
 
-                                    <button style="clear: both;margin-top: 20px !important;" id="submit" type="button" class="btn btn-block btn-cta-primary">注册</button>
+                                    <button style="clear: both;margin-top: 20px !important;" id="submit" type="button" class="btn btn-block btn-cta-primary"><?php echo (L("_Register_register_register")); ?></button>
 
 
 
-                                    <p class="note">
-                                        <!--By signing up, you agree to our terms of services and privacy policy.-->
-                                        通过注册，您同意我们的服务条款和隐私政策。
-                                    </p>
+                                    <!--<p class="note">-->
+                                        <!--&lt;!&ndash;By signing up, you agree to our terms of services and privacy policy.&ndash;&gt;-->
+                                        <!--通过注册，您同意我们的服务条款和隐私政策。-->
+                                    <!--</p>-->
                                     <p class="lead">
                                         <!--Already have an account?-->
-                                        已有帐号
+                                        <?php echo (L("_Register_register_existing")); ?>
                                         <a class="login-link" id="login-link" href="index.php?a=signin">
                                             <!--Log in-->
-                                            点击登录
+                                            <?php echo (L("_Register_register_sign")); ?>
                                         </a>
                                     </p>
                                 </form>
@@ -110,13 +110,14 @@
 
                             <div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">
                                 <div class="divider"><span>Or</span></div>
-                                <ul class="list-unstyled social-login">
-                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>Sign up with QQ</button></li>
-                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>Sign up with Wechat</button></li>
+                                <ul class="list-unstyled social-login" style="padding-top: 40px;" >
+                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i><?php echo (L("_login_7")); ?></button></li>
+                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i><?php echo (L("_login_8")); ?></button></li>
+                                    <li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i><?php echo (L("_login_9")); ?></button></li>
                                     <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>-->
                                     <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>-->
-                                    <li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>
-                                    <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>
+                                    <!--<li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>-->
+                                    <!--<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>-->
                                 </ul>
                                 <!--<p class="note">Don't worry, we won't post anything without your permission.</p>-->
                             </div><!--//social-login-->

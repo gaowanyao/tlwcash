@@ -8,7 +8,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
@@ -45,7 +45,6 @@
     <!--<link href="/Public/resource/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />-->
     <!--&lt;!&ndash; END THEME LAYOUT STYLES &ndash;&gt;-->
 
-
     <style>
         .icoTitle{
             padding: 15px;
@@ -61,6 +60,9 @@
         }
         .indent{
             text-indent:2em;
+        }
+        body{
+            font-family: 'Roboto', arial, sans-serif;
         }
 
     </style>
@@ -158,9 +160,9 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -173,8 +175,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
-                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -188,9 +190,9 @@
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
 
                         <!--<a class="my_center"  href="javascript:;">-->
@@ -650,29 +652,156 @@
 
 
 
+<!--模态框开始-->
+<div class="row">
+        <div  class="modal fade draggable-modal"  id="modal" tabindex="-1" role="basic" aria-hidden="true">
+            <div class="modal-dialog" style="padding: 5px;padding-top:15px ">
+                <div class="modal-content">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">
+                                资产风险提示
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ios" data-toggle="tab">
+                                资产委托协议
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content" style="padding: 10px">
+                        <div class="tab-pane fade in active" id="home" style="padding: 30px;height: 200px;overflow: auto;border: 2px solid gray;border-radius: 10px">
+                            <div>
+                                <p>尊敬的投资人：在投资过程中可能会面临多种风险因素。 因此，根据有关法律法规规定的要求，在您选择参与本次投资前，请 确保自己符合相关法律法规规定，并完全明白本次投资的性质和所涉及的风险，详细了解和审慎评估本次投资的资金投向、分 配方式、潜在风险及预期收益等基本情况，在审慎考虑后作出是否投资本公司理财产品的决定。在投资理财产品后，您应随时 关注本项目的信息披露情况，及时获取相关信息。 作为参与本公司理财产品的投资人，您应自行承担投资涉及的各类风险，包 括但不限于：</p>
+                                <p>(1) 政策监管风险：有关法律、法规及相关政策、规则发生变化，导致无法实现您的交易，您由此可能遭受损失；</p>
+                                <p>(2) 流动性风险：除另有约定的情形外，本公司理财产品的众筹标的份额须在符合本协议约定的各项条件且存在受让方的前提下 方可转让，上述安排可能存在导致您无法将投资随时变现的风险；</p>
+                                <p>(3) 预期收益风险：本协议有关本公司理财产品收益的描述均为预期收益，本项目存在由于特定原因无法实现预期收益和投资本金保障的风险；</p>
+                                <p>(4) 成交风险：由于本公司部分理财产品存在众筹资金上限，您所提交的认购请求可能无法最终达成，您由此无法获得收益或投资；</p>
+                                <p>(5) 管理风险：受管理人员经验、技能、判断力、执行力等方面的限制，可能对自有租赁物业的运作及管理造成一定影响，并因此存在影响预期收益的风险；</p>
+                                <p>(6) 由不可抗力因素导致的风险：由于包括但不限于地震、台风、洪水、火灾、瘟疫、战争、政变、恐怖主义行动、骚乱、罢工以及新法律或国家政策颁布或对原法律或国家政策的修改等因素导致的风险；</p>
+                                <p>(7) 操作风险：因您的过错操作导致的风险，该等过错操作包括但不限于：决策失误、操作不当、遗忘或泄露快钱账户/快钱钱包密码、密码被他人破解、您使用的计算机系统或手机被第三方侵入、您委托他人代理交易时他人恶意或不当操作而造成的损失；</p>
+                                <p>(8) 其他发起人无法预见、无法避免或无法控制的风险。 以上并不能揭示您投资本公司理财产品所面临的全部风险及市场的全部情形。您在做出交易决策前，应全面了解本公司理财产品的实际情况，根据您自身的投资目的、投资期限、投资经验、资产状况等判断是否具备相应的投资风险承受能力，谨慎决策，并自行承担全部风险。 尽管发起人将谨慎履行本协议项下的相关义务，但并不承诺您的投资不受损失，亦不承诺本公司理财产品的最低收益。</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ios" style="padding: 30px;height: 200px;overflow: auto;border: 2px solid gray;border-radius: 10px">
+                            <p> 甲方（投资人）：</p>
+                            <p>  乙方（操作人）：陆家嘴比特币基金</p>
+                            <p>  工作日：  国家法定工作日</p>
+                            <p>  甲方熟知数字货币市场中的风险，为实现资产的保值、增值，为更好地在数字货币市场上发展，本着“资源共享、诚实信用、互惠互利、共同发展”的原则，委托乙方进行资产管理，乙方以人才和信息优势为依托，接受甲方的委托，在此基础上双方达成合作意向如下：</p>
+                            <p>  第一条、账户管理</p>
+                            <p>  甲方以自己的名义在乙方的意零（上海）金融信息服务有限公司开设资产管理账户，授权乙方订单支付资产（大写：壹、贰、叁、肆、伍、陆、柒、捌、玖、拾、佰、仟、万）进行资产管理。</p>
+                            <p>  第二条、委托期限</p>
+                            <p>   委托期限由甲方购买产品的期限为准，自购买日起至周期结束为止。在委托期间甲方有权在委托结束前十天内登入一次交易账户并查看市值情况，（具体时间：从甲方在乙方开设专门账户并将资产交付给乙方管理之日起算起。）在委托期结束后，若所投资的资产按时收回全额资金，则甲方可获得的预期年化收益率为相应产品的预期年化收益率。测算收益不等于实际收益，投资需谨慎。</p>
+                            <p>   第三条、授权范围</p>
+                            <p>   甲方授权乙方进行投资，具体交易品种与买卖时机由乙方决定。</p>
+                            <p>  第四条、甲方的权利和义务</p>
+                            <p>   1．	甲方有权按照本协议规定获得相应的投资收益；</p>
+                            <p>   2．甲方保证委托资产的足额按时到位；</p>
+                            <p>   3．在本协议有效期内，甲方不得在授权期间自行登入或动用其委托乙方管理的账户及资产，若没有在指定查看日内登入交易账户导致账户在交易过程中造成的亏损或严重亏损甲方将自行承担；</p>
+                            <p>   4．甲方不得擅自将相关委托资产私自留存或另立账户存储；</p>
+                            <p>   5．甲方有权向乙方垂询投资情况；</p>
+                            <p>   第五条、乙方的权利和义务</p>
+                            <p>    1．乙方有权依据本协议的有关规定对甲方的资产进行合理管理并有权在授权范围内自主决定最佳投资组合以及买卖时机；</p>
+                            <p>   2．乙方应依据本协议的规定，本着诚实信用、谨慎尽职原则，对甲方的资产进行管理；</p>
+                            <p>   3．乙方不得在未通知甲方或未取得甲方同意的情况下，为自己的经济利益动用甲方资产；</p>
+                            <p>   4．乙方保证委托资产的安全性，不得从事有损于甲方利益的活动；</p>
+                            <p>   5．乙方有义务于合同生效70至75天内向甲方汇报甲方帐户市值情况。</p>
+                            <p>   6．乙方有权拒绝甲方的操作建议和投资方向；</p>
+                            <p>   7．乙方尽自己最大的能力管理甲方的资产风险，因市场存在诸多不确定因素若最终出现亏损或严重亏损由甲方自愿承担，而乙方不承担最终投资亏损的任何责任；</p>
+                            <p>    第六条、资产委托期限内，甲乙双方均无权单方对本协议中有关的资金账户进行撤销指定交易、转托管或转出资金等资产转移行为。</p>
+                            <p>    第七条、甲方委托乙方操作的资金在协议期内甲方不能提取，以保证协议的实施。乙方全权负责甲方资金的操作，甲方在协议期内不能干预乙方操作。</p>
+                            <p>   第八条、甲方如需要了解帐户市值应事先书面通知乙方，乙方在收到其通知后应当提供书面的市值状况。</p>
+                            <p>   第九条、保密义务</p>
+                            <p>   1．甲方对乙方提供的投资研发资料和详细居住地址，乙方具有保密义务；</p>
+                            <p>   2．未经乙方同意，甲方不得将乙方提供的投资对象、交易记录、研发资料向第三方泄露；</p>
+                            <p>   3．乙方对甲方的资金、交易记录、委托理财的操作情况有保密义务。</p>
+                            <p>   第十条、结算方式</p>
+                            <p>    1．在购买ico产品时，乙方以甲方初始到账总资金的6%作为基金运营费的方式收取（并收取盈利部分的30%作为奖金）。在甲方购买陆家嘴比特币一号（指数基金产品）时，乙方以甲方初始到账总资金的5%作为基金运营费的方式收取，（并收取盈利部分的20%作为奖金，乙方应尽自己所能，发挥受托资产的最大效益） 。在购买套利基金产品时，预期年化收益率内的所有年化收益都归将给甲方，乙方无权和甲方收益分成。</p>
+                            <p>   2．委托期终止后甲方委托乙方进行资金清算的年化收益率预期不低于30% ，若委托终止后未能达到预期年化收益率，则乙方将5%管理费退还给甲方。</p>
+                            <p>    指数基金管理费计算方法：管理费=初始到账总资金×5%</p>
+                            <p>   ICO基金管理费计算方法：管理费=初始到账总资金×6%</p>
+                            <p>   收益计算方法：预期期末收益＝投资本金×预期年化收益率×实际存续天数/365</p>
+                            <p>   第十一条、附属条款</p>
+                            <p>   1．甲方在委托期限内不得减少委托投资款；</p>
+                            <p>   2．甲方在委托期限内要追加委托投资款的，应提前三日通知乙方；</p>
+                            <p>    3．在委托期即将结束前15个工作日甲乙双方应相互协商是否续约；</p>
+                            <p>   第十二条、争议的解决</p>
+                            <p>   经过协商并同意，甲乙双方认真阅读、仔细理解、本协议内容，故由甲乙双方制定并自愿签署。</p>
+                            <p>   本协议适用中华人民共和国有关法律，受中华人民共和国法律管辖，本协议各方当事人对本协议有关条款的解释或履行发生争议时，应通过友好协商方式予以解决。如果协商未达成书面协议，则任何一方当事人均有权向有管辖权的人民法院提起诉讼。</p>
+                            <p>   第十三条、协议的解释</p>
+                            <p>   本协议各条款的标题仅为方便而设，不影响标题所属条款的意思。</p>
+                            <p>   第十四条、生效条件</p>
+                            <p>   本协议自各方的法定代表或其授权代理人在本协议签字之日起生效。 本协议一式两份，具有相同的法律效力，甲乙双方各一份。</p>
+                            <p>   第十六条、提示</p>
+                            <p>  乙方已提醒甲方注意对协议各印就条款作全面、准确的理解，并应甲方的要求作了相应的条款说明。签约双方对本协议的含义认识一致。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
 
+                        <label> <input type="checkbox"> 我已阅读并同意<?php if($pc!='pc') echo'<br>'?>《投资风险提示书》、《资产委托协议书》</label>
+                    </div>
+                    <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>-->
+                    <!--&lt;!&ndash;<h4 class="modal-title">提示</h4>&ndash;&gt;-->
+                    <!--<span>资产风险提示书</span>-->
+                    <!--<span>资产委托协议</span>-->
+                    <!--</div>-->
+                    <!--<div class="modal-body"> 确定要删除该用户吗？ </div>-->
+                    <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn dark btn-outline" data-dismiss="modal">取消</button>-->
+                    <!--<button type="button" id="delete_confirm" class="btn green">确定</button>-->
+                    <!--</div>-->
+                    <br>
 
-<div class="modal fade draggable-modal" id="modal" tabindex="-1" role="basic" aria-hidden="true">
-    <div class="modal-dialog" style="padding-top:200px;">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                <!--<h4 class="modal-title">提示</h4>-->
-                <span>资产风险提示书</span>
-                <span>资产委托协议</span>
-            </div>
-            <div class="modal-body"> 确定要删除该用户吗？ </div>
-            <div class="modal-footer">
-                <button type="button" class="btn dark btn-outline" data-dismiss="modal">取消</button>
-                <button type="button" id="delete_confirm" class="btn green">确定</button>
-            </div>
+                    <br>
+                    <div class="panel panel-default text-center" style="margin: 0 15px;margin-top: -30px;border: 0px !important;">
+                        <div class="panel-heading">
+                            <span style="font-size: 20px">生成订单 </span></div>
+                        <div class="panel-body" style="padding: 0;margin:0px;">
+                            <div class="table-responsive" style="padding-bottom: 0px;">
+                                <table class="table table-striped text-center" style="margin-bottom: 0px;collapse: collapse;">
+                                    <tr class="success">
+                                        <td>产品名称</td>
+                                        <td>比特币套利基金新月</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>产品周期</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>年化回报率</td>
+                                        <td>8.0</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td>起投金额</td>
+                                        <td>1000元</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td colspan="2">
+                                            <!--<button type="button" class="btn btn-info"style="border-radius: 0" disabled>购买金额</button>-->
+                                            <input class="form-control" type="text" style="margin-top:1px;border-radius: 0px;width: 82px;height: 36px;font-weight:900;background:rgba(0,0,0,0.1);display: inline-block" disabled value="购买金额">
+                                            <input class="form-control" placeholder="输入金额" style="margin-top:1px;border-radius: 0px;width: 82px;height: 36px;background:rgba(0,0,0,0.1);display: inline-block" type="text"><span>元</span>
+                                        </td>
+                                        <!--<td style="text-align: right"><span style="display: inline-block;"><button type="button" class="btn btn-info"style="border-radius: 0">购买金额</button></span></td>-->
+                                        <!--<td style="text-align: left"><input class="form-control" placeholder="购买金额" style="border-radius: 0px;width: 82px;height: 32px;background:rgba(0,0,0,0.1);display: inline-block" type="text"><span>元</span></td>-->
+                                    </tr>
+                                    <tr >
+                                        <td colspan="2"><button style="margin-left:-15px;margin-right:5px;" class="btn btn-success">生成订单</button><button style="margin-left: 0px" class="btn btn-warning" data-dismiss="modal">取消订单</button></td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--&lt;!&ndash; /.modal-content &ndash;&gt;-->
+                </div>
+                <!-- /.modal-dialog -->
         </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
+
 </div>
 
-
+<!--模态框结束-->
 
 
 <!-- Javascript -->

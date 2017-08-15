@@ -47,20 +47,12 @@
 </head>
 
 <body class=" home-page login-page access-page has-full-screen-bg">
-
-
-
-
 <div class="upper-wrapper">
-
-
-
      <!--******HEADER******-->
     <header class="header">
         <div class="container">
             <h1 class="logo">
                 <img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
-
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
 
@@ -72,36 +64,38 @@
         <div class="container">
             <div class="row">
                 <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                    <div class="form-box-inner">
-                        <h2 class="title text-center">账号密码登录</h2>
+                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>">
+                        <h2 class="title text-center"><?php echo (L("_login_1")); ?></h2>
                         <div class="row">
                             <div class="form-container col-xs-12 col-md-5">
                                 <form class="login-form">
                                     <div class="form-group email">
                                         <label class="sr-only" for="user">用户名/手机号</label>
-                                        <input id="user" type="text" class="form-control login-email" placeholder="用户名/手机号">
+                                        <input id="user" type="text" class="form-control login-email" placeholder="<?php echo (L("_login_2")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">Password</label>
-                                        <input id="pwd" type="password" class="form-control login-password" placeholder="密码">
-                                        <p class="forgot-password" style="text-align: right;"><a href="index.php?a=forgetpwd">忘记密码?</a></p>
+                                        <input id="pwd" type="password" class="form-control login-password" placeholder="<?php echo (L("_login_3")); ?>">
+                                        <p class="forgot-password" style="text-align: right;"><a href="index.php?a=forgetpwd"><?php echo (L("_Login_forgot_password")); ?>?</a></p>
                                     </div><!--//form-group-->
-                                    <button id="submit" type="button" class="btn btn-block btn-cta-primary">登录</button>
+                                    <button id="submit" type="button" class="btn btn-block btn-cta-primary"><?php echo (L("_login_4")); ?></button>
                                     <!--<div class="checkbox remember">-->
                                         <!--<label>-->
                                             <!--<input type="checkbox"> Remember me-->
                                         <!--</label>-->
                                     <!--</div>&lt;!&ndash;//checkbox&ndash;&gt;-->
-                                    <p class="lead">还没有账号? <a class="signup-link" href="index.php?a=signup">点击这里进行注册</a></p>
+                                    <p class="lead"><?php echo (L("_login_6")); ?>? <a class="signup-link" href="index.php?a=signup"><?php echo (L("_login_5")); ?></a></p>
                                 </form>
                             </div><!--//form-container-->
+
+                            
                             <div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">
                                 <div class="divider"><span>Or</span></div>
-                                <ul class="list-unstyled social-login">
-                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>Log in with QQ</button></li>
-                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>Log in with Wechat</button></li>
-                                    <li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Log in with Github</button></li>
-                                    <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>
+                                <ul class="list-unstyled social-login" style="padding-top: 40px;">
+                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i><?php echo (L("_login_7")); ?></button></li>
+                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i><?php echo (L("_login_8")); ?></button></li>
+                                    <li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i><?php echo (L("_login_9")); ?></button></li>
+                                    <!--<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>-->
                                 </ul>
                             </div><!--//social-btns-->
                         </div><!--//row-->

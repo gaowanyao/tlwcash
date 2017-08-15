@@ -135,9 +135,9 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
@@ -150,8 +150,8 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
-                            <li><a href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -165,9 +165,9 @@
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
-                            <li><a href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
 
                         <!--<a class="my_center"  href="javascript:;">-->
@@ -206,7 +206,7 @@
 
 
 
-<section class="features-video section section-on-bg" style="<?php if($pc == 'pc'){ echo 'height: 550px;';}else{ echo 'height: 450px;';} ?>">
+<section class="features-video section section-on-bg" style="<?php if($pc == 'pc'){ echo 'height: 520px;';}else{ echo 'height: 450px;';} ?>">
     <div class="container text-center">
         <h2 class="title"><?php echo (L("_exponential_banner")); ?></h2>
         <div class="" style="color:#fff;width: 100%">
@@ -220,7 +220,7 @@
 
 <div class="headline-bg">
 </div><!--//headline-bg-->
-<div class="features-tabbed section blog container" style="padding:0px 0px 10px;margin-top: 100px">
+<div class="features-tabbed section blog container" style="padding:0px 0px 10px;margin-top: 10px">
     <div class="row" style="margin: 0px;">
         <div id="blog-mansonry" class="blog-list">
             <article class="post col-md-4 col-sm-6 col-xs-12" style="">

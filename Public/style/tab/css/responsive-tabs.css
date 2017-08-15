@@ -2,7 +2,7 @@
 /* REQUIRED for core functionality */
 
 .responsive-tabs__heading { display: none;}
-.responsive-tabs__list__item { display: inline; cursor:pointer;}
+.responsive-tabs__list__item { display: inline-block; cursor:pointer;}
 
 
 @media (max-width: 767px) {
@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 768px) {
-	.responsive-tabs__panel--closed-accordion-only { display: block !important;}
+	.responsive-tabs__panel--closed-accordion-only { display: inline !important;}
 }
 
 /* END - Required for core functionality */
@@ -40,7 +40,7 @@
 .responsive-tabs__list__item--active:focus { outline: none !important;}
 
 .responsive-tabs__list { font-size: 1.2em; margin: 2em 0 0 0; padding: 0;border-bottom: 1px solid #ddd; padding-bottom:11px;}
-.responsive-tabs__list__item { background: #eee; padding: 10px 20px;  margin-right: 1em; border-top-left-radius: 5px; border-top-right-radius: 5px;border: 1px solid #ddd; }
+.responsive-tabs__list__item { background: #eee; padding: 10px 20px;margin-top: 0.5em;  margin-right: 1em;margin-left: 2.6em; border-top-left-radius: 5px; border-top-right-radius: 5px;border: 1px solid #ddd; }
 .responsive-tabs__list__item:hover {background: #efefef }
 .responsive-tabs__list__item--active, 
 .responsive-tabs__list__item--active:hover {  background: #fff; border-bottom-color: #fff;}
