@@ -31,136 +31,168 @@
 <div class="page-wrapper">
 
     
+<style>
 
-<!-- Preloader -->
-<div class="preloader"  style="z-index: 10000000;"></div>
-<!--header-style-two-->
-<!-- Main Header-->
-<header class="main-header " style="z-index: 30;">
-    <!-- Header Top -->
-    <div class="header-top">
-        <div class="auto-container clearfix">
-            <!-- Top Left -->
-            <div class="top-left">
-                <ul class="clearfix">
-                    <li><span class="icon fa flaticon-old-typical-phone"></span> <a href="#">+920-637-8294</a></li>
-                    <li><span class="icon fa fa-envelope"></span> <a href="mailto:something@gmail.com">something@gmail.com</a></li>
-                </ul>
-            </div>
+    .scrolled{
+        background: #304153 !important;
+    }
 
-            <!-- Top Right -->
-            <div class="top-right">
-                <ul class="clearfix">
-                    <!--<li><a href="#">Career</a></li>-->
-                    <!--<li><a href="#">Privacy Policy</a></li>-->
-                    <!--<li><a href="/Public/static/contact.html">Help &amp; Support</a></li>-->
-                    <!--<li><a href="/Public/static/faq-1.html">FAQ</a></li>-->
-
-                    <li><a <?php if($account == 'on'){ }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "account"; }else{ echo 'signin';} ?>"><?php if($account == 'on'){ echo "用户中心"; }else{ echo '登录';} ?></a></li>
-                    <li><a href="#">|</a></li>
-                    <li><a <?php if($account == 'on'){ }else{ echo 'target="_blank"';} ?> href="index.php?a=<?php if($account == 'on'){ echo "logout"; }else{ echo 'signup';} ?>"><?php if($account == 'on'){ echo "退出"; }else{ echo '注册';} ?></a></li>
-                    <!--<li><a href="/Public/static/faq-1.html">FAQ</a></li>-->
+    .my_center{
+        text-align: center;
+        font-size: 16px;
+    }
 
 
-                </ul>
-            </div>
+    #header,#header.container,body{
 
-        </div>
-    </div><!-- Header Top End -->
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
 
-    <!--Header-Lower-->
-    <div class="header-lower">
-        <div class="auto-container">
-            <div class="outer clearfix">
-                <!--Logo -->
-                <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="/Public/img/logo.png" alt=""></a></div>
-
-                    <!--<div class="logo"><a href="index.html"><img src="/Public/static/images/logo.png" alt=""></a></div>-->
-                </div>
-
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+    }
 
 
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(/Public/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
+
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
+    }
+
+    .opencolor{
+        color: #ec6952 !important;
+    }
+
+</style>
 
 
+<header id="header" class="header navbar-fixed-top">
+    <!--<div class="top" >-->
+        <!--<span>欢迎来到铜锣湾比特币基金</span>-->
+    <!--</div>-->
 
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current "><a href="index.php">首页</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/index.html">Homepage One</a></li>-->
-                                    <!--<li><a href="/Public/static/index-2.html">Homepage Two</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class="dropdown"><a href="#">我要理财</a>
-                                <ul>
-                                    <li><a href="about-us-1.html">ICO基金</a></li>
-                                    <li><a href="about-us-2.html">指数基金</a></li>
-                                    <li><a href="about-us-2.html">套利基金</a></li>
-                                    <!--<li class="dropdown"><a href="#">Our Team</a>-->
-                                        <!--<ul>-->
-                                            <!--<li><a href="/Public/static/team-grid.html">Team Grid View</a></li>-->
-                                            <!--<li><a href="/Public/static/team-single.html">Single Member</a></li>-->
-                                        <!--</ul>-->
-                                    <!--</li>-->
-                                </ul>
-                            </li>
-                            <li class=""><a href="index.php?a=features">产品特色</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/services.html">Services Style One</a></li>-->
-                                    <!--<li><a href="/Public/static/services-2.html">Services Style Two</a></li>-->
-                                    <!--<li><a href="/Public/static/single-service.html">Single Service</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <li class=""><a href="#">安全保障</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/faq-1.html">FAQs Style One</a></li>-->
-                                    <!--<li><a href="/Public/static/faq-2.html">FAQs Style Two</a></li>-->
-                                    <!--<li><a href="/Public/static/error-page.html">404 Page</a></li>-->
-                                <!--</ul>-->
-                            </li>
+    <div class="container">
+        <h1 class="logo">
+            <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
+            <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
+            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
 
-                            <li class=""><a href="index.php?a=faq">问题解答</a>
-                                <!--<ul>-->
-                                    <!--<li><a href="/Public/static/blog.html">Blog Classic</a></li>-->
-                                    <!--<li><a href="/Public/static/blog-three-column.html">Blog Three Column</a></li>-->
-                                    <!--<li><a href="/Public/static/blog-single.html">Blog Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
+            <!--/Public/img/logo.png-->
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
 
-                            <li class=""><a href="index.php?a=about">关于我们</a>
-                                <!--<ul>-->
-                                <!--<li><a href="/Public/static/gallery-1.html">Gallery One</a></li>-->
-                                <!--<li><a href="/Public/static/gallery-2.html">Gallery Two</a></li>-->
-                                <!--<li><a href="/Public/static/gallery-single.html">Gallery Single</a></li>-->
-                                <!--</ul>-->
-                            </li>
-                            <!--<li class="dropdown"><a href="#">Contact Us</a>-->
-                                <!--<ul class="from-right">-->
-                                    <!--<li><a href="/Public/static/contact.html">Contact Us One</a></li>-->
-                                    <!--<li><a href="/Public/static/contact-2.html">Contact Us Two</a></li>-->
-                                <!--</ul>-->
-                            <!--</li>-->
+            <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="ulChangeColor">
+                    <li class="<?php if('[active]' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center <?php if('[active]' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
+
+                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
+                            <li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+
                         </ul>
-                    </div>
-                </nav><!-- Main Menu End-->
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
+                    <li class="<?php if('[active]' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-            </div>
-        </div>
-    </div>
+                    <li class="nav-item <?php if('[active]' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
-</header>
-<!--End Main Header -->
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center <?php if('[active]' == 'service'){ echo 'opencolor';}?>" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="<?php echo ($action_url); ?>&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
+
+                        <!--<a class="my_center"  href="javascript:;">-->
+
+                            <!---->
+                            <!---->
+
+                            <!--&lt;!&ndash;注册&ndash;&gt;-->
+                            <!--<select id="language" onchange="change()" style="appearance:button;background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                                <!--<option value="zh-cn">简体中文</option>-->
+                                <!--<option value="zh-tw">繁体中文</option>-->
+                                <!--<option value="en-us">English</option>-->
+                                <!--<i class="fa fa-angle-down"></i>-->
+
+                            <!--</select>-->
+                        <!--</a>-->
+
+                    </li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
+
+
+                    <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div><!--//container-->
+</header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
+
 
 
 
@@ -216,97 +248,177 @@
 
 
     <!--Main Footer-->
-    <footer class="main-footer">
+    <!-- ******FOOTER****** -->
+<!--<footer class="footer" style="background: #253340;">-->
+    <footer class="footer" style="background: #304153 !important;">
+    <div class="footer-content" >
+        <div class="container">
+            <div class="row">
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title"  style="text-align: center;margin: 0px;">
 
-    <!--Footer Upper-->
-    <div class="footer-upper">
-        <div class="auto-container">
-            <div class="row clearfix">
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="footer-widget about-widget">
-                        <h2>About Sorto</h2>
-                        <div class="text">
-                            <p>These days are all share them with me oh baby a man is born he's a man of means then along come two they got nothing but their jeans the mate. </p>
-                        </div>
+                            <img style="width: 180px;" src="/Public/img/logo22.png" >
 
-                        <div class="social-links">
-                            <a href="#"><span class="fa fa-facebook-f"></span></a>
-                            <a href="#"><span class="fa fa-twitter"></span></a>
-                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                            <a href="#"><span class="fa fa-instagram"></span></a>
-                        </div>
 
-                    </div>
-                </div>
+                        </h3>
+                        <p  style="text-align: center;padding-left: 14px;"><?php echo (L("_Footer_hours")); ?></p>
+                        <!--<ul class="list-unstyled">-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Tcash简介</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>帮助中心</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>联系我们</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
+                        <!--</ul>-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
 
-                <!--Footer Column-->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="footer-widget latest-news">
-                        <h2>Latest News</h2>
-                        <!--News Item-->
-                        <div class="news-item">
-                            <a href="#" class="news-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
-                            <div class="update-time">JANUARY 05, 2016</div>
-                        </div>
-                        <!--News Item-->
-                        <div class="news-item">
-                            <a href="#" class="news-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
-                            <div class="update-time">JANUARY 02, 2016</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!--Footer Column-->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column padd-left-60">
-                    <div class="footer-widget links-widget">
-                        <h2>Quick Links</h2>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner" style="text-align: center;">
+                        <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
+                        <ul class="list-unstyled" style="font-size: 16px;">
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+
+                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
+                            <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
                         </ul>
-
-                    </div>
-                </div>
-
-                <!--Footer Column-->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                    <div class="footer-widget gallery-widget">
-                        <h2>Flickr Widget</h2>
-                        <div class="clearfix">
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-1.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-1.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-2.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-2.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-3.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-3.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-4.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-4.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-5.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-5.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="/Public/static/images/resource/footer-gallery-6.jpg" class="lightbox-image" title="Caption Here"><img src="/Public/static/images/resource/footer-gallery-6.jpg" alt=""></a></figure>
-                        </div>
-                    </div>
-                </div>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
 
 
+
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-6 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title" style="text-align: center;">
+
+
+                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+
+                        </h3>
+
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_WeChat")); ?></p>
+
+                        <!--<ul class="list-unstyled">-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>-->
+                        <!--</ul>-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+
+
+
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-6 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title" style="text-align: center;">
+
+
+                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+
+                        </h3>
+
+                        <p style="text-align: center;font-size: 16px;"><?php echo (L("_Footer_qq")); ?></p>
+
+                        <!--<ul class="list-unstyled">-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>-->
+                        <!--</ul>-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+
+
+
+
+                <div class="footer-col connect col-xs-12 col-md-4">
+                    <div class="footer-col-inner" style="text-align: center;">
+                        <ul class="social list-inline">
+                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
+                            <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
+                            </ul>
+                        <div class="form-container">
+                            <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
+                            <form class="signup-form navbar-form">
+                                <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
+                                    <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
+                                </div>
+                                <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
+                            </form>
+                            <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                            </div>
+                        </div><!--//subscription-form-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="clearfix"></div>
+            </div><!--//row-->
+            <div class="row has-divider" style="display: none;">
+                <div class="footer-col download col-xs-12 col-md-6">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Mobile apps</h3>
+                        <ul class="list-unstyled download-list">
+                            <li><a class="btn btn-ghost" href="#"><i class="fa fa-apple"></i><span class="text">Download for iOS</span> </a></li>
+                            <li><a class="btn btn-ghost" href="#"><i class="fa fa-android"></i><span class="text">Download for Android</span></a></li>
+                            <li><a class="btn btn-ghost" href="#"><i class="fa fa-windows"></i><span class="text">Windows coming soon...</span></a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//download-->
+                <div class="footer-col contact col-xs-12 col-md-6">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Contact us</h3>
+                        <p class="adr clearfix">
+                            <i class="fa fa-map-marker pull-left"></i>
+                            <span class="adr-group pull-left">
+                                    <span class="street-address">College Green</span><br>
+                                    <span class="region">56 College Green Road</span><br>
+                                    <span class="postal-code">BS1 XR18</span><br>
+                                    <span class="country-name">UK</span>
+                                </span>
+                        </p>
+                        <p class="tel"><i class="fa fa-phone"></i> 0800 123 4567</p>
+                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                        <a href="" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+                    </div><!--//footer-col-inner-->
+                </div><!--//contact-->
             </div>
+        </div><!--//container-->
+    </div><!--//footer-content-->
+    <div class="bottom-bar">
+        <div class="container" style="text-align: center;">
+            <small class="copyright">Copyright &copy; 2017.Company 铜锣湾 All rights reserved.</small>
+        </div><!--//container-->
+    </div><!--//bottom-bar-->
+</footer><!--//footer-->
 
-        </div>
-    </div>
-
-    <!--Footer Bottom-->
-    <div class="footer-bottom">
-        <div class="auto-container">
-            <div class="outer-box text-center">
-
-                <!--Copyright-->
-                <div class="copyright">&copy; Copyrights 2016 <a href="/Public/static/" target="_blank">ThemeCraze</a>. All rights reserved</div>
-
+<!-- Video Modal -->
+<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
             </div>
-        </div>
-    </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <iframe id="vimeo-video" src="" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
 
-</footer>
+
 
 
 

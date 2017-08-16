@@ -79,6 +79,26 @@ return array(
     '_Header_notice1' => 'NOTICE',
     '_download_1' => 'September 1, 2017 on-line iOS, Android application client, can be used to buy financial products online, real-time view of income',
 
+    '_pop_up_1' => 'Asset Risk Warning',
+    '_pop_up_2' => 'Asset Consignment Agreement',
+    '_pop_up_3' => 'Dear Investor: you may face many risk factors in the process of investment. Therefore, according to the provisions of relevant laws and regulations, if you choose to participate in the investment before, please ensure that you comply with the provisions of the relevant laws and regulations, and fully understand the nature of the investment and the risks involved, detailed understanding and careful assessment of the investment funds, distribution, the basic situation of the potential risk and expected other income, whether to invest in financial products in the company\'s decision after careful consideration. After investing in financial products, you should always pay attention to the information disclosure of this project and obtain relevant information in a timely manner. As part of the company\'s financial products investors, you should bear all kinds of risk investment involved, including but not limited to:',
+    '_pop_up_4' => '(1) policy, regulatory risk: changes in the relevant laws, regulations and policies, rules, resulting in the failure to achieve your transaction, you may suffer losses;',
+    '_pop_up_5' => '(2) liquidity risk: unless otherwise agreed the case, financial products of the company\'s share of the congregation to raise the subject under the premise shall comply with the conditions stipulated in this Agreement and the transferee can transfer, the arrangement may lead to the risk of investment you can\'t be realized at any time;',
+    '_pop_up_6' => '(3) expected return risk: the description of the proceeds of the company\'s financial products in this agreement is expected revenue. There is a risk that the project can not achieve the expected return and the protection of the investment principal due to specific reasons;',
+    '_pop_up_7' => '(4) transaction risk: due to the ceiling of funds raised by some of our products, your request for delivery may not be reached and you will not be able to obtain any profit or investment;',
+    '_pop_up_8' => '(5) risk management: management experience, skills, judgment, execution and other aspects, the operation and management of its own may cause a rental property, and therefore the existence of risk affect the expected return;',
+    '_pop_up_9' => '(6) by the risk factors: due to force majeure including but not limited to the risk of earthquake, typhoon, flood, fire, plague, war, coups, terrorism, riots, strikes and new law or policy enacted or lead to the modification of other factors on the original law or national policy;',
+    '_pop_up_10' => '(7) operational risk: the risk caused by the fault of your operation, the fault operation including but not limited to: making mistakes, improper operation, forgotten or leaked quick money account / password, the password is fast Money Wallet others crack, you use a computer system or a mobile phone penetration by the third party, you entrust when trading other malicious or improper operation caused by the loss;',
+    '_pop_up_11' => '(8) risks that other initiators cannot foresee, cannot avoid or can not control. The above does not reveal all the risks you face in investing in the company\'s financial products and the overall situation of the market. You are to make trading decisions, should fully understand the actual situation of financial products of the company, to determine whether according to your own investment objectives, investment period, investment experience, asset status with the corresponding investment risk tolerance, cautious decision-making, and bear all risks. Although the sponsor will be careful to comply with the relevant obligations under this agreement, but do not promise your investment without loss, nor commitment to the minimum income of our financial products.',
+
+
+
+
+
+
+
+
+
 //Index首页页面翻译
     '_Index_big_title' => 'DBCoin block chain to the center of the digital currency project',
     '_Index_small_title' => 'Promoting consumption finance and realizing full employee stock ownership',
@@ -116,7 +136,7 @@ return array(
     '_Register_placeholder_username' => 'Please enter your user name',
     '_Register_placeholder_password' => 'Please input a password',
     '_Register_placeholder_rusername' => 'Please enter a repeat password',
-    '_Register_placeholder_phone' => 'Please enter your cell phone number',
+    '_Register_placeholder_phone' => 'Please your cell phone number',
     '_Register_placeholder_email' => 'Please enter the Email',
     '_Register_register_tis' => 'Already have an account',
     '_Register_register_Verification' => 'SMS Authentication Code',
@@ -320,17 +340,30 @@ return array(
     '_help_withdrawals_2_2' => 'BTC transfers fees without charge from the network to 0.0001BTC as transaction fees. LTC transfers fees without charge from the network to 0.001LTC as transaction fees',
 
     '_help_novice' => 'Newbie help',
-    '_help_novice_1' => '提现需要多久？',
-    '_help_novice_1_1' => '比特币提现一般在两小时内就能完成。',
-    '_help_novice_2' => '提现有手续费么？',
-    '_help_novice_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+    '_help_novice_1' => 'How to download cell phone APP?',
+    '_help_novice_1_1' => 'Click on the home page, use your mobile phone, scan the two-dimensional code, download, install, or click on the corresponding mobile phone system for installation.',
+    '_help_novice_2' => 'How do you register your account?',
+    '_help_novice_2_2' => 'Open the home page, the upper right corner, click registration, enter the phone number, password and verification code, after successful registration, click login',
+    '_help_novice_3' => 'How to log in?',
+    '_help_novice_3_3' => 'Click on the login button, just register the account and password entered, login successful',
 
 
     '_help_risk' => 'Risk',
-    '_help_risk_1' => '提现需要多久？',
-    '_help_risk_1_1' => '比特币提现一般在两小时内就能完成。',
-    '_help_risk_2' => '提现有手续费么？',
-    '_help_risk_2_2' => 'BTC转出免手续费，由网络收取0.0001BTC作为交易手续费。LTC转出免手续费，由网络收取0.001LTC作为交易手续费',
+    '_help_risk_1' => 'Policy Risk',
+    '_help_risk_1_1' => 'Changes in the state\'s macro policies, market laws and regulations, and relevant regulatory provisions can affect the operation and liquidation of the products.',
+    '_help_risk_2' => 'Credit Risks',
+    '_help_risk_2_2' => 'The issuer may default or the counterparty fails to perform the contract.',
+    '_help_risk_3' => 'Market Risk',
+    '_help_risk_3_3' => 'The fluctuation of earnings arising from the uncertainty of the future market and the underlying asset value of financial products.',
+    '_help_risk_4' => 'Management Risk',
+    '_help_risk_4_4' => 'Managers and issuers are limited by experience, skills, judgment, and executive power, which may have a bearing on the operation and management of the product.',
+    '_help_risk_5' => 'Compliance risk',
+    '_help_risk_5_5' => 'The management operation of financial products does not conform to the risks caused by laws, regulations and contract stipulations.',
+    '_help_risk_6' => 'Force majeure and accident',
+    '_help_risk_6_6' => 'Including but not limited to the financial market crisis, natural disasters, wars or changes in national policy.',
+    '_help_risk_7' => 'Other digital currency and block chain technology issues',
+    '_help_risk_7_7' => 'In contrast to the bit / Wright coverage, these centralized digital data systems fail to address both of the two objectives of good liquidity and reliable stability when the market value is still small. Tcash is the center of the issue, a certain extent the application characteristics of block chain technology in decentralized operations, to a relatively stable value, to cover for the purpose of digital currency circulation, namely can solve the liquidity problem. By word in circulation, and the solution of fluctuations in the value of one bit word, word circulation problems in wright.',
+
 
 
 

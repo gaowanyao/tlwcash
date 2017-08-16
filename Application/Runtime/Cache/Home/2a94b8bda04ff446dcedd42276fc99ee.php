@@ -161,6 +161,9 @@
         }
 
 
+        .padd{
+            padding-left:3px;padding-right:3px;
+        }
 
 
     </style>
@@ -215,6 +218,10 @@
         background-position: 0px -291px;
     }
 
+    .opencolor{
+        color: #ec6952 !important;
+    }
+
 </style>
 
 
@@ -256,27 +263,29 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="ulChangeColor">
-                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
+                    <li class="<?php if('index' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center <?php if('index' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+
+                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
+                            <li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
+                    <li class="<?php if('index' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
+                    <li class="nav-item <?php if('index' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center <?php if('index' == 'service'){ echo 'opencolor';}?>" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -311,8 +320,10 @@
                         <!--</a>-->
 
                     </li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
+
+                    <li class="nav-item"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=account">用户中心</a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
 
 
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
@@ -344,8 +355,8 @@
             <h2 class="title"><?php echo (L("_Index_banner_title")); ?></h2>
             <p class="intro"><?php echo (L("_Index_banner1_title1")); ?><br/><?php echo (L("_Index_banner2_title2")); ?></p>
             <p>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_white_book")); ?></a>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" href="signup.html"><?php echo (L("_Home_ico_rules")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper.pdf"><?php echo (L("_Home_white_book")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/ico.pdf"><?php echo (L("_Home_ico_rules")); ?></a>
 
             </p>
 
@@ -419,7 +430,7 @@
                                 <div style="width: 80px;height: 3px;background: black;margin-left: 10px;margin-top: -20px;"></div>
                             </div>
 
-                            <p class="intro" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_Project")); ?></p>
+                            <p class="intro padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify;"><?php echo (L("_Index_Project")); ?></p>
 
                         </div><!--//post-inner-->
                     </article><!--//post-->
@@ -429,7 +440,7 @@
                                 <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
                             </div>
                             <h4 ><?php echo (L("_Index_cross")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_cross_content")); ?></p>
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_cross_content")); ?></p>
                         </div><!--//post-inner-->
                     </article><!--//post-->
                     <article class="post col-md-4 col-sm-12 col-xs-12" style="">
@@ -438,7 +449,7 @@
                                 <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
                             </div>
                             <h4><?php echo (L("_Index_otc")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left">
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">
                                 <?php echo (L("_Index_otc_content")); ?>
                             </p>
                         </div><!--//post-inner-->
@@ -449,7 +460,7 @@
                                 <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
                             </div>
                             <h4><?php echo (L("_Index_ethernet")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_ethernet_content")); ?>
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_ethernet_content")); ?>
 
                             </p>
                         </div><!--//post-inner-->
@@ -460,7 +471,7 @@
                                 <a  style="text-decoration: none" class="hi-icon hi-icon-earth">Partners</a>
                             </div>
                             <h4><?php echo (L("_Index_payment")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_payment_content")); ?>
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_payment_content")); ?>
                             </p>
                         </div><!--//post-inner-->
                     </article><!--//post-->
@@ -470,7 +481,7 @@
                                 <a  style="text-decoration: none" class="hi-icon hi-icon-contract">Contact</a>
                             </div>
                             <h4><?php echo (L("_Index_exchange")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_exchange_content")); ?></p>
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_exchange_content")); ?></p>
                         </div><!--//post-inner-->
                     </article><!--//post-->
                     <article class="post col-md-4 col-sm-12 col-xs-12" style="">
@@ -479,7 +490,7 @@
                                 <a  style="text-decoration: none" class="hi-icon hi-icon-refresh">Refresh</a>
                             </div>
                             <h4><?php echo (L("_Index_freely")); ?></h4>
-                            <p class="intro text-center" style="max-width: 100%;color: #444;text-indent: 2em;text-align: left"><?php echo (L("_Index_freely_content")); ?>
+                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_freely_content")); ?>
                             </p>
                         </div><!--//post-inner-->
                     </article><!--//post-->
@@ -599,8 +610,8 @@
 
                         <p class="notpc_center" style="display: inline-block;">
                             <p class="notpc_center" style="display: inline-block;">
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-apple"></i><span class="text" ><?php echo (L("_Index_ios_download")); ?></span></a><br/>
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?release_id=5992d710ca87a8675100079f"><i class="fa fa-apple"></i><span class="text" ><?php echo (L("_Index_ios_download")); ?></span></a><br/>
+                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?utm_source=fir&utm_medium=qr"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a><br/>
                                 <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="signup.html"><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a>
                             </p>
                             <!--<p class=" class="download-area"">-->
@@ -610,7 +621,7 @@
                             <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>-->
                             <!--</ul>-->
                             <!--</p>-->
-                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png" alt="" />
+                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="index.php?a=qr&level=3&size=4" alt="" />
 
 
                         </p>

@@ -10,7 +10,7 @@ return array(
     'DB_PORT'               =>  '3306',        // 端口
     'DB_PREFIX'             =>  't_',    // 数据库表前缀
 
-    "domain"                =>  'http://www.jifadu.cn',
+    "domain"                =>  'http://www.jifage.cn',
 
 
 //    'DB_TYPE'               =>  'mysql',     // 数据库类型

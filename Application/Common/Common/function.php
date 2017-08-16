@@ -255,7 +255,7 @@ function num_format($num){
 }
 //******************************
 /**
- * 发送短信
+ * 发送短信  创南
  *
  * @param string $mobile 手机号码
  * @param string $name 短信头
@@ -270,19 +270,27 @@ function sandPhone( $mobile, $name, $user_name, $user_password, $needstatus = 't
     $IP="222.73.117.156";
     $chuanglan_config['api_account']=iconv('UTF-8', 'UTF-8',$user_name);
     $chuanglan_config['api_password']=iconv('UTF-8', 'UTF-8', $user_password);
-    $chuanglan_config['api_send_url']="http://".$IP.":".$PORT."/msg/HttpBatchSendSM";
+//    $chuanglan_config['api_send_url']="http://".$IP.":".$PORT."/msg/HttpBatchSendSM";
+
+
+
+
+
+
+
+    $chuanglan_config['api_send_url'] = 'https://zapi.253.com/msg/HttpBatchSendSM';
     $code = rand(100000,999999);
     session(array('name'=>'code','expire'=>600));
     session('code',$code);  //设置session
     session('num',session('num')+1);  //设置session
     session('time',time());
 
-    /*if (session('num')>3){
+    if (session('num')>3){
             $arr[1]="121";
             return $arr;
-     }*/
+     }
 
-    $data="您好，您的验证码是".$code;//要发送的短信内容
+    $data="【".$name."】您好，您的验证码是".$code;//要发送的短信内容
     $content=mb_convert_encoding("$data",'UTF-8', 'UTF-8');
     //创蓝接口参数
     $postArr = array (

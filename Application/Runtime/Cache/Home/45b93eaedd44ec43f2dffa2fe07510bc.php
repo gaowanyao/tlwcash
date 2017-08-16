@@ -81,7 +81,7 @@
                                     <div class="form-group password">
                                         <label class="sr-only" for="verify">验证码</label>
                                         <!--<i class="fa fa-envelope-o"></i>-->
-                                        <input id="verify" minlength="4" maxlength="4" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="<?php echo (L("_Register_register_Verification")); ?>">
+                                        <input id="verify" minlength="6" maxlength="6" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="<?php echo (L("_Register_register_Verification")); ?>">
                                         <button id="verify_send" style="width: 80px;float: right;" type="button" class="btn btn-cta-primary btn-cta-primary" ><?php echo (L("_Register_register_immediately")); ?></button>
 
                                         <br/>
@@ -421,8 +421,8 @@
                 return false;
             }
 
-            if(verify.length != 4){
-                tipDialog("验证码长度为4！",'error','',1);
+            if(verify.length != 6){
+                tipDialog("验证码长度为6！",'error','',1);
                 return false;
             }
 

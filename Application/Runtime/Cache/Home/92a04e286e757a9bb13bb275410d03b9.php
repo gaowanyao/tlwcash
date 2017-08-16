@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
-    <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+    <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
     <link rel="stylesheet" href="/Public/assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -39,6 +39,30 @@
         body{
             background: #f5f5f5;
         }
+
+        .my_question{
+            width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px;
+            margin-top: 12px;
+        }
+
+        .my_h{
+            /*margin-top: 50px;*/
+            /*color: #fff;*/
+            width:95%;
+            margin: 1em auto;
+            /*background-color: #e96147;*/
+
+        }
+        .responsive-tabs__list{
+            margin: 1em auto;
+
+        }
+
+        .responsive-tabs__list__item{
+            min-width:120px;
+            margin-left:6.8%;
+        }
+
     </style>
 </head>
 
@@ -91,6 +115,10 @@
         background-position: 0px -291px;
     }
 
+    .opencolor{
+        color: #ec6952 !important;
+    }
+
 </style>
 
 
@@ -132,27 +160,29 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="ulChangeColor">
-                    <li class="active nav-item"><a class="my_center" href="index.html" ><?php echo (L("_Header_index")); ?></a></li>
+                    <li class="<?php if('service' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center <?php if('service' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+
+                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
+                            <li><a class="<?php if('faq' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
+                            <li><a class="<?php if('faq' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
+                            <li><a class="<?php if('faq' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
 
                         </ul>
                     </li><!--//dropdown-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
+                    <li class="<?php if('service' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
 
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
+                    <li class="nav-item <?php if('service' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <a class="dropdown-toggle my_center <?php if('service' == 'service'){ echo 'opencolor';}?>" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_customer_service")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
-                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+                            <li><a class="<?php if('faq' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a class="<?php if('faq' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
 
                             <!--<li><a href="blog-single.html">联系我们</a></li>-->
 
@@ -187,8 +217,10 @@
                         <!--</a>-->
 
                     </li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
-                    <li class="nav-item"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
+
+                    <li class="nav-item"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=account">用户中心</a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
 
 
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
@@ -227,35 +259,35 @@
         <!--<h2 class="title text-center">Frequently Asked Questions</h2>-->
         <div class="row" style="">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="panel">
+                <div class="panel panel-danger">
                     <div class="responsive-tabs">
-                        <h2><?php echo (L("_help_project")); ?></h2>
+                        <h2 class="my_h"><?php echo (L("_help_project")); ?></h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_1")); ?></span></div>
+                                    <div class="col-md-11 col-xs-10 panel" style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_1")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_project_1_1")); ?>
                                         </div>
                                     </div>
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_2")); ?></span></div>
+                                        <div class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_project_2_2")); ?>
                                         </div>
                                     </div>
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_3")); ?></span></div>
+                                        <div class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_3")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_project_3_3")); ?>
                                         </div>
                                     </div>
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_4")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_4")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_project_4_4")); ?>
@@ -265,48 +297,60 @@
                             </div>
                         </div>
 
-                        <h2><?php echo (L("_help_recharge")); ?></h2>
+                        <h2 class="my_h"><?php echo (L("_help_recharge")); ?></h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_recharge_1")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_recharge_1")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_recharge_1_1")); ?>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
+
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_recharge_2")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_recharge_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_recharge_2_2")); ?>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
+                            <!--<div class="col-md-12">-->
+                            <!--<div class="row">-->
+                            <!--<div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">-->
+                            <!--<div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_recharge_2")); ?></span></div>-->
+                            <!--<div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">-->
+                            <!--<span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>-->
+                            <!--<?php echo (L("_help_recharge_2_2")); ?>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
-                        <h2><?php echo (L("_help_withdrawals")); ?></h2>
+                        <h2 class="my_h"><?php echo (L("_help_withdrawals")); ?></h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_withdrawals_1")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_withdrawals_1")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_withdrawals_1_1")); ?>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_withdrawals_2")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_withdrawals_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_withdrawals_2_2")); ?>
@@ -315,12 +359,15 @@
                                 </div>
                             </div>
                         </div>
-                        <h2><?php echo (L("_help_novice")); ?></h2>
+
+
+
+                        <h2 class="my_h"><?php echo (L("_help_novice")); ?></h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_novice_1")); ?></span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_novice_1")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
                                             <?php echo (L("_help_novice_1_1")); ?>
@@ -331,24 +378,35 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px">有什么政策风险？</span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_novice_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
-                                            国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。
+                                            <?php echo (L("_help_novice_2_2")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_novice_3")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_novice_3_3")); ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <h2><?php echo (L("_help_risk")); ?></h2>
+                        <h2 class="my_h"><?php echo (L("_help_risk")); ?></h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px">有什么政策风险？</span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_risk_1")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
-                                            国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。
+                                            <?php echo (L("_help_risk_1_1")); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -356,10 +414,65 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
-                                        <div style="width:100%;height: 100%;font-size: 20px;color: #FFFFFF;padding-left:16px"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px">有什么政策风险？</span></div>
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
                                             <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
-                                            国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。
+                                            <?php echo (L("_help_risk_2_2")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_3")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_risk_3_3")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_4")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_risk_4_4")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_5")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_risk_5_5")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_6")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_risk_6_6")); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
+                                        <div  class="my_question"><?php echo (L("_help_q")); ?>: <span style="font-size: 15px"><?php echo (L("_help_risk_7")); ?></span></div>
+                                        <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
+                                            <span style="font-size: 20px;color: white"><?php echo (L("_help_a")); ?>：</span>
+                                            <?php echo (L("_help_risk_7_7")); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -388,164 +501,164 @@
 </script>
 <!-- ******FAQ Section****** -->
 <!--<section class="faq section has-bg-color" style="padding-bottom: 50px;">-->
-    <!--<div class="container">-->
-        <!--&lt;!&ndash;<h2 class="title text-center">Frequently Asked Questions</h2>&ndash;&gt;-->
-        <!--<div class="row" style="margin-top: 50px;">-->
-            <!--<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">-->
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i>-->
-                                <!--政策风险-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
+<!--<div class="container">-->
+<!--&lt;!&ndash;<h2 class="title text-center">Frequently Asked Questions</h2>&ndash;&gt;-->
+<!--<div class="row" style="margin-top: 50px;">-->
+<!--<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1"><i class="fa fa-plus-square"></i>-->
+<!--政策风险-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq1">-->
-                        <!--<div class="panel-body">-->
-                            <!--国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--<div class="panel-collapse collapse" id="faq1">-->
+<!--<div class="panel-body">-->
+<!--国家宏观政策以及市场法律法规、相关监管规定发生变化，可以影响产品的运营、清算等进行。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
 
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i>-->
-                                <!--信用风险-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2"><i class="fa fa-plus-square"></i>-->
+<!--信用风险-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq2">-->
-                        <!--<div class="panel-body">-->
-                            <!--发行人可能出现违约情形或者交易对手方未能按约履行的情形。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--<div class="panel-collapse collapse" id="faq2">-->
+<!--<div class="panel-body">-->
+<!--发行人可能出现违约情形或者交易对手方未能按约履行的情形。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
 
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i>-->
-                                <!--市场风险-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq3"><i class="fa fa-plus-square"></i>-->
+<!--市场风险-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq3">-->
-                        <!--<div class="panel-body">-->
-                            <!--金融产品的基础资产价值受未来市场的不确定影响，产生的收益波动。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
-
-
-
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i>-->
-                                <!--合规风险-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
-
-                    <!--<div class="panel-collapse collapse" id="faq5">-->
-                        <!--<div class="panel-body">-->
-                            <!--金融产品的管理人的管理运作不符合法律法规和合同规定，可能造成的风险。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
-
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i>-->
-                                <!--管理风险-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
-
-                    <!--<div class="panel-collapse collapse" id="faq6">-->
-                        <!--<div class="panel-body">-->
-                            <!--管理人和发行人受经验、技能、判断力、执行力等方面的限制，可能对产品的运作及管理造成一定影响。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--<div class="panel-collapse collapse" id="faq3">-->
+<!--<div class="panel-body">-->
+<!--金融产品的基础资产价值受未来市场的不确定影响，产生的收益波动。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
 
 
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i>-->
-                                <!--不可抗力及意外事件-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq4">-->
-                        <!--<div class="panel-body">-->
-                            <!--包括但不限于自然灾害、金融市场危机、战争或国家政策变化等。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq5"><i class="fa fa-plus-square"></i>-->
+<!--合规风险-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
+
+<!--<div class="panel-collapse collapse" id="faq5">-->
+<!--<div class="panel-body">-->
+<!--金融产品的管理人的管理运作不符合法律法规和合同规定，可能造成的风险。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq6"><i class="fa fa-plus-square"></i>-->
+<!--管理风险-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
+
+<!--<div class="panel-collapse collapse" id="faq6">-->
+<!--<div class="panel-body">-->
+<!--管理人和发行人受经验、技能、判断力、执行力等方面的限制，可能对产品的运作及管理造成一定影响。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
 
 
-                <!--<div class="panel">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title">-->
-                            <!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-plus-square"></i>-->
-                                <!--其他数字货币和区块链技术问题-->
-                            <!--</a>-->
-                        <!--</h4>-->
-                    <!--</div>-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq4"><i class="fa fa-plus-square"></i>-->
+<!--不可抗力及意外事件-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq7">-->
-                        <!--<div class="panel-body">-->
-                            <!--相对于比特币/莱特币这些去中心化的数字货币在市值还小的情况下无法兼顾流动性良好和币值稳定两个目标。Tcash是中心化发行，一定程度上应用区块链技术中的特性去中心化运营、来相对稳定币值、以流通为目的数字货币，即能解决法币流通中的流动性问题，又能解决比特币、莱特币流通中价值波动的问题。-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--<div class="panel-collapse collapse" id="faq4">-->
+<!--<div class="panel-body">-->
+<!--包括但不限于自然灾害、金融市场危机、战争或国家政策变化等。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
 
-                <!--<div class="panel" style="display: none;">-->
-                    <!--<div class="panel-heading">-->
-                        <!--<h4 class="panel-title"><a data-parent="#accordion"-->
-                                                   <!--data-toggle="collapse" class="panel-toggle" href="#faq8"><i class="fa fa-plus-square"></i>Can I imperdiet massa ut?</a></h4>-->
-                    <!--</div>-->
 
-                    <!--<div class="panel-collapse collapse" id="faq8">-->
-                        <!--<div class="panel-body">-->
-                            <!--Anim pariatur cliche reprehenderit, enim eiusmod high life-->
-                            <!--accusamus terry richardson ad squid. 3 wolf moon officia-->
-                            <!--aute, non cupidatat skateboard dolor brunch. Food truck-->
-                            <!--quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,-->
-                            <!--sunt aliqua put a bird on it squid single-origin coffee-->
-                            <!--nulla assumenda shoreditch et. Nihil anim keffiyeh-->
-                            <!--helvetica, craft beer labore wes anderson cred nesciunt-->
-                            <!--sapiente ea proident. Ad vegan excepteur butcher vice lomo.-->
-                            <!--Leggings occaecat craft beer farm-to-table, raw denim-->
-                            <!--aesthetic synth nesciunt you probably haven't heard of them-->
-                            <!--accusamus labore sustainable VHS.-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>&lt;!&ndash;//row&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="contact-lead text-center">&ndash;&gt;-->
-            <!--&lt;!&ndash;<h4 class="title">Have more questions?</h4>&ndash;&gt;-->
-            <!--&lt;!&ndash;<a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in touch</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>&lt;!&ndash;//container&ndash;&gt;-->
+<!--<div class="panel">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title">-->
+<!--<a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq7"><i class="fa fa-plus-square"></i>-->
+<!--其他数字货币和区块链技术问题-->
+<!--</a>-->
+<!--</h4>-->
+<!--</div>-->
+
+<!--<div class="panel-collapse collapse" id="faq7">-->
+<!--<div class="panel-body">-->
+<!--相对于比特币/莱特币这些去中心化的数字货币在市值还小的情况下无法兼顾流动性良好和币值稳定两个目标。Tcash是中心化发行，一定程度上应用区块链技术中的特性去中心化运营、来相对稳定币值、以流通为目的数字货币，即能解决法币流通中的流动性问题，又能解决比特币、莱特币流通中价值波动的问题。-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+
+<!--<div class="panel" style="display: none;">-->
+<!--<div class="panel-heading">-->
+<!--<h4 class="panel-title"><a data-parent="#accordion"-->
+<!--data-toggle="collapse" class="panel-toggle" href="#faq8"><i class="fa fa-plus-square"></i>Can I imperdiet massa ut?</a></h4>-->
+<!--</div>-->
+
+<!--<div class="panel-collapse collapse" id="faq8">-->
+<!--<div class="panel-body">-->
+<!--Anim pariatur cliche reprehenderit, enim eiusmod high life-->
+<!--accusamus terry richardson ad squid. 3 wolf moon officia-->
+<!--aute, non cupidatat skateboard dolor brunch. Food truck-->
+<!--quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,-->
+<!--sunt aliqua put a bird on it squid single-origin coffee-->
+<!--nulla assumenda shoreditch et. Nihil anim keffiyeh-->
+<!--helvetica, craft beer labore wes anderson cred nesciunt-->
+<!--sapiente ea proident. Ad vegan excepteur butcher vice lomo.-->
+<!--Leggings occaecat craft beer farm-to-table, raw denim-->
+<!--aesthetic synth nesciunt you probably haven't heard of them-->
+<!--accusamus labore sustainable VHS.-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//panel&ndash;&gt;-->
+<!--</div>-->
+<!--</div>&lt;!&ndash;//row&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="contact-lead text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;<h4 class="title">Have more questions?</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;<a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in touch</a>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>&lt;!&ndash;//container&ndash;&gt;-->
 <!--</section>&lt;!&ndash;//faq&ndash;&gt;-->
 
 <!--&lt;!&ndash; ******CTA Section****** &ndash;&gt;-->
 <!--<section id="cta-section" class="section cta-section text-center pricing-cta-section">-->
-    <!--<div class="container">-->
-        <!--<h2 class="title">More than <span class="counting">300,000</span> users are using Velocity</h2>-->
-        <!--<p class="intro">What are you waiting for?</p>-->
-        <!--<p><a class="btn btn-cta btn-cta-primary" href="" target="_blank">Get Velocity Now</a></p>-->
-    <!--</div>&lt;!&ndash;//container&ndash;&gt;-->
+<!--<div class="container">-->
+<!--<h2 class="title">More than <span class="counting">300,000</span> users are using Velocity</h2>-->
+<!--<p class="intro">What are you waiting for?</p>-->
+<!--<p><a class="btn btn-cta btn-cta-primary" href="" target="_blank">Get Velocity Now</a></p>-->
+<!--</div>&lt;!&ndash;//container&ndash;&gt;-->
 <!--</section>&lt;!&ndash;//cta-section&ndash;&gt;-->
 
 

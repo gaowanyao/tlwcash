@@ -187,9 +187,9 @@
 
 
                     if(data.errcode == 3){
-                        tipDialog("登录成功！",'ok','',2);
+                        tipDialog("登录成功！",'ok','',1);
                         setTimeout(function(){
-                            window.location='index.php';
+                            window.location='index.php?a=account';
                         },3000);
                         return false;
                     }

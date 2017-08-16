@@ -20,10 +20,10 @@ return array(
         'REPLY_NAME' => '', //回复名称（留空则为发件人名称）
         'SESSION_EXPIRE' => '72',
     ),
-
-    'CODE_NAME' => 'Tcash',
-    'CODE_USER_NAME' => 'gcan',
-    'CODE_USER_PASS' => 'gaowanyao123456'
+//    ：N4243086  ：FmM4RVl3La3966
+    'CODE_NAME' => '铜锣湾基金',
+    'CODE_USER_NAME' => 'N4243086',
+    'CODE_USER_PASS' => 'FmM4RVl3La3966'
 
 
 

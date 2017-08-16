@@ -30,7 +30,7 @@
 
 <body class="download-page">
 <!-- ******HEADER****** -->
-<include file="Public/header"/>
+<include active="download" file="Public/header"/>
 
 
 <div class="headline-bg">
@@ -48,9 +48,9 @@
                     </p>
 
                     <ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">{$Think.lang._Index_ios_download}</span> </a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="{$url}"><i class="fa fa-apple"></i><span class="text">{$Think.lang._Index_ios_download}</span> </a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="{$android}"><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="{$url}"><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a></li>
                     </ul>
                     <!--//Only show QR code on desktop -->
                     <!--hidden-sm hidden-xs-->
@@ -58,7 +58,7 @@
                         <figure class="qrcode">
 
                         <!--<img class="img-responsive" style="max-width: 157px !important;" src="__PUBLIC__/assets/images/mobile/QR-code.png" alt="QR code" />-->
-                        <img class="img-responsive" style="max-width: 157px !important;vertical-align: middle;" src="http://wechat.tiny-calf.com/Public/images/wechat.png" alt="QR code" />
+                        <img class="img-responsive" style="max-width: 157px !important;vertical-align: middle;" src="index.php?a=qr&level=3&size=4" alt="QR code" />
                             <!--<figcaption class="caption">Scan the QR code<br /> to download</figcaption>-->
                         </figure><!--//qrcode-->
                     </div>
@@ -77,7 +77,8 @@
             </div><!--//content-area-->
             <div  class="phone-holder-wrapper col-md-4 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offste-0 col-md-pull-6 col-sm-pull-6 col-xs-pull-0">
                 <div class="phone-holder" style="height: 570px;<?php if($pc == 'notpc'){ echo 'width: 280px; !important;margin: 0 auto;';} ?>">
-                    <img class="screenshot" src="__PUBLIC__/assets/images/mobile/screenshot.png" alt="" />
+                    <!--<img class="screenshot" src="__PUBLIC__/assets/images/mobile/screenshot.png" alt="" />-->
+                    <img class="screenshot" src="__PUBLIC__/img/tcash.png" alt="" />
                 </div><!--//phone-holder-->
             </div><!--//phone-holder-wrapper-->
         </div><!--//row-->

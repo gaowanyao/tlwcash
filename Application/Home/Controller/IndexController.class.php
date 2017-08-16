@@ -19,6 +19,98 @@ $log = \Log::Init($logHandler, 15);
 class IndexController extends Controller
 {
 
+
+
+
+    public function _empty(){
+        header("HTTP/1.0 404 Not Found");
+        $this->display('Index:error404');
+    }
+
+    public function error403(){
+        $this->judge();
+        $this->display();
+    }
+
+    public function error404(){
+        $this->judge();
+        $this->display();
+    }
+
+    public function error500(){
+        $this->judge();
+        $this->display();
+    }
+
+
+
+    function http_request($url,$data = null){
+
+        if(function_exists('curl_init')){
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, $url);
+
+            if (!empty($data)){
+                curl_setopt($curl, CURLOPT_POST, 1);
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            }
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+            $output = curl_exec($curl);
+            curl_close($curl);
+
+
+            $result=preg_split("/[,\r\n]/",$output);
+
+            if($result[1]==0){
+                return "curl success";
+            }else{
+                return "curl error".$result[1];
+            }
+        }elseif(function_exists('file_get_contents')){
+
+            $output=file_get_contents($url.$data);
+            $result=preg_split("/[,\r\n]/",$output);
+
+            if($result[1]==0){
+                return "success";
+            }else{
+                return "error".$result[1];
+            }
+
+
+        }else{
+            return false;
+        }
+
+    }
+
+    public function vv(){
+
+
+        $code = rand(100000,999999);
+        $data ="【铜锣湾基金】您好，您的验证码是" . $code ;
+        $_SESSION['code'] = $code;
+        $post_data = array();
+        $post_data['account'] ="N4243086";
+        $post_data['pswd'] = "FmM4RVl3La3966";
+        $post_data['msg']="$data";
+        $post_data['mobile'] ="17801098915";
+
+        $post_data['needstatus']='true';
+        $url = 'https://zapi.253.com/msg/HttpBatchSendSM';
+//        $url='http://sapi.253.com/msg/HttpBatchSendSM';
+        $res = $this->http_request($url,http_build_query($post_data));
+        var_dump($res);
+
+
+
+    }
+
+
+
+
+
+
     /**
      * Author:阿耀王子
      * 所有判断验证部分及共有部分
@@ -27,7 +119,9 @@ class IndexController extends Controller
 
 
 
+
         if(!empty($_SESSION['account']) && isset($_SESSION['account'])){
+
             $this->assign("account","on");
         }else{
             $this->assign("account","off");
@@ -62,6 +156,8 @@ class IndexController extends Controller
 
 
     public function kk(){
+
+        dump($_SESSION);
         $this->judge();
         dump($_SESSION);
         dump($_COOKIE);
@@ -100,20 +196,33 @@ class IndexController extends Controller
         }
 
 
-        $r = sandPhone1($phone,C('CODE_NAME'),C('CODE_USER_NAME'),C('CODE_USER_PASS'));
+        //短信宝
+//        $r = sandPhone1($phone,C('CODE_NAME'),C('CODE_USER_NAME'),C('CODE_USER_PASS'));
+
+        //创蓝
+        $r = sandPhone($phone,C('CODE_NAME'),C('CODE_USER_NAME'),C('CODE_USER_PASS'));
+
+        if(!$r[1]){
+			$data['status']=1;
+        	$data['info']="发送成功";
+        	$this->ajaxReturn($data);exit;
+		}else{
+			$data['status'] =-3;
+        	$data['info'] = chuanglan_status($r[1]);
+        	$this->ajaxReturn($data);exit;
+		}
 
 
 
-
-        if($r!="短信发送成功"){
-            $data['status']=0;
-            $data['info'] = $r;
-            $this->ajaxReturn($data);
-        }else{
-            $data['status']=1;
-            $data['info'] = $r;
-            $this->ajaxReturn($data);
-        }
+//        if($r!="短信发送成功"){
+//            $data['status']=0;
+//            $data['info'] = $r;
+//            $this->ajaxReturn($data);
+//        }else{
+//            $data['status']=1;
+//            $data['info'] = $r;
+//            $this->ajaxReturn($data);
+//        }
     }
 
 
@@ -129,6 +238,10 @@ class IndexController extends Controller
     }
 
 
+    public function order(){
+        $this->judge();
+        $this->display();
+    }
 
     /**
      * Author:阿耀王子
@@ -212,10 +325,6 @@ class IndexController extends Controller
     }
 
 
-    public function download(){
-        $this->judge();
-        $this->display();
-    }
 
 
 
@@ -305,9 +414,91 @@ class IndexController extends Controller
      */
     public function account(){
         $this->judge();
+
+        if(!empty($_SESSION['account']) && isset($_SESSION['account'])){
+
+            $this->assign("name",$_SESSION['account']['user_name']);
+
+        }else{
+
+            $this->error("请登录！","index.php");
+
+        }
+        $m=M('User');
+        $uid=$_SESSION['account']['uid'];
+        $res=$m->where("uid=$uid")->find();
+        dump($res);
+        $this->assign(res,$res);
         $this->display();
     }
 
+
+    //判断登录密码开始
+    public function account_msg(){
+        $m=M('User');
+        $uid=$_SESSION['account']['uid'];
+        $res=$m->where("uid=$uid")->find();
+        if(md5($_POST['password'])==$res['password']){
+            $data['status'] = 1;
+        }else{
+            $data['status'] = 0;
+        }
+        $this->ajaxReturn($data);
+
+    }
+    //判断登陆密码结束
+
+
+    //点击保存信息开始
+    public function account_save_msg(){
+        $m=M('User');
+        $uid=$_SESSION['account']['uid'];
+        $res=$m->where("uid=$uid")->find();
+        $res['user_name']=$_POST['dataUserName'];
+        $res['email']=$_POST['dataUserEmail'];
+        $res['password']=md5($_POST['dataUserPassword']);
+        $res['phone']=$_POST['dataUserMobile'];
+        $m->save($res);
+    }
+    //点击保存信息结束
+
+    //上传图片开始
+    public function account_upload(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     './Public/upload/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+        // 上传文件
+        $info   =   $upload->upload();
+//        dump($info);
+
+        if(!$info) {// 上传错误提示错误信息
+//            $this->error($upload->getError());
+        }else{// 上传成功
+            $m=M('User');
+            $uid=$_SESSION['account']['uid'];
+            $data=$m->where("uid=$uid")->find();
+            $data['area']=$_POST['area'];
+            $data['real_name']=$_POST['realName'];
+            $data['idcard']=$_POST['IDNumber'];
+            $data['idcard_hand_url'] = "/Public/upload/".$info['idcard_hand_url']['savepath'].$info['idcard_hand_url']['savename'];
+            $data['idcard_zm_url'] = "/Public/upload/".$info['idcard_zm_url']['savepath'].$info['idcard_zm_url']['savename'];
+            $data['idcard_fm_url'] = "/Public/upload/".$info['idcard_fm_url']['savepath'].$info['idcard_fm_url']['savename'];
+            $m->save($data);
+        }
+    }
+    public function account_upload_msg(){
+        dump($_POST);
+        $m=M('User');
+        $uid=$_SESSION['account']['uid'];
+        $data=$m->where("uid=$uid")->find();
+        $data['area']=$_POST['area'];
+        $data['real_name']=$_POST['realName'];
+        $data['idcard']=$_POST['IDNumber'];
+        $m->save($data);
+    }
+    //上传图片结束
 
 
     /**
@@ -374,7 +565,7 @@ class IndexController extends Controller
 
         $time = time();
 
-        $end = strtotime("2017-08-15 20:00:00");
+        $end = strtotime("2017-09-01 10:00:00");
 
         $this->assign('end',$end);
         $this->assign('time',$time);
@@ -484,6 +675,7 @@ class IndexController extends Controller
                              }';
                     $msg = json_decode($msg,true);
 
+                    $account['uid'] = $sel['uid'];
                     $account['user_name'] = $sel['user_name'];
                     $account['email'] = $sel['email'];
 
@@ -517,6 +709,80 @@ class IndexController extends Controller
                 return false;
 
             }
+
+
+    }
+
+
+
+    public function qrcode($url,$level=3,$size=4)
+    {
+        Vendor('phpqrcode.phpqrcode');
+        $errorCorrectionLevel =intval($level) ;//容错级别
+        $matrixPointSize = intval($size);//生成图片大小
+        //生成二维码图片
+        $object = new \QRcode();
+        $object->png($url, false, $errorCorrectionLevel, $matrixPointSize, 2);
+    }
+
+
+    public function qr(){
+
+        $address = "https://fir.im/hnp1?release_id=5992d710ca87a8675100079f";
+        $level = $_GET['level'];
+        $size = $_GET['size'];
+        $this->qrcode($address,$level,$size);
+    }
+
+    public function download(){
+        $this->judge();
+
+
+        $url = "https://fir.im/hnp1?release_id=5992d710ca87a8675100079f";
+        $android = 'https://fir.im/hnp1?utm_source=fir&utm_medium=qr';
+        $this->assign("url",$url);
+        $this->assign("android",$android);
+
+        $this->display();
+    }
+
+
+
+    public function aa(){
+
+
+        $m = M("User");
+
+        $sel = $m->select();
+
+        dump($_SESSION);
+
+        $uid = $_SESSION['account']['uid'];
+
+        $res = $m->where("uid=$uid")->find();
+        dump($res);
+
+
+        dump($uid);
+
+
+        $data['uid'] = $uid;
+        $data['area'] = "北大";
+
+        $dd = $m->data($data)->save();
+
+        dump($dd);
+
+
+        $uid = $_SESSION['account']['uid'];
+
+        $res = $m->where("uid=$uid")->find();
+        dump($res);
+
+
+
+        dump($sel);
+
 
 
     }
