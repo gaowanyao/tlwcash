@@ -192,6 +192,11 @@
                if(data['status']==0) {
                    $("#userInfo").html("");
                 }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
             }
         });
     })
@@ -218,6 +223,11 @@
                 }
                 if(data['status']==0) {
                     $("#phoneInfo2").html("");
+                }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
                 }
             }
         })
@@ -322,6 +332,11 @@
 
                     },1000);
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 
@@ -392,6 +407,11 @@
 
 
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 

@@ -3,7 +3,9 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Home</title>
+    <title>铜锣湾基金-Tcash全球区块链数字货币金融服务基金</title>
+    <meta name="keywords" content="铜锣湾基金_Tcash_区块链金融_数字货币_区块链金融服务_区块链金融理财_比特币交易" />
+    <meta name="description" content="铜锣湾Tcash基金是首家区块链金融服务基金银行,为区块链提供金融服务,致力于打造新兴的区块链技术金融平台,Tcash基金服务于区块链金融及数字货币的发展,为客户提供全面的、专业的区块链数字货币理财服务,提供数字货币投资理财业务,无风险套利,以太坊域名投资,场外OTC交易,P2P借贷理财业务,交易所手续费等其他数字货币交易业务,不断创新区块链金融服务,平台未来还将增加其他稳健数字货币的理财产品."/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

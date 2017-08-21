@@ -210,6 +210,11 @@
 
 
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 

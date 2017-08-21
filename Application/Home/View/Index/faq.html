@@ -4,7 +4,9 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title></title>
+    <title>帮助中心-Tcash铜锣湾基金</title>
+    <meta name="keywords" content="帮助中心_铜锣湾基金_新手帮助_提现问题_理财问题_充值问题_风险问题" />
+    <meta name="description" content="铜锣湾基金帮助中心为您提供新手帮助,提现问题,理财问题,充值问题,风险问题等一系列理财问题答案."/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
