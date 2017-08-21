@@ -928,7 +928,7 @@
 
 
                     <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/5.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/zjs.png" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
@@ -940,7 +940,7 @@
 
 
                     <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/4.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/xbm.jpg" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
