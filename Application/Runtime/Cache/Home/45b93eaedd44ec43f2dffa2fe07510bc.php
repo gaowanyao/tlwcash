@@ -3,14 +3,14 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title></title>
+    <title>注册-铜锣湾基金</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/Public/img/ico.ico">
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -170,7 +170,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -208,7 +208,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -230,7 +230,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 
@@ -362,6 +362,11 @@
                if(data['status']==0) {
                    $("#userInfo").html("");
                 }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
             }
         });
     })
@@ -388,6 +393,11 @@
                 }
                 if(data['status']==0) {
                     $("#phoneInfo2").html("");
+                }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
                 }
             }
         })
@@ -474,7 +484,8 @@
                         $("#pwd").attr("disabled",true);
                         $("#pwd1").attr("disabled",true);
                         $("#email").attr("disabled",true);
-                    }else{
+                    }
+                    if(data['status'] == -2){
                         tipDialog(data['info'],'error','',1);
                         return false;
                     }
@@ -492,6 +503,11 @@
 
                     },1000);
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 
@@ -562,6 +578,11 @@
 
 
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 

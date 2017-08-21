@@ -3,14 +3,14 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title></title>
+    <title>注册-铜锣湾基金</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="__PUBLIC__/img/ico.ico">
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -314,7 +314,8 @@
                         $("#pwd").attr("disabled",true);
                         $("#pwd1").attr("disabled",true);
                         $("#email").attr("disabled",true);
-                    }else{
+                    }
+                    if(data['status'] == -2){
                         tipDialog(data['info'],'error','',1);
                         return false;
                     }

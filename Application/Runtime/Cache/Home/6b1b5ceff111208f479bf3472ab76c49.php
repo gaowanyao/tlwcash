@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/Public/img/ico.ico">
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -101,7 +101,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" alt="铜锣湾基金" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -250,7 +250,7 @@
 
                         <!--<img class="img-responsive" style="max-width: 157px !important;" src="/Public/assets/images/mobile/QR-code.png" alt="QR code" />-->
                             <!--<img class="img-responsive" style="max-width: 157px !important;vertical-align: middle;" src="index.php?a=qr&level=3&size=4" alt="QR code" />-->
-                            <img class="img-responsive" style="max-width: 157px !important;vertical-align: middle;" src="/Public/images/app.png" alt="QR code" />
+                            <img class="img-responsive" style="max-width: 157px !important;vertical-align: middle;" src="/Public/images/app.png" alt="铜锣湾基金APP下载" />
                             <!--<figcaption class="caption">Scan the QR code<br /> to download</figcaption>-->
                         </figure><!--//qrcode-->
                     </div>
@@ -284,31 +284,31 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="/Public/appimg/11.png" alt="...">
+                                <img src="/Public/appimg/11.png" alt="铜锣湾基金">
                                 <div class="carousel-caption">
                                     <!--...-->
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="/Public/appimg/22.png" alt="...">
+                                <img src="/Public/appimg/22.png" alt="铜锣湾基金">
                                 <div class="carousel-caption">
                                     <!--...-->
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="/Public/appimg/33.png" alt="...">
+                                <img src="/Public/appimg/33.png" alt="铜锣湾基金">
                                 <div class="carousel-caption">
                                     <!--...-->
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="/Public/appimg/44.png" alt="...">
+                                <img src="/Public/appimg/44.png" alt="铜锣湾基金">
                                 <div class="carousel-caption">
                                     <!--...-->
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="/Public/appimg/55.png" alt="...">
+                                <img src="/Public/appimg/55.png" alt="铜锣湾基金">
                                 <div class="carousel-caption">
                                     <!--...-->
                                 </div>

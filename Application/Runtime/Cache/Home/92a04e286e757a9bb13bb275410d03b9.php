@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/Public/img/ico.ico">
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -148,7 +148,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" alt="铜锣湾基金" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->

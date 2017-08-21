@@ -402,7 +402,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" alt="铜锣湾基金" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -832,7 +832,7 @@
                             <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>-->
                             <!--</ul>-->
                             <!--</p>-->
-                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="/Public/images/app.png" alt="" />
+                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="/Public/images/app.png" alt="铜锣湾基金" />
 
 
                         </p>
@@ -852,7 +852,7 @@
 
                 </div><!--//content-->
                 <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/img/apppage.png" alt="" />
+                    <img class="img-responsive" src="/Public/img/apppage.png" alt="铜锣湾基金" />
                 </figure>
             </div><!--//item-->
         </div>
@@ -864,7 +864,7 @@
             <div class="row" style="<?php if($pc=='pc')echo'display: flex;align-items: center'?>">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center" >
                     <!--<div  style="width: 585px;height: 450px;background: url('/Public/img/app2-en.png');background-repeat: round"></div>-->
-                    <img src="/Public/img/apppage.png" class="img-responsive" alt="">
+                    <img src="/Public/img/apppage.png" class="img-responsive" alt="铜锣湾基金APP下载">
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 text-center">
                     <div class="row" >
@@ -918,7 +918,7 @@
                 </ol><!--//carousel-indicators-->
                 <div class="carousel-inner" style="padding-bottom: 0px;margin-bottom: 0px;">
                     <div class="item active" style="padding-bottom: 0px;margin-bottom: 0px;">
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/3.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/3.png" alt="赵鑫" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
@@ -930,7 +930,7 @@
 
 
                     <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/zjs.png" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/zjs.png" alt="诸嘉盛" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
@@ -942,7 +942,7 @@
 
 
                     <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/xbm.jpg" alt="" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/xbm.jpg" alt="解宝明" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
@@ -1047,7 +1047,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -1085,7 +1085,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -1107,7 +1107,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 
