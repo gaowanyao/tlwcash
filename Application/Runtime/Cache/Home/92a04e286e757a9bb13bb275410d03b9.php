@@ -60,7 +60,14 @@
 
         .responsive-tabs__list__item{
             min-width:120px;
-            margin-left:6.8%;
+            margin-left:5.5%;
+            text-align: center;
+        }
+
+        .headline-bg,.pricing-headline-bg{
+            background:url('/Public/images/help.jpg') no-repeat;
+            background-size:cover;
+            height: 450px;
         }
 
     </style>
@@ -73,8 +80,14 @@
 
 <style>
 
+    html,body,div,p,a{
+        font-family: "微软雅黑" !important;
+    }
+
     .scrolled{
         background: #304153 !important;
+        /*background: #888 !important;*/
+
     }
 
     .my_center{
@@ -118,11 +131,13 @@
     .opencolor{
         color: #ec6952 !important;
     }
-
+    @media (max-width: 992px){
+       .header {background: #304158}
+    }
 </style>
 
 
-<header id="header" class="header navbar-fixed-top">
+<header id="header" class="header navbar-fixed-top" style="<?php if($pc!='pc'){echo 'background:rgba(0,0,0,0)';}?>">
     <!--<div class="top" >-->
         <!--<span>欢迎来到铜锣湾比特币基金</span>-->
     <!--</div>-->
@@ -131,7 +146,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -160,22 +175,22 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="ulChangeColor">
-                    <li class="<?php if('service' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center <?php if('service' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
+                    <li class="<?php if('service' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" >&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_index")); ?></a></li>
+                    <!--<li class="nav-item dropdown">-->
+                        <!--<a class="dropdown-toggle my_center <?php if('service' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>-->
+                        <!--<ul class="dropdown-menu" style="text-align: center;min-width: 130px;">-->
 
-                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
-                            <li><a class="<?php if('faq' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a class="<?php if('faq' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a class="<?php if('faq' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <!--&lt;!&ndash;onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"&ndash;&gt;-->
+                            <!--<li><a class="<?php if('faq' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>-->
+                            <!--<li><a class="<?php if('faq' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>-->
+                            <!--<li><a class="<?php if('faq' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>-->
 
-                        </ul>
-                    </li><!--//dropdown-->
+                        <!--</ul>-->
+                    <!--</li>&lt;!&ndash;//dropdown&ndash;&gt;-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="<?php if('service' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
+                    <!--<li class="<?php if('service' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>-->
 
-                    <li class="nav-item <?php if('service' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
+                    <li class="nav-item <?php if('service' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download">&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
@@ -189,10 +204,29 @@
                         </ul>
                     </li><!--//dropdown-->
 
+                    <li class="nav-item dropdown" style="<?php if($account == 'off'){ echo 'display:none;';} ?>">
+                        <a class="dropdown-toggle my_center " data-toggle="dropdown" data-hover="dropdown" data-delay="0" style="cursor:pointer;" data-close-others="false" onclick="window.location.href='index.php?a=account';" >&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['account']['phone']; ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="" href="index.php?a=account"><?php echo (L("_user_1")); ?></a></li>
+                            <li><a class="" href="index.php?a=logout"><?php echo (L("_sign_out")); ?></a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item dropdown"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>">-->
+                        <!--<a class="dropdown-toggle my_center"  href="index.php?a=account"><?php echo (L("_user_center")); ?></a>-->
+                        <!--<ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">-->
+                            <!--<li><a class="<?php if('faq' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>-->
+                            <!--<li><a class="<?php if('faq' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>-->
+
+                            <!--&lt;!&ndash;<li><a href="blog-single.html">联系我们</a></li>&ndash;&gt;-->
+
+                        <!--</ul>-->
+                    <!--</li>-->
 
 
-
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
@@ -218,11 +252,8 @@
 
                     </li>
 
-                    <li class="nav-item"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=account">用户中心</a></li>
-                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
-                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
-
-
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;<?php echo (L("_Register")); ?></a></li>
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
                 </ul><!--//nav-->
             </div><!--//navabr-collapse-->
@@ -238,12 +269,15 @@
 
 
 
-<div class="headline-bg pricing-headline-bg">
+<div class="headline-bg pricing-headline-bg" >
 </div><!--//headline-bg-->
 
-<!-- ******Pricing Section****** -->
-<section class="features-video section section-on-bg" style="height: 500px;">
-    <div class="container text-center">
+<!--<?php if($pc == 'pc'){ echo 'height: 500px;';}else{echo 'height: 100px;';} ?>"-->
+<!--background:url('/Public/images/help.jpg') no-repeat;-->
+
+<!-- ******Pricing Section****** section-on-bg -->
+<section class="features-video section " style="">
+    <div class="container text-center" style="<?php if($pc == 'pc'){ echo 'margin-bottom: 120px;'; }else{ echo 'margin-bottom: 250px;';} ?>">
         <h2 class="title"><?php echo (L("_help_center")); ?></h2>
         <div class="" style="color:#fff;width: 100%">
             <!--<iframe src="/player.vimeo.com/video/90299717?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
@@ -254,7 +288,9 @@
         <!--</div>&lt;!&ndash;//video-container&ndash;&gt;-->
     </div><!--//container-->
 </section><!--//feature-video-->
-<section class="faq section has-bg-color" style="padding-bottom: 20px;margin-top:-120px;<?php if($pc=='pc')echo 'margin-top:0px;'?>">
+
+
+<section class="faq section has-bg-color" style="clear:both;padding-bottom: 20px;margin-top:-120px;<?php if($pc=='pc')echo 'margin-top:0px;'?>">
     <div class="container">
         <!--<h2 class="title text-center">Frequently Asked Questions</h2>-->
         <div class="row" style="">
@@ -492,13 +528,6 @@
 
 
 
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="/Public/style/tab/js/responsiveTabs.min.js"></script>
-<script>
-    $(document).ready(function () {
-        RESPONSIVEUI.responsiveTabs();
-    })
-</script>
 <!-- ******FAQ Section****** -->
 <!--<section class="faq section has-bg-color" style="padding-bottom: 50px;">-->
 <!--<div class="container">-->
@@ -665,11 +694,11 @@
 
 
 <!-- ******CTA Section****** -->
-<section id="cta-section" class="section cta-section text-center home-cta-section">
+<section id="cta-section" class="section cta-section text-center home-cta-section" style="min-height: 370px;">
     <div class="container">
-        <h2 class="title">为改变世界而生</h2>
-        <p class="intro">数字货币---颠覆现实、引发技术革命，即将渗透至你我生活的方方面面</p>
-        <p><a class="btn btn-cta btn-cta-primary" href="" target="_blank">马上加入</a></p>
+        <h2 class="title"><?php echo (L("_Index_right_join")); ?></h2>
+        <p class="intro"><?php echo (L("_Index_right_join1")); ?></p>
+        <p><a class="btn btn-cta btn-cta-primary" id="join" style="" target="_blank"><?php echo (L("_Index_right_join2")); ?></a></p>
     </div><!--//container-->
 </section><!--//cta-section-->
 
@@ -682,10 +711,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;margin: 0px;">
+                        <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <img style="width: 180px;" src="/Public/img/logo22.png" >
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
 
 
                         </h3>
@@ -706,9 +735,9 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=about" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="/index.php?a=download" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=faq" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -723,7 +752,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png">
 
                         </h3>
 
@@ -745,7 +774,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png">
 
                         </h3>
 
@@ -767,22 +796,22 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
                             <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
                             </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
-                            <form class="signup-form navbar-form">
+                            <form class="login-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
                                     <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
                                 <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
-                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 17695540023</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a style="text-decoration: none;"> 3283719599@qq.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -873,6 +902,38 @@
 <script type="text/javascript" src="/Public/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/Public/assets/js/main.js"></script>
 
+
+
+<!--<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="/Public/style/tab/js/responsiveTabs.min.js"></script>
+<script>
+    $(document).ready(function () {
+        RESPONSIVEUI.responsiveTabs();
+    })
+</script>
+
+
+<script>
+
+
+    var login = "<?php echo ($account); ?>";
+
+    $("#join").click(function () {
+
+
+
+        if(login == "on"){
+            window.location.href = "index.php?a=account";
+
+
+        }else{
+            window.location.href = "index.php?a=signin";
+        }
+
+
+    });
+
+</script>
 
 </body>
 </html>

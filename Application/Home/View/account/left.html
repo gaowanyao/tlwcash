@@ -3,14 +3,16 @@
     <div class="account-container">
 
         <div class="account-avatar">
-            <img src="__PUBLIC__/mySpace/img/headshot.png" alt="" class="thumbnail" />
+            <!--{$res['head_url']}-->
+            <!--<img id="headPic" src="__PUBLIC__/mySpace/img/headshot.png" alt="" class="thumbnail" />-->
+            <img id="headPic" src="<?php if($res['head_url']!=null) {echo $res['head_url'];}else{echo '__PUBLIC__/mySpace/img/defaultPic.jpg';}?>" onerror="this.src='__PUBLIC__/mySpace/img/defaultPic.jpg'" alt="" class="thumbnail" />
         </div> <!-- /account-avatar -->
 
         <div class="account-details">
 
-            <span class="account-name">{$name}</span>
+            <span class="account-name"><?php echo $_SESSION['account']['user_name']; ?></span>
 
-            <span class="account-role">Administrator</span>
+            <span class="account-role"><?php echo $_SESSION['account']['phone']; ?><?php echo $_SESSION['account']['username']; ?></span>
 
             <!--<span class="account-actions">-->
 							<!--<a href="javascript:;">Profile</a> |-->
@@ -29,10 +31,15 @@
 
         <li class="active">
             <a href="index.php?a=account">
-                <i class="icon-user"></i>
-                用户中心
+                <i class="icon-user"></i>{$Think.lang._user_name}
             </a>
         </li>
+        <li>
+        <a href="index.php">
+        <i class="icon-home"></i>{$Think.lang._user_home}
+        </a>
+        </li>
+
 
         <!--<li>-->
             <!--<a href="index.php?a=account">-->

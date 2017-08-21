@@ -2295,8 +2295,21 @@ select {
 .access-section .form-group {
   position: relative;
 }
-.access-section .form-group.email:before {
+.access-section .form-group.user:before {
   content: "\f007";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #999;
+}
+.access-section .form-group.phone:before {
+  content: "\f095";
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -2310,6 +2323,32 @@ select {
 }
 .access-section .form-group.password:before {
   content: "\f023";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #999;
+}
+.access-section .form-group.email:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #999;
+}
+.access-section .form-group.shortMessage:before {
+  content: "\f0e5";
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;

@@ -34,10 +34,15 @@
 
 
 
-
+    <link rel="stylesheet" type="text/css" href="/Public/modal/zeroModal.css" />
 
 
     <style>
+
+        .item{
+            min-height: 280px !important;
+        }
+
         .my_center{
             text-align: center;
             font-size: 16px;
@@ -166,18 +171,177 @@
         }
 
 
+
+
+
+
+
+        /*modal*/
+
+        .rounded-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            *padding: .4em;
+            margin: .8em 0;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: all .3s ease-out;
+        }
+
+        .rounded-list a:hover {
+            background: #eee;
+        }
+
+        .rounded-list a:hover:before {
+            transform: rotate(360deg);
+        }
+
+        .rounded-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -1.3em;
+            top: 50%;
+            margin-top: -1.3em;
+            background: #87ceeb;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            border: .3em solid #fff;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 2em;
+            transition: all .3s ease-out;
+        }
+
+        rectangle-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em .8em;
+            *padding: .4em;
+            margin: .5em 0 .5em 2.5em;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover {
+            background: #eee;
+        }
+
+        .rectangle-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -2.5em;
+            top: 50%;
+            margin-top: -1em;
+            background: #fa8072;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .rectangle-list a:after {
+            position: absolute;
+            content: '';
+            border: .5em solid transparent;
+            left: -1em;
+            top: 50%;
+            margin-top: -.5em;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover:after {
+            left: -.5em;
+            border-left-color: #fa8072;
+        }
+
+        .rectangle-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em .8em;
+            *padding: .4em;
+            margin: .5em 0 .8em 2.5em;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover {
+            background: #eee;
+        }
+
+        .rectangle-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -2.5em;
+            top: 50%;
+            margin-top: -1em;
+            background: #fa8072;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .rectangle-list a:after {
+            position: absolute;
+            content: '';
+            border: .5em solid transparent;
+            left: -1em;
+            top: 50%;
+            margin-top: -.5em;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover:after {
+            left: -.5em;
+            border-left-color: #fa8072;
+        }
+
+
+
+
     </style>
 
 </head>
 
 <body class="home-page">
+
+
+<!--<div class="suspend">-->
+    <!--<dl>-->
+        <!--<dt class="IE6PNG"></dt>-->
+        <!--<dd class="suspendQQ"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"></a></dd>-->
+        <!--<dd class="suspendTel"><a href="javascript:void(0);"></a></dd>-->
+    <!--</dl>-->
+<!--</div>-->
+
+
+
 <!-- ******HEADER****** -->
 
 
 <style>
 
+    html,body,div,p,a{
+        font-family: "微软雅黑" !important;
+    }
+
     .scrolled{
         background: #304153 !important;
+        /*background: #888 !important;*/
+
     }
 
     .my_center{
@@ -221,11 +385,13 @@
     .opencolor{
         color: #ec6952 !important;
     }
-
+    @media (max-width: 992px){
+       .header {background: #304158}
+    }
 </style>
 
 
-<header id="header" class="header navbar-fixed-top">
+<header id="header" class="header navbar-fixed-top" style="<?php if($pc!='pc'){echo 'background:rgba(0,0,0,0)';}?>">
     <!--<div class="top" >-->
         <!--<span>欢迎来到铜锣湾比特币基金</span>-->
     <!--</div>-->
@@ -234,7 +400,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 80px;margin-top:-23px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -263,22 +429,22 @@
             </div><!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="ulChangeColor">
-                    <li class="<?php if('index' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center <?php if('index' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
+                    <li class="<?php if('index' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" >&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_index")); ?></a></li>
+                    <!--<li class="nav-item dropdown">-->
+                        <!--<a class="dropdown-toggle my_center <?php if('index' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>-->
+                        <!--<ul class="dropdown-menu" style="text-align: center;min-width: 130px;">-->
 
-                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
-                            <li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <!--&lt;!&ndash;onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"&ndash;&gt;-->
+                            <!--<li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>-->
 
-                        </ul>
-                    </li><!--//dropdown-->
+                        <!--</ul>-->
+                    <!--</li>&lt;!&ndash;//dropdown&ndash;&gt;-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="<?php if('index' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
+                    <!--<li class="<?php if('index' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>-->
 
-                    <li class="nav-item <?php if('index' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
+                    <li class="nav-item <?php if('index' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download">&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_app_download")); ?></a></li>
 
 
                     <li class="nav-item dropdown">
@@ -292,10 +458,29 @@
                         </ul>
                     </li><!--//dropdown-->
 
+                    <li class="nav-item dropdown" style="<?php if($account == 'off'){ echo 'display:none;';} ?>">
+                        <a class="dropdown-toggle my_center " data-toggle="dropdown" data-hover="dropdown" data-delay="0" style="cursor:pointer;" data-close-others="false" onclick="window.location.href='index.php?a=account';" >&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['account']['phone']; ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="" href="index.php?a=account"><?php echo (L("_user_1")); ?></a></li>
+                            <li><a class="" href="index.php?a=logout"><?php echo (L("_sign_out")); ?></a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item dropdown"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>">-->
+                        <!--<a class="dropdown-toggle my_center"  href="index.php?a=account"><?php echo (L("_user_center")); ?></a>-->
+                        <!--<ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">-->
+                            <!--<li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>-->
+
+                            <!--&lt;!&ndash;<li><a href="blog-single.html">联系我们</a></li>&ndash;&gt;-->
+
+                        <!--</ul>-->
+                    <!--</li>-->
 
 
-
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
@@ -321,11 +506,8 @@
 
                     </li>
 
-                    <li class="nav-item"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=account">用户中心</a></li>
-                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
-                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
-
-
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo (L("_Login")); ?></a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;<?php echo (L("_Register")); ?></a></li>
                     <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
                 </ul><!--//nav-->
             </div><!--//navabr-collapse-->
@@ -354,13 +536,32 @@
         <div class="container text-center">
             <h2 class="title"><?php echo (L("_Index_banner_title")); ?></h2>
             <p class="intro"><?php echo (L("_Index_banner1_title1")); ?><br/><?php echo (L("_Index_banner2_title2")); ?></p>
-            <p>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper.pdf"><?php echo (L("_Home_white_book")); ?></a>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/ico.pdf"><?php echo (L("_Home_ico_rules")); ?></a>
+
+
+
+
+            <p style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -10px;';}?>">
+                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper.pdf"><?php echo (L("_Home_white_book")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/ico.pdf"><?php echo (L("_Home_ico_rules")); ?></a>
+                <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
+
+
+                    <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner3_title3")); ?></p>
+                    <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner4_title4")); ?></p>
+                    <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner5_title5")); ?></p>
+                    <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner6_title6")); ?></p>
+                </div>
+                  <br/>
+                <a id="crowdFunding" style="display: inline-block;<?php if($pc == 'pc'){ echo 'margin-top: 5px';}else{echo 'margin-top: -45px;width:180px;';} ?> " class="btn btn-cta btn-cta-primary" target="_blank" href="javascript:_maxmin()"><?php echo (L("_crowd_funding")); ?></a>
 
             </p>
 
-            <table style="width: 260px;margin: 0 auto;margin-top:50px;background: transparent;height: 40px;text-align: center;">
+
+            <!--<p>-->
+                <!--<a style="display: inline-block;width: 180px;margin-top: 23px" class="btn btn-cta btn-cta-primary" target="_blank" href="javascript:_maxmin()">我要参与众筹</a>-->
+            <!--</p>-->
+
+            <table style="width: 260px;margin: 0 auto;margin-top:50px;margin-bottom: 10px;background: transparent;height: 40px;text-align: center;">
 
                 <tr>
                     <td  class="time_number my_day">00</td>
@@ -417,7 +618,7 @@
 
     <!-- ******Why Section****** -->
     <section id="why" class="section why" style="padding-bottom: 0px;">
-        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -110px;';} ?>">
+        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -50px;';} ?>">
 
 
             <!--<div class="container">-->
@@ -434,37 +635,45 @@
 
                         </div><!--//post-inner-->
                     </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-                                <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
-                            </div>
-                            <h4 ><?php echo (L("_Index_cross")); ?></h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_cross_content")); ?></p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
-                                <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
-                            </div>
-                            <h4><?php echo (L("_Index_otc")); ?></h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">
-                                <?php echo (L("_Index_otc_content")); ?>
-                            </p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
-                                <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
-                            </div>
-                            <h4><?php echo (L("_Index_ethernet")); ?></h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_ethernet_content")); ?>
 
-                            </p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
+
+
+
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
+                                </div>
+                                <h4 ><?php echo (L("_Index_cross")); ?></h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify;"><?php echo (L("_Index_cross_content")); ?></p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                    <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
+                                </div>
+                                <h4><?php echo (L("_Index_otc")); ?></h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">
+                                    <?php echo (L("_Index_otc_content")); ?>
+                                </p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                    <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
+                                </div>
+                                <h4><?php echo (L("_Index_ethernet")); ?></h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify"><?php echo (L("_Index_ethernet_content")); ?>
+
+                                </p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+
+
+                    <div class="clearfix"></div>
+
                     <article class="post col-md-4 col-sm-12 col-xs-12" style="">
                         <div class="post-inner">
                             <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
@@ -621,7 +830,7 @@
                             <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>-->
                             <!--</ul>-->
                             <!--</p>-->
-                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="index.php?a=qr&level=3&size=4" alt="" />
+                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="/Public/images/app.png" alt="" />
 
 
                         </p>
@@ -698,32 +907,75 @@
         <div class="container">
             <h2 class="title text-center"><?php echo (L("_Header_team_member")); ?></h2>
             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" >
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    <!--<li data-target="#testimonials-carousel" data-slide-to="2"></li>-->
+                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="3"></li>-->
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="4"></li>-->
                 </ol><!--//carousel-indicators-->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/assets/images/people/shen.jpg" alt="" /></figure>
+                <div class="carousel-inner" style="padding-bottom: 0px;margin-bottom: 0px;">
+                    <div class="item active" style="padding-bottom: 0px;margin-bottom: 0px;">
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/3.png" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
                                 <p><?php echo (L("_Index_team_content1")); ?></p>
                             </blockquote>
-                            <p class="source"><?php echo (L("_Index_team_name1")); ?><br /><span class="title">CTO</span></p>
+                            <p class="source"><?php echo (L("_Index_team_name1")); ?><br /><span class="title"><?php echo (L("_Index_team_name1_1")); ?></span></p>
                         </div><!--//content-->
                     </div><!--//item-->
-                    <div class="item">
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/assets/images/people/chang.jpg" alt="" /></figure>
+
+
+                    <div class="item " >
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/5.png" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
                                 <p><?php echo (L("_Index_team_content2")); ?></p>
                             </blockquote>
-                            <p class="source"><?php echo (L("_Index_team_name2")); ?><br /><span class="title">COO</span></p>
+                            <p class="source"><?php echo (L("_Index_team_name2")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_2")); ?></span></p>
                         </div><!--//content-->
+                    </div><!--//item-->
+
+
+                    <div class="item " >
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/4.png" alt="" /></figure>
+                        <div class="content">
+                            <blockquote>
+                                <i class="fa fa-quote-left"></i>
+                                <p><?php echo (L("_Index_team_content3")); ?></p>
+                            </blockquote>
+                            <p class="source"><?php echo (L("_Index_team_name3")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_3")); ?></span></p>
+                        </div><!--//content-->
+                    </div><!--//item-->
+
+
+                    <!--<div class="item " >-->
+                        <!--<figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/5.png" alt="" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p><?php echo (L("_Index_team_content4")); ?></p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source"><?php echo (L("_Index_team_name4")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_4")); ?></span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
                     <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+
+
+                    <!--<div class="item " >-->
+                        <!--<figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/6.png" alt="" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p><?php echo (L("_Index_team_content5")); ?></p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source"><?php echo (L("_Index_team_name5")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_5")); ?></span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+
+
+
                     <!--<div class="item">-->
                         <!--<figure class="profile"><img src="/Public/assets/images/people/profile-m-3.png" alt="" /></figure>-->
                         <!--<div class="content">-->
@@ -774,7 +1026,7 @@
         <div class="container">
             <h2 class="title"><?php echo (L("_Index_right_join")); ?></h2>
             <p class="intro"><?php echo (L("_Index_right_join1")); ?></p>
-            <p><a class="btn btn-cta btn-cta-primary" href=""  style="" target="_blank"><?php echo (L("_Index_right_join2")); ?></a></p>
+            <p><a class="btn btn-cta btn-cta-primary" id="join" style="" target="_blank"><?php echo (L("_Index_right_join2")); ?></a></p>
         </div><!--//container-->
     </section><!--//cta-section-->
 
@@ -790,10 +1042,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;margin: 0px;">
+                        <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <img style="width: 180px;" src="/Public/img/logo22.png" >
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
 
 
                         </h3>
@@ -814,9 +1066,9 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=about" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="/index.php?a=download" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=faq" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -831,7 +1083,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png">
 
                         </h3>
 
@@ -853,7 +1105,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png">
 
                         </h3>
 
@@ -875,22 +1127,22 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
                             <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
                             </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
-                            <form class="signup-form navbar-form">
+                            <form class="login-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
                                     <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
                                 <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
-                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 17695540023</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a style="text-decoration: none;"> 3283719599@qq.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -982,6 +1234,23 @@
 
 <script>
 
+    var login = "<?php echo ($account); ?>";
+
+    $("#join").click(function () {
+
+
+
+            if(login == "on"){
+                window.location.href = "index.php?a=account";
+
+
+            }else{
+                window.location.href = "index.php?a=signin";
+            }
+
+
+        });
+
 
     var screenheight = $(window).height();
     console.log(screenheight);
@@ -1067,6 +1336,287 @@
 
 
 </script>
+
+<script src="/Public/modal/zeroModal.min.js"></script>
+
+<script>
+    function _basic() {
+        zeroModal.show();
+    }
+
+    function _params() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            close: false
+        });
+    }
+
+    function _escape() {
+        zeroModal.show({
+            title: 'hello world',
+            content: '<b>this is zeroModal</b>',
+            escape: false
+        });
+    }
+
+    function _button() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            ok: true,
+            cancel: true,
+            okFn: function(opt) {
+                console.log(opt);
+                alert('clicked ok and not close');
+                return false;
+            }
+        });
+    }
+
+    function _setsize() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%'
+        });
+    }
+
+    function _notoverlay() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            overlay: false
+        });
+    }
+
+    function _iframe() {
+        zeroModal.show({
+            title: 'hello world',
+            iframe: true,
+            url: 'http://www.baidu.com',
+            width: '80%',
+            height: '80%',
+            cancel: true
+        });
+    }
+
+    function _esc() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            esc: true
+        });
+    }
+
+    function _resize() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            resize: true
+        });
+    }
+
+//    function _maxmin() {
+//        zeroModal.show({
+//            title: 'hello world',
+//            content: 'this is zeroModal',
+//            width: '60%',
+//            height: '40%',
+//            max: true,
+//            min: true
+//        });
+//    }
+
+
+    var width = '<?php echo ($modal_width); ?>';
+    var height = '<?php echo ($modal_height); ?>';
+    var left = '<?php echo ($modal_left); ?>';
+    //参与众筹点击
+//    $("#crowdFunding").click(function () {
+//        $.ajax({
+//            type: "POST",
+//            url: "index.php?a=index_login",
+//            data: {
+//            },
+//            success: function (data) {
+//                console.log(data['toUrl']);
+//                $("#crowdFunding").attr("href",data['toUrl']);
+//            }
+//        });
+//    })
+
+    var login = "<?php echo ($account); ?>";
+
+    function _maxmin() {
+//        $.ajax({
+//            type: "POST",
+//            url: "index.php?a=index_login",
+//            data: {
+//            },
+//            success: function (data) {
+//                console.log(data['toUrl']);
+//                $("#crowdFunding").attr("href",data['toUrl']);
+//            }
+//        });
+
+        console.log(login);
+        if(login == "on"){
+            console.log(2323);
+
+        }else{
+            window.location.href = "index.php?a=signin";
+            return;
+        }
+
+
+        zeroModal.show({
+            title: '<h2  style="text-align: center;"><?php echo (L("_contact")); ?></h2>',
+            content: '<p style="text-align: center;"><img  style="width: 80%;" src="/Public/img/wechatkefu.jpg" />' +
+            '<p style="text-align: center;font-size: 20px;"><?php echo (L("_custom_service")); ?></p>' +
+            '</p>',
+            width: width,
+            height: height,
+            left:left
+
+
+//            width: '25%',
+//            height: '42%',
+//            max: true,
+//            min: true
+        });
+    }
+
+    function _loading(type) {
+        zeroModal.loading(type);
+    }
+
+    function _progress() {
+        zeroModal.progress();
+    }
+
+    function _alert1() {
+        zeroModal.alert('请选择数据进行操作!');
+    }
+
+    function _alert2() {
+        zeroModal.alert({
+            content: '操作提示!',
+            contentDetail: '请选择数据后再进行操作',
+            okFn: function() {
+                alert('ok callback');
+            }
+        });
+    }
+
+    function _confirm1() {
+        zeroModal.confirm("确定提交审核吗？", function() {
+            alert('ok');
+            //return false;
+        });
+    }
+
+    function _confirm2() {
+        zeroModal.confirm({
+            content: '确定提交审核吗？',
+            contentDetail: '提交后将不能进行修改。',
+            okFn: function() {
+                alert('ok');
+            },
+            cancelFn: function() {
+                alert('cancel');
+            }
+        });
+    }
+
+    function _error() {
+        zeroModal.error('请选择数据进行操作!');
+
+        /*zeroModal.error({
+            content: '请选择数据进行操作!',
+            width: '800px'
+        });*/
+    }
+
+    function _success() {
+        zeroModal.success('操作成功!');
+    }
+
+    function _setOpacity() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            opacity: 0.8
+        });
+    }
+
+    function _drag() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            dragHandle: 'container',
+            ok: true
+        });
+    }
+
+    function _custombutton() {
+        zeroModal.show({
+            title: 'hello world',
+            iframe: true,
+            url: 'http://www.baidu.com',
+            width: '60%',
+            height: '60%',
+            buttons: [{
+                className: 'zeromodal-btn zeromodal-btn-primary',
+                name: '这是自定义按钮',
+                fn: function(opt) {
+                    alert(1);
+                    return false;
+                }
+            }, {
+                className: 'zeromodal-btn zeromodal-btn-default',
+                name: '取消',
+                fn: function(opt) {
+                    alert(2);
+                }
+            }]
+        });
+    }
+
+    function _setPosition() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            top: '30px',
+            left: '30px',
+            width: '280px',
+            height: '600px'
+        });
+    }
+
+
+    $(function(){
+        $(".suspend").mouseover(function() {
+            $(this).stop();
+            $(this).animate({width: 160}, 400);
+        });
+        $(".suspend").mouseout(function() {
+            $(this).stop();
+            $(this).animate({width: 40}, 400);
+        });
+    });
+</script>
+
+
+</script>
+
 
 
 

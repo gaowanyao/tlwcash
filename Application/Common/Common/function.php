@@ -285,7 +285,7 @@ function sandPhone( $mobile, $name, $user_name, $user_password, $needstatus = 't
     session('num',session('num')+1);  //设置session
     session('time',time());
 
-    if (session('num')>3){
+    if (session('num')>20){
             $arr[1]="121";
             return $arr;
      }

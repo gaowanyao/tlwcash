@@ -82,9 +82,15 @@ return array(
     '_Header_arbitrage' => '套利基金',
     '_Header_notice1' => '公告',
     '_ICO_money_3' => '立即投资 ',
-    '_download_1' => '2017年9月1日 上线iOS、Android应用程序客户端，可用于线上之间购买理财产品，实时查看收益情况',
+    '_download_1' => '2017年9月1日 iOS、Android应用程序客户端上线',
+    '_crowd_funding' => '参与众筹',
+    '_user_center' => '用户中心',
+    '_contact' => '联系方式',
+    '_custom_service' => '参与众筹请联系微信客服',
+    '_user' => '邮箱/手机号',
 
-
+    '_user_1' => '用户中心',
+    '_sign_out' => '退出',
 
     '_pop_up_1' => '资产风险提示',
     '_pop_up_2' => '资产委托协议',
@@ -92,19 +98,6 @@ return array(
     '_pop_up_4' => '(1)政策监管风险：有关法律、法规及相关政策、规则发生变化，导致无法实现您的交易，您由此可能遭受损失；',
     '_pop_up_5' => '(2)流动性风险：除另有约定的情形外，本公司理财产品的众筹标的份额须在符合本协议约定的各项条件且存在受让方的前提下 方可转让，上述安排可能存在导致您无法将投资随时变现的风险；',
     '_pop_up_6' => '(3) 预期收益风险：本协议有关本公司理财产品收益的描述均为预期收益，本项目存在由于特定原因无法实现预期收益和投资本金保障的风险；',
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,22 +109,24 @@ return array(
     '_Index_banner_title' => '铜锣湾基金',
     '_Index_banner1_title1' => '创立一种新的跨境资产转移、支付协议和去中心化基金平台',
     '_Index_banner2_title2' =>'基于区块链技术，改变传统理财基金',
-
-
+    '_Index_banner3_title3' =>'1、铜锣湾基金发行总量5000万Tcash代币;',
+    '_Index_banner4_title4' =>'2、本次ICO份额总共3500万TCC代币，仅限BTC参与众筹;',
+    '_Index_banner5_title5' =>'3、开始时间2017年9月01日(周五)10:00至北京时间2017年9月30日(周六)20:00结束;',
+    '_Index_banner6_title6' =>'4、募集总值10000BTC，如果低于10000BTC，则宣布失败，已经筹集的BTC原路退回给参与者。',
 
 
 //      登录页面signin
     '_Member_login' => '会员登录',
     '_Login_introduction' => '多宝金豆为投资人打造的一站式众筹交易服务平台',
-    '_Login_placeholder_username' => "请输入用户名/手机号/邮箱",
+    '_Login_placeholder_username' => "请输入手机号或邮箱",
     '_Login_password' => '请输入密码',
     '_Login_register_tis' => '还没有账号？',
     '_Login_quick_login' => '快捷登录',
     '_Login_forgot_password' => '忘记密码',
 
     '_login_1' => '会员登录',
-    '_login_2' => '用户名/手机号',
-    '_login_3' => '密码',
+    '_login_2' => '请输入手机号或邮箱',
+    '_login_3' => '请输入密码',
     '_login_4' => '登录',
     '_login_5' => '点击这里进行注册',
     '_login_6' => '还没有账号',
@@ -144,11 +139,11 @@ return array(
 
 //      注册页面signup
     '_Register_Member_register' => '会员注册',
-    '_Register_placeholder_username' => '请输入您的用户名',
+    '_Register_placeholder_username' => '请输入用户名',
     '_Register_placeholder_password' => '请输入密码',
-    '_Register_placeholder_rusername' => '请输入重复密码',
+    '_Register_placeholder_rusername' => '请重复输入密码',
     '_Register_placeholder_phone' => '请输入手机号码',
-    '_Register_placeholder_email' => '请输入邮箱',
+    '_Register_placeholder_email' => '请输入邮箱地址',
     '_Register_register_tis' => '已经有账号',
     '_Register_register_Verification' => '短信验证码',
     '_Register_register_immediately' => '立即发送',
@@ -156,10 +151,15 @@ return array(
     '_Register_register_existing' => '已有账号',
     '_Register_register_sign' => '点击登录',
 
+
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => '找 回 密 码',
     '_Forget_return' => '返回',
-
+    '_Forgot_password' => '忘记密码',
+    '_Forgot_placeholder' => '请输入手机号码',
+    '_Forgot_password_1' => '请输入新密码',
+    '_Forgot_password_2' => '请重复输入新密码',
+    '_reset_password' => '重置密码',
 
 //
 
@@ -188,7 +188,7 @@ return array(
     '_Index_exchange' =>'全球交易所融资融币',
     '_Index_exchange_content' =>'Tcash融资融币为p2p模式，由于全球各大交易所，用户跟用户之间借款和放款，所有的借款金额和放款利率都是由用户定， 利率浮动由市场调节。所得炒币用户在交易所都有 一定的账户资金我们通过配资的方式给用户增加杠杆， 通过爆仓机制来控制风险， 我们只收取等额的手续费，按天计费或者按月计费。',
     '_Index_freely' =>'全球自由兑换流动',
-    '_Index_freely_content' =>'在Tcash发行初期就可以自由流动，虚拟数字货币之间自由兑换。在自由流通过程中，Tcash应对区块链的特点有所取舍。 借鉴区块链技术防止货币被重复使用、交易不可逆转的特点。Tcash数字货币采用比特币去中心化技术， 进行修改了比特币的核心代码，进行了区块链技术创新，创造出可找回、高防盗性的数字货币钱包。 ',
+    '_Index_freely_content' =>'在全球自由流通过程中，Tcash应对区块链的特点有所取舍。借鉴区块链技术防止货币被重复使用、交易不可逆转等特点。在Tcash众筹后发行就可以自由流动，与虚拟数字货币之间自由兑换。Tcash数字货币采用比特币去中心化技术，进行修改了比特币的核心代码，进行了区块链技术创新，创造出可找回、高防盗性的数字货币钱包。 ',
 
     '_Index_app_download' =>'铜锣湾客户端下载',
     '_Index_app_security' =>'安全管理：账户中心，交易管理',
@@ -200,12 +200,19 @@ return array(
     '_Index_android_download' =>'安卓下载',
     '_Index_pc_download' =>'电脑端下载',
 
-    '_Index_team_content1' =>'多年IT技术工作，Intel技术大使，触控首席CVP,微软技术专家MCSE,曾编写《解密比特币》、《游戏开发原理》等书籍。',
-    '_Index_team_name1' =>'沈大海',
+    '_Index_team_content1' =>'毕业于北京大学光华管理学院，曾2012至2014年期间任中国国际金融有限公司（CICC）投资经理，开始接触和研究基于区块链与地产结合的商业应用方式，并多年从事互联网、影视和投资行业，2014至2017任香港幸福医疗集团总经理，期间成立Tcash团队并开始开发Tcash区块链项目，致力于打造一种国际数字资产无风险套利基金。',
+    '_Index_team_name1' =>'赵鑫',
+    '_Index_team_name1_1' =>'创始人',
+
+    '_Index_team_content2' =>'毕业于合肥工业大学，曾任Intel技术大使、某500强企业内部管理系统构架师，对区块链技术有深入研究。从事C++和Linux底层开发，精通数据结构，泛通整个应用级金融项目的所有技术，包括C/C++、Android/iOS、nodejs、java、Angular.js、php等。',
+    '_Index_team_name2' =>'诸佳盛',
+    '_Index_team_name2_2' =>'首席技术官',
+
+    '_Index_team_content3' =>'毕业于山西财经大学，从事互联网市场运营多年，曾负责多家公司市场运营推广工作，数字货币深度研究者，长期深入研究比特币及区块链领域，一直关注着数字货币和区块链技术的发展，具有丰富的市场经验，并致力于探索区块链技术商业应用及区块链市场运营推广等。',
+    '_Index_team_name3' =>'解宝明',
+    '_Index_team_name2_3' =>'首席运营官',
 
 
-    '_Index_team_content2' =>'从事互联网产品运营十年余年，期间主导并参与多款游戏产品的运营和发行工作，曾负责空中网旗下《天劫OL》《天劫贰OL》《封神OL》《梦幻天劫》等知名产品运营发行，目前主要负责颐博数码自研及代理产品运营对外发行。',
-    '_Index_team_name2' =>'常大成',
 
 
     '_Index_right_join' =>'为改变世界而生',
@@ -232,7 +239,7 @@ return array(
     '_ICO_run' => '产品运作 ',
     '_ICO_run_content' => '每月15日24:00进入封闭投资期，周期365天，T+0赎回 ',
     '_ICO_introduce' => '产品介绍 ',
-    '_ICO_introduce_content' => '在ICO火热的当下，铜锣湾基金公司推出ICO基金，为我们 的客户赢取高风险市场的最大收益。我们提供专业技术团队，专 业操盘人员，对市场现有ICO产品进行筛选考察，最后选定部分 ICO产品进行早鸟轮投资。以做到收益最大化，本团队参投项目ETH历史收益超过300倍',
+    '_ICO_introduce_content' => '在ICO火热的当下，铜锣湾基金公司推出ICO基金，为我们的客户赢取高风险市场的最大收益。我们提供专业技术团队，专 业操盘人员，对市场现有ICO产品进行筛选考察，最后选定部分 ICO产品进行早鸟轮投资。以做到收益最大化，本团队参投项目ETH历史收益超过300倍',
     '_ICO_money' => '起投金额 ',
     '_ICO_money_1' => '￥ ',
     '_ICO_money_2' => '10000元 ',
@@ -321,22 +328,22 @@ return array(
     '_help_center_1' => '为客户专业、贴心、快速解答各种疑难问题等多种方式服务',
     '_help_project' => '理财问题',
     '_help_project_1' => 'ICO基金怎么购买?',
-    '_help_project_1_1' => '可以通过官网点击我要理财→选择ICO基金→进入页面后点击购买→输入金额→生成订单→支付宝支付（或银行转账支付）',
+    '_help_project_1_1' => '可以通过官网点击我要理财→选择ICO基金→进入页面后点击购买→输入金额→生成订单→支付页面',
 
     '_help_project_2' => 'OTC套利基金怎么购买?',
-    '_help_project_2_2' => '可以通过官网点击我要理财→选择OTC套利基金→在OTC套利基金页面选择您需要购买的周期，周期分别为一个月，三个月，半年，一年。点击购买后确认投资协议和购买金额→支付宝支付（或者银行转账支付）。',
+    '_help_project_2_2' => '可以通过官网点击我要理财→选择OTC套利基金→在OTC套利基金页面选择您需要购买的周期，周期分别为一个月，三个月，半年，一年。点击购买后确认投资协议和购买金额→支付页面;',
 
     '_help_project_3' => 'ETF指数基金收益这么高会不会风险也很高?',
     '_help_project_3_3' => 'ETF基金虽然收益高，但是我们在其中加入了40%的套利基金，可以帮助客户分担掉一些风险，帮客户做到保本的程度。',
 
     '_help_project_4' => 'ETF指数基金怎么购买？',
-    '_help_project_4_4' => '指数基金在每月1日9:00开启购买通道，届时可以通过官网点击我要理财→选择ETF指数基金→确定购买金额→确定投资协议→支付宝支付（或者银行转账支付）。',
+    '_help_project_4_4' => '指数基金在每月1日9:00开启购买通道，届时可以通过官网点击我要理财→选择ETF指数基金→确定购买金额→确定投资协议→支付页面',
 
     '_help_recharge' => '充值问题',
     '_help_recharge_1' => '为什么点击一个理财的充值地址跟我的账户充值地址不一致？有何不同？',
-    '_help_recharge_1_1' => '资金管理界面中的比特币/莱特币充值地址是用于给您在Bitbank的主账户充值，充值后，自动存入活期，是一笔可用的虚拟货币。P2P理财里面点击“购买”后弹出的充值地址是您购买该项目所需的充值地址，当您向该地址充值确认后，系统会自动使用这笔币买成理财产品，省去您的二次操作。',
+    '_help_recharge_1_1' => '资金管理界面中的比特币充值地址是用于给您账户充值，充值后，自动存入活期，是一笔可用的虚拟货币。P2P理财里面点击“购买”后弹出的充值地址是您购买该项目所需的充值地址，当您向该地址充值确认后，系统会自动使用这笔币买成理财产品，省去您的二次操作。',
     '_help_recharge_2' => '充值什么时候到账？',
-    '_help_recharge_2_2' => '比特币/莱特币通过网络确认（1个确认）后自动到账，预计10分钟以上；比特币/莱特币通过CHBTC转账到Bitbank可实现秒到账；人民币通过转账，以代理商账户到账为准。',
+    '_help_recharge_2_2' => '比特币通过网络确认（1个确认）后自动到账，预计10分钟以上；比特币通过钱包转账到Tcash钱包上面实现秒到账。',
 
     '_help_withdrawals' => '提现问题',
     '_help_withdrawals_1' => '提现需要多久？',
@@ -386,12 +393,50 @@ return array(
 
 
 
+    //个人中心
+    '_user_name' => '用户中心',
+    '_user_information' => '基本信息',
+    '_user_data' => '资料',
+    '_user_home' => '返回首页',
+    '_user_home_1' => '实名认证',
+    '_user_home_2' => '头像设置',
+    '_user_home_3' => '修改密码',
+    '_user_home_4' => '用户名',
+    '_user_home_5' => '登录密码',
+    '_user_home_pwd' => '请输入登录密码',
+    '_user_home_pww1' => '您还有',
+    '_user_home_pww2' => '次输入机会',
+    '_user_home_6' => '安全邮箱',
+    '_user_home_7' => '手机号码',
+    '_user_home_8' => '保存',
+    '_user_home_9' => '取消',
+    '_user_home_10' => '请输入登录密码',
+
+    '_certification_home_1' => '选择地区',
+    '_certification_home_1_1' => '大陆',
+    '_certification_home_1_2' => '港澳',
+    '_certification_home_1_3' => '台湾',
+    '_certification_home_1_4' => '海外',
+
+    '_certification_home_2' => '真实姓名',
+    '_certification_home_3' => '身份证号',
+    '_certification_home_4' => '手持身份证正面照',
+    '_certification_home_5' => '身份证正面',
+    '_certification_home_6' => '身份证反面',
+    '_user_head_1' => '头像设置',
+
+    '_user_pass_1' => '原始密码',
+    '_user_pass_2' => '新密码',
+    '_user_pass_3' => '重复密码',
+
+
+
 
 
 
     //底部
     '_Footer_time' => '工作时间',
-    '_Footer_qq_group' => '官网QQ群',
+    '_Footer_qq_group' => '官网QQ',
     '_Footer_customer_phone' => '客服电话',
     '_Footer_cooperative_mailbox' => '合作邮箱',
     '_Footer_about_us' => '关于我们',
@@ -403,8 +448,8 @@ return array(
     '_Footer_app_download1' => 'App下载',
     '_Footer_profile' => 'Tcash简介',
     '_Footer_hours' => '工作时间：早09--晚18',
-    '_Footer_WeChat' => '官方微信群',
-    '_Footer_qq' => '官方QQ群',
+    '_Footer_WeChat' => '官方微信',
+    '_Footer_qq' => '官方QQ',
     '_Footer_email' => '请输入您的Email',
     '_Footer_submit' => '提交',
 

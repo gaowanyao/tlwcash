@@ -60,7 +60,14 @@
 
         .responsive-tabs__list__item{
             min-width:120px;
-            margin-left:6.8%;
+            margin-left:5.5%;
+            text-align: center;
+        }
+
+        .headline-bg,.pricing-headline-bg{
+            background:url('__PUBLIC__/images/help.jpg') no-repeat;
+            background-size:cover;
+            height: 450px;
         }
 
     </style>
@@ -73,12 +80,15 @@
 <include active="service" open="faq" file="Public/header"/>
 
 
-<div class="headline-bg pricing-headline-bg">
+<div class="headline-bg pricing-headline-bg" >
 </div><!--//headline-bg-->
 
-<!-- ******Pricing Section****** -->
-<section class="features-video section section-on-bg" style="height: 500px;">
-    <div class="container text-center">
+<!--<?php if($pc == 'pc'){ echo 'height: 500px;';}else{echo 'height: 100px;';} ?>"-->
+<!--background:url('__PUBLIC__/images/help.jpg') no-repeat;-->
+
+<!-- ******Pricing Section****** section-on-bg -->
+<section class="features-video section " style="">
+    <div class="container text-center" style="<?php if($pc == 'pc'){ echo 'margin-bottom: 120px;'; }else{ echo 'margin-bottom: 250px;';} ?>">
         <h2 class="title">{$Think.lang._help_center}</h2>
         <div class="" style="color:#fff;width: 100%">
             <!--<iframe src="/player.vimeo.com/video/90299717?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
@@ -89,7 +99,9 @@
         <!--</div>&lt;!&ndash;//video-container&ndash;&gt;-->
     </div><!--//container-->
 </section><!--//feature-video-->
-<section class="faq section has-bg-color" style="padding-bottom: 20px;margin-top:-120px;<?php if($pc=='pc')echo 'margin-top:0px;'?>">
+
+
+<section class="faq section has-bg-color" style="clear:both;padding-bottom: 20px;margin-top:-120px;<?php if($pc=='pc')echo 'margin-top:0px;'?>">
     <div class="container">
         <!--<h2 class="title text-center">Frequently Asked Questions</h2>-->
         <div class="row" style="">
@@ -327,13 +339,6 @@
 
 
 
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="__PUBLIC__/style/tab/js/responsiveTabs.min.js"></script>
-<script>
-    $(document).ready(function () {
-        RESPONSIVEUI.responsiveTabs();
-    })
-</script>
 <!-- ******FAQ Section****** -->
 <!--<section class="faq section has-bg-color" style="padding-bottom: 50px;">-->
 <!--<div class="container">-->
@@ -500,11 +505,11 @@
 
 
 <!-- ******CTA Section****** -->
-<section id="cta-section" class="section cta-section text-center home-cta-section">
+<section id="cta-section" class="section cta-section text-center home-cta-section" style="min-height: 370px;">
     <div class="container">
-        <h2 class="title">为改变世界而生</h2>
-        <p class="intro">数字货币---颠覆现实、引发技术革命，即将渗透至你我生活的方方面面</p>
-        <p><a class="btn btn-cta btn-cta-primary" href="" target="_blank">马上加入</a></p>
+        <h2 class="title">{$Think.lang._Index_right_join}</h2>
+        <p class="intro">{$Think.lang._Index_right_join1}</p>
+        <p><a class="btn btn-cta btn-cta-primary" id="join" style="" target="_blank">{$Think.lang._Index_right_join2}</a></p>
     </div><!--//container-->
 </section><!--//cta-section-->
 
@@ -538,6 +543,38 @@
 <script type="text/javascript" src="__PUBLIC__/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/assets/js/main.js"></script>
 
+
+
+<!--<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="__PUBLIC__/style/tab/js/responsiveTabs.min.js"></script>
+<script>
+    $(document).ready(function () {
+        RESPONSIVEUI.responsiveTabs();
+    })
+</script>
+
+
+<script>
+
+
+    var login = "{$account}";
+
+    $("#join").click(function () {
+
+
+
+        if(login == "on"){
+            window.location.href = "index.php?a=account";
+
+
+        }else{
+            window.location.href = "index.php?a=signin";
+        }
+
+
+    });
+
+</script>
 
 </body>
 </html>

@@ -47,6 +47,10 @@
 
 <style>
 
+    html,body,div,p,a{
+        font-family: "微软雅黑" !important;
+    }
+
     .scrolled{
         background: #304153 !important;
     }
@@ -135,19 +139,19 @@
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="ulChangeColor">
                     <li class="<?php if('[active]' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" ><?php echo (L("_Header_index")); ?></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle my_center <?php if('[active]' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" style="text-align: center;min-width: 130px;">
+                    <!--<li class="nav-item dropdown">-->
+                        <!--<a class="dropdown-toggle my_center <?php if('[active]' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_Header_Financial")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>-->
+                        <!--<ul class="dropdown-menu" style="text-align: center;min-width: 130px;">-->
 
-                            <!--onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"-->
-                            <li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>
-                            <li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>
-                            <li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>
+                            <!--&lt;!&ndash;onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"&ndash;&gt;-->
+                            <!--<li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico"><?php echo (L("_Header_ico")); ?></a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential"><?php echo (L("_Header_exp")); ?></a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage"><?php echo (L("_Header_arbitrage")); ?></a></li>-->
 
-                        </ul>
-                    </li><!--//dropdown-->
+                        <!--</ul>-->
+                    <!--</li>&lt;!&ndash;//dropdown&ndash;&gt;-->
                     <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
-                    <li class="<?php if('[active]' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>
+                    <!--<li class="<?php if('[active]' == 'safety'){ echo 'active';} ?> nav-item"><a class="my_center"  href="index.php?a=safety"><?php echo (L("_Header_safety")); ?></a></li>-->
 
                     <li class="nav-item <?php if('[active]' == 'download'){ echo 'active';} ?>"><a class="my_center"  href="index.php?a=download"><?php echo (L("_Header_app_download")); ?></a></li>
 
@@ -163,10 +167,29 @@
                         </ul>
                     </li><!--//dropdown-->
 
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center <?php if('[active]' == 'service'){ echo 'opencolor';}?>" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo (L("_user_center")); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq">用户中心</a></li>
+                            <li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about">退出</a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+                    <li class="nav-item dropdown"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>">
+                        <a class="dropdown-toggle my_center"  href="index.php?a=account"><?php echo (L("_user_center")); ?></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq"><?php echo (L("_Header_help")); ?></a></li>
+                            <li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about"><?php echo (L("_Header_about_us")); ?></a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li>
 
 
-
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
 
                         <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span><?php echo ($language); ?>&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
@@ -192,7 +215,6 @@
 
                     </li>
 
-                    <li class="nav-item"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=account">用户中心</a></li>
                     <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><?php echo (L("_Login")); ?></a></li>
                     <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><?php echo (L("_Register")); ?></a></li>
 
@@ -340,7 +362,7 @@
                         <h3 class="title"  style="text-align: center;margin: 0px;">
 
 
-                            <img style="width: 180px;" src="/Public/img/logo22.png" >
+                            <a href="index.php"><img style="width: 180px;"  src="/Public/img/logo22.png" ></a>
 
 
                         </h3>
@@ -361,9 +383,9 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=about" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="/index.php?a=download" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=faq" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->

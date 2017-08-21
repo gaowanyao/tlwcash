@@ -35,7 +35,18 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
     <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
-
+    <style>
+        @media (max-width:991px ) {
+            form.signup-form{
+                margin-left: 0px;
+            }
+        }
+        @media (min-width:991px ) {
+            form.signup-form{
+                margin-left: 100px;
+            }
+        }
+    </style>
 
 
 </head>
@@ -46,7 +57,8 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 150px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo.png">
+                <!--<img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">-->
+                <img onclick="window.location.href='index.php';" style="width: 220px;line-height: 80px;margin-top:80px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
 
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
@@ -58,64 +70,73 @@
     <section class="signup-section access-section section">
         <div class="container">
             <div class="row">
-                <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                    <div class="form-box-inner">
+                <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8 " >
+                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>" >
                         <h2 class="title text-center">
                             <!--Sign up now-->
-                            忘记密码
+                            <?php echo (L("_Forgot_password")); ?>
                         </h2>
                         <!--<p class="intro text-center">It only takes 3 minutes!</p>-->
                         <div class="row">
-                            <div class="form-container col-xs-12 col-md-5">
+                            <!--<div class="form-container col-xs-12 col-md-6" style="<?php if($pc=='pc')echo'margin-left:180px;';?> " >-->
+                            <div class="form-container col-xs-12 col-md-10">
                                 <form class="signup-form">
-                                    <div class="form-group email">
+                                    <div class="form-group phone">
                                         <label class="sr-only" for="phone">手机号</label>
-                                        <input id="phone" type="tel" class="form-control login-email" placeholder="手机号">
+                                        <input id="phone" maxlength="11" minlength="11" type="tel" class="form-control login-email" placeholder="<?php echo (L("_Forgot_placeholder")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">新密码</label>
-                                        <input id="pwd" type="password" class="form-control login-password" placeholder="新密码">
+                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_1")); ?>">
+                                    </div><!--//form-group-->
+                                    <div class="form-group password">
+                                        <label class="sr-only" for="pwd">确认密码</label>
+                                        <input id="pwd1" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_2")); ?>">
                                     </div><!--//form-group-->
 
-                                    <div class="form-group password">
+                                    <div class="form-group shortMessage">
                                         <label class="sr-only" for="verify">验证码</label>
                                         <!--<i class="fa fa-envelope-o"></i>-->
-                                        <input id="verify" minlength="4" maxlength="4" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="短信验证码">
-                                        <button id="verify_send" style="width: 80px;float: right;" type="button" class="btn btn-cta-primary btn-cta-primary" >立即发送</button>
+                                        <input id="verify" minlength="6" maxlength="6" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="<?php echo (L("_Register_register_Verification")); ?>">
+                                        <button id="verify_send" style="width: 80px;float: right;" type="button" class="btn btn-cta-primary btn-cta-primary" ><?php echo (L("_Register_register_immediately")); ?></button>
 
                                         <br/>
                                         <br/>
                                     </div><!--//form-group-->
 
-                                    <button style="clear: both;margin-top: 20px !important;" id="submit" type="button" class="btn btn-block btn-cta-primary">重置密码</button>
+                                    <button style="clear: both;margin-top: 20px !important;" id="submit" type="button" class="btn btn-block btn-cta-primary"><?php echo (L("_reset_password")); ?></button>
 
 
 
 
                                     <p class="lead">
                                         <!--Already have an account?-->
-                                        已有帐号
+                                        <?php echo (L("_Register_register_existing")); ?>
                                         <a class="login-link" id="login-link" href="index.php?a=signin">
                                             <!--Log in-->
-                                            点击登录
+                                            <?php echo (L("_Register_register_sign")); ?>
                                         </a>
                                     </p>
                                 </form>
                             </div><!--//form-container-->
 
 
-                            <div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">
-                                <div class="divider"><span>Or</span></div>
-                                <ul class="list-unstyled social-login">
-                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>Sign up with QQ</button></li>
-                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>Sign up with Wechat</button></li>
-                                    <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>-->
-                                    <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>-->
-                                    <li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>
-                                    <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>
-                                </ul>
-                                <!--<p class="note">Don't worry, we won't post anything without your permission.</p>-->
-                            </div><!--//social-login-->
+                            <!--<div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">-->
+                                <!--<div class="divider" ><span>Or</span></div>-->
+                                <!--<ul class="list-unstyled social-login" style="margin-top: 40px;">-->
+                                    <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i><?php echo (L("_login_7")); ?></button></li>-->
+                                    <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i><?php echo (L("_login_8")); ?></button></li>-->
+                                    <!--<li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i><?php echo (L("_login_9")); ?></button></li>-->
+
+                                    <!--&lt;!&ndash;<li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>Sign up with QQ</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>Sign up with Wechat</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&lt;!&ndash;<li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>&ndash;&gt;&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&lt;!&ndash;<li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>&ndash;&gt;&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                                <!--&lt;!&ndash;<p class="note">Don't worry, we won't post anything without your permission.</p>&ndash;&gt;-->
+                            <!--</div>&lt;!&ndash;//social-login&ndash;&gt;-->
                         </div><!--//row-->
                     </div><!--//form-box-inner-->
                 </div><!--//form-box-->
@@ -134,10 +155,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;margin: 0px;">
+                        <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <img style="width: 180px;" src="/Public/img/logo22.png" >
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
 
 
                         </h3>
@@ -158,9 +179,9 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=about" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="/index.php?a=download" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=faq" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -175,7 +196,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png">
 
                         </h3>
 
@@ -197,7 +218,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png">
 
                         </h3>
 
@@ -219,22 +240,22 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
                             <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
                             </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
-                            <form class="signup-form navbar-form">
+                            <form class="login-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
                                     <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
                                 <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
-                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 17695540023</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a style="text-decoration: none;"> 3283719599@qq.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -324,9 +345,10 @@
 
             var phone = $("#phone").val();
             var pwd = $("#pwd").val();
+            var pwd1 = $("#pwd1").val();
 
 
-            console.log(encodeURIComponent(phone));
+//            console.log(encodeURIComponent(phone));
 
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
@@ -347,7 +369,14 @@
                 tipDialog("密码长度为6-20位！",'error','',1);
                 return false;
             }
-
+            if(pwd1 == ""){
+                tipDialog("确认密码不能为空！",'error','',1);
+                return false;
+            }
+            if(pwd1 != pwd){
+                tipDialog("两次输入密码不一致！",'error','',1);
+                return false;
+            }
             $.ajax({
                 type:"POST",
                 url:"index.php?a=ajaxSandPhoneforgetpwd",
@@ -391,7 +420,7 @@
             var verify = $("#verify").val();
 
 
-            console.log(encodeURIComponent(phone));
+//            console.log(encodeURIComponent(phone));
 
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
@@ -420,8 +449,8 @@
                 return false;
             }
 
-            if(verify.length != 4){
-                tipDialog("验证码长度为4！",'error','',1);
+            if(verify.length != 6){
+                tipDialog("验证码长度为6！",'error','',1);
                 return false;
             }
 

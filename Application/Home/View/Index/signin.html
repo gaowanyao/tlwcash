@@ -41,10 +41,19 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
     <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
+    <style>
+        @media (max-width:991px ) {
+          form.signup-form{
+              margin-left: 0px;
+          }
+        }
+        @media (min-width:991px ) {
+            form.signup-form{
+                margin-left: 100px;
+            }
+        }
+    </style>
 
-
-
-</head>
 
 <body class=" home-page login-page access-page has-full-screen-bg">
 <div class="upper-wrapper">
@@ -52,7 +61,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="__PUBLIC__/img/logo22.png">
+                <img onclick="window.location.href='index.php';" style="width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';}  ?>vertical-align: middle;padding: 10px;" src="__PUBLIC__/images/logo.png">
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
 
@@ -60,22 +69,23 @@
     </header><!--//header-->
 
     <!-- ******Login Section****** -->
-    <section class="login-section access-section section">
+    <section class="login-section access-section section" >
         <div class="container">
             <div class="row">
                 <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>">
+                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>" >
                         <h2 class="title text-center">{$Think.lang._login_1}</h2>
                         <div class="row">
-                            <div class="form-container col-xs-12 col-md-5">
-                                <form class="login-form">
-                                    <div class="form-group email">
+                            <!--<div class="form-container col-xs-12 col-md-6" style="<?php if($pc=='pc'){echo 'margin-left:180px;';}?>">-->
+                            <div class="form-container col-xs-12 col-md-10">
+                                <form class="signup-form">
+                                    <div class="form-group user" >
                                         <label class="sr-only" for="user">用户名/手机号</label>
-                                        <input id="user" type="text" class="form-control login-email" placeholder="{$Think.lang._login_2}">
+                                        <input id="user" type="text"  minlength="4" class="form-control login-email" placeholder="{$Think.lang._login_2}">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">Password</label>
-                                        <input id="pwd" type="password" class="form-control login-password" placeholder="{$Think.lang._login_3}">
+                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._login_3}">
                                         <p class="forgot-password" style="text-align: right;"><a href="index.php?a=forgetpwd">{$Think.lang._Login_forgot_password}?</a></p>
                                     </div><!--//form-group-->
                                     <button id="submit" type="button" class="btn btn-block btn-cta-primary">{$Think.lang._login_4}</button>
@@ -89,15 +99,15 @@
                             </div><!--//form-container-->
 
                             
-                            <div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">
-                                <div class="divider"><span>Or</span></div>
-                                <ul class="list-unstyled social-login" style="padding-top: 40px;">
-                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>{$Think.lang._login_7}</button></li>
-                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>{$Think.lang._login_8}</button></li>
-                                    <li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i>{$Think.lang._login_9}</button></li>
-                                    <!--<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>-->
-                                </ul>
-                            </div><!--//social-btns-->
+                            <!--<div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">-->
+                                <!--<div class="divider" ><span>Or</span></div>-->
+                                <!--<ul class="list-unstyled social-login" style="margin-top: 40px;">-->
+                                    <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>{$Think.lang._login_7}</button></li>-->
+                                    <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>{$Think.lang._login_8}</button></li>-->
+                                    <!--<li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i>{$Think.lang._login_9}</button></li>-->
+                                    <!--&lt;!&ndash;<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                            <!--</div>&lt;!&ndash;//social-btns&ndash;&gt;-->
                         </div><!--//row-->
                     </div><!--//form-box-inner-->
                 </div><!--//form-box-->
@@ -159,6 +169,10 @@
                 tipDialog("密码长度不能小于6！",'error','',3);
                 return false;
             }
+            if(pwd.length > 20){
+                tipDialog("密码长度不能大于20！",'error','',3);
+                return false;
+            }
 
 
 
@@ -189,7 +203,7 @@
                     if(data.errcode == 3){
                         tipDialog("登录成功！",'ok','',1);
                         setTimeout(function(){
-                            window.location='index.php?a=account';
+                            window.location='index.php';
                         },3000);
                         return false;
                     }

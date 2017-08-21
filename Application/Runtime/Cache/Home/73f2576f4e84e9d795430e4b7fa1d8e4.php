@@ -41,10 +41,19 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
     <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
+    <style>
+        @media (max-width:991px ) {
+          form.signup-form{
+              margin-left: 0px;
+          }
+        }
+        @media (min-width:991px ) {
+            form.signup-form{
+                margin-left: 100px;
+            }
+        }
+    </style>
 
-
-
-</head>
 
 <body class=" home-page login-page access-page has-full-screen-bg">
 <div class="upper-wrapper">
@@ -52,7 +61,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">
+                <img onclick="window.location.href='index.php';" style="width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';} ?>vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
 
@@ -60,22 +69,23 @@
     </header><!--//header-->
 
     <!-- ******Login Section****** -->
-    <section class="login-section access-section section">
+    <section class="login-section access-section section" >
         <div class="container">
             <div class="row">
                 <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>">
+                    <div class="form-box-inner" style="margin-top: 75px;<?php if($pc!='pc') echo 'margin-top:80px;'?>" >
                         <h2 class="title text-center"><?php echo (L("_login_1")); ?></h2>
                         <div class="row">
-                            <div class="form-container col-xs-12 col-md-5">
-                                <form class="login-form">
-                                    <div class="form-group email">
+                            <!--<div class="form-container col-xs-12 col-md-6" style="<?php if($pc=='pc'){echo 'margin-left:180px;';}?>">-->
+                            <div class="form-container col-xs-12 col-md-10">
+                                <form class="signup-form">
+                                    <div class="form-group user" >
                                         <label class="sr-only" for="user">用户名/手机号</label>
-                                        <input id="user" type="text" class="form-control login-email" placeholder="<?php echo (L("_login_2")); ?>">
+                                        <input id="user" type="text"  minlength="4" class="form-control login-email" placeholder="<?php echo (L("_login_2")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">Password</label>
-                                        <input id="pwd" type="password" class="form-control login-password" placeholder="<?php echo (L("_login_3")); ?>">
+                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_login_3")); ?>">
                                         <p class="forgot-password" style="text-align: right;"><a href="index.php?a=forgetpwd"><?php echo (L("_Login_forgot_password")); ?>?</a></p>
                                     </div><!--//form-group-->
                                     <button id="submit" type="button" class="btn btn-block btn-cta-primary"><?php echo (L("_login_4")); ?></button>
@@ -89,15 +99,15 @@
                             </div><!--//form-container-->
 
                             
-                            <div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">
-                                <div class="divider"><span>Or</span></div>
-                                <ul class="list-unstyled social-login" style="padding-top: 40px;">
-                                    <li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i><?php echo (L("_login_7")); ?></button></li>
-                                    <li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i><?php echo (L("_login_8")); ?></button></li>
-                                    <li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i><?php echo (L("_login_9")); ?></button></li>
-                                    <!--<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>-->
-                                </ul>
-                            </div><!--//social-btns-->
+                            <!--<div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">-->
+                                <!--<div class="divider" ><span>Or</span></div>-->
+                                <!--<ul class="list-unstyled social-login" style="margin-top: 40px;">-->
+                                    <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i><?php echo (L("_login_7")); ?></button></li>-->
+                                    <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i><?php echo (L("_login_8")); ?></button></li>-->
+                                    <!--<li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i><?php echo (L("_login_9")); ?></button></li>-->
+                                    <!--&lt;!&ndash;<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Log in with Google</button></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                            <!--</div>&lt;!&ndash;//social-btns&ndash;&gt;-->
                         </div><!--//row-->
                     </div><!--//form-box-inner-->
                 </div><!--//form-box-->
@@ -115,10 +125,10 @@
             <div class="row">
                 <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
                     <div class="footer-col-inner">
-                        <h3 class="title"  style="text-align: center;margin: 0px;">
+                        <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <img style="width: 180px;" src="/Public/img/logo22.png" >
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
 
 
                         </h3>
@@ -139,9 +149,9 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <h3 class="title" style="font-size: 26px;"><?php echo (L("_Footer_about_us")); ?></h3>
                         <ul class="list-unstyled" style="font-size: 16px;">
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=about" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_profile")); ?></a></li>
+                            <li><a href="/index.php?a=download" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_app_download1")); ?>&nbsp;&nbsp;</a></li>
+                            <li><a href="/index.php?a=faq" style="text-decoration: none;"><i class="fa fa-caret-right"></i><?php echo (L("_Footer_help")); ?>&nbsp;&nbsp;</a></li>
 
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>-->
                             <!--<li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>-->
@@ -156,7 +166,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png">
 
                         </h3>
 
@@ -178,7 +188,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="http://wechat.tiny-calf.com/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png">
 
                         </h3>
 
@@ -200,22 +210,22 @@
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
                             <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
                             </ul>
                         <div class="form-container">
                             <!--<p class="intro">Stay up to date with the latest news and offers from Velocity</p>-->
-                            <form class="signup-form navbar-form">
+                            <form class="login-form navbar-form">
                                 <div class="form-group" style="width: 150px;margin-right: 5px;display: inline-block;">
                                     <input  style="width: 150px;" type="text" class="form-control" placeholder="<?php echo (L("_Footer_email")); ?>">
                                 </div>
                                 <button style="width: 130px;display: inline-block;" type="submit" class="btn btn-cta btn-cta-primary"><?php echo (L("_Footer_submit")); ?></button>
                             </form>
                             <div class="footer-col-inner" style="font-size: 16px;padding-top:10px;">
-                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 0800 123 4567</p>
-                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a href="#"> enquires@ebo.com</a></p>
+                                <p class="tel" style="padding-bottom: 0px;margin-bottom: 5px;"><i class="fa fa-phone"></i> 17695540023</p>
+                                <p class="email" style="padding-top: 0px;margin-top: 0px;"><i class="fa fa-envelope-o"></i><a style="text-decoration: none;"> 3283719599@qq.com</a></p>
                             </div>
                         </div><!--//subscription-form-->
                     </div><!--//footer-col-inner-->
@@ -329,6 +339,10 @@
                 tipDialog("密码长度不能小于6！",'error','',3);
                 return false;
             }
+            if(pwd.length > 20){
+                tipDialog("密码长度不能大于20！",'error','',3);
+                return false;
+            }
 
 
 
@@ -359,7 +373,7 @@
                     if(data.errcode == 3){
                         tipDialog("登录成功！",'ok','',1);
                         setTimeout(function(){
-                            window.location='index.php?a=account';
+                            window.location='index.php';
                         },3000);
                         return false;
                     }

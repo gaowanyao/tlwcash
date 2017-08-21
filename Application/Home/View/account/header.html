@@ -1,45 +1,50 @@
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" style="">
 
-    <div class="navbar-inner">
+    <div class="navbar-inner" style="min-height: 60px!important; ">
+        <!--<div class="navbar-inner" style="">-->
 
-        <div class="container">
+        <div class="container" >
 
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <a class="btn btn-navbar" style="margin-top: 17px;" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
 
-            <a class="brand" href="index.php?a=account">用户中心</a>
+            <a class="brand" href="index.php">
+                <img style="<?php if($pc == 'notpc'){ echo 'margin-left:10px;';} ?>width: 130px;margin-top:0px;vertical-align: middle;" src="__PUBLIC__/images/logo.png">
+
+                <!--用户中心-->
+            </a>
 
             <div class="nav-collapse">
 
-                <ul class="nav pull-right">
+                <ul class="nav pull-right" style="margin-top: 10px;">
                     <!--<li>-->
                         <!--<a href="#"><span class="badge badge-warning">7</span></a>-->
                     <!--</li>-->
 
                     <li class="divider-vertical"></li>
 
-                    <li class="dropdown">
+                    <li class="dropdown"  style="text-align: center;">
 
                         <a data-toggle="dropdown" class="dropdown-toggle " href="#">
-                            {$name} <b class="caret"></b>
+                            <?php echo $_SESSION['account']['phone']; ?><b class="caret"></b>
                         </a>
 
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="text-align: center;min-width: 50px!important;">
                             <li>
-                                <a href="__PUBLIC__/mySpace/account.html"><i class="icon-user"></i>用户中心</a>
+                                <a href="index.php?a=account"><i class="icon-user"></i>{$Think.lang._user_name}</a>
                             </li>
 
                             <li>
-                                <a href="__PUBLIC__/mySpace/change_password.html"><i class="icon-lock"></i>修改密码</a>
+                                <a href="index.php?a=account"><i class="icon-lock"></i>{$Think.lang._user_home_3}</a>
                             </li>
 
                             <li class="divider"></li>
 
                             <li>
-                                <a href="index.php?a=logout"><i class="icon-off"></i> 退出</a>
+                                <a href="index.php?a=logout"><i class="icon-off"></i> {$Think.lang._sign_out}</a>
                             </li>
                         </ul>
                     </li>

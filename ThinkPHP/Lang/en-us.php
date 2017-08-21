@@ -77,7 +77,14 @@ return array(
     '_Header_exp' => 'Exponential Fund',
     '_Header_arbitrage' => 'Arbitrage Fund',
     '_Header_notice1' => 'NOTICE',
-    '_download_1' => 'September 1, 2017 on-line iOS, Android application client, can be used to buy financial products online, real-time view of income',
+    '_download_1' => 'In September 1, 2017, the iOS and Android application clients came online',
+    '_crowd_funding' => 'Crowd Funding',
+    '_user_center' => 'User Center',
+    '_contact' => 'Contact Information',
+    '_custom_service' => 'All chips please contact customer service',
+    '_user' => 'User name / cell phone number',
+    '_user_1' => 'User Center',
+    '_sign_out' => 'Sign Out',
 
     '_pop_up_1' => 'Asset Risk Warning',
     '_pop_up_2' => 'Asset Consignment Agreement',
@@ -109,6 +116,13 @@ return array(
     '_Index_banner_title' => 'Tongluowan Fund',
     '_Index_banner1_title1' => 'The establishment of a new cross-border asset transfer, payment agreement and to the center of the fund platform',
     '_Index_banner2_title2' =>'The traditional financial fund is changed based on block chaining Technology',
+    '_Index_banner3_title3' =>'1、the total amount of Tongluowan Fund issued 50 million Tcash tokens;',
+    '_Index_banner4_title4' =>'2、the ICO share a total of 35 million TCC tokens, only BTC participate in all chips;',
+    '_Index_banner5_title5' =>'3、the start time, September 2017 01, Friday (10:00) to Beijing time on Saturday (September 30, 2017) at 20:00;',
+    '_Index_banner6_title6' =>'4、raise the total value of 10000BTC, if less than 10000BTC, announced defeat, have been raised BTC original road returned to participants.',
+
+
+
 
 
 //    登录页面signin
@@ -121,8 +135,8 @@ return array(
     '_Login_forgot_password' => 'Forgot password',
 
     '_login_1' => 'Login In',
-    '_login_2' => 'User name / Cell Phone Number',
-    '_login_3' => 'Password',
+    '_login_2' => 'Please enter your cell phone number or mailbox',
+    '_login_3' => 'Please input a password',
     '_login_4' =>'Sign in',
     '_login_5' => 'Click Registration',
     '_login_6' => 'No account yet',
@@ -135,9 +149,9 @@ return array(
     '_Register_Member_register' => 'Sign Up',
     '_Register_placeholder_username' => 'Please enter your user name',
     '_Register_placeholder_password' => 'Please input a password',
-    '_Register_placeholder_rusername' => 'Please enter a repeat password',
+    '_Register_placeholder_rusername' => 'Please repeat the password',
     '_Register_placeholder_phone' => 'Please your cell phone number',
-    '_Register_placeholder_email' => 'Please enter the Email',
+    '_Register_placeholder_email' => 'Please enter your email address',
     '_Register_register_tis' => 'Already have an account',
     '_Register_register_Verification' => 'SMS Authentication Code',
     '_Register_register_immediately' => 'Send',
@@ -148,6 +162,11 @@ return array(
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => 'Password retrieval',
     '_Forget_return' => 'Return',
+    '_Forgot_password' => 'Forgot Password',
+    '_Forgot_placeholder' => 'Please your cell phone number',
+    '_Forgot_password_1' => 'Please new password',
+    '_Forgot_password_2' => 'Please repeat the new password',
+    'reset_password' => 'Reset Password',
 
 
 //      项目介绍home页
@@ -166,7 +185,7 @@ return array(
     '_Index_project' =>'Tongluowan Foundation (English Name: Tcash) is a mature and open block chain technology. Can the normal global cross-border payments, cross-border arbitrage and exchange financing currency, OTC and other commercial transactions with currency or other digital currency, can also be used for daily consumption. The operation team ensures that the Tcash in circulation is always more valuable than its digital assets as reserves to achieve the goal of maintaining the stability of the Tcash price.',
 
     '_Index_cross' =>'Global cross-border risk-free arbitrage',
-    '_Index_cross_content' =>'Due to different national conditions, the price in the domestic exchange of digital currency is different, sometimes the price difference in 10%-15%, we have registered accounts in the mainstream of the global exchange, each account with legal tender to do account cash if the price difference, in the low price to buy into the exchange, sell at the high price of exchange. When the stock markets are stable, they hedge their accounts by digital money to achieve risk-free arbitrage.',
+    '_Index_cross_content' =>'Due to different national conditions,the price in the domestic exchange of digital currency is different, sometimes the price difference in 10%-15%, we have registered accounts in the mainstream of the global exchange, each account with legal tender to do account cash if the price difference, in the low price to buy into the exchange, sell at the high price of exchange. When the stock markets are stable, they hedge their accounts by digital money to achieve risk-free arbitrage.',
 
     '_Index_otc' =>'Global OTC Trading',
     '_Index_otc_content' =>'To have specialized traders in the world\'s major regions, our customers and other digital currency bitcoin business consulting, agency purchase, P2P trading, through the service of two people, the first is the investment ability but do not know how to buy and sell digital currency crowd, the second is a digital currency trading group, the business mainly through social software, network, mobile phone wallet to complete the payment.',
@@ -181,7 +200,8 @@ return array(
     '_Index_exchange_content' =>'Tcash finance financing P2P model, due to the world\'s major exchanges, users and borrowers borrowing and lending, all the loan amount and lending rates are determined by the user, the interest rate floating by the market. The user in the exchange of currency speculation has certain accounts through our approach to the user with a capital increase in leverage to control the risk through the explosion mechanism, we only charge for the fees, billing by the day or monthly billing.',
 
     '_Index_freely' =>'Global free exchange flows',
-    '_Index_freely_content' =>'In the early days of Tcash release, you can freely move and freely convert between the virtual digital currencies. In the process of free circulation, Tcash should choose the characteristics of block chain. Using block chaining technology for reference to prevent the currency from being reused and the transaction irreversible. Tcash digital currency using bitcoin to center technology, to modify the core code bitcoin, block chain technical innovation, to create a recoverable, high anti-theft digital currency wallet.',
+    '_Index_freely_content' =>'In the process of global free circulation, Tcash should choose the characteristics of block chain. Use block chain technology for reference to prevent currency from being reused and irreversible trading. After the Tcash chips are raised, they can be freely traded and freely convertible with the virtual digital currency. Tcash digital currency using bitcoin to center technology, to modify the core code bitcoin, block chain technical innovation, to create a recoverable, high anti-theft digital currency wallet.',
+
     '_Index_app_download' =>'Tcash client Download',
     '_Index_app_security' =>'Security management: account center, transaction management',
     '_Index_app_fast' =>'Fast Trading: one key transaction, safe and fast',
@@ -193,12 +213,22 @@ return array(
     '_Index_pc_download' =>'Computer',
 
 
-    '_Index_team_content1' =>'Years of IT technology work, Intel technology ambassador, touch chief CVP, Microsoft technology expert MCSE, has written "decryption bitcoin", "game development principles" and other books.',
-    '_Index_team_name1' =>'Shendahai',
+    '_Index_team_content1' =>'Graduated from Peking University, Guanghua School of Management, once during the period from 2012 to 2014 of China International Capital Co (CICC) investment manager, began to contact and Study on the block chain and the combination of real estate business apcations, and for many years engaged in the Internet, television and investment industry, 2014 to 2017 Hongkong happy medical group general manager, during the establishment of Tcash team and began to develop Tcash block chain the project, is committed to creating an international digital asset arbitrage fund..',
+    '_Index_team_name1' =>'Zhao Xin',
+    '_Index_team_name1_1' =>'CEO',
 
 
-    '_Index_team_content2' =>'Engaged in Internet product operation ten years, leading and participating in a variety of game products during the operation and distribution of work, was responsible for the air network\'s "tragedy OL" "tragedy" OL II "Fengshen OL" "dream taken" and other well-known products operation issue, is mainly responsible for the Yi Bo digital research and products operation issue',
-    '_Index_team_name2' =>'Changdacheng',
+    '_Index_team_content2' =>'Graduated from HeFei University of Technology, he worked as Intel technical ambassador and internal management system architect of a 500 strong enterprise, and has deep research on block chain technology. Engaged in C++ and Linux underlying development, proficient in data structures, the entire application level through the financial projects of all technologies, including C/C++, Android/iOS, nodejs, Java, Angular.js, PHP and so on.',
+    '_Index_team_name2' =>'Jonathan Zhu',
+    '_Index_team_name2_2' =>'CTO',
+
+
+    '_Index_team_content3' =>'Graduated from Shanxi University of Finance and Economics, engaged in the Internet market operation for many years, was responsible for the market promotion companies, research on digital currency depth, long-term research and bitcoin blockchain field, has been concerned with the development of digital currency and block chain technology, has rich experience in the market, and is committed to the exploration and application of commercial block chain technology block chain market promotion and other operations.',
+    '_Index_team_name3' =>'Xie Maoming',
+    '_Index_team_name2_3' =>'COO',
+
+
+
 
     '_Index_right_join' =>'Born to change the world',
     '_Index_right_join1' =>'Digital currency - the subversion of reality and the technological revolution is about to permeate all aspects of your life',
@@ -314,23 +344,23 @@ return array(
 
     '_help_project' => 'Financing',
     '_help_project_1' => 'How do you buy ICO funds?',
-    '_help_project_1_1' => 'Can I want to finance through the official website click Select ICO fund to enter the page and click to buy, the amount of input to generate orders, Alipay paid (or bank transfer payment)',
+    '_help_project_1_1' => 'You can click through the official website, I want to finance. Select the ICO fund. After entering the page, click on the purchase amount to enter the amount to generate orders to pay pages',
 
     '_help_project_2' => 'OTC how to buy an arbitrage fund?',
-    '_help_project_2_2' => 'You can click through the official website, I want to finance. Select OTC arbitrage fund. On the OTC arbitrage fund page, select the cycle you need to buy, the cycles are one month, three months, six months, one year. Click to buy after the confirmation of the investment agreement and the purchase amount, Alipay paid (or bank transfer payment)',
+    '_help_project_2_2' => 'You can click through the official website, I want to finance. Select OTC arbitrage fund. In the OTC arbitrage fund page, select the cycle you need to buy, the cycle is one month, three months, six months, one year. After the purchase, confirm the investment agreement and the purchase amount',
 
     '_help_project_3' => 'ETF index fund earnings so high will be high risk?',
     '_help_project_3_3' => 'Although the ETF fund has a high profit, we have added 40% of the arbitrage funds to help customers share some of the risks and help customers to make sure they are guaranteed',
 
     '_help_project_4' => 'ETF index fund how to buy?',
-    '_help_project_4_4' => 'The index fund purchase channel in 1 monthly 9:00 open, then you can click I want to choose the financial website ETF index fund to determine the purchase amount to determine the investment agreement, Alipay paid (or bank transfer payment)',
+    '_help_project_4_4' => 'Index fund opened at 9:00 on the 1 day of the month to buy the channel, then you can click on the official website, I want to manage material to select the ETF index fund to determine the amount of purchase to determine the investment agreement - payment page',
 
     '_help_recharge' => 'Recharge',
     '_help_recharge_1' => 'Why do you click the top address of a bank? What\'s the difference?',
-    '_help_recharge_1_1' => 'Money management interface Wright coin recharge address is used to recharge your account in, recharge automatically deposit current, is a virtual currency available. P2P money inside click "buy" after the pop-up recharge address is your purchase of the required address when you recharge, recharge to the address after the confirmation, the system will automatically use the money to buy into financial products, save two of your operation',
+    '_help_recharge_1_1' => 'Money management interface bitcoin recharge address is used to give you in the account recharge, recharge, automatically deposit current, is a virtual currency available. P2P management. Click "buy" pop-up recharge address that you buy the item needed to address when you recharge, recharge to the address after the confirmation, the system will automatically use the word to buy physical products, save two of your operation.',
 
     '_help_recharge_2' => 'When does the recharge come in？',
-    '_help_recharge_2_2' => 'Wright currency through the network to confirm (1 confirmed) automatically after the arrival, is expected to more than 10 minutes;  Wright currency by CHBTC transfer to Bitbank can realize the second arrival; RMB through transfer agents to account to account for',
+    '_help_recharge_2_2' => 'bitcoin after network confirmation (1 confirmed) automatically arrival, is expected to more than 10 minutes; bitcoin transfers through the wallet to Tcaash, you can achieve the second arrival.',
 
     '_help_withdrawals' => 'Withdrawals',
     '_help_withdrawals_1' => 'How long does it take to withdraw cash?',
@@ -377,6 +407,44 @@ return array(
     '_about_number_6' => 'Official Call',
     '_about_number_7' => 'Official mailbox',
 
+
+    //用户中心
+    '_user_name' => 'User Center',
+    '_user_information' => 'Essential Information',
+    '_user_data' => 'Data',
+    '_user_home' => 'Return Home',
+    '_user_home_1' => 'Certification',
+    '_user_home_2' => 'Head',
+    '_user_home_3' => 'Password',
+    '_user_home_4' => 'User Name',
+    '_user_home_5' => 'Login Password',
+    '_user_home_pwd' => 'Please login password',
+    '_user_home_pww1' => 'You still have',
+    '_user_home_pww2' => 'Secondary input opportunity',
+    '_user_home_6' => 'Secure Mailbox',
+    '_user_home_7' => 'Phone Number',
+    '_user_home_8' => 'Preservation',
+    '_user_home_9' => 'Cancel',
+    '_user_home_10' => 'Please input a password',
+
+    '_certification_home_1' => 'Selected Areas',
+    '_certification_home_1_1' => 'China',
+    '_certification_home_1_2' => 'Hong Kong',
+    '_certification_home_1_3' => 'Taiwan',
+    '_certification_home_1_4' => 'verseas',
+
+    '_certification_home_2' => 'Real Name',
+    '_certification_home_3' => 'ID card No.',
+    '_certification_home_4' => 'Front view of handheld ID card',
+    '_certification_home_5' => 'Front of ID card',
+    '_certification_home_6' => 'ID card negative',
+
+    '_user_head_1' => 'Avatar Settings',
+    '_user_pass_1' => 'Original Password',
+    '_user_pass_2' => 'New Password',
+    '_user_pass_3' => 'Repeat Password',
+
+
     //底部
     '_Footer_time' => ' Working Hours',
     '_Footer_qq_group' => 'Website QQ Group',
@@ -390,8 +458,8 @@ return array(
     '_Footer_contact_us' => 'CONTACT US',
     '_Footer_profile' => 'Tcash profile',
     '_Footer_hours' => 'Working:09:00--18:00',
-    '_Footer_WeChat' => 'WeChat Group',
-    '_Footer_qq' => 'QQ Group',
+    '_Footer_WeChat' => 'Official WeChat',
+    '_Footer_qq' => 'Official QQ',
     '_Footer_email' => 'Please enter Email',
     '_Footer_submit' => 'Submitted',
     '_Footer_app_download1' => 'App Download',

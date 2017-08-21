@@ -80,7 +80,14 @@ return array(
     '_Header_exp' => '指數基金',
     '_Header_arbitrage' => '套利基金',
     '_Header_notice1' => '公告',
-    '_download_1' => '2017年9月1日 上線iOS、Android應用程序客戶端，可用於線上之間購買理財產品，實時查看收益情況',
+    '_download_1' => '2017年9月1日iOS、Android應用程序客戶端上线',
+    '_crowd_funding' => '參與衆籌',
+    '_user_center' => '用戶中心',
+    '_contact' => '聯系方式',
+    '_custom_service' => '參與衆籌請聯系微信客服',
+    '_user' => '用戶名/手機號',
+
+
 
     '_pop_up_1' => '資產風險提示',
     '_pop_up_2' => '資產委托協議',
@@ -97,16 +104,6 @@ return array(
 
 
 
-
-
-
-
-
-
-
-
-
-
 //Index首页页面翻译
     '_Index_big_title' => '多寶金豆區塊鏈去中心化數位貨幣項目',
     '_Index_small_title' => '促進消費金融，實現全員持股',
@@ -116,7 +113,10 @@ return array(
     '_Index_banner_title' => '銅鑼灣基金',
     '_Index_banner1_title1' => '創立一種新的跨境資産轉移、支付協議和去中心化基金平台',
      '_Index_banner2_title2' =>'基于區塊鏈技術，改變傳統理財基金',
-
+    '_Index_banner3_title3' =>'1、銅鑼灣基金發行總量5000萬Tcash代幣;',
+    '_Index_banner4_title4' =>'2、本次ICO份額總共3500萬TCC代幣，僅限BTC參與眾籌;',
+    '_Index_banner5_title5' =>'3、開始時間2017年9月01日(周五)10:00至北京時間2017年9月30日(周六)20:00結束;',
+    '_Index_banner6_title6' =>'4、募集總值10000BTC，如果低於10000BTC，則宣布失敗，已經籌集的BTC原路退回給參與者。',
 
 
 //    登录页面signin
@@ -131,8 +131,8 @@ return array(
 
 
     '_login_1' => '會員登錄',
-    '_login_2' => '用戶名/手機號',
-    '_login_3' => '密碼',
+    '_login_2' => '請輸入手機號或郵箱',
+    '_login_3' => '請輸入密碼',
     '_login_4' => '登錄',
     '_login_5' => '點擊這裏進行注冊',
     '_login_6' => '還沒有賬號',
@@ -143,11 +143,11 @@ return array(
 
 //      注册页面signup
     '_Register_Member_register' => '會員注册',
-    '_Register_placeholder_username' => '請輸入您的用戶名',
+    '_Register_placeholder_username' => '請輸入用戶名',
     '_Register_placeholder_password' => '請輸入密碼',
-    '_Register_placeholder_rusername' => '請輸入重複密碼',
+    '_Register_placeholder_rusername' => '請重複輸入密碼',
     '_Register_placeholder_phone' => '請輸入手機號碼',
-    '_Register_placeholder_email' => '請輸入郵箱',
+    '_Register_placeholder_email' => '請輸入郵箱地址',
     '_Register_register_tis' => '已經有帳號',
     '_Register_register_Verification' => '短信驗證碼',
     '_Register_register_immediately' => '立即發送',
@@ -159,8 +159,11 @@ return array(
 //      忘记密码页forget_pwd
     '_Forget_password_retrieval' => '找 回 密 碼',
     '_Forget_return' => '返回',
-
-
+    '_Forgot_password' => '忘記密碼',
+    '_Forgot_placeholder' => '請輸入手機號碼',
+    '_Forgot_password_1' => '請輸入新密碼',
+    '_Forgot_password_2' => '請重複輸入新密碼',
+    'reset_password' => '重置密碼',
 
 //      项目介绍home页
     '_Home_countdown' => 'ICO 眾籌倒計時',
@@ -187,7 +190,7 @@ return array(
     '_Index_exchange' =>'全球交易所融資融幣',
     '_Index_exchange_content' =>'Tcash融資融幣為p2p模式，由于全球各大交易所，用戶跟用戶之間借款和放款，所有的借款金額和放款利率都是由用戶定， 利率浮動由市場調節。所得炒幣用戶在交易所都有 一定的賬戶資金我們通過配資的方式給用戶增加杠杆， 通過爆倉機制來控制風險， 我們只收取等額的手續費，按天計費或者按月計費。',
     '_Index_freely' =>'全球自由兌換流動',
-    '_Index_freely_content' =>'在Tcash發行初期就可以自由流動，虛擬數字貨幣之間自由兌換。在自由流通過程中，Tcash應對區塊鏈的特點有所取舍。 借鑒區塊鏈技術防止貨幣被重複使用、交易不可逆轉的特點。Tcash數字貨幣采用比特幣去中心化技術， 進行修改了比特幣的核心代碼，進行了區塊鏈技術創新，創造出可找回、高防盜性的數字貨幣錢包。 ',
+    '_Index_freely_content' =>'在全球自由流通過程中，Tcash應對區塊鏈的特點有所取舍。借鑒區塊鏈技術防止貨幣被重複使用、交易不可逆轉等特點。在Tcash衆籌後發行就可以自由流動，與虛擬數字貨幣之間自由兌換。Tcash數字貨幣采用比特幣去中心化技術，進行修改了比特幣的核心代碼，進行了區塊鏈技術創新，創造出可找回、高防盜性的數字貨幣錢包。 ',
 
 
     '_Index_app_download' =>'銅鑼灣客戶端下載',
@@ -200,11 +203,28 @@ return array(
     '_Index_android_download' =>'安卓下载',
     '_Index_pc_download' =>'電腦端下載',
 
-    '_Index_team_content1' =>'多年IT技術工作，Intel技術大使，觸控首席CVP,微軟技術專家MCSE,曾編寫《解密比特幣》、《遊戲開發原理》等書籍。',
-    '_Index_team_name1' =>'沈大海',
+//    '_Index_team_content1' =>'多年IT技術工作，Intel技術大使，觸控首席CVP,微軟技術專家MCSE,曾編寫《解密比特幣》、《遊戲開發原理》等書籍。',
+//    '_Index_team_name1' =>'沈大海',
+//
+//    '_Index_team_content2' =>'從事互聯網産品運營十年余年，期間主導並參與多款遊戲産品的運營和發行工作，曾負責空中網旗下《天劫OL》《天劫貳OL》《封神OL》《夢幻天劫》等知名産品運營發行，目前主要負責頤博數碼自研及代理産品運營對外發行。',
+//    '_Index_team_name2' =>'常大成',
 
-    '_Index_team_content2' =>'從事互聯網産品運營十年余年，期間主導並參與多款遊戲産品的運營和發行工作，曾負責空中網旗下《天劫OL》《天劫貳OL》《封神OL》《夢幻天劫》等知名産品運營發行，目前主要負責頤博數碼自研及代理産品運營對外發行。',
-    '_Index_team_name2' =>'常大成',
+
+    '_Index_team_content1' =>'畢業於北京大學光華管理學院，曾2012至2014年期間任中國國際金融有限公司（CICC）投資經理，開始接觸和研究基於區塊鏈與地產結合的商業應用管道，並多年從事互聯網、影視和投資行業，2014至2017任香港幸福醫療集團總經理，期間成立Tcash團隊並開始開發Tcash區塊鏈項目，致力於打造一種國際數位資產無風險套利基金。',
+    '_Index_team_name1' =>'趙鑫',
+    '_Index_team_name1_1' =>'創始人',
+
+    '_Index_team_content2' =>'畢業于合肥工業大學，曾任Intel技術大使、某500強企業內部管理系統構架師，對區塊鏈技術有深入研究。從事C++和Linux底層開發，精通數據結構，泛通整個應用級金融項目的所有技術，包括C/C++、Android/iOS、nodejs、java、Angular.js、php等。',
+    '_Index_team_name2' =>'諸佳盛',
+    '_Index_team_name2_2' =>'首席技術官',
+
+    '_Index_team_content3' =>'畢業于山西財經大學，從事互聯網市場運營多年，曾負責多家公司市場運營推廣工作，數字貨幣深度研究者，長期深入研究比特幣及區塊鏈領域，一直關注著數字貨幣和區塊鏈技術的發展，具有豐富的市場經驗，並致力于探索區塊鏈技術商業應用及區塊鏈市場運營推廣等。',
+    '_Index_team_name3' =>'解寶明',
+    '_Index_team_name2_3' =>'首席運營官',
+
+
+
+
 
     '_Index_right_join' =>'爲改變世界而生',
     '_Index_right_join1' =>'數字貨幣---顛覆現實、引發技術革命，即將滲透至妳我生活的方方面面',
@@ -322,22 +342,22 @@ return array(
 
     '_help_project' => '理財問題',
     '_help_project_1' => 'ICO基金怎麽購買?',
-    '_help_project_1_1' => '可以通過官網點擊我要理財→選擇ICO基金→進入頁面後點擊購買→輸入金額→生成訂單→支付寶支付（或銀行轉賬支付）',
+    '_help_project_1_1' => '可以通過官網點擊我要理財→選擇ICO基金→進入頁面後點擊購買→輸入金額→生成訂單→支付页面',
 
     '_help_project_2' => 'OTC套利基金怎麽購買?',
-    '_help_project_2_2' => '可以通過官網點擊我要理財→選擇OTC套利基金→在OTC套利基金頁面選擇您需要購買的周期，周期分別為壹個月，三個月，半年，壹年。點擊購買後確認投資協議和購買金額→支付寶支付（或者銀行轉賬支付）。',
+    '_help_project_2_2' => '可以通過官網點擊我要理財→選擇OTC套利基金→在OTC套利基金頁面選擇您需要購買的周期，周期分別為壹個月，三個月，半年，壹年。點擊購買後確認投資協議和購買金額→支付页面',
 
     '_help_project_3' => 'ETF指數基金收益這麽高會不會風險也很高?',
     '_help_project_3_3' => 'ETF基金雖然收益高，但是我們在其中加入了40%的套利基金，可以幫助客戶分擔掉壹些風險，幫客戶做到保本的程度。',
 
     '_help_project_4' => 'ETF指數基金怎麽購買？',
-    '_help_project_4_4' => '指數基金在每月1日9:00開啟購買通道，屆時可以通過官網點擊我要理材→選擇ETF指數基金→確定購買金額→確定投資協議→支付寶支付（或者銀行轉帳支付）。',
+    '_help_project_4_4' => '指數基金在每月1日9:00開啟購買通道，屆時可以通過官網點擊我要理材→選擇ETF指數基金→確定購買金額→確定投資協議→支付页面',
 
     '_help_recharge' => '充值問題',
     '_help_recharge_1' => '為什麽點擊壹個理財的充值地址跟我的賬戶充值地址不壹致？有何不同？',
-    '_help_recharge_1_1' => '資金管理界面中的比特蔽/萊特蔽充值地址是用於給您在Bitbank的主帳護充值，充值後，自動存入活期，是壹筆可用的虛擬貨蔽。P2P理材裏面點擊“購買”後彈出的充值地址是您購買該項目所需的充值地址，當您向該地址充值確認後，系統會自動使用這筆蔽買成理材產品，省去您的二次操作。',
+    '_help_recharge_1_1' => '資金管理界面中的比特币充值地址是用於給您在帳護充值，充值後，自動存入活期，是壹筆可用的虛擬货币。P2P理材裏面點擊“購買”後彈出的充值地址是您購買該項目所需的充值地址，當您向該地址充值確認後，系統會自動使用這筆蔽買成理材產品，省去您的二次操作。',
     '_help_recharge_2' => '充值什麽時候到賬？',
-    '_help_recharge_2_2' => '比特幣/萊特幣通過網絡確認（1個確認）後自動到賬，預計10分鐘以上；比特幣/萊特幣通過CHBTC轉賬到Bitbank可實現秒到賬；人民幣通過轉賬，以代理商賬戶到賬為淮。',
+    '_help_recharge_2_2' => '比特幣過網絡確認（1個確認）後自動到賬，預計10分鐘以上；比特幣通過钱包轉賬到Tcaash可實現秒到賬。',
 
     '_help_withdrawals' => '提現問題',
     '_help_withdrawals_1' => '提現需要多久？',
@@ -383,6 +403,40 @@ return array(
     '_about_number_6' => '官方電話',
     '_about_number_7' => '官方郵箱',
 
+    //用户中心
+    '_user_name' => '用戶中心',
+    '_user_information' => '基本信息',
+    '_user_data' => '資料',
+    '_user_home' => '返回首頁',
+    '_user_home_1' => '實名認證',
+    '_user_home_2' => '头像设置',
+    '_user_home_3' => '修改密碼',
+    '_user_home_4' => '用戶名',
+    '_user_home_5' => '登錄密碼',
+    '_user_home_6' => '安全郵箱',
+    '_user_home_7' => '手機號碼',
+    '_user_home_8' => '保存',
+    '_user_home_9' => '取消',
+    '_user_home_10' => '請輸入登錄密碼',
+
+    '_certification_home_1' => '選擇地區',
+    '_certification_home_1_1' => '大陸',
+    '_certification_home_1_2' => '港澳',
+    '_certification_home_1_3' => '台灣',
+    '_certification_home_1_4' => '海外',
+
+    '_certification_home_2' => '真實姓名',
+    '_certification_home_3' => '身份證號',
+    '_certification_home_4' => '手持身份證正面照',
+    '_certification_home_5' => '身份證正面',
+    '_certification_home_6' => '身份證反面',
+    '_user_head_1' => '头像设置',
+    '_user_pass_1' => '原始密碼',
+    '_user_pass_2' => '新密碼',
+    '_user_pass_3' => '重複密碼',
+
+
+
 
     //底部
     '_Footer_time' => '工作時間',
@@ -398,8 +452,8 @@ return array(
     '_Footer_app_download1' => 'App下載',
     '_Footer_profile' => 'Tcash簡介',
     '_Footer_hours' => '工作時間：早09--晚18',
-    '_Footer_WeChat' => '官方微信群',
-    '_Footer_qq' => '官方QQ群',
+    '_Footer_WeChat' => '官方微信',
+    '_Footer_qq' => '官方QQ',
     '_Footer_email' => '請輸入您的Email',
     '_Footer_submit' => '提交',
 

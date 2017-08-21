@@ -34,10 +34,15 @@
 
 
 
-
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/modal/zeroModal.css" />
 
 
     <style>
+
+        .item{
+            min-height: 280px !important;
+        }
+
         .my_center{
             text-align: center;
             font-size: 16px;
@@ -166,11 +171,164 @@
         }
 
 
+
+
+
+
+
+        /*modal*/
+
+        .rounded-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            *padding: .4em;
+            margin: .8em 0;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: all .3s ease-out;
+        }
+
+        .rounded-list a:hover {
+            background: #eee;
+        }
+
+        .rounded-list a:hover:before {
+            transform: rotate(360deg);
+        }
+
+        .rounded-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -1.3em;
+            top: 50%;
+            margin-top: -1.3em;
+            background: #87ceeb;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            border: .3em solid #fff;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 2em;
+            transition: all .3s ease-out;
+        }
+
+        rectangle-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em .8em;
+            *padding: .4em;
+            margin: .5em 0 .5em 2.5em;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover {
+            background: #eee;
+        }
+
+        .rectangle-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -2.5em;
+            top: 50%;
+            margin-top: -1em;
+            background: #fa8072;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .rectangle-list a:after {
+            position: absolute;
+            content: '';
+            border: .5em solid transparent;
+            left: -1em;
+            top: 50%;
+            margin-top: -.5em;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover:after {
+            left: -.5em;
+            border-left-color: #fa8072;
+        }
+
+        .rectangle-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em .8em;
+            *padding: .4em;
+            margin: .5em 0 .8em 2.5em;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover {
+            background: #eee;
+        }
+
+        .rectangle-list a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -2.5em;
+            top: 50%;
+            margin-top: -1em;
+            background: #fa8072;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .rectangle-list a:after {
+            position: absolute;
+            content: '';
+            border: .5em solid transparent;
+            left: -1em;
+            top: 50%;
+            margin-top: -.5em;
+            transition: all .3s ease-out;
+        }
+
+        .rectangle-list a:hover:after {
+            left: -.5em;
+            border-left-color: #fa8072;
+        }
+
+
+
+
     </style>
 
 </head>
 
 <body class="home-page">
+
+
+<!--<div class="suspend">-->
+    <!--<dl>-->
+        <!--<dt class="IE6PNG"></dt>-->
+        <!--<dd class="suspendQQ"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"></a></dd>-->
+        <!--<dd class="suspendTel"><a href="javascript:void(0);"></a></dd>-->
+    <!--</dl>-->
+<!--</div>-->
+
+
+
 <!-- ******HEADER****** -->
 
 <include active="index" file="Public/header"/>
@@ -189,13 +347,32 @@
         <div class="container text-center">
             <h2 class="title">{$Think.lang._Index_banner_title}</h2>
             <p class="intro">{$Think.lang._Index_banner1_title1}<br/>{$Think.lang._Index_banner2_title2}</p>
-            <p>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/white_paper.pdf">{$Think.lang._Home_white_book}</a>
-                <a style="display: inline-block;width: 180px;margin-top: 3px" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/ico.pdf">{$Think.lang._Home_ico_rules}</a>
+
+
+
+
+            <p style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -10px;';}?>">
+                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/white_paper.pdf">{$Think.lang._Home_white_book}</a>
+                <a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/ico.pdf">{$Think.lang._Home_ico_rules}</a>
+                <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
+
+
+                    <p  style="text-indent: 2em;color: #c3c3c3">{$Think.lang._Index_banner3_title3}</p>
+                    <p  style="text-indent: 2em;color: #c3c3c3">{$Think.lang._Index_banner4_title4}</p>
+                    <p  style="text-indent: 2em;color: #c3c3c3">{$Think.lang._Index_banner5_title5}</p>
+                    <p  style="text-indent: 2em;color: #c3c3c3">{$Think.lang._Index_banner6_title6}</p>
+                </div>
+                  <br/>
+                <a id="crowdFunding" style="display: inline-block;<?php if($pc == 'pc'){ echo 'margin-top: 5px';}else{echo 'margin-top: -45px;width:180px;';} ?> " class="btn btn-cta btn-cta-primary" target="_blank" href="javascript:_maxmin()">{$Think.lang._crowd_funding}</a>
 
             </p>
 
-            <table style="width: 260px;margin: 0 auto;margin-top:50px;background: transparent;height: 40px;text-align: center;">
+
+            <!--<p>-->
+                <!--<a style="display: inline-block;width: 180px;margin-top: 23px" class="btn btn-cta btn-cta-primary" target="_blank" href="javascript:_maxmin()">我要参与众筹</a>-->
+            <!--</p>-->
+
+            <table style="width: 260px;margin: 0 auto;margin-top:50px;margin-bottom: 10px;background: transparent;height: 40px;text-align: center;">
 
                 <tr>
                     <td  class="time_number my_day">00</td>
@@ -252,7 +429,7 @@
 
     <!-- ******Why Section****** -->
     <section id="why" class="section why" style="padding-bottom: 0px;">
-        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -110px;';} ?>">
+        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -50px;';} ?>">
 
 
             <!--<div class="container">-->
@@ -269,37 +446,45 @@
 
                         </div><!--//post-inner-->
                     </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-                                <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
-                            </div>
-                            <h4 >{$Think.lang._Index_cross}</h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">{$Think.lang._Index_cross_content}</p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
-                                <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
-                            </div>
-                            <h4>{$Think.lang._Index_otc}</h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">
-                                {$Think.lang._Index_otc_content}
-                            </p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
-                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
-                        <div class="post-inner">
-                            <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
-                                <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
-                            </div>
-                            <h4>{$Think.lang._Index_ethernet}</h4>
-                            <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">{$Think.lang._Index_ethernet_content}
 
-                            </p>
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
+
+
+
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
+                                </div>
+                                <h4 >{$Think.lang._Index_cross}</h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify;">{$Think.lang._Index_cross_content}</p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                    <a  style="text-decoration: none" class="hi-icon hi-icon-images">Images</a>
+                                </div>
+                                <h4>{$Think.lang._Index_otc}</h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">
+                                    {$Think.lang._Index_otc_content}
+                                </p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+                            <div class="post-inner">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
+                                    <a   style="text-decoration: none" class="hi-icon hi-icon-pencil">Edit</a>
+                                </div>
+                                <h4>{$Think.lang._Index_ethernet}</h4>
+                                <p class="intro text-center padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify">{$Think.lang._Index_ethernet_content}
+
+                                </p>
+                            </div><!--//post-inner-->
+                        </article><!--//post-->
+
+
+                    <div class="clearfix"></div>
+
                     <article class="post col-md-4 col-sm-12 col-xs-12" style="">
                         <div class="post-inner">
                             <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" >
@@ -456,7 +641,7 @@
                             <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-windows"></i><span class="text">电脑端下载</span></a></li>-->
                             <!--</ul>-->
                             <!--</p>-->
-                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="index.php?a=qr&level=3&size=4" alt="" />
+                            <img class="img-responsive" style="display: inline-block;width: 126px;margin:-84px 0 0 8px;" src="__PUBLIC__/images/app.png" alt="" />
 
 
                         </p>
@@ -533,32 +718,75 @@
         <div class="container">
             <h2 class="title text-center">{$Think.lang._Header_team_member}</h2>
             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" >
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    <!--<li data-target="#testimonials-carousel" data-slide-to="2"></li>-->
+                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="3"></li>-->
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="4"></li>-->
                 </ol><!--//carousel-indicators-->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/assets/images/people/shen.jpg" alt="" /></figure>
+                <div class="carousel-inner" style="padding-bottom: 0px;margin-bottom: 0px;">
+                    <div class="item active" style="padding-bottom: 0px;margin-bottom: 0px;">
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/images/3.png" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
                                 <p>{$Think.lang._Index_team_content1}</p>
                             </blockquote>
-                            <p class="source">{$Think.lang._Index_team_name1}<br /><span class="title">CTO</span></p>
+                            <p class="source">{$Think.lang._Index_team_name1}<br /><span class="title">{$Think.lang._Index_team_name1_1}</span></p>
                         </div><!--//content-->
                     </div><!--//item-->
-                    <div class="item">
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/assets/images/people/chang.jpg" alt="" /></figure>
+
+
+                    <div class="item " >
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/images/5.png" alt="" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
                                 <p>{$Think.lang._Index_team_content2}</p>
                             </blockquote>
-                            <p class="source">{$Think.lang._Index_team_name2}<br /><span class="title">COO</span></p>
+                            <p class="source">{$Think.lang._Index_team_name2}<br /><span class="title">{$Think.lang._Index_team_name2_2}</span></p>
                         </div><!--//content-->
+                    </div><!--//item-->
+
+
+                    <div class="item " >
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/images/4.png" alt="" /></figure>
+                        <div class="content">
+                            <blockquote>
+                                <i class="fa fa-quote-left"></i>
+                                <p>{$Think.lang._Index_team_content3}</p>
+                            </blockquote>
+                            <p class="source">{$Think.lang._Index_team_name3}<br /><span class="title">{$Think.lang._Index_team_name2_3}</span></p>
+                        </div><!--//content-->
+                    </div><!--//item-->
+
+
+                    <!--<div class="item " >-->
+                        <!--<figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/images/5.png" alt="" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p>{$Think.lang._Index_team_content4}</p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source">{$Think.lang._Index_team_name4}<br /><span class="title">{$Think.lang._Index_team_name2_4}</span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
                     <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+
+
+                    <!--<div class="item " >-->
+                        <!--<figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="__PUBLIC__/images/6.png" alt="" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p>{$Think.lang._Index_team_content5}</p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source">{$Think.lang._Index_team_name5}<br /><span class="title">{$Think.lang._Index_team_name2_5}</span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
+
+
+
                     <!--<div class="item">-->
                         <!--<figure class="profile"><img src="__PUBLIC__/assets/images/people/profile-m-3.png" alt="" /></figure>-->
                         <!--<div class="content">-->
@@ -609,7 +837,7 @@
         <div class="container">
             <h2 class="title">{$Think.lang._Index_right_join}</h2>
             <p class="intro">{$Think.lang._Index_right_join1}</p>
-            <p><a class="btn btn-cta btn-cta-primary" href=""  style="" target="_blank">{$Think.lang._Index_right_join2}</a></p>
+            <p><a class="btn btn-cta btn-cta-primary" id="join" style="" target="_blank">{$Think.lang._Index_right_join2}</a></p>
         </div><!--//container-->
     </section><!--//cta-section-->
 
@@ -646,6 +874,23 @@
 
 
 <script>
+
+    var login = "{$account}";
+
+    $("#join").click(function () {
+
+
+
+            if(login == "on"){
+                window.location.href = "index.php?a=account";
+
+
+            }else{
+                window.location.href = "index.php?a=signin";
+            }
+
+
+        });
 
 
     var screenheight = $(window).height();
@@ -732,6 +977,287 @@
 
 
 </script>
+
+<script src="__PUBLIC__/modal/zeroModal.min.js"></script>
+
+<script>
+    function _basic() {
+        zeroModal.show();
+    }
+
+    function _params() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            close: false
+        });
+    }
+
+    function _escape() {
+        zeroModal.show({
+            title: 'hello world',
+            content: '<b>this is zeroModal</b>',
+            escape: false
+        });
+    }
+
+    function _button() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            ok: true,
+            cancel: true,
+            okFn: function(opt) {
+                console.log(opt);
+                alert('clicked ok and not close');
+                return false;
+            }
+        });
+    }
+
+    function _setsize() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%'
+        });
+    }
+
+    function _notoverlay() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            overlay: false
+        });
+    }
+
+    function _iframe() {
+        zeroModal.show({
+            title: 'hello world',
+            iframe: true,
+            url: 'http://www.baidu.com',
+            width: '80%',
+            height: '80%',
+            cancel: true
+        });
+    }
+
+    function _esc() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            esc: true
+        });
+    }
+
+    function _resize() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            resize: true
+        });
+    }
+
+//    function _maxmin() {
+//        zeroModal.show({
+//            title: 'hello world',
+//            content: 'this is zeroModal',
+//            width: '60%',
+//            height: '40%',
+//            max: true,
+//            min: true
+//        });
+//    }
+
+
+    var width = '{$modal_width}';
+    var height = '{$modal_height}';
+    var left = '{$modal_left}';
+    //参与众筹点击
+//    $("#crowdFunding").click(function () {
+//        $.ajax({
+//            type: "POST",
+//            url: "index.php?a=index_login",
+//            data: {
+//            },
+//            success: function (data) {
+//                console.log(data['toUrl']);
+//                $("#crowdFunding").attr("href",data['toUrl']);
+//            }
+//        });
+//    })
+
+    var login = "{$account}";
+
+    function _maxmin() {
+//        $.ajax({
+//            type: "POST",
+//            url: "index.php?a=index_login",
+//            data: {
+//            },
+//            success: function (data) {
+//                console.log(data['toUrl']);
+//                $("#crowdFunding").attr("href",data['toUrl']);
+//            }
+//        });
+
+        console.log(login);
+        if(login == "on"){
+            console.log(2323);
+
+        }else{
+            window.location.href = "index.php?a=signin";
+            return;
+        }
+
+
+        zeroModal.show({
+            title: '<h2  style="text-align: center;">{$Think.lang._contact}</h2>',
+            content: '<p style="text-align: center;"><img  style="width: 80%;" src="__PUBLIC__/img/wechatkefu.jpg" />' +
+            '<p style="text-align: center;font-size: 20px;">{$Think.lang._custom_service}</p>' +
+            '</p>',
+            width: width,
+            height: height,
+            left:left
+
+
+//            width: '25%',
+//            height: '42%',
+//            max: true,
+//            min: true
+        });
+    }
+
+    function _loading(type) {
+        zeroModal.loading(type);
+    }
+
+    function _progress() {
+        zeroModal.progress();
+    }
+
+    function _alert1() {
+        zeroModal.alert('请选择数据进行操作!');
+    }
+
+    function _alert2() {
+        zeroModal.alert({
+            content: '操作提示!',
+            contentDetail: '请选择数据后再进行操作',
+            okFn: function() {
+                alert('ok callback');
+            }
+        });
+    }
+
+    function _confirm1() {
+        zeroModal.confirm("确定提交审核吗？", function() {
+            alert('ok');
+            //return false;
+        });
+    }
+
+    function _confirm2() {
+        zeroModal.confirm({
+            content: '确定提交审核吗？',
+            contentDetail: '提交后将不能进行修改。',
+            okFn: function() {
+                alert('ok');
+            },
+            cancelFn: function() {
+                alert('cancel');
+            }
+        });
+    }
+
+    function _error() {
+        zeroModal.error('请选择数据进行操作!');
+
+        /*zeroModal.error({
+            content: '请选择数据进行操作!',
+            width: '800px'
+        });*/
+    }
+
+    function _success() {
+        zeroModal.success('操作成功!');
+    }
+
+    function _setOpacity() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            width: '60%',
+            height: '40%',
+            opacity: 0.8
+        });
+    }
+
+    function _drag() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            dragHandle: 'container',
+            ok: true
+        });
+    }
+
+    function _custombutton() {
+        zeroModal.show({
+            title: 'hello world',
+            iframe: true,
+            url: 'http://www.baidu.com',
+            width: '60%',
+            height: '60%',
+            buttons: [{
+                className: 'zeromodal-btn zeromodal-btn-primary',
+                name: '这是自定义按钮',
+                fn: function(opt) {
+                    alert(1);
+                    return false;
+                }
+            }, {
+                className: 'zeromodal-btn zeromodal-btn-default',
+                name: '取消',
+                fn: function(opt) {
+                    alert(2);
+                }
+            }]
+        });
+    }
+
+    function _setPosition() {
+        zeroModal.show({
+            title: 'hello world',
+            content: 'this is zeroModal',
+            top: '30px',
+            left: '30px',
+            width: '280px',
+            height: '600px'
+        });
+    }
+
+
+    $(function(){
+        $(".suspend").mouseover(function() {
+            $(this).stop();
+            $(this).animate({width: 160}, 400);
+        });
+        $(".suspend").mouseout(function() {
+            $(this).stop();
+            $(this).animate({width: 40}, 400);
+        });
+    });
+</script>
+
+
+</script>
+
 
 
 
