@@ -5,7 +5,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
     <title>Tcash App客户端下载-铜锣湾基金</title>
-    <meta name="keywords" content="铜锣湾基金_Tcash钱包_App下载_客户端下载_ios下载_安卓下载_Android下载" />
+    <meta name="keywords" content="铜锣湾基金,Tcash钱包,App下载,客户端下载,ios下载,安卓下载,Android下载" />
     <meta name="description" content="铜锣湾基金为您提供安全、快速、便捷的Tcash App钱包,包括ios下载,安卓下载,Android下载等客户端App."/>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -343,7 +343,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -381,7 +381,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -403,7 +403,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 

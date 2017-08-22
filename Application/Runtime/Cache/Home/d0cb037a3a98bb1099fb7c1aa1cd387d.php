@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>User Account - Bootstrap Admin</title>
+    <title>用户中心-铜锣湾基金</title>
+    <meta name="keywords" content="用户中心,个人中心,铜锣湾基金" />
+    <meta name="description" content="铜锣湾基金用户中心为我们管理账户资料、修改密码等帮助."/>
     <link rel="shortcut icon" href="/Public/img/ico.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -516,7 +518,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -536,7 +538,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -556,7 +558,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -576,7 +578,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }

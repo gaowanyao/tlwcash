@@ -57,7 +57,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';} ?>vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+                <img onclick="window.location.href='index.php';" style="cursor: pointer;width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';} ?>vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
 
                 <!--<img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">-->
                 <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
@@ -82,7 +82,7 @@
                         <div class="row text-center">
                             <!--<div class="form-container col-xs-12 col-md-6" style="<?php if($pc=='pc')echo'margin-left:180px;';?> ">-->
                             <div class="form-container col-xs-12 col-md-10">
-                                <form class="signup-form ">
+                                <form class="signup-form " method="post">
                                     <div class="form-group user">
                                         <label class="sr-only" for="user">用户名</label>
                                         <input id="user" type="text" name="user" minlength="4" maxlength="10" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_username")); ?>">
@@ -96,11 +96,11 @@
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">密码</label>
-                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_password")); ?>">
+                                        <input autocomplete="off" id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_password")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">确认密码</label>
-                                        <input id="pwd1" type="password"maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_rusername")); ?>">
+                                        <input autocomplete="off" id="pwd1" type="password"maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Register_placeholder_rusername")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group email">
                                         <label class="sr-only" for="email">邮箱</label>
@@ -346,6 +346,10 @@
 <script>
     $("#user").blur(function () {
         var username=$("#user").val();
+//        if(username==""){
+//            tipDialog("用户名不能为空！",'error','',1);
+//            return false;
+//        }
         $.ajax({
             type:"POST",
             url:"index.php?a=signup_checkuser",
@@ -372,11 +376,16 @@
     })
     $("#phone").blur(function () {
         var myphone = $("#phone").val();
-//        if(!myphone.match(/^(((13[0-9]{1})|150|151|152|158|159|157|182|187|188|147|155|156|185|186|153|180|189|178)+\d{8})$/)){
-//            $("#phoneInfo2").html("请输入正确的手机号！");
-//            return;
-//        }
+//
+        if(myphone==""){
+            return false;
+        }
 
+        if(!myphone.match(/^(((13[0-9]{1})|147|150|151|152|157|158|159|178|182|183|184|187|188|155|156|185|186|145|176|133|153|177|173|180|181|189|170|171)+\d{8})$/))
+        {
+            tipDialog("请输入正确的手机号！",'error','',1);
+            return;
+        }
         $.ajax({
             type:"POST",
             url:"index.php?a=signup_checkphone",
@@ -395,7 +404,14 @@
                     $("#phoneInfo2").html("");
                 }
             },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
                 if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
+                if(textStatus=='error'){
                     tipDialog("网络异常！",'error','',3);
                     return false;
                 }
@@ -414,7 +430,6 @@
             var email=$("#email").val();
             var user=$("#user").val();
 
-//            console.log(encodeURIComponent(phone));
             if(user==""){
                 tipDialog("用户名不能为空！",'error','',1);
                 return false;
@@ -508,6 +523,10 @@
                         tipDialog("网络异常！",'error','',3);
                         return false;
                     }
+                    if(textStatus=='error'){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
                 }
             });
 
@@ -580,6 +599,10 @@
 
                 },error:function (XMLHttpRequest, textStatus, errorThrown) {
                     if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
                         tipDialog("网络异常！",'error','',3);
                         return false;
                     }

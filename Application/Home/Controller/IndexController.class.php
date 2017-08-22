@@ -14,6 +14,11 @@ require_once './Public/lib/log.php';
 require_once "./Public/lib/test.php";
 require_once "./Public/lib/WxPay.NativePay.php";
 header("Content-type: text/html; charset=utf-8");
+header('X-Frame-Options:Deny');
+header("X-XSS-Protection:1"); //开启XSS保护
+header("X-Content-Type-Options: nosniff");
+header("Set-Cookie: hidden=value; httpOnly");
+
 //初始化日志
 $logHandler = new \CLogFileHandler("./Public/logs/" . date('Y-m-d') . '.log');
 $log = \Log::Init($logHandler, 15);
@@ -573,7 +578,7 @@ class IndexController extends Controller
     public function account_upload()
     {
         $upload = new \Think\Upload();// 实例化上传类
-        $upload->maxSize = 3145728;// 设置附件上传大小
+        $upload->maxSize = 3145728*3;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
         $upload->rootPath = './Public/upload/'; // 设置附件上传根目录
         $upload->savePath = ''; // 设置附件上传（子）目录

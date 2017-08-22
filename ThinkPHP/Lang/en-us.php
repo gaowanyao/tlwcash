@@ -120,8 +120,7 @@ return array(
     '_Index_banner4_title4' =>'2、the ICO share a total of 35 million TCC tokens, only BTC participate in all chips;',
     '_Index_banner5_title5' =>'3、the start time, September 2017 01, Friday (10:00) to Beijing time on Saturday (September 30, 2017) at 20:00;',
     '_Index_banner6_title6' =>'4、raise the total value of 10000BTC, if less than 10000BTC, announced defeat, have been raised BTC original road returned to participants.',
-
-
+    '_Index_title_1' => 'Tongluowan Fund -Tcash global block chain digital money services fund',
 
 
 
@@ -135,7 +134,7 @@ return array(
     '_Login_forgot_password' => 'Forgot password',
 
     '_login_1' => 'Login In',
-    '_login_2' => 'Please enter your cell phone number or mailbox',
+    '_login_2' => 'Please enter your mobile phone number or email address',
     '_login_3' => 'Please input a password',
     '_login_4' =>'Sign in',
     '_login_5' => 'Click Registration',

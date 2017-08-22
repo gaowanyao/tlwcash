@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>User Account - Bootstrap Admin</title>
+    <title>用户中心-铜锣湾基金</title>
+    <meta name="keywords" content="用户中心,个人中心,铜锣湾基金" />
+    <meta name="description" content="铜锣湾基金用户中心为我们管理账户资料、修改密码等帮助."/>
     <link rel="shortcut icon" href="__PUBLIC__/img/ico.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -341,7 +343,6 @@
             data: {
             },
             success: function (data) {
-                console.log(data['infook']);
                 if(data['infook']==1){
                     $("#realNameAuthPic").attr("disabled",true);
                 }
@@ -356,7 +357,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -376,7 +377,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -396,7 +397,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -416,7 +417,7 @@
         reader.readAsDataURL(files[0]);
         reader.onload = function (e) {
             var mb = (e.total / 1024) / 1024;
-            if (mb >= 2) {
+            if (mb >= 6) {
                 alert('文件大小大于2M');
                 return;
             }
@@ -433,7 +434,6 @@
     var num = 10;
     $('#userPassword').blur(function () {
         num--;
-        console.log(num)
         var password = $('#userPassword').val();
         $('#passwordNum').html(num);
         $.ajax({
@@ -639,7 +639,6 @@
             ok: true,
             cancel: true,
             okFn: function(opt) {
-                console.log(opt);
                 alert('clicked ok and not close');
                 return false;
             }
@@ -717,7 +716,7 @@
     //            data: {
     //            },
     //            success: function (data) {
-    //                console.log(data['toUrl']);
+    //
     //                $("#crowdFunding").attr("href",data['toUrl']);
     //            }
     //        });
@@ -732,14 +731,12 @@
 //            data: {
 //            },
 //            success: function (data) {
-//                console.log(data['toUrl']);
+//
 //                $("#crowdFunding").attr("href",data['toUrl']);
 //            }
 //        });
 
-        console.log(login);
         if(login == "on"){
-            console.log(2323);
 
         }else{
             window.location.href = "index.php?a=signin";

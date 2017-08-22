@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/Public/img/ico.ico">
     <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
     <!-- Global CSS -->
@@ -87,11 +87,11 @@
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">新密码</label>
-                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_1")); ?>">
+                                        <input autocomplete="off" id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_1")); ?>">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">确认密码</label>
-                                        <input id="pwd1" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_2")); ?>">
+                                        <input autocomplete="off" id="pwd1" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_Forgot_password_2")); ?>">
                                     </div><!--//form-group-->
 
                                     <div class="form-group shortMessage">
@@ -158,7 +158,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -196,7 +196,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -218,7 +218,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 
@@ -407,6 +407,15 @@
 
                     },1000);
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
+                        tipDialog("系统繁忙，请稍后再试！",'error','',3);
+                        return false;
+                    }
                 }
             });
 
@@ -464,7 +473,7 @@
                 },
                 success:function (data) {
 
-                    console.log(data);
+//                    console.log(data);
 
                     if(data['status'] == 1){
                         tipDialog(data['info'],'ok','',1);
@@ -477,6 +486,15 @@
 
 
 
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
+                        tipDialog("系统繁忙，请稍后再试！",'error','',3);
+                        return false;
+                    }
                 }
             });
 

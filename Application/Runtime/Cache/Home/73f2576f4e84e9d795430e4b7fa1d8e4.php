@@ -23,7 +23,7 @@
 
     <!--index css  server six parts-->
     <link rel="stylesheet" href="/Public/style/hover/css/component.css">
-    <link rel="stylesheet" href="/Public/style/hover/css/default.css">
+    <!--<link rel="stylesheet" href="/Public/style/hover/css/default.css">-->
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="/Public/assets/css/styles.css">
 
@@ -61,7 +61,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <img onclick="window.location.href='index.php';" style="width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';} ?>vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+                <img onclick="window.location.href='index.php';" style="cursor: pointer;width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';} ?>vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
                 <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
             </h1><!--//logo-->
 
@@ -85,7 +85,7 @@
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">Password</label>
-                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_login_3")); ?>">
+                                        <input autocomplete="off" id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="<?php echo (L("_login_3")); ?>">
                                         <p class="forgot-password" style="text-align: right;"><a href="index.php?a=forgetpwd"><?php echo (L("_Login_forgot_password")); ?>?</a></p>
                                     </div><!--//form-group-->
                                     <button id="submit" type="button" class="btn btn-block btn-cta-primary"><?php echo (L("_login_4")); ?></button>
@@ -322,9 +322,8 @@
                 return false;
             }
 
-            if(user.length < 2){
-                console.log($("#user").length);
-                tipDialog("用户名/手机号长度不能小于2！",'error','',3);
+            if(user.length < 4){
+                tipDialog("用户名/手机号长度不能小于4！",'error','',3);
                 return false;
             }
 
@@ -357,7 +356,7 @@
                 success:function (data) {
 
 
-                    console.log(data);
+               
 
 
 
@@ -382,6 +381,10 @@
 
                 },error:function (XMLHttpRequest, textStatus, errorThrown) {
                     if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
                         tipDialog("网络异常！",'error','',3);
                         return false;
                     }

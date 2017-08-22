@@ -5,8 +5,8 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
     <title>帮助中心-Tcash铜锣湾基金</title>
-    <meta name="keywords" content="帮助中心_铜锣湾基金_新手帮助_提现问题_理财问题_充值问题_风险问题" />
-    <meta name="description" content="铜锣湾基金帮助中心为您提供新手帮助,提现问题,理财问题,充值问题,风险问题等一系列理财问题答案."/>
+    <meta name="keywords" content="帮助中心,铜锣湾基金,新手帮助,提现问题,理财问题,充值问题,风险问题" />
+    <meta name="description" content="铜锣湾基金帮助中心为您提供新手帮助、提现问题、理财问题、充值问题、风险问题等一系列理财问题答案."/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+
     <style>
         h2{
             font-size: 22px;
@@ -310,6 +313,7 @@
                                             <?php echo (L("_help_project_1_1")); ?>
                                         </div>
                                     </div>
+
                                     <div class="col-md-11 col-xs-10 panel " style="margin-left: 28px;<?php if($pc=='pc') echo 'margin-left: 50px;'?>margin-top:20px;background: #0d66aa">
                                         <div class="my_question"><?php echo (L("_help_q")); ?>：<span style="font-size: 15px"><?php echo (L("_help_project_2")); ?></span></div>
                                         <div class="col-md-12 col-xs-12 panel " style="margin-top:20px;background: #169bd7;color:white">
@@ -716,7 +720,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -754,7 +758,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -776,7 +780,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 

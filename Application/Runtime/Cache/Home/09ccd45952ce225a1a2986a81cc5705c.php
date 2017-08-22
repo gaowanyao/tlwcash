@@ -5,7 +5,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
     <title>关于我们-Tcash铜锣湾基金</title>
-    <meta name="keywords" content="关于我们_什么是Tcash_铜锣湾基金" />
+    <meta name="keywords" content="关于我们,什么是Tcash,铜锣湾基金" />
     <meta name="description" content="铜锣湾基金关于我们为您提供什么是Tcash以及客服微信、客服QQ、客服电话、官方邮箱等帮助."/>
     <!-- Meta -->
     <!-- Meta -->
@@ -113,7 +113,7 @@
         <h1 class="logo">
             <!--<a href="index.html"><span class="text"><img src="/Public/img/logo.png"></span></a>-->
             <!--<a href="index.html"><img src="/Public/img/logo.png"></a>-->
-            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" src="/Public/images/logo.png">
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" alt="铜锣湾基金" src="/Public/images/logo.png">
 
             <!--/Public/img/logo.png-->
         </h1><!--//logo-->
@@ -437,7 +437,7 @@
                         <h3 class="title"  style="text-align: center;margin: 20px;">
 
 
-                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png" ></a>
+                            <a href="index.php"><img style="width: 160px;"  src="/Public/images/logo.png"  alt="铜锣湾基金"></a>
 
 
                         </h3>
@@ -475,7 +475,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/wechat.png">
+                            <img style="width: 110px;" src="/Public/images/wechat.png" alt="铜锣湾基金微信">
 
                         </h3>
 
@@ -497,7 +497,7 @@
                         <h3 class="title" style="text-align: center;">
 
 
-                            <img style="width: 110px;" src="/Public/images/qq.png">
+                            <img style="width: 110px;" src="/Public/images/qq.png" alt="铜锣湾基金QQ">
 
                         </h3>
 

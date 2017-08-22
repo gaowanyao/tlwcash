@@ -87,11 +87,11 @@
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">新密码</label>
-                                        <input id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Forgot_password_1}">
+                                        <input autocomplete="off" id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Forgot_password_1}">
                                     </div><!--//form-group-->
                                     <div class="form-group password">
                                         <label class="sr-only" for="pwd">确认密码</label>
-                                        <input id="pwd1" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Forgot_password_2}">
+                                        <input autocomplete="off" id="pwd1" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Forgot_password_2}">
                                     </div><!--//form-group-->
 
                                     <div class="form-group shortMessage">
@@ -178,8 +178,6 @@
             var pwd1 = $("#pwd1").val();
 
 
-//            console.log(encodeURIComponent(phone));
-
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
                 return false;
@@ -242,6 +240,10 @@
                         tipDialog("网络异常！",'error','',3);
                         return false;
                     }
+                    if(textStatus=='error'){
+                        tipDialog("系统繁忙，请稍后再试！",'error','',3);
+                        return false;
+                    }
                 }
             });
 
@@ -255,7 +257,6 @@
             var verify = $("#verify").val();
 
 
-//            console.log(encodeURIComponent(phone));
 
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
@@ -298,8 +299,7 @@
                     verify:encodeURIComponent(verify)
                 },
                 success:function (data) {
-
-//                    console.log(data);
+                    
 
                     if(data['status'] == 1){
                         tipDialog(data['info'],'ok','',1);
@@ -315,6 +315,10 @@
                 },error:function (XMLHttpRequest, textStatus, errorThrown) {
                     if(XMLHttpRequest.readyState!=4){
                         tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
+                        tipDialog("系统繁忙，请稍后再试！",'error','',3);
                         return false;
                     }
                 }

@@ -255,7 +255,7 @@ function num_format($num){
 }
 //******************************
 /**
- * 发送短信  创南
+ * 发送短信  创蓝
  *
  * @param string $mobile 手机号码
  * @param string $name 短信头
