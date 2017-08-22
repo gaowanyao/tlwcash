@@ -16,8 +16,13 @@ require_once "./Public/lib/WxPay.NativePay.php";
 header("Content-type: text/html; charset=utf-8");
 header('X-Frame-Options:Deny');
 header("X-XSS-Protection:1"); //开启XSS保护
-header("X-Content-Type-Options: nosniff");
-header("Set-Cookie: hidden=value; httpOnly");
+header("X-Content-Type-Options:nosniff");
+
+
+
+
+
+//header("Set-Cookie: hidden=value; httpOnly");  //设置后会导致session不能使用
 
 //初始化日志
 $logHandler = new \CLogFileHandler("./Public/logs/" . date('Y-m-d') . '.log');
@@ -125,18 +130,29 @@ class IndexController extends Controller
     {
 
 
+
         if (!empty($_SESSION['account']) && isset($_SESSION['account'])) {
+
+
 
             $this->assign("account", "on");
 
+            if(!empty($_SESSION['account']['uid'])){
 
-            $sel = M("User")->where("uid=".$_SESSION['account']['uid'])->find();
-            $account['uid'] = $sel['uid'];
-            $account['user_name'] = $sel['user_name'];
-            $account['email'] = $sel['email'];
-            $account['phone'] = $sel['phone'];
+                $sel = M("User")->where("uid=".$_SESSION['account']['uid'])->find();
+                $account['uid'] = $sel['uid'];
+                $account['user_name'] = $sel['user_name'];
+                $account['email'] = $sel['email'];
+                $account['phone'] = $sel['phone'];
 
-            session('account', $account);
+                session('account', $account);
+            }else{
+                $res = session('account', null);
+
+                header("Location:index.php");
+            }
+
+
 
 
 

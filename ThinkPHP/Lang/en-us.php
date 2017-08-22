@@ -230,7 +230,7 @@ return array(
 
 
     '_Index_right_join' =>'Born to change the world',
-    '_Index_right_join1' =>'Digital currency - the subversion of reality and the technological revolution is about to permeate all aspects of your life',
+    '_Index_right_join1' =>'Digital currency - the subversion of reality, virtual money and the chain technology behind it - is about to permeate all aspects of your life',
     '_Index_right_join2' =>'Join Right Away',
 
 

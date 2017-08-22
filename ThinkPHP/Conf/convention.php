@@ -96,7 +96,7 @@ return  array(
     /* SESSION设置 */
     'SESSION_AUTO_START'    =>  true,    // 是否自动开启Session
     'SESSION_OPTIONS'       =>  array(
-        'name'        =>   '',
+//        'name'        =>   '',
         'expire'     =>     '0'
 
 

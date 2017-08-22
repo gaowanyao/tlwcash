@@ -404,9 +404,6 @@
                     $("#phoneInfo2").html("");
                 }
             },error:function (XMLHttpRequest, textStatus, errorThrown) {
-                console.log(XMLHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
                 if(XMLHttpRequest.readyState!=4){
                     tipDialog("网络异常！",'error','',3);
                     return false;
@@ -584,7 +581,6 @@
                 },
                 success:function (data) {
 
-//                    console.log(data);
 
                     if(data['status'] == 1){
                         tipDialog(data['info'],'ok','',1);

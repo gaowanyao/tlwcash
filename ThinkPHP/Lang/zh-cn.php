@@ -216,7 +216,7 @@ return array(
 
 
     '_Index_right_join' =>'为改变世界而生',
-    '_Index_right_join1' =>'数字货币---颠覆现实、引发技术革命，即将渗透至你我生活的方方面面',
+    '_Index_right_join1' =>'数字货币--颠覆现实虚拟货币与其背后的区块链技术，即将渗透至你我生活的方方面面',
     '_Index_right_join2' =>'马上加入',
 
     '_Home_transaction_service_content' => '由于很多人不懂互联网和数字货币操作，从事数字货币线上交易平台和提供数字货币交易服务，收取交易费在任何国家都有需求。',
@@ -383,9 +383,7 @@ return array(
     '_about_number' => '关于我们',
     '_about_number_1' => '为方便客户快速了解我们Tcash以及联系方式',
     '_about_number_2' => '什么是Tcash',
-    '_about_number_3' => 'Tcash隶属于派德麟(香港)互动娱乐有限公司，致力于全球数字资产的发展，为客户提供全面、专业的数字资产理财服务，包括ICO基金理财、E
-    TF指数基金理财、OTC套利基金理财，是基于成熟、开源的区块链技术，可以实现目前主流数字货币的功能，包括：货币兑换、兼具安全和透明性用户可以交易、存储、兑换、消费支付等，并且Tcash支
-    持多重签名技术/以及良好的升级扩展性，为广大客户和各界朋友提供更好的数字资产金融理财服务',
+    '_about_number_3' => 'Tcash隶属于派德麟(香港)互动娱乐有限公司，致力于全球数字资产的发展，为客户提供全面、专业的数字资产理财服务，包括ICO基金理财、ETF指数基金理财、OTC套利基金理财，是基于成熟、开源的区块链技术，可以实现目前主流数字货币的功能，包括：货币兑换、兼具安全和透明性用户可以交易、存储、兑换、消费支付等，并且Tcash支持多重签名技术/以及良好的升级扩展性，为广大客户和各界朋友提供更好的数字资产金融理财服务',
     '_about_number_4' => '官方QQ',
     '_about_number_5' => '官方微信',
     '_about_number_6' => '官方电话',
@@ -448,8 +446,8 @@ return array(
     '_Footer_app_download1' => 'App下载',
     '_Footer_profile' => 'Tcash简介',
     '_Footer_hours' => '工作时间：早09--晚18',
-    '_Footer_WeChat' => '官方微信',
-    '_Footer_qq' => '官方QQ',
+    '_Footer_WeChat' => '客服微信',
+    '_Footer_qq' => '客服QQ',
     '_Footer_email' => '请输入您的Email',
     '_Footer_submit' => '提交',
 

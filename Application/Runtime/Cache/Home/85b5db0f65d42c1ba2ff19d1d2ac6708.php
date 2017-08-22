@@ -348,8 +348,6 @@
             var pwd1 = $("#pwd1").val();
 
 
-//            console.log(encodeURIComponent(phone));
-
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
                 return false;
@@ -429,7 +427,6 @@
             var verify = $("#verify").val();
 
 
-//            console.log(encodeURIComponent(phone));
 
             if(phone == ""){
                 tipDialog("手机号不能为空！",'error','',1);
@@ -473,7 +470,6 @@
                 },
                 success:function (data) {
 
-//                    console.log(data);
 
                     if(data['status'] == 1){
                         tipDialog(data['info'],'ok','',1);

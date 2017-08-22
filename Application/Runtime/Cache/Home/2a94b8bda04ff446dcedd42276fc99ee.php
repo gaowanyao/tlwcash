@@ -311,7 +311,9 @@
             border-left-color: #fa8072;
         }
 
-
+        /*p:first-letter{*/
+            /*text-transform: uppercase;*/
+        /*}*/
 
 
     </style>
@@ -548,7 +550,7 @@
                 <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
 
 
-                    <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner3_title3")); ?></p>
+                    <p  style="text-indent: 2em;color: #c3c3c3;"><?php echo (L("_Index_banner3_title3")); ?></p>
                     <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner4_title4")); ?></p>
                     <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner5_title5")); ?></p>
                     <p  style="text-indent: 2em;color: #c3c3c3"><?php echo (L("_Index_banner6_title6")); ?></p>

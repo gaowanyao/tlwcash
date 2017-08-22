@@ -227,7 +227,7 @@ return array(
 
 
     '_Index_right_join' =>'爲改變世界而生',
-    '_Index_right_join1' =>'數字貨幣---顛覆現實、引發技術革命，即將滲透至妳我生活的方方面面',
+    '_Index_right_join1' =>'數字貨幣--顛覆現實虛擬貨幣與其背後的區塊鏈技術，即將滲透至妳我生活的方方面面',
     '_Index_right_join2' =>'馬上加入',
 
     '_Home_transaction_service_content' => '由於很多人不懂互聯網和數位貨幣操作，從事數位貨幣線上交易平臺和提供數位貨幣交易服務，收取交易費在任何國家都有需求。',
@@ -452,8 +452,8 @@ return array(
     '_Footer_app_download1' => 'App下載',
     '_Footer_profile' => 'Tcash簡介',
     '_Footer_hours' => '工作時間：早09--晚18',
-    '_Footer_WeChat' => '官方微信',
-    '_Footer_qq' => '官方QQ',
+    '_Footer_WeChat' => '客服微信',
+    '_Footer_qq' => '客服QQ',
     '_Footer_email' => '請輸入您的Email',
     '_Footer_submit' => '提交',
 

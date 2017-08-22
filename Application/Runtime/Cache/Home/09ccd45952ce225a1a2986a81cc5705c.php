@@ -252,6 +252,8 @@
     </div><!--//container-->
 </section><!--//feature-video-->
 
+
+
 <div class="features-tabbed section blog container" >
 
     <div class="features-tabbed section blog container" style="padding:0px 0px 20px; margin-top: -40px;<?php if($pc=='pc') echo 'margin-top:0px'?>">

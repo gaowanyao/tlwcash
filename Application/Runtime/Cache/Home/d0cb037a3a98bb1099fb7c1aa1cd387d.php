@@ -503,7 +503,6 @@
             data: {
             },
             success: function (data) {
-                console.log(data['infook']);
                 if(data['infook']==1){
                     $("#realNameAuthPic").attr("disabled",true);
                 }
@@ -595,7 +594,6 @@
     var num = 10;
     $('#userPassword').blur(function () {
         num--;
-        console.log(num)
         var password = $('#userPassword').val();
         $('#passwordNum').html(num);
         $.ajax({
@@ -801,7 +799,6 @@
             ok: true,
             cancel: true,
             okFn: function(opt) {
-                console.log(opt);
                 alert('clicked ok and not close');
                 return false;
             }
@@ -879,7 +876,7 @@
     //            data: {
     //            },
     //            success: function (data) {
-    //                console.log(data['toUrl']);
+    //
     //                $("#crowdFunding").attr("href",data['toUrl']);
     //            }
     //        });
@@ -894,14 +891,12 @@
 //            data: {
 //            },
 //            success: function (data) {
-//                console.log(data['toUrl']);
+//
 //                $("#crowdFunding").attr("href",data['toUrl']);
 //            }
 //        });
 
-        console.log(login);
         if(login == "on"){
-            console.log(2323);
 
         }else{
             window.location.href = "index.php?a=signin";

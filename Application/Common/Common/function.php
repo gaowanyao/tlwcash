@@ -267,7 +267,7 @@ function num_format($num){
  */
 function sandPhone( $mobile, $name, $user_name, $user_password, $needstatus = 'true', $product = '', $extno = '') {
     $PORT=80;//端口号默认80
-    $IP="222.73.117.156";
+    $IP="222.73.117.1563";
     $chuanglan_config['api_account']=iconv('UTF-8', 'UTF-8',$user_name);
     $chuanglan_config['api_password']=iconv('UTF-8', 'UTF-8', $user_password);
 //    $chuanglan_config['api_send_url']="http://".$IP.":".$PORT."/msg/HttpBatchSendSM";
