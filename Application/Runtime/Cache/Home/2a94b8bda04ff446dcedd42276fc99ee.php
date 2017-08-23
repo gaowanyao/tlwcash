@@ -318,6 +318,9 @@
 
     </style>
 
+
+
+
 </head>
 
 <body class="home-page">
@@ -545,8 +548,9 @@
 
 
             <p style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -10px;';}?>">
-                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper.pdf"><?php echo (L("_Home_white_book")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper2.pdf"><?php echo (L("_Home_white_book")); ?></a>
                 <a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/ico.pdf"><?php echo (L("_Home_ico_rules")); ?></a>
+
                 <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
 
 
@@ -565,7 +569,7 @@
                 <!--<a style="display: inline-block;width: 180px;margin-top: 23px" class="btn btn-cta btn-cta-primary" target="_blank" href="javascript:_maxmin()">我要参与众筹</a>-->
             <!--</p>-->
 
-            <table style="width: 260px;margin: 0 auto;margin-top:50px;margin-bottom: 10px;background: transparent;height: 40px;text-align: center;">
+            <table style="width: 260px;margin: 0 auto;margin-top:30px;margin-bottom: 10px;background: transparent;height: 40px;text-align: center;">
 
                 <tr>
                     <td  class="time_number my_day">00</td>
@@ -589,6 +593,10 @@
     </section><!--//promo-->
 
 </div>
+
+
+
+
 
 
 
@@ -620,9 +628,11 @@
 
 <div class="sections-wrapper">
 
+
+
     <!-- ******Why Section****** -->
     <section id="why" class="section why" style="padding-bottom: 0px;">
-        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -50px;';} ?>">
+        <div class="container" style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -130px;';} ?>">
 
 
             <!--<div class="container">-->
@@ -637,13 +647,30 @@
 
                             <p class="intro padd" style="max-width: 100%;color: #444;text-indent: 2em;text-align: justify;"><?php echo (L("_Index_Project")); ?></p>
 
+
+                            <video poster="/Public/img/pre.png" preload="auto" style="margin-top:-15px;margin-bottom:15px;<?php if($pc == 'pc'){ echo 'width: 80%;height: 50%;';}else{ echo 'width: 95%;height: 95%;';} ?>" src="/Public/file/tlw.mp4"  loop controls="controls">
+                                您的浏览器不支持 video 标签。
+                            </video>
+
+
                         </div><!--//post-inner-->
+
+
                     </article><!--//post-->
 
 
 
+                    <!--<br/>-->
 
-                        <article class="post col-md-4 col-sm-12 col-xs-12" style="">
+
+
+
+
+
+
+
+
+                    <article class="post col-md-4 col-sm-12 col-xs-12" style="">
                             <div class="post-inner">
                                 <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
                                     <a style="text-decoration: none" class="hi-icon hi-icon-link">Link</a>
@@ -854,7 +881,7 @@
 
                 </div><!--//content-->
                 <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
-                    <img class="img-responsive" src="/Public/img/apppage.png" alt="铜锣湾基金" />
+                    <img class="img-responsive" src="/Public/img/2.png" alt="铜锣湾基金" />
                 </figure>
             </div><!--//item-->
         </div>
@@ -866,7 +893,7 @@
             <div class="row" style="<?php if($pc=='pc')echo'display: flex;align-items: center'?>">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center" >
                     <!--<div  style="width: 585px;height: 450px;background: url('/Public/img/app2-en.png');background-repeat: round"></div>-->
-                    <img src="/Public/img/apppage.png" class="img-responsive" alt="铜锣湾基金APP下载">
+                    <img src="/Public/img/.png" class="img-responsive" alt="铜锣湾基金APP下载">
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 text-center">
                     <div class="row" >
@@ -944,7 +971,7 @@
 
 
                     <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/xbm.jpg" alt="解宝明" /></figure>
+                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/chang.jpg" alt="常大程" /></figure>
                         <div class="content">
                             <blockquote>
                                 <i class="fa fa-quote-left"></i>
@@ -1130,8 +1157,9 @@
                 <div class="footer-col connect col-xs-12 col-md-4">
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
-                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmousemove="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <!--http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes-->
+                            <li><a href= "<?php if($pc=='pc') {echo 'http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes';}else{echo 'mqqwpa://im/chat?chat_type=wpa&uin=3283719599';} ?> "target="_blank"><img src="/Public/img/qq1.svg" onmouseover="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <!--<li><a><img src="/Public/img/qq1.svg" onmouseover="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'"  alt=""></a></li>-->
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>
@@ -1227,6 +1255,9 @@
 <script type="text/javascript" src="/Public/assets/plugins/FitVids/jquery.fitvids.js"></script>
 <script type="text/javascript" src="/Public/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/Public/assets/js/main.js"></script>
+
+
+
 
 
 <!--<script type="text/javascript" src="/Public/static/js/canvas_line.js"></script>-->

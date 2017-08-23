@@ -222,8 +222,8 @@ return array(
     '_Index_team_name2_2' =>'CTO',
 
 
-    '_Index_team_content3' =>'Graduated from Shanxi University of Finance and Economics, engaged in the Internet market operation for many years, was responsible for the market promotion companies, research on digital currency depth, long-term research and bitcoin blockchain field, has been concerned with the development of digital currency and block chain technology, has rich experience in the market, and is committed to the exploration and application of commercial block chain technology block chain market promotion and other operations.',
-    '_Index_team_name3' =>'Xie Maoming',
+    '_Index_team_content3' =>'Graduated from the Peking University Department of computer science and technology,a former domestic air network listed group senior management office,and the well-known Internet entertainment company in the spring and Autumn period, the Internet has more than 10 years of experience in product operations,senior product operations experts, research on digital currency depth,and participate in a variety of games are dominant during the operation and distribution of work,was responsible for the famous product operation issue, is mainly responsible for Tcash digital asset fund products distribution, promotion and commercial applications such as landing operations.',
+    '_Index_team_name3' =>'Chang Dacheng',
     '_Index_team_name2_3' =>'COO',
 
 
