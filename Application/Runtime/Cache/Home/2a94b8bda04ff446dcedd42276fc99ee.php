@@ -548,7 +548,7 @@
 
 
             <p style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -10px;';}?>">
-                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper2.pdf"><?php echo (L("_Home_white_book")); ?></a>
+                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/white_paper.pdf"><?php echo (L("_Home_white_book")); ?></a>
                 <a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="/Public/file/ico.pdf"><?php echo (L("_Home_ico_rules")); ?></a>
 
                 <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
@@ -941,7 +941,7 @@
                 <ol class="carousel-indicators" >
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    <!--<li data-target="#testimonials-carousel" data-slide-to="2"></li>-->
                     <!--<li data-target="#testimonials-carousel" data-slide-to="3"></li>-->
                     <!--<li data-target="#testimonials-carousel" data-slide-to="4"></li>-->
                 </ol><!--//carousel-indicators-->
@@ -970,16 +970,16 @@
                     </div><!--//item-->
 
 
-                    <div class="item " >
-                        <figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/chang.jpg" alt="常大程" /></figure>
-                        <div class="content">
-                            <blockquote>
-                                <i class="fa fa-quote-left"></i>
-                                <p><?php echo (L("_Index_team_content3")); ?></p>
-                            </blockquote>
-                            <p class="source"><?php echo (L("_Index_team_name3")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_3")); ?></span></p>
-                        </div><!--//content-->
-                    </div><!--//item-->
+                    <!--<div class="item " >-->
+                        <!--<figure class="profile"><img style="width: 140px;height: 140px;border-radius: 100%" src="/Public/images/chang.jpg" alt="常大程" /></figure>-->
+                        <!--<div class="content">-->
+                            <!--<blockquote>-->
+                                <!--<i class="fa fa-quote-left"></i>-->
+                                <!--<p><?php echo (L("_Index_team_content3")); ?></p>-->
+                            <!--</blockquote>-->
+                            <!--<p class="source"><?php echo (L("_Index_team_name3")); ?><br /><span class="title"><?php echo (L("_Index_team_name2_3")); ?></span></p>-->
+                        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
 
                     <!--<div class="item " >-->

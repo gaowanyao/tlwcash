@@ -586,7 +586,7 @@ class IndexController extends Controller
         $res['password'] = md5($_POST['dataUserPassword']);
         $res['phone'] = $_POST['dataUserMobile'];
         $m->save($res);
-        $this->success('修改成功，即将用户中心页面', 'http://www.jifage.cn/index.php?a=account');
+        $this->success('修改成功，即将用户中心页面', 'index.php?a=account');
     }
     //点击保存信息结束
 
@@ -610,7 +610,7 @@ class IndexController extends Controller
                 $data['real_name'] = $_POST['realName'];
                 $data['idcard'] = $_POST['IDNumber'];
                 $m->save($data);
-                $this->success('新增成功，即将用户中心页面', 'http://www.jifage.cn/index.php?a=account');
+                $this->success('新增成功，即将用户中心页面', 'index.php?a=account');
             } else {
                 $this->error($upload->getError());
 
@@ -642,7 +642,7 @@ class IndexController extends Controller
 
 
             $m->save($data);
-            $this->success('新增成功，即将返回列表页面', 'http://www.jifage.cn/index.php?a=account');
+            $this->success('新增成功，即将返回列表页面', 'index.php?a=account');
         }
     }
     //上传证件图片结束
@@ -668,7 +668,7 @@ class IndexController extends Controller
                 $data['head_url'] = "/Public/upload/" . $info['picHead']['savepath'] . $info['picHead']['savename'];
             }
             $m->save($data);
-            $this->success('新增成功，即将用户中心页面', 'http://www.jifage.cn/index.php?a=account');
+            $this->success('新增成功，即将用户中心页面', 'index.php?a=account');
         }
     }
     //上传头像结束
@@ -699,7 +699,7 @@ class IndexController extends Controller
         $data = $m->where("uid=$uid")->find();
         $data["password"]=md5($_POST["newPassword"]);
         $m->save($data);
-        redirect("http://www.jifage.cn/index.php?a=logout");
+        redirect("index.php?a=logout");
     }
     //修改密码开始
 
@@ -888,7 +888,20 @@ class IndexController extends Controller
         $is_pc = (strpos($agent, 'windows nt')) ? true : false;
         return $is_pc;
     }
+    //是否为Android
+    function is_adnroid(){
+        $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+        $is_android=(strpos($agent, 'android'))?true : false;
+        return $is_android;
 
+    }
+    //是否为IOS
+    function is_ios(){
+        $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+        $is_ios=(strpos($agent, 'iphone') || strpos($agent, 'ipad'))?true : false;
+        return $is_ios;
+
+    }
     /**
      * Author:阿耀王子
      * 退出

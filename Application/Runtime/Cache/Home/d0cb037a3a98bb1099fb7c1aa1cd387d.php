@@ -307,11 +307,11 @@
                                                 <div class="control-group">
                                                     <label class="control-label" for="area"><?php echo (L("_certification_home_1")); ?></label>
                                                     <div class="controls">
-                                                        <select class="selectpicker" id="area" name="area" selected="$res['area']" style="width: 200px">
-                                                            <option><?php echo (L("_certification_home_1_1")); ?></option>
-                                                            <option><?php echo (L("_certification_home_1_2")); ?></option>
-                                                            <option><?php echo (L("_certification_home_1_3")); ?></option>
-                                                            <option><?php echo (L("_certification_home_1_4")); ?></option>
+                                                        <select class="selectpicker" id="area" name="area"  style="width: 200px">
+                                                            <option <?php if($res['area']=='大陆'){echo 'selected';}?>><?php echo (L("_certification_home_1_1")); ?></option>
+                                                            <option <?php if($res['area']=='港澳'){echo 'selected';}?>><?php echo (L("_certification_home_1_2")); ?></option>
+                                                            <option <?php if($res['area']=='台湾'){echo 'selected';}?>><?php echo (L("_certification_home_1_3")); ?></option>
+                                                            <option <?php if($res['area']=='海外'){echo 'selected';}?>><?php echo (L("_certification_home_1_4")); ?></option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -326,7 +326,7 @@
                                                 <div class="control-group">
                                                     <label class="control-label" name="IDNumber" for="IDNumber"><?php echo (L("_certification_home_3")); ?></label>
                                                     <div class="controls">
-                                                        <input required type="text" style="width: 190px" id="IDNumber" name="IDNumber" value="<?php echo ($res['idcard']); ?>"/>
+                                                        <input required type="text" minlength="15" maxlength="18" style="width: 190px" id="IDNumber" name="IDNumber" value="<?php echo ($res['idcard']); ?>"/>
                                                         <span id="IDNumberInfo"></span>
                                                     </div>
                                                 </div>
@@ -669,7 +669,7 @@
     function allOK() {
         if($("#area").val()&&$("#realName").val()&&$("#IDNumber").val()&&$("#idPicH").val()&&$("#idPicF").val()&&$("#idPicZ").val()){
             _success();
-            setTimeout(window.location.href="http://www.jifage.cn/index.php?a=account",3000);
+            setTimeout(window.location.href="index.php?a=account",3000);
             return true;
         }else{
             alert("请填完信息！")
@@ -721,7 +721,7 @@
             },
             success: function (data) {
                 _success();
-                setTimeout(window.location.href="http://www.jifage.cn/index.php?a=account",3000);
+                setTimeout(window.location.href="index.php?a=account",3000);
 
             }
         });
