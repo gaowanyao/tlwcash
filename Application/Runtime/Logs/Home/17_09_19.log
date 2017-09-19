@@ -1003,3 +1003,15 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000073s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
 
+[ 2017-09-19T11:31:22+08:00 ] 60.29.18.51 /index.php?a=account_btn_dis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2] fopen(./Public/logs/2017-09-19.log): failed to open stream: No such file or directory /home/wwwroot/tlwcash/Public/lib/log.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_user` WHERE ( uid=44 ) LIMIT 1   [ RunTime:0.0003s ]
+
