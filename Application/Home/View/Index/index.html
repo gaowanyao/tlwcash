@@ -359,8 +359,8 @@
 
 
             <p style="<?php if($pc=='pc'){ echo 'margin-top: -30px;';}else{ echo 'margin-top: -10px;';}?>">
-                <a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/white_paper.pdf">{$Think.lang._Home_white_book}</a>
-                <a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/ico.pdf">{$Think.lang._Home_ico_rules}</a>
+                <!--<a style="display: inline-block;width: 180px;margin-top: 5px" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/white_paper.pdf">{$Think.lang._Home_white_book}</a>-->
+                <!--<a style="display: inline-block;width: 180px;margin-top: 5px;margin-left: 0px;" class="btn btn-cta btn-cta-primary" target="_blank" href="__PUBLIC__/file/ico.pdf">{$Think.lang._Home_ico_rules}</a>-->
 
                 <div style=" display: inline-block; text-align:justify;  <?php if($pc == 'pc'){ echo 'width: 42%;';}else{echo 'display: none;';} ?>" >
 
@@ -371,7 +371,7 @@
                     <p  style="text-indent: 2em;color: #c3c3c3">{$Think.lang._Index_banner6_title6}</p>
                 </div>
                   <br/>
-                <a id="crowdFunding" style="display: inline-block;<?php if($pc == 'pc'){ echo 'margin-top: 5px';}else{echo 'margin-top: -45px;width:180px;';} ?> " class="btn btn-cta btn-cta-primary" target="_blank" onclick="_maxmin()" >{$Think.lang._crowd_funding}</a>
+                <!--<a id="crowdFunding" style="display: inline-block;<?php if($pc == 'pc'){ echo 'margin-top: 5px';}else{echo 'margin-top: -45px;width:180px;';} ?> " class="btn btn-cta btn-cta-primary" target="_blank" onclick="_maxmin()" >{$Think.lang._crowd_funding}</a>-->
 
             </p>
 
@@ -661,10 +661,15 @@
 
                         <p class="notpc_center" style="display: inline-block;">
                             <p class="notpc_center" style="display: inline-block;">
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?release_id=5992d710ca87a8675100079f"><i class="fa fa-apple"></i><span class="text" >{$Think.lang._Index_ios_download}</span></a><br/>
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?utm_source=fir&utm_medium=qr"><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a><br/>
-                                <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?utm_source=fir&utm_medium=qr"><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a>
-                            </p>
+                                <!--<a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?release_id=5992d710ca87a8675100079f"><i class="fa fa-apple"></i><span class="text" >{$Think.lang._Index_ios_download}</span></a><br/>-->
+                                <!--<a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?utm_source=fir&utm_medium=qr"><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a><br/>-->
+                                <!--<a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href="https://fir.im/hnp1?utm_source=fir&utm_medium=qr"><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a>-->
+                        <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href=""><i class="fa fa-apple"></i><span class="text" >{$Think.lang._Index_ios_download}</span></a><br/>
+                        <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href=""><i class="fa fa-android"></i><span class="text">{$Think.lang._Index_android_download}</span></a><br/>
+                        <a class="btn btn-cta btn-cta-primary btn-ghost" style="width: 150px;background: #304153;" href=""><i class="fa fa-windows"></i><span class="text">{$Think.lang._Index_pc_download}</span></a>
+
+
+                    </p>
                             <!--<p class=" class="download-area"">-->
                             <!--<ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >-->
                             <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="#"><i class="fa fa-apple"></i><span class="text">苹果下载</span> </a></li>-->
@@ -745,7 +750,7 @@
     </div>
     <!-- ******Testimonials Section****** -->
     <!--<div style="background:#f5f5f5;width: 100%;height: 30px; "></div>-->
-    <section class="section testimonials">
+    <section class="section testimonials" style="display:none;">
         <div class="container">
             <h2 class="title text-center">{$Think.lang._Header_team_member}</h2>
             <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">

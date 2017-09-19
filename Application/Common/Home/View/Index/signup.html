@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>注册-铜锣湾基金</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="__PUBLIC__/img/ico.ico">
+    <!---<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>--->
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="__PUBLIC__/assets//css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--&lt;!&ndash;[if lt IE 9]>-->
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+
+
+
+
+    <!--[if lt IE 9]><script src="__PUBLIC__/static/js/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="__PUBLIC__/static/js/respond.js"></script><![endif]-->
+
+
+    <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
+    <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
+    <style>
+        @media (max-width:991px ) {
+            form.signup-form{
+                margin-left: 0px;
+            }
+        }
+        @media (min-width:991px ) {
+            form.signup-form{
+                margin-left: 100px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="signup-page access-page has-full-screen-bg">
+<div class="upper-wrapper">
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <img onclick="window.location.href='index.php';" style="cursor: pointer;width: 220px;line-height: 80px;<?php  if($pc == 'pc'){ echo 'margin-top:80px;';}else{ echo 'margin-top:40px;';}  ?>vertical-align: middle;padding: 10px;" src="__PUBLIC__/images/logo.png">
+
+                <!--<img onclick="window.location.href='index.php';" style="width: 260px;line-height: 80px;vertical-align: middle;padding: 10px;" src="/Public/img/logo22.png">-->
+                <link rel="stylesheet" type="text/css" href="<?php echo C('home_css') ?>/tipDialog.css"/>
+                <script type="text/javascript" src="<?php echo C('home_js') ?>/tipDialog.js"></script>
+                <!--<a href="index.html"><span class="logo-icon"></span><span class="text">Velocity</span></a>-->
+            </h1><!--//logo-->
+
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <!-- ******Signup Section****** -->
+    <section class="signup-section access-section section">
+        <div class="container">
+            <div class="row">
+                <div class="form-box col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
+                    <div class="form-box-inner" style="margin-top: 70px;<?php if($pc!='pc') echo 'margin-top:80px;'?>" >
+                        <h2 class="title text-center">
+                            <!--Sign up now-->
+                            {$Think.lang._Register_Member_register}
+                        </h2>
+                        <!--<p class="intro text-center">It only takes 3 minutes!</p>-->
+                        <div class="row text-center">
+                            <!--<div class="form-container col-xs-12 col-md-6" style="<?php if($pc=='pc')echo'margin-left:180px;';?> ">-->
+                            <div class="form-container col-xs-12 col-md-10">
+                                <form class="signup-form " method="post">
+                                    <div class="form-group user">
+                                        <label class="sr-only" for="user">用户名</label>
+                                        <input id="user" type="text" name="user" minlength="4" maxlength="10" class="form-control login-password" placeholder="{$Think.lang._Register_placeholder_username}">
+                                        <span id="userInfo"></span>
+                                    </div><!--//form-group-->
+                                    <div class="form-group phone">
+
+                                        <label class="sr-only" for="phone">手机号</label>
+                                        <input id="phone" name="myphone" type="tel" maxlength="11" minlength="11" class="form-control login-email" placeholder="{$Think.lang._Register_placeholder_phone}">
+                                        <span id="phoneInfo2"></span>
+                                    </div><!--//form-group-->
+                                    <div class="form-group password">
+                                        <label class="sr-only" for="pwd">密码</label>
+                                        <input autocomplete="off" id="pwd" type="password" maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Register_placeholder_password}">
+                                    </div><!--//form-group-->
+                                    <div class="form-group password">
+                                        <label class="sr-only" for="pwd">确认密码</label>
+                                        <input autocomplete="off" id="pwd1" type="password"maxlength="20" minlength="6" class="form-control login-password" placeholder="{$Think.lang._Register_placeholder_rusername}">
+                                    </div><!--//form-group-->
+                                    <div class="form-group email">
+                                        <label class="sr-only" for="email">邮箱</label>
+                                        <input id="email" type="email" class="form-control login-password" placeholder="{$Think.lang._Register_placeholder_email}">
+                                    </div><!--//form-group-->
+                                    <div class="form-group shortMessage">
+                                        <label class="sr-only" for="verify">验证码</label>
+                                        <!--<i class="fa fa-envelope-o"></i>-->
+                                        <input id="verify" minlength="6" maxlength="6" style="width: 60%;float: left;"  type="text" class="form-control login-password" placeholder="{$Think.lang._Register_register_Verification}">
+                                        <button id="verify_send" style="width: 80px;float: right" type="button" class="btn btn-cta-primary btn-cta-primary" >立即获取</button>
+
+                                        <br/>
+                                        <br/>
+                                    </div><!--//form-group-->
+
+                                    <button style="clear: both;margin-top: 20px !important;" id="submit" type="button" class="btn btn-block btn-cta-primary">{$Think.lang._Register_register_register}</button>
+
+
+
+                                    <!--<p class="note">-->
+                                        <!--&lt;!&ndash;By signing up, you agree to our terms of services and privacy policy.&ndash;&gt;-->
+                                        <!--通过注册，您同意我们的服务条款和隐私政策。-->
+                                    <!--</p>-->
+                                    <p class="lead">
+                                        <!--Already have an account?-->
+                                        {$Think.lang._Register_register_existing}
+                                        <a class="login-link" id="login-link" href="index.php?a=signin">
+                                            <!--Log in-->
+                                            {$Think.lang._Register_register_sign}
+                                        </a>
+                                    </p>
+                                </form>
+                            </div><!--//form-container-->
+
+
+                            <!--<div class="social-btns col-md-offset-1 col-sm-offset-0 col-sm-offset-0 col-xs-12 col-md-5">-->
+                                <!--<div class="divider" ><span>Or</span></div>-->
+                                <!--<ul class="list-unstyled social-login" style="margin-top: 40px;">-->
+                                    <!--<li><button class="twitter-btn btn" type="button"><i class="fa fa-qq"></i>{$Think.lang._login_7}</button></li>-->
+                                    <!--<li><button class="facebook-btn btn" type="button"><i class="fa fa-wechat"></i>{$Think.lang._login_8}</button></li>-->
+                                    <!--<li><button class="github-btn btn" type="button"><i class="fa fa-weibo"></i>{$Think.lang._login_9}</button></li>-->
+                                    <!--&lt;!&ndash;<li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                                <!--&lt;!&ndash;<p class="note">Don't worry, we won't post anything without your permission.</p>&ndash;&gt;-->
+                            <!--</div>&lt;!&ndash;//social-login&ndash;&gt;-->
+                        </div><!--//row-->
+                    </div><!--//form-box-inner-->
+                </div><!--//form-box-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//signup-section-->
+</div><!--//upper-wrapper-->
+
+<!-- ******FOOTER****** -->
+
+<include file="Public/footer"/>
+
+<!-- Javascript -->
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/back-to-top.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/FitVids/jquery.fitvids.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets//js/main.js"></script>
+
+
+
+<script>
+    $("#user").blur(function () {
+        var username=$("#user").val();
+//        if(username==""){
+//            tipDialog("用户名不能为空！",'error','',1);
+//            return false;
+//        }
+        $.ajax({
+            type:"POST",
+            url:"index.php?a=signup_checkuser",
+            data:{
+                username:username
+            },
+            success:function (data) {
+                if(data['status']==1){
+                   $("#userInfo").html("用户名已存在！");
+
+                }if($("#user").val().length<4||$("#user").val().length>10){
+                    $("#userInfo").html("用户名4-10字符！");
+                }
+               if(data['status']==0) {
+                   $("#userInfo").html("");
+                }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
+            }
+        });
+    })
+    $("#phone").blur(function () {
+        var myphone = $("#phone").val();
+//
+        if(myphone==""){
+            return false;
+        }
+
+        if(!myphone.match(/^(((13[0-9]{1})|147|150|151|152|157|158|159|178|182|183|184|187|188|155|156|185|186|145|176|133|153|177|173|180|181|189|170|171)+\d{8})$/))
+        {
+            tipDialog("请输入正确的手机号！",'error','',1);
+            return;
+        }
+        $.ajax({
+            type:"POST",
+            url:"index.php?a=signup_checkphone",
+            data:{
+                myphone:myphone
+            },
+            success:function (data) {
+
+                if(data['status']==1){
+
+//                    $("#phoneInfo2").html("手机号已被注册！");
+                    tipDialog("手机号已被注册！",'error','',1);
+                    return false;
+                }
+                if(data['status']==0) {
+                    $("#phoneInfo2").html("");
+                }
+            },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                if(XMLHttpRequest.readyState!=4){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
+                if(textStatus=='error'){
+                    tipDialog("网络异常！",'error','',3);
+                    return false;
+                }
+            }
+        })
+    })
+
+    $(document).ready(function () {
+
+
+        $("#verify_send").click(function () {
+
+            var phone = $("#phone").val();
+            var pwd = $("#pwd").val();
+            var pwd1=$("#pwd1").val();
+            var email=$("#email").val();
+            var user=$("#user").val();
+
+            if(user==""){
+                tipDialog("用户名不能为空！",'error','',1);
+                return false;
+            }
+            if(user.length>10||user.length<4){
+                tipDialog("用户名4-10字符！",'error','',1);
+                return false;
+            }
+            if(phone == ""){
+                tipDialog("手机号不能为空！",'error','',1);
+                return false;
+            }
+//            if(!phone.match(/^(((13[0-9]{1})|150|151|152|158|159|157|182|187|188|147|155|156|185|186|153|180|189)+\d{8})$/)){
+//                tipDialog("请输入正确的手机号！",'error','',1);
+//                return false;
+//            }
+
+            if(pwd == ""){
+                tipDialog("密码不能为空！",'error','',1);
+                return false;
+            }
+
+            if(pwd.length < 6){
+                tipDialog("密码长度为6-20位！",'error','',1);
+                return false;
+            }
+            if(pwd.length > 20){
+                tipDialog("密码长度为6-20位！",'error','',1);
+                return false;
+            }
+
+            if(pwd.length!=pwd1.length){
+                tipDialog("两次输入密码不一致！",'error','',1);
+                return false;
+            }
+            if(email== ""){
+                tipDialog("email不能为空！",'error','',1);
+                return false;
+            }
+            if(!email.match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){
+                tipDialog("请输入正确的email！",'error','',1);
+                return false;
+            }
+            if(user == ""){
+                tipDialog("用户名不能为空！",'error','',1);
+                return false;
+            }
+            if(user.length<4||user.length>10){
+                tipDialog("用户名长度4-10字符！",'error','',1);
+                return false;
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"index.php?a=ajaxSandPhone",
+                data:{
+                    phone:encodeURIComponent(phone)
+                },
+                success:function (data) {
+
+
+                    if(data['status'] == 1){
+                        tipDialog(data['info'],'ok','',1);
+                        $("#verify_send").attr("disabled",true);
+                        $("#user").attr("disabled",true);
+                        $("#phone").attr("disabled",true);
+                        $("#pwd").attr("disabled",true);
+                        $("#pwd1").attr("disabled",true);
+                        $("#email").attr("disabled",true);
+                    }
+                    if(data['status'] == -2){
+                        tipDialog(data['info'],'error','',1);
+                        return false;
+                    }
+
+                    var second = 60;
+                    var t = setInterval(function () {
+                        $("#verify_send").html(second);
+                        second--;
+                        if(second == 0){
+                            window.clearInterval(t);
+                            $("#verify_send").attr("disabled",false);
+                            $("#verify_send").html("立即发送");
+
+                        }
+
+                    },1000);
+
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                }
+            });
+
+
+
+
+        });
+
+        $("#submit").click(function () {
+            var phone = $("#phone").val();
+            var pwd = $("#pwd").val();
+            var verify = $("#verify").val();
+            var user=$("#user").val();
+            var email=$("#email").val();
+            if(phone == ""){
+                tipDialog("手机号不能为空！",'error','',1);
+                return false;
+            }
+            if(pwd == ""){
+                tipDialog("密码不能为空！",'error','',1);
+                return false;
+            }
+            if(pwd.length < 6){
+                tipDialog("密码长度为6-20位！",'error','',1);
+                return false;
+            }
+
+            if(pwd.length > 20){
+                tipDialog("密码长度为6-20位！",'error','',1);
+                return false;
+            }
+//            if(!phone.match(/^(((13[0-9]{1})|150|151|152|158|159|157|182|187|188|147|155|156|185|186|153|180|189)+\d{8})$/)){
+//                tipDialog("请输入正确的手机号！",'error','',1);
+//                return false;
+//            }
+            if(verify == ""){
+                tipDialog("验证码不能为空！",'error','',1);
+                return false;
+            }
+
+            if(verify.length != 6){
+                tipDialog("验证码长度为6！",'error','',1);
+                return false;
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"index.php?a=signupMsg",
+                data:{
+                    phone:encodeURIComponent(phone),
+                    pwd:encodeURIComponent(pwd),
+                    verify:encodeURIComponent(verify),
+                    user:user,
+                    email:email
+                },
+                success:function (data) {
+
+
+                    if(data['status'] == 1){
+                        tipDialog(data['info'],'ok','',1);
+
+                        window.location.href='index.php?a=signin';
+
+                    }else{
+                        tipDialog(data['info'],'error','',1);
+                    }
+
+
+
+                },error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    if(XMLHttpRequest.readyState!=4){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                    if(textStatus=='error'){
+                        tipDialog("网络异常！",'error','',3);
+                        return false;
+                    }
+                }
+            });
+
+        });
+
+    });
+    
+
+
+</script>
+
+
+</body>
+</html>
+
+

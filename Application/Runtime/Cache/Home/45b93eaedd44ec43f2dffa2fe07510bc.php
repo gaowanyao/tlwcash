@@ -251,8 +251,9 @@
                 <div class="footer-col connect col-xs-12 col-md-4">
                     <div class="footer-col-inner" style="text-align: center;">
                         <ul class="social list-inline">
-                            <!--<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
-                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes"><img src="/Public/img/qq1.svg" onmouseover="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" onclick="this.src='/Public/img/qq2.svg'" alt=""></a></li>
+                            <!--http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes-->
+                            <li><a href= "<?php if($pc=='pc') {echo 'http://wpa.qq.com/msgrd?v=3&uin=3283719599&site=qq&menu=yes';}else{echo 'mqqwpa://im/chat?chat_type=wpa&uin=3283719599';} ?> "target="_blank"><img src="/Public/img/qq1.svg" onmouseover="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'" alt=""></a></li>
+                            <!--<li><a><img src="/Public/img/qq1.svg" onmouseover="this.src='/Public/img/qq2.svg'" onmouseout="this.src='/Public/img/qq1.svg'"  alt=""></a></li>-->
                             <li><a><img src="/Public/img/wechat1.svg" onmousemove="this.src='/Public/img/wechat2.svg'" onmouseout="this.src='/Public/img/wechat1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/microblog1.svg" onmousemove="this.src='/Public/img/microblog2.svg'" onmouseout="this.src='/Public/img/microblog1.svg'" alt=""></a></li>
                             <li><a><img src="/Public/img/twitter1.svg" onmousemove="this.src='/Public/img/twitter2.svg'"  onmouseout="this.src='/Public/img/twitter1.svg'" alt=""></a></li>

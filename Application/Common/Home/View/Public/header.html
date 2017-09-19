@@ -1,0 +1,189 @@
+
+<style>
+
+    html,body,div,p,a{
+        font-family: "微软雅黑" !important;
+    }
+
+    .scrolled{
+        background: #304153 !important;
+        /*background: #888 !important;*/
+
+    }
+
+    .my_center{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    #header,#header.container,body{
+
+        /*<?php if($pc == 'pc'){ echo 'min-width: 1280px !important;';} ?>*/
+
+    }
+
+
+    .guoqi{
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url(__PUBLIC__/img/guoqi.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border-radius: 3px;
+        position: relative;
+        top: 3px
+    }
+
+    .my_chinese{
+        background-position: 0px -3px;
+    }
+
+    .my_hongkong{
+        background-position: 0px -29px;
+    }
+
+    .my_english{
+        background-position: 0px -291px;
+    }
+
+    .opencolor{
+        color: #ec6952 !important;
+    }
+    @media (max-width: 992px){
+       .header {background: #304158}
+    }
+</style>
+
+
+<header id="header" class="header navbar-fixed-top" style="<?php if($pc!='pc'){echo 'background:rgba(0,0,0,0)';}?>">
+    <!--<div class="top" >-->
+        <!--<span>欢迎来到铜锣湾比特币基金</span>-->
+    <!--</div>-->
+
+    <div class="container">
+        <h1 class="logo">
+            <!--<a href="index.html"><span class="text"><img src="__PUBLIC__/img/logo.png"></span></a>-->
+            <!--<a href="index.html"><img src="__PUBLIC__/img/logo.png"></a>-->
+            <img style="width: 200px;line-height: 70px;margin-top:0px;vertical-align: middle;padding: 10px;" alt="铜锣湾基金" src="__PUBLIC__/images/logo.png">
+
+            <!--__PUBLIC__/img/logo.png-->
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation" style="background: transparent !important;">
+
+            <div class="navbar-header">
+
+                <!--<label for="lang"><span onclick="$(#lang).click();" style="position: absolute;right: 45px;top: 20px;" class="guoqi my_chinese"></span></label>-->
+                <!--<select id="language" onchange="change()" style="background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                <!--<option value="zh-cn"><span   class="guoqi my_chinese"></span></option>-->
+                <!--<option value="zh-tw">繁体中文</option>-->
+                <!--<option value="en-us">English</option>-->
+
+                <!--</select>-->
+                <!--<select id="lang" >-->
+                    <!--<option value="zh-cn">简体中文</option>-->
+                    <!--<option value="zh-tw">繁体中文</option>-->
+                    <!--<option value="en-us">English</option>-->
+                <!--</select>-->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="ulChangeColor">
+                    <li class="<?php if('[active]' == 'index'){ echo 'active';}?>  nav-item"><a class="my_center" href="index.php" >&nbsp;&nbsp;&nbsp;{$Think.lang._Header_index}</a></li>
+                    <!--<li class="nav-item dropdown">-->
+                        <!--<a class="dropdown-toggle my_center <?php if('[active]' == 'money'){ echo 'opencolor';}?> " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;{$Think.lang._Header_Financial}&nbsp;<i class="fa fa-angle-down"></i></a>-->
+                        <!--<ul class="dropdown-menu" style="text-align: center;min-width: 130px;">-->
+
+                            <!--&lt;!&ndash;onmouseover="this.style.color='#ec6952'" onmouseout="this.style.color='#fff'"&ndash;&gt;-->
+                            <!--<li><a class="<?php if('[open]' == 'ico'){ echo 'opencolor';}?>"  href="index.php?a=ico">{$Think.lang._Header_ico}</a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'exponential'){ echo 'opencolor';}?>"  href="index.php?a=exponential">{$Think.lang._Header_exp}</a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'arbitrage'){ echo 'opencolor';}?>"  href="index.php?a=arbitrage">{$Think.lang._Header_arbitrage}</a></li>-->
+
+                        <!--</ul>-->
+                    <!--</li>&lt;!&ndash;//dropdown&ndash;&gt;-->
+                    <!--<li class="nav-item"><a href="features.html">我要理财</a></li>-->
+                    <!--<li class="<?php if('[active]' == 'safety'){ echo 'active';}  ?> nav-item"><a class="my_center"  href="index.php?a=safety">{$Think.lang._Header_safety}</a></li>-->
+
+                    <li class="nav-item <?php if('[active]' == 'download'){ echo 'active';}  ?>"><a class="my_center"  href="index.php?a=download">&nbsp;&nbsp;&nbsp;{$Think.lang._Header_app_download}</a></li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle my_center <?php if('[active]' == 'service'){ echo 'opencolor';}?>" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;{$Think.lang._Header_customer_service}&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq">{$Think.lang._Header_help}</a></li>
+                            <li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about">{$Think.lang._Header_about_us}</a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+
+                    <li class="nav-item dropdown" style="<?php if($account == 'off'){ echo 'display:none;';} ?>">
+                        <a class="dropdown-toggle my_center " data-toggle="dropdown" data-hover="dropdown" data-delay="0" style="cursor:pointer;" data-close-others="false" onclick="window.location.href='index.php?a=account';" >&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['account']['phone']; ?>&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">
+                            <li><a class="" href="index.php?a=account">{$Think.lang._user_1}</a></li>
+                            <li><a class="" href="index.php?a=logout">{$Think.lang._sign_out}</a></li>
+
+                            <!--<li><a href="blog-single.html">联系我们</a></li>-->
+
+                        </ul>
+                    </li><!--//dropdown-->
+                    <!--<li class="nav-item dropdown"  style="<?php if($account == 'off'){ echo 'display:none;';} ?>">-->
+                        <!--<a class="dropdown-toggle my_center"  href="index.php?a=account">{$Think.lang._user_center}</a>-->
+                        <!--<ul class="dropdown-menu"  style="text-align: center;min-width: 130px;">-->
+                            <!--<li><a class="<?php if('[open]' == 'faq'){ echo 'opencolor';}?>" href="index.php?a=faq">{$Think.lang._Header_help}</a></li>-->
+                            <!--<li><a class="<?php if('[open]' == 'about'){ echo 'opencolor';}?>" href="index.php?a=about">{$Think.lang._Header_about_us}</a></li>-->
+
+                            <!--&lt;!&ndash;<li><a href="blog-single.html">联系我们</a></li>&ndash;&gt;-->
+
+                        <!--</ul>-->
+                    <!--</li>-->
+
+
+                    <li class="nav-item dropdown">
+
+                        <a class="dropdown-toggle my_center" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">&nbsp;&nbsp;&nbsp;&nbsp;<span class="guoqi my_chinese"></span>{$language}&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu"  style="text-align: center;min-width: 160px;">
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="{$action_url}&l=zh-cn"><span class="guoqi my_chinese"></span>简体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="{$action_url}&l=zh-tw"><span class="guoqi my_hongkong"></span>繁体中文</a></li>
+                            <li><a onmouseover="this.style.color='#ec6952'"onmouseout="this.style.color='#fff'" href="{$action_url}&l=en-us"><span class="guoqi my_english"></span>English&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
+
+                        <!--<a class="my_center"  href="javascript:;">-->
+
+                            <!---->
+                            <!---->
+
+                            <!--&lt;!&ndash;注册&ndash;&gt;-->
+                            <!--<select id="language" onchange="change()" style="appearance:button;background: #304153;font-size: 14px;width: 85px;border: 1px solid gray;">-->
+                                <!--<option value="zh-cn">简体中文</option>-->
+                                <!--<option value="zh-tw">繁体中文</option>-->
+                                <!--<option value="en-us">English</option>-->
+                                <!--<i class="fa fa-angle-down"></i>-->
+
+                            <!--</select>-->
+                        <!--</a>-->
+
+                    </li>
+
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signin"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{$Think.lang._Login}</a></li>
+                    <li class="nav-item" style="<?php if($account == 'on'){ echo 'display:none;';} ?>"><a class="my_center"  href="index.php?a=signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;{$Think.lang._Register}</a></li>
+                    <!--<li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">注册</a></li>-->
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div><!--//container-->
+</header><!--//header-->
+<style>
+    .red{
+        color: red;
+    }
+</style>
+

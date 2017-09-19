@@ -239,9 +239,14 @@
                     </p>
 
                     <ul class="list-unstyled download-list" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>" >
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($url); ?>"><i class="fa fa-apple"></i><span class="text"><?php echo (L("_Index_ios_download")); ?></span> </a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($android); ?>"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a></li>
-                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($url); ?>"><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a></li>
+                        <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($url); ?>"><i class="fa fa-apple"></i><span class="text"><?php echo (L("_Index_ios_download")); ?></span> </a></li>-->
+                        <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($android); ?>"><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a></li>-->
+                        <!--<li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href="<?php echo ($url); ?>"><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a></li>-->
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href=""><i class="fa fa-apple"></i><span class="text"><?php echo (L("_Index_ios_download")); ?></span> </a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href=""><i class="fa fa-android"></i><span class="text"><?php echo (L("_Index_android_download")); ?></span></a></li>
+                        <li><a class="btn btn-ghost" style="<?php if($pc == 'notpc'){ echo 'width: 100%!important;';}?>text-align: center;" href=""><i class="fa fa-windows"></i><span class="text"><?php echo (L("_Index_pc_download")); ?></span></a></li>
+
+
                     </ul>
                     <!--//Only show QR code on desktop -->
                     <!--hidden-sm hidden-xs-->
